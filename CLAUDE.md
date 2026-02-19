@@ -46,7 +46,7 @@ When testing with `mkdocs serve`, use the repository name in the path:
 
 This project has THREE systems for rendering chemistry content. Each has specific syntax rules. **Content generators MUST follow these rules exactly.**
 
-> **Testing status:** Only **SMILES + SmilesDrawer** (System 2) has been verified working in this project. MathJax and mhchem (Systems 1 and 3) are configured in `mkdocs.yml` but have **not yet been tested**. If you encounter rendering issues with `$\ce{...}$` or `$$...$$`, check that MathJax is loading correctly and that the mhchem extension is available.
+> **Testing status:** All three systems have been verified working. SMILES + SmilesDrawer (System 2) was tested via the SMILES Drawing Test page. MathJax + mhchem (Systems 1 and 3) was tested via the mhchem Rendering Test page. Note: MathJax requires `js/mathjax-config.js` to load **before** the MathJax CDN script — this config enables the mhchem extension and is order-dependent in `mkdocs.yml`.
 
 ### System 1: Chemical Equations with MathJax + mhchem
 
@@ -280,3 +280,47 @@ Remember: use `<code>` tags (not backticks) for SMILES containing brackets, and 
 ```bash
 date "+%Y-%m-%d %H:%M:%S"
 ```
+
+## Learning Mascot: Catalyst the Cat
+
+### Character Overview
+
+- **Name**: Catalyst
+- **Species**: Cat
+- **Personality**: Curious, encouraging, slightly playful, scientifically precise
+- **Catchphrase**: "Let's react!"
+- **Visual**: Teal-and-white cat in a mini lab coat with safety goggles perched on head
+
+### Voice Characteristics
+
+- Uses simple, encouraging language appropriate for high school students
+- Occasionally uses chemistry puns ("That's a solid explanation!", "This idea has real potential energy!")
+- Refers to students as "chemists" or "scientists"
+- Signature phrases: "Let's react!", "Great chemistry!", "Now we're bonding!"
+
+### Placement Rules
+
+| Context | Admonition Type | Frequency |
+|---------|----------------|-----------|
+| Chapter opening | mascot-welcome | Every chapter |
+| Key concept | mascot-thinking | 2-3 per chapter |
+| Helpful tip | mascot-tip | As needed |
+| Common mistake | mascot-warning | As needed |
+| Section completion | mascot-celebration | End of major sections |
+| Difficult content | mascot-encourage | Where students may struggle |
+
+### Do's and Don'ts
+
+**Do:**
+
+- Use Catalyst to introduce new topics warmly
+- Include the catchphrase "Let's react!" in welcome admonitions
+- Keep dialogue brief (1-3 sentences)
+- Match the pose/image to the content type
+
+**Don't:**
+
+- Use Catalyst more than 5-6 times per chapter
+- Put mascot admonitions back-to-back
+- Use the mascot for purely decorative purposes
+- Change Catalyst's personality or speech patterns

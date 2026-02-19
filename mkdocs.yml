@@ -58,6 +58,7 @@ nav:
 
   - Learning Graph:
     - Introduction: learning-graph/index.md
+    - Mascot Test: learning-graph/mascot-test.md
 
   - Sample Prompts:
     - List of Prompts: prompts/index.md
@@ -107,12 +108,14 @@ markdown_extensions:
 
 extra_css:
   - css/extra.css
+  - css/mascot.css
 
 extra_javascript:
   - js/extra.js
   - https://cdn.jsdelivr.net/npm/smiles-drawer@1.2.0/dist/smiles-drawer.min.js
   - js/smiles.js
-  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+  - js/mathjax-config.js
+  - https://unpkg.com/mathjax@3/es5/tex-chtml.js
 
 # Watch these files for changes to trigger a rebuild
 watch:

@@ -1,1 +1,129 @@
-site_name: My Docs
+site_name: AP Chemistry
+repo_url: https://github.com/dmccreary/chemistry
+site_url: https://dmccreary.github.io/chemistry/
+site_description: An interactive intelligent textbook for AP chemistry designed for college credit.
+site_author: Dan McCreary
+
+nav:
+  - Home: index.md
+  - About the Course: about.md
+  - Course Description: course-description.md
+
+  - Chapters:
+    - Overview: chapters/index.md
+    - 1. Atomic Structure and Properties:
+      - Content: chapters/01-atomic-structure-and-properties/index.md
+      - Quiz: chapters/01-atomic-structure-and-properties/quiz.md
+      - References: chapters/01-atomic-structure-and-properties/references.md
+    - 2. Compound Structure and Properties:
+      - Content: chapters/02-compound-structure-and-properties/index.md
+      - Quiz: chapters/02-compound-structure-and-properties/quiz.md
+      - References: chapters/02-compound-structure-and-properties/references.md
+    - 3. Properties of Substances and Mixtures:
+      - Content: chapters/03-properties-of-substances-and-mixtures/index.md
+      - Quiz: chapters/03-properties-of-substances-and-mixtures/quiz.md
+      - References: chapters/03-properties-of-substances-and-mixtures/references.md
+    - 4. Chemical Reactions:
+      - Content: chapters/04-chemical-reactions/index.md
+      - Quiz: chapters/04-chemical-reactions/quiz.md
+      - References: chapters/04-chemical-reactions/references.md
+    - 5. Kinetics:
+      - Content: chapters/05-kinetics/index.md
+      - Quiz: chapters/05-kinetics/quiz.md
+      - References: chapters/05-kinetics/references.md
+    - 6. Thermodynamics:
+      - Content: chapters/06-thermodynamics/index.md
+      - Quiz: chapters/06-thermodynamics/quiz.md
+      - References: chapters/06-thermodynamics/references.md
+    - 7. Equilibrium:
+      - Content: chapters/07-equilibrium/index.md
+      - Quiz: chapters/07-equilibrium/quiz.md
+      - References: chapters/07-equilibrium/references.md
+    - 8. Acids and Bases:
+      - Content: chapters/08-acids-and-bases/index.md
+      - Quiz: chapters/08-acids-and-bases/quiz.md
+      - References: chapters/08-acids-and-bases/references.md
+    - 9. Applications of Thermodynamics:
+      - Content: chapters/09-applications-of-thermodynamics/index.md
+      - Quiz: chapters/09-applications-of-thermodynamics/quiz.md
+      - References: chapters/09-applications-of-thermodynamics/references.md
+
+  - MicroSims:
+    - List of MicroSims: sims/index.md
+    - SMILES Drawing Test: sims/smiles-drawing-test/index.md
+
+  - Appendices:
+    - List of Appendices: appendices/index.md
+
+  - Learning Graph:
+    - Introduction: learning-graph/index.md
+
+  - Sample Prompts:
+    - List of Prompts: prompts/index.md
+    - Chemistry Diagram Rendering Options: prompts/chemistry-diagram-rendering-options.md
+
+  - Glossary: glossary.md
+  - FAQ: faq.md
+
+  - License: license.md
+  - Contact: contact.md
+
+theme:
+  name: material
+  # logo: img/logo-192.png
+  # favicon: img/favicon.ico
+  palette:
+    primary: 'teal'
+    accent: 'white'
+  include_sidebar: true
+  features:
+    - content.code.copy
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - toc.follow
+    - navigation.top
+    - navigation.footer
+    - content.action.edit
+
+plugins:
+  - search
+  - social
+  - social_override
+
+markdown_extensions:
+  - md_in_html
+  - attr_list
+  - admonition
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - css/extra.css
+
+extra_javascript:
+  - js/extra.js
+  - https://cdn.jsdelivr.net/npm/smiles-drawer@1.2.0/dist/smiles-drawer.min.js
+  - js/smiles.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+# Watch these files for changes to trigger a rebuild
+watch:
+  - docs
+  - mkdocs.yml
+
+copyright: Copyright &copy; 2025 Dan McCreary. Licensed under <a href="license/">CC BY-NC-SA 4.0</a> for non-commercial use.
+
+extra:
+  schema: https://dmccreary.github.io/intelligent-textbooks/ns/textbook/v1
+  textbook_name: Chemistry
+  textbook_version: "1.0"
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX

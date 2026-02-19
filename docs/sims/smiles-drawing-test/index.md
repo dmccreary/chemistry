@@ -11,6 +11,8 @@ notation using [SmilesDrawer](https://github.com/reymond-group/smilesDrawer).
 3. The `js/smiles.js` script calls `SmilesDrawer.apply()` at page load, converting every
    tagged canvas into a 2D structural diagram.
 
+[Smiles Test HTML](./smiles-test.html)
+
 ## Simple Molecules
 
 <div class="grid cards" markdown>
@@ -59,21 +61,21 @@ notation using [SmilesDrawer](https://github.com/reymond-group/smilesDrawer).
 
 <div class="grid cards" markdown>
 
--   **Aspirin** `CC(=O)Oc1ccccc1C(=O)O`
+-   **Aspirin** <code>CC(=O)Oc1ccccc1C(=O)O</code>
 
     <canvas data-smiles="CC(=O)Oc1ccccc1C(=O)O" width="250" height="250"></canvas>
 
--   **Caffeine** `Cn1c(=O)c2c(ncn2C)n(C)c1=O`
+-   **Caffeine** <code>Cn1c(=O)c2c(ncn2C)n(C)c1=O</code>
 
     <canvas data-smiles="Cn1c(=O)c2c(ncn2C)n(C)c1=O" width="250" height="250"></canvas>
 
--   **Ibuprofen** `CC(C)Cc1ccc(cc1)[C@@H](C)C(=O)O`
+-   **Ibuprofen** <code>CC(C)Cc1ccc(cc1)[C@@H](C)C(=O)O</code>
 
-    <canvas data-smiles="CC(C)Cc1ccc(cc1)[C@@H](C)C(=O)O" width="250" height="250"></canvas>
+    <canvas data-smiles="CC(C)Cc1ccc(cc1)&#91;C@@H&#93;(C)C(=O)O" width="250" height="250"></canvas>
 
--   **Penicillin G** `CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)Cc3ccccc3)C(=O)O)C`
+-   **Penicillin G** <code>CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)Cc3ccccc3)C(=O)O)C</code>
 
-    <canvas data-smiles="CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)Cc3ccccc3)C(=O)O)C" width="250" height="250"></canvas>
+    <canvas data-smiles="CC1(&#91;C@@H&#93;(N2&#91;C@H&#93;(S1)&#91;C@@H&#93;(C2=O)NC(=O)Cc3ccccc3)C(=O)O)C" width="250" height="250"></canvas>
 
 </div>
 
@@ -81,13 +83,13 @@ notation using [SmilesDrawer](https://github.com/reymond-group/smilesDrawer).
 
 <div class="grid cards" markdown>
 
--   **Glucose** `OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O`
+-   **Glucose** <code>OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O</code>
 
-    <canvas data-smiles="OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O" width="250" height="250"></canvas>
+    <canvas data-smiles="OC&#91;C@H&#93;1OC(O)&#91;C@H&#93;(O)&#91;C@@H&#93;(O)&#91;C@@H&#93;1O" width="250" height="250"></canvas>
 
--   **Alanine** `C[C@@H](N)C(=O)O`
+-   **Alanine** <code>C[C@@H](N)C(=O)O</code>
 
-    <canvas data-smiles="C[C@@H](N)C(=O)O" width="250" height="250"></canvas>
+    <canvas data-smiles="C&#91;C@@H&#93;(N)C(=O)O" width="250" height="250"></canvas>
 
 -   **ATP** `c1nc(c2c(n1)n(cn2)C3CC(C(O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)N`
 
@@ -132,6 +134,6 @@ notation using [SmilesDrawer](https://github.com/reymond-group/smilesDrawer).
 | Benzene | `c1ccccc1` |
 | Aspirin | `CC(=O)Oc1ccccc1C(=O)O` |
 | Caffeine | `Cn1c(=O)c2c(ncn2C)n(C)c1=O` |
-| Glucose | `OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O` |
-| Penicillin G | `CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)Cc3ccccc3)C(=O)O)C` |
-| Ibuprofen | `CC(C)Cc1ccc(cc1)[C@@H](C)C(=O)O` |
+| Glucose | <code>OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O</code> |
+| Penicillin G | <code>CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)Cc3ccccc3)C(=O)O)C</code> |
+| Ibuprofen | <code>CC(C)Cc1ccc(cc1)[C@@H](C)C(=O)O</code> |

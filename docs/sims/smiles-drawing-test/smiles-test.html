@@ -149,9 +149,9 @@
         <canvas data-smiles="C[C@@H](N)C(=O)O" width="250" height="250"></canvas>
     </div>
     <div class="molecule-card">
-        <h3>ATP (simplified)</h3>
-        <div class="smiles-code">c1nc(c2c(n1)n(cn2)[C@@H]3[C@@H]([C@@H]([C@H](O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)O)N</div>
-        <canvas data-smiles="c1nc(c2c(n1)n(cn2)[C@@H]3[C@@H]([C@@H]([C@H](O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)O)N" width="250" height="250"></canvas>
+        <h3>ATP</h3>
+        <div class="smiles-code">c1nc(c2c(n1)n(cn2)C3CC(C(O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)N</div>
+        <canvas data-smiles="c1nc(c2c(n1)n(cn2)C3CC(C(O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)N" width="250" height="250"></canvas>
     </div>
     <div class="molecule-card">
         <h3>Cholesterol</h3>
@@ -185,25 +185,24 @@
     </div>
 </div>
 
-<script src="https://unpkg.com/smiles-drawer@2.2.0/dist/smiles-drawer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/smiles-drawer@1.2.0/dist/smiles-drawer.min.js"></script>
 <script>
-    const statusEl = document.getElementById('status');
+    var statusEl = document.getElementById('status');
     try {
         if (typeof SmilesDrawer === 'undefined') {
             throw new Error('SmilesDrawer library failed to load');
         }
 
-        // Apply to all canvas elements with data-smiles attributes
-        SmilesDrawer.apply({
-            width: 250,
-            height: 250,
-            bondThickness: 1.5,
-            compactDrawing: false
-        });
+        SmilesDrawer.apply(
+            { width: 250, height: 250 },
+            'canvas[data-smiles]',
+            'light',
+            function(err) { console.error('SMILES render error:', err); }
+        );
 
-        const canvasCount = document.querySelectorAll('canvas[data-smiles]').length;
+        var canvasCount = document.querySelectorAll('canvas[data-smiles]').length;
         statusEl.className = 'status ok';
-        statusEl.textContent = 'SmilesDrawer v2.2.0 loaded. Rendered ' + canvasCount + ' molecules.';
+        statusEl.textContent = 'SmilesDrawer v1.2.0 loaded. Rendered ' + canvasCount + ' molecules.';
     } catch (e) {
         statusEl.className = 'status error';
         statusEl.textContent = 'Error: ' + e.message;

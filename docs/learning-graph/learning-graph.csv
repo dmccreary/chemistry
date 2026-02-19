@@ -1,0 +1,501 @@
+ConceptID,ConceptLabel,Dependencies
+1,Matter,
+2,Energy,
+3,Atoms,1
+4,Elements,3
+5,Compounds,4
+6,Mixtures,1|5
+7,Physical Properties,1
+8,Chemical Properties,1|5
+9,Physical Changes,7
+10,Chemical Changes,8
+11,Scientific Method,
+12,Measurement,11
+13,SI Units,12
+14,Significant Figures,12
+15,Dimensional Analysis,13|14
+16,Density,1|12
+17,Temperature Scales,12
+18,Scientific Notation,12
+19,Accuracy and Precision,12
+20,Percent Error,19
+21,Laboratory Safety,11
+22,Data Collection,11|12
+23,Graphing Data,22
+24,Conservation Laws,2
+25,Atomic Theory History,3
+26,Subatomic Particles,3|25
+27,Protons,26
+28,Neutrons,26
+29,Electrons,26
+30,Atomic Number,27
+31,Mass Number,27|28
+32,Isotopes,30|31
+33,Atomic Mass,31
+34,Average Atomic Mass,32|33
+35,Mass Spectrometry,34
+36,Mass Spectrum Analysis,35|23
+37,Relative Abundance,32|35
+38,Mole Concept,34
+39,Avogadro's Number,38
+40,Molar Mass,38|34
+41,Mole Calculations,38|39|40
+42,Percent Composition,40|41
+43,Empirical Formula,42
+44,Molecular Formula,43|40
+45,Combustion Analysis,44|10
+46,Bohr Model,29|25
+47,Quantum Mechanical Model,46
+48,Energy Levels,47
+49,Principal Quantum Number,48
+50,Subshells,49
+51,Orbitals,50
+52,Orbital Shapes,51
+53,Electron Configuration,50|51
+54,Aufbau Principle,53
+55,Pauli Exclusion Principle,53
+56,Hund's Rule,53|51
+57,Valence Electrons,53|4
+58,Core Electrons,53|57
+59,Noble Gas Notation,53|57
+60,Electron Config of Ions,53|57
+61,Electromagnetic Spectrum,2
+62,Wavelength,61
+63,Frequency,61|62
+64,Photon Energy,63|2
+65,Planck's Equation,64
+66,Photoelectric Effect,64|65
+67,Emission Spectra,46|64
+68,Absorption Spectra,67
+69,Photoelectron Spectroscopy,53|64
+70,PES Data Interpretation,69|23
+71,Periodic Table Organization,4|30
+72,Periods and Groups,71
+73,Periodic Trends,72|53
+74,Atomic Radius,73
+75,Ionic Radius,73|74
+76,Ionization Energy,73|57
+77,Successive Ionization Energy,76
+78,Electron Affinity,73|57
+79,Electronegativity,73|76|78
+80,Effective Nuclear Charge,27|29|73
+81,Chemical Bonds,57|2
+82,Ionic Bonds,81|79
+83,Covalent Bonds,81|57
+84,Metallic Bonds,81
+85,Bond Formation Energy,81|2
+86,Ionic Compounds,82
+87,Crystal Lattice,86
+88,Lattice Energy,87|85
+89,Cation Formation,76|82
+90,Anion Formation,78|82
+91,Polyatomic Ions,86|83
+92,Naming Ionic Compounds,86|91
+93,Writing Ionic Formulas,86|91
+94,Transition Metal Ions,89|72
+95,Lewis Dot Symbols,57
+96,Lewis Structures,95|83
+97,Octet Rule,96|57
+98,Single Bonds,96
+99,Double Bonds,96|98
+100,Triple Bonds,96|99
+101,Lone Pairs,96
+102,Bonding Pairs,96
+103,Resonance Structures,96|99
+104,Resonance Hybrid,103
+105,Formal Charge,96|101
+106,Formal Charge Calculation,105
+107,Expanded Octets,97|50
+108,Incomplete Octets,97
+109,Exceptions to Octet Rule,107|108
+110,Bond Order,98|99|100
+111,Bond Length,110
+112,Bond Energy,110|85
+113,VSEPR Theory,96|101|102
+114,Electron Geometry,113
+115,Molecular Geometry,113|114
+116,Linear Geometry,115
+117,Trigonal Planar Geometry,115
+118,Tetrahedral Geometry,115
+119,Trigonal Bipyramidal,115|107
+120,Octahedral Geometry,115|107
+121,Bent Geometry,115|101
+122,Trigonal Pyramidal,115|101
+123,Bond Angles,115
+124,Lone Pair Repulsion,101|113
+125,Orbital Hybridization,51|83|115
+126,sp Hybridization,125|116
+127,sp2 Hybridization,125|117
+128,sp3 Hybridization,125|118
+129,Sigma Bonds,125|98
+130,Pi Bonds,125|99|129
+131,Bond Polarity,79|83
+132,Electronegativity Difference,79|131
+133,Polar Covalent Bonds,131|132
+134,Nonpolar Covalent Bonds,131|132
+135,Dipole Moment,131|115
+136,Molecular Polarity,135|115
+137,Polar Molecules,136
+138,Nonpolar Molecules,136
+139,Naming Covalent Compounds,5|83
+140,Network Covalent Solids,83|87
+141,Intermolecular Forces,136|137|138
+142,Intramolecular Forces,81|112
+143,IMF vs Chemical Bonds,141|142
+144,London Dispersion Forces,141
+145,Polarizability,144|29
+146,Dipole-Dipole Forces,141|135
+147,Hydrogen Bonding,146|79
+148,Hydrogen Bond Requirements,147
+149,Ion-Dipole Forces,141|86
+150,IMF Strength Comparison,144|146|147|149
+151,States of Matter,1|2|141
+152,Kinetic Molecular Theory,151|2
+153,Solids,151|141
+154,Crystalline Solids,153|87
+155,Amorphous Solids,153
+156,Liquids,151|141
+157,Surface Tension,156|141
+158,Viscosity,156|141
+159,Capillary Action,157|147
+160,Gases,151|152
+161,Gas Pressure,160
+162,Atmospheric Pressure,161
+163,Ideal Gas Law,160|38|17
+164,Ideal Gas Constant,163
+165,Boyle's Law,163|161
+166,Charles's Law,163|17
+167,Avogadro's Law,163|38
+168,Dalton's Law,163|161
+169,Partial Pressures,168
+170,Mole Fraction,169|38
+171,Gas Stoichiometry,163|41
+172,Molar Volume,163|38
+173,Real Gases,163|141
+174,Van der Waals Equation,173
+175,Deviations from Ideality,173|174
+176,Phase Changes,151|2
+177,Melting and Freezing,176|153|156
+178,Boiling and Condensation,176|156|160
+179,Sublimation and Deposition,176|153|160
+180,Heating Curves,176|17|23
+181,Cooling Curves,180
+182,Heat of Fusion,177|2
+183,Heat of Vaporization,178|2
+184,Phase Diagrams,176|161|17
+185,Triple Point,184
+186,Critical Point,184
+187,Vapor Pressure,178|152
+188,Solutions,6|189
+189,Solvent and Solute,6
+190,Solubility,188|141
+191,Like Dissolves Like,190|136
+192,Saturated Solutions,190
+193,Concentration Units,188
+194,Molarity,193|38|41
+195,Dilution Calculations,194
+196,Beer-Lambert Law,194|68
+197,Spectrophotometry,196|22
+198,Colligative Properties,188|170
+199,Boiling Point Elevation,198|178
+200,Freezing Point Depression,198|177
+201,Chemical Equations,10|5
+202,Balancing Equations,201|24
+203,Coefficients,202
+204,State Symbols,201|151
+205,Reaction Types Overview,201
+206,Synthesis Reactions,205
+207,Decomposition Reactions,205
+208,Single Replacement,205
+209,Double Replacement,205
+210,Combustion Reactions,205|10
+211,Activity Series,208|76
+212,Solubility Rules,190|86
+213,Precipitation Reactions,209|212
+214,Complete Ionic Equations,213|86
+215,Net Ionic Equations,214
+216,Spectator Ions,215
+217,Stoichiometry,202|41
+218,Mole-to-Mole Ratios,217|203
+219,Mass-to-Mass Calculations,217|40
+220,Limiting Reagent,217
+221,Excess Reagent,220
+222,Theoretical Yield,220
+223,Actual Yield,222
+224,Percent Yield,222|223
+225,Solution Stoichiometry,217|194
+226,Titration,225
+227,Titration Curves,226|23
+228,Equivalence Point,226|227
+229,Indicator Selection,228
+230,Gravimetric Analysis,213|217
+231,Oxidation States,4|81
+232,Assigning Oxidation Numbers,231
+233,Oxidation,231|232
+234,Reduction,231|232
+235,Redox Reactions,233|234
+236,Half Reactions,235
+237,Balancing Redox Equations,236|202
+238,Oxidizing Agents,235
+239,Reducing Agents,235
+240,Electron Transfer,235|29
+241,Conservation of Mass,24|217
+242,Conservation of Charge,24|240
+243,Gas Evolution Reactions,209|160
+244,Acid-Carbonate Reactions,243
+245,Molecular Equations,201|86
+246,Reaction Prediction,205|211|212
+247,Qualitative Analysis,246
+248,Flame Tests,247|67
+249,Precipitate Identification,247|213
+250,Volumetric Analysis,226
+251,Standard Solutions,194|250
+252,Primary Standards,251
+253,Endpoint vs Equivalence,228|229
+254,Titration Calculations,226|225
+255,Percent Purity,254|224
+256,Empirical Formula from Data,43|42|22
+257,Molar Ratios in Solutions,194|218
+258,Serial Dilutions,195
+259,Driving Force of Reactions,205|2
+260,Metathesis Reactions,209
+261,Acid-Metal Reactions,235|208
+262,Disproportionation,235|232
+263,Color of Solutions,188|61
+264,Chemical Analysis,247|250
+265,Back Titration,226|254
+266,Reaction Rate,10|12
+267,Rate of Disappearance,266
+268,Rate of Appearance,266
+269,Average Rate,266|23
+270,Instantaneous Rate,269|23
+271,Initial Rate,270
+272,Rate Law,271|266
+273,Rate Constant,272
+274,Reaction Order,272
+275,Zero Order Reactions,274
+276,First Order Reactions,274
+277,Second Order Reactions,274
+278,Determining Reaction Order,279|304
+279,Method of Initial Rates,271|272
+280,Integrated Rate Laws,272|23
+281,Zero Order Integrated Law,280|275
+282,First Order Integrated Law,280|276
+283,Second Order Integrated Law,280|277
+284,Half-Life,282
+285,First Order Half-Life,284|282
+286,Graphical Rate Analysis,280|23
+287,Concentration vs Time,286
+288,Linearization Rate Data,286|287
+289,Collision Theory,266|152
+290,Activation Energy,289|2
+291,Activated Complex,290
+292,Transition State,291
+293,Effective Collisions,289|290
+294,Orientation Factor,293
+295,Arrhenius Equation,290|273|17
+296,Arrhenius Plot,295|23
+297,Frequency Factor,295
+298,Temperature and Rate,289|295
+299,Energy Diagrams,290|2|23
+300,Exothermic Diagrams,299|326
+301,Endothermic Diagrams,299|327
+302,Reaction Mechanisms,303
+303,Elementary Steps,266|272
+304,Molecularity,303
+305,Unimolecular Reactions,304
+306,Bimolecular Reactions,304
+307,Rate-Determining Step,302|303|272
+308,Reaction Intermediates,302|303
+309,Mechanism Validation,307|308|272
+310,Catalysis,290|266
+311,Homogeneous Catalysis,310|188
+312,Heterogeneous Catalysis,310|153
+313,Enzyme Catalysis,310
+314,Catalyst Effect on Ea,310|290|299
+315,Catalyst and Equilibrium,310|376
+316,Catalyzed vs Uncatalyzed,314|299
+317,Surface Area and Rate,312|266
+318,Concentration and Rate,266|272
+319,Factors Affecting Rate,298|317|318|294
+320,Kinetics Experiments,22|266|279
+321,Thermodynamics,2|24
+322,System and Surroundings,321
+323,Open Systems,322
+324,Closed Systems,322
+325,Isolated Systems,322
+326,Exothermic Reactions,321|10
+327,Endothermic Reactions,321|10
+328,Heat and Temperature,2|17
+329,Heat Transfer,328
+330,Specific Heat Capacity,328|1
+331,Heat Capacity,330
+332,Calorimetry,329|330
+333,Coffee Cup Calorimeter,332|324
+334,Bomb Calorimeter,332|325
+335,Enthalpy,321|329
+336,Enthalpy Change,335
+337,Standard Enthalpy,336
+338,Enthalpy of Formation,337|5
+339,Standard Formation Values,338
+340,Enthalpy of Combustion,337|210
+341,Enthalpy of Reaction,336|217
+342,Hess's Law,341|24
+343,Hess's Law Calculations,342|341
+344,Born-Haber Cycle,342|88
+345,Bond Enthalpy,112|336
+346,Bond Enthalpy Calculations,345|341
+347,Entropy,321
+348,Entropy Change,347
+349,Standard Entropy,348
+350,Entropy and Disorder,347|152
+351,Microstates,350
+352,Boltzmann Equation,351
+353,Second Law Thermodynamics,347|321
+354,Third Law Thermodynamics,349
+355,Entropy of Phase Changes,348|176
+356,Entropy Predictions,348|350
+357,Gibbs Free Energy,335|347
+358,Gibbs Free Energy Equation,357|336|348
+359,Standard Free Energy,358|337|349
+360,Free Energy of Formation,359|338
+361,Spontaneity,358
+362,Nonspontaneous Processes,361
+363,Temperature Dependence,358|17
+364,Gibbs and Equilibrium,357|376
+365,Free Energy and Work,357|2
+366,Coupled Reactions,362|365
+367,Thermodynamic Stability,361|357
+368,Kinetic Stability,290|367
+369,State Functions,335|347|321
+370,Path Functions,369|329
+371,Internal Energy,321|2
+372,First Law Thermodynamics,371|24
+373,PV Work,372|163
+374,Enthalpy vs Internal Energy,335|371|373
+375,Calorimetry Calculations,332|330|15
+376,Chemical Equilibrium,266|321
+377,Dynamic Equilibrium,376
+378,Equilibrium State,377
+379,Forward Reaction,376
+380,Reverse Reaction,376|379
+381,Equilibrium Constant Kc,376|194
+382,Equilibrium Constant Kp,381|169
+383,Kc and Kp Relationship,381|382|163
+384,Writing K Expressions,381
+385,Homogeneous Equilibrium,384|188
+386,Heterogeneous Equilibrium,384|153
+387,Equilibrium Position,381
+388,Reaction Quotient Q,381
+389,Q vs K Comparison,388|381
+390,Predicting Direction,389
+391,ICE Tables,384|194
+392,ICE Table Calculations,391
+393,Small K Approximation,392
+394,Quadratic in Equilibrium,392
+395,Le Chatelier's Principle,377|387
+396,Concentration Changes,395|381
+397,Pressure Changes,395|382
+398,Volume Changes,395|163
+399,Temperature Changes on K,395|326|327
+400,Effect of Catalyst on Eq,395|310
+401,Adding Inert Gas,395|168
+402,Equilibrium Shifts,395
+403,Solubility Equilibria,190|376
+404,Solubility Product Ksp,403|384
+405,Molar Solubility,404
+406,Common Ion Effect,404|395
+407,Predicting Precipitation,404|388
+408,Selective Precipitation,407
+409,Complex Ion Formation,403|91
+410,Formation Constants,409|384
+411,Ksp Calculations,404|391
+412,Ion Product,404|388
+413,Temperature and Solubility,403|399
+414,Henry's Law,190|161
+415,Equilibrium and Free Energy,376|357
+416,Relationship K and Delta G,415|358
+417,Manipulating K Expressions,384
+418,Reversing Reactions K,417
+419,Adding Reactions K,417
+420,Industrial Equilibrium,395|376
+421,Acids,8
+422,Bases,8
+423,Arrhenius Theory,421|422
+424,Bronsted-Lowry Theory,423|240
+425,Lewis Acid-Base Theory,424|101
+426,Conjugate Acid-Base Pairs,424
+427,Conjugate Acid,426
+428,Conjugate Base,426
+429,Amphiprotic Substances,424|426
+430,Autoionization of Water,424
+431,Ion Product of Water Kw,430|381
+432,pH Scale,431
+433,pH Calculation,432|18
+434,pOH,432
+435,pH and pOH Relationship,433|434|431
+436,Strong Acids,421|423
+437,Strong Bases,422|423
+438,Strong Acid pH,436|433
+439,Strong Base pH,437|434
+440,Weak Acids,421|376
+441,Weak Bases,422|376
+442,Acid Dissociation Ka,440|384
+443,Base Dissociation Kb,441|384
+444,Ka and Kb Relationship,442|443|431
+445,Percent Ionization,442|440
+446,Weak Acid pH Calculation,442|391|433
+447,Weak Base pH Calculation,443|391|434
+448,Polyprotic Acids,440|442
+449,Diprotic Acid Equilibria,448|391
+450,Acid Strength Factors,442|79|111
+451,Binary Acid Trends,450|73
+452,Oxyacid Strength,450|232
+453,Salt Hydrolysis,424|190
+454,Acidic Salts,453|442
+455,Basic Salts,453|443
+456,Neutral Salts,453
+457,Buffer Solutions,440|441|426
+458,Buffer Composition,457
+459,Henderson-Hasselbalch,457|442|433
+460,Buffer Capacity,457|458
+461,Buffer pH Calculations,459|391
+462,Buffer Preparation,460|461
+463,Acid-Base Titration,226|424
+464,Strong Acid-Strong Base,463|438|439
+465,Weak Acid-Strong Base,463|446
+466,Strong Acid-Weak Base,463|447
+467,Titration Curve Analysis,463|227|432
+468,Half-Equivalence Point,467|442
+469,Buffer Region,467|457
+470,Indicators and pH Range,229|432
+471,Selecting Indicators,470|467
+472,Neutralization Reactions,424|215
+473,Net Ionic Acid-Base,472|215
+474,Dilute Acid Calculations,438|195
+475,pH of Mixed Solutions,433|457
+476,Electrochemistry,235|321
+477,Galvanic Cells,476|361
+478,Voltaic Cell Components,477
+479,Anode and Cathode,478|233|234
+480,Salt Bridge,478|149
+481,Electron Flow Direction,479|240
+482,Cell Notation,479|478
+483,Standard Reduction Potential,479|234
+484,Standard Hydrogen Electrode,483
+485,Cell Potential Calculation,483|484
+486,Spontaneous Cell Reactions,485|361
+487,Nernst Equation,485|381|433
+488,Nonstandard Conditions,487
+489,Concentration Cells,487|488
+490,Free Energy and Cell EMF,485|357
+491,Delta G and E Relation,490|358
+492,Faraday's Constant,240|38
+493,Electrolytic Cells,476|362
+494,Electrolysis,493
+495,Electrolysis of Water,494|207
+496,Electroplating,494
+497,Faraday's Laws,492|494
+498,Stoichiometry Electrolysis,497|217
+499,Batteries and Fuel Cells,477|493
+500,Corrosion,476|235

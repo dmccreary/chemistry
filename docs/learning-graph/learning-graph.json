@@ -1,0 +1,6119 @@
+{
+  "metadata": {
+    "title": "AP Chemistry Learning Graph",
+    "description": "A comprehensive learning graph for AP Chemistry covering atomic structure, bonding, intermolecular forces, reactions, kinetics, thermodynamics, equilibrium, acids and bases, and electrochemistry. Designed for high school students preparing for the AP Chemistry exam.",
+    "creator": "Dan McCreary",
+    "date": "2026-02-19",
+    "version": "1.0",
+    "format": "Learning Graph JSON v1.0",
+    "schema": "https://raw.githubusercontent.com/dmccreary/learning-graphs/refs/heads/main/src/schema/learning-graph-schema.json",
+    "license": "CC BY-NC-SA 4.0 DEED"
+  },
+  "groups": {
+    "RXNS": {
+      "classifierName": "Chemical Reactions",
+      "color": "MistyRose",
+      "font": {
+        "color": "black"
+      }
+    },
+    "STOI": {
+      "classifierName": "Stoichiometry and Titration",
+      "color": "PeachPuff",
+      "font": {
+        "color": "black"
+      }
+    },
+    "EQBM": {
+      "classifierName": "Equilibrium",
+      "color": "LightYellow",
+      "font": {
+        "color": "black"
+      }
+    },
+    "GAS": {
+      "classifierName": "Gas Laws and Behavior",
+      "color": "Honeydew",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ECHEM": {
+      "classifierName": "Electrochemistry",
+      "color": "PaleTurquoise",
+      "font": {
+        "color": "black"
+      }
+    },
+    "BOND": {
+      "classifierName": "Bonding and Structure",
+      "color": "SteelBlue",
+      "font": {
+        "color": "black"
+      }
+    },
+    "IMF": {
+      "classifierName": "Intermolecular Forces",
+      "color": "Lavender",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ATOM": {
+      "classifierName": "Atomic Structure",
+      "color": "LavenderBlush",
+      "font": {
+        "color": "black"
+      }
+    },
+    "KIN": {
+      "classifierName": "Kinetics",
+      "color": "Thistle",
+      "font": {
+        "color": "black"
+      }
+    },
+    "MOLE": {
+      "classifierName": "Moles and Quantitative Analysis",
+      "color": "MintCream",
+      "font": {
+        "color": "black"
+      }
+    },
+    "FOUND": {
+      "classifierName": "Foundation Concepts",
+      "color": "LightCoral",
+      "font": {
+        "color": "black"
+      }
+    },
+    "ACID": {
+      "classifierName": "Acids and Bases",
+      "color": "Plum",
+      "font": {
+        "color": "black"
+      }
+    },
+    "PTAB": {
+      "classifierName": "Periodic Table and Trends",
+      "color": "Gainsboro",
+      "font": {
+        "color": "black"
+      }
+    },
+    "THRM": {
+      "classifierName": "Thermodynamics",
+      "color": "PowderBlue",
+      "font": {
+        "color": "black"
+      }
+    }
+  },
+  "nodes": [
+    {
+      "id": 1,
+      "label": "Matter",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 2,
+      "label": "Energy",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 3,
+      "label": "Atoms",
+      "group": "FOUND"
+    },
+    {
+      "id": 4,
+      "label": "Elements",
+      "group": "FOUND"
+    },
+    {
+      "id": 5,
+      "label": "Compounds",
+      "group": "FOUND"
+    },
+    {
+      "id": 6,
+      "label": "Mixtures",
+      "group": "FOUND"
+    },
+    {
+      "id": 7,
+      "label": "Physical Properties",
+      "group": "FOUND"
+    },
+    {
+      "id": 8,
+      "label": "Chemical Properties",
+      "group": "FOUND"
+    },
+    {
+      "id": 9,
+      "label": "Physical Changes",
+      "group": "FOUND"
+    },
+    {
+      "id": 10,
+      "label": "Chemical Changes",
+      "group": "FOUND"
+    },
+    {
+      "id": 11,
+      "label": "Scientific Method",
+      "group": "FOUND",
+      "shape": "box"
+    },
+    {
+      "id": 12,
+      "label": "Measurement",
+      "group": "FOUND"
+    },
+    {
+      "id": 13,
+      "label": "SI Units",
+      "group": "FOUND"
+    },
+    {
+      "id": 14,
+      "label": "Significant Figures",
+      "group": "FOUND"
+    },
+    {
+      "id": 15,
+      "label": "Dimensional Analysis",
+      "group": "FOUND"
+    },
+    {
+      "id": 16,
+      "label": "Density",
+      "group": "FOUND"
+    },
+    {
+      "id": 17,
+      "label": "Temperature Scales",
+      "group": "FOUND"
+    },
+    {
+      "id": 18,
+      "label": "Scientific Notation",
+      "group": "FOUND"
+    },
+    {
+      "id": 19,
+      "label": "Accuracy and Precision",
+      "group": "FOUND"
+    },
+    {
+      "id": 20,
+      "label": "Percent Error",
+      "group": "FOUND"
+    },
+    {
+      "id": 21,
+      "label": "Laboratory Safety",
+      "group": "FOUND"
+    },
+    {
+      "id": 22,
+      "label": "Data Collection",
+      "group": "FOUND"
+    },
+    {
+      "id": 23,
+      "label": "Graphing Data",
+      "group": "FOUND"
+    },
+    {
+      "id": 24,
+      "label": "Conservation Laws",
+      "group": "FOUND"
+    },
+    {
+      "id": 25,
+      "label": "Atomic Theory History",
+      "group": "FOUND"
+    },
+    {
+      "id": 26,
+      "label": "Subatomic Particles",
+      "group": "ATOM"
+    },
+    {
+      "id": 27,
+      "label": "Protons",
+      "group": "ATOM"
+    },
+    {
+      "id": 28,
+      "label": "Neutrons",
+      "group": "ATOM"
+    },
+    {
+      "id": 29,
+      "label": "Electrons",
+      "group": "ATOM"
+    },
+    {
+      "id": 30,
+      "label": "Atomic Number",
+      "group": "ATOM"
+    },
+    {
+      "id": 31,
+      "label": "Mass Number",
+      "group": "ATOM"
+    },
+    {
+      "id": 32,
+      "label": "Isotopes",
+      "group": "ATOM"
+    },
+    {
+      "id": 33,
+      "label": "Atomic Mass",
+      "group": "ATOM"
+    },
+    {
+      "id": 34,
+      "label": "Average Atomic Mass",
+      "group": "ATOM"
+    },
+    {
+      "id": 35,
+      "label": "Mass Spectrometry",
+      "group": "ATOM"
+    },
+    {
+      "id": 36,
+      "label": "Mass Spectrum Analysis",
+      "group": "ATOM"
+    },
+    {
+      "id": 37,
+      "label": "Relative Abundance",
+      "group": "ATOM"
+    },
+    {
+      "id": 38,
+      "label": "Mole Concept",
+      "group": "MOLE"
+    },
+    {
+      "id": 39,
+      "label": "Avogadro's Number",
+      "group": "MOLE"
+    },
+    {
+      "id": 40,
+      "label": "Molar Mass",
+      "group": "MOLE"
+    },
+    {
+      "id": 41,
+      "label": "Mole Calculations",
+      "group": "MOLE"
+    },
+    {
+      "id": 42,
+      "label": "Percent Composition",
+      "group": "MOLE"
+    },
+    {
+      "id": 43,
+      "label": "Empirical Formula",
+      "group": "MOLE"
+    },
+    {
+      "id": 44,
+      "label": "Molecular Formula",
+      "group": "MOLE"
+    },
+    {
+      "id": 45,
+      "label": "Combustion Analysis",
+      "group": "MOLE"
+    },
+    {
+      "id": 46,
+      "label": "Bohr Model",
+      "group": "ATOM"
+    },
+    {
+      "id": 47,
+      "label": "Quantum Mechanical Model",
+      "group": "ATOM"
+    },
+    {
+      "id": 48,
+      "label": "Energy Levels",
+      "group": "ATOM"
+    },
+    {
+      "id": 49,
+      "label": "Principal Quantum Number",
+      "group": "ATOM"
+    },
+    {
+      "id": 50,
+      "label": "Subshells",
+      "group": "ATOM"
+    },
+    {
+      "id": 51,
+      "label": "Orbitals",
+      "group": "ATOM"
+    },
+    {
+      "id": 52,
+      "label": "Orbital Shapes",
+      "group": "ATOM"
+    },
+    {
+      "id": 53,
+      "label": "Electron Configuration",
+      "group": "ATOM"
+    },
+    {
+      "id": 54,
+      "label": "Aufbau Principle",
+      "group": "ATOM"
+    },
+    {
+      "id": 55,
+      "label": "Pauli Exclusion Principle",
+      "group": "ATOM"
+    },
+    {
+      "id": 56,
+      "label": "Hund's Rule",
+      "group": "ATOM"
+    },
+    {
+      "id": 57,
+      "label": "Valence Electrons",
+      "group": "ATOM"
+    },
+    {
+      "id": 58,
+      "label": "Core Electrons",
+      "group": "ATOM"
+    },
+    {
+      "id": 59,
+      "label": "Noble Gas Notation",
+      "group": "ATOM"
+    },
+    {
+      "id": 60,
+      "label": "Electron Config of Ions",
+      "group": "ATOM"
+    },
+    {
+      "id": 61,
+      "label": "Electromagnetic Spectrum",
+      "group": "ATOM"
+    },
+    {
+      "id": 62,
+      "label": "Wavelength",
+      "group": "ATOM"
+    },
+    {
+      "id": 63,
+      "label": "Frequency",
+      "group": "ATOM"
+    },
+    {
+      "id": 64,
+      "label": "Photon Energy",
+      "group": "ATOM"
+    },
+    {
+      "id": 65,
+      "label": "Planck's Equation",
+      "group": "ATOM"
+    },
+    {
+      "id": 66,
+      "label": "Photoelectric Effect",
+      "group": "ATOM"
+    },
+    {
+      "id": 67,
+      "label": "Emission Spectra",
+      "group": "ATOM"
+    },
+    {
+      "id": 68,
+      "label": "Absorption Spectra",
+      "group": "ATOM"
+    },
+    {
+      "id": 69,
+      "label": "Photoelectron Spectroscopy",
+      "group": "ATOM"
+    },
+    {
+      "id": 70,
+      "label": "PES Data Interpretation",
+      "group": "ATOM"
+    },
+    {
+      "id": 71,
+      "label": "Periodic Table Organization",
+      "group": "PTAB"
+    },
+    {
+      "id": 72,
+      "label": "Periods and Groups",
+      "group": "PTAB"
+    },
+    {
+      "id": 73,
+      "label": "Periodic Trends",
+      "group": "PTAB"
+    },
+    {
+      "id": 74,
+      "label": "Atomic Radius",
+      "group": "PTAB"
+    },
+    {
+      "id": 75,
+      "label": "Ionic Radius",
+      "group": "PTAB"
+    },
+    {
+      "id": 76,
+      "label": "Ionization Energy",
+      "group": "PTAB"
+    },
+    {
+      "id": 77,
+      "label": "Successive Ionization Energy",
+      "group": "PTAB"
+    },
+    {
+      "id": 78,
+      "label": "Electron Affinity",
+      "group": "PTAB"
+    },
+    {
+      "id": 79,
+      "label": "Electronegativity",
+      "group": "PTAB"
+    },
+    {
+      "id": 80,
+      "label": "Effective Nuclear Charge",
+      "group": "PTAB"
+    },
+    {
+      "id": 81,
+      "label": "Chemical Bonds",
+      "group": "BOND"
+    },
+    {
+      "id": 82,
+      "label": "Ionic Bonds",
+      "group": "BOND"
+    },
+    {
+      "id": 83,
+      "label": "Covalent Bonds",
+      "group": "BOND"
+    },
+    {
+      "id": 84,
+      "label": "Metallic Bonds",
+      "group": "BOND"
+    },
+    {
+      "id": 85,
+      "label": "Bond Formation Energy",
+      "group": "BOND"
+    },
+    {
+      "id": 86,
+      "label": "Ionic Compounds",
+      "group": "BOND"
+    },
+    {
+      "id": 87,
+      "label": "Crystal Lattice",
+      "group": "BOND"
+    },
+    {
+      "id": 88,
+      "label": "Lattice Energy",
+      "group": "BOND"
+    },
+    {
+      "id": 89,
+      "label": "Cation Formation",
+      "group": "BOND"
+    },
+    {
+      "id": 90,
+      "label": "Anion Formation",
+      "group": "BOND"
+    },
+    {
+      "id": 91,
+      "label": "Polyatomic Ions",
+      "group": "BOND"
+    },
+    {
+      "id": 92,
+      "label": "Naming Ionic Compounds",
+      "group": "BOND"
+    },
+    {
+      "id": 93,
+      "label": "Writing Ionic Formulas",
+      "group": "BOND"
+    },
+    {
+      "id": 94,
+      "label": "Transition Metal Ions",
+      "group": "BOND"
+    },
+    {
+      "id": 95,
+      "label": "Lewis Dot Symbols",
+      "group": "BOND"
+    },
+    {
+      "id": 96,
+      "label": "Lewis Structures",
+      "group": "BOND"
+    },
+    {
+      "id": 97,
+      "label": "Octet Rule",
+      "group": "BOND"
+    },
+    {
+      "id": 98,
+      "label": "Single Bonds",
+      "group": "BOND"
+    },
+    {
+      "id": 99,
+      "label": "Double Bonds",
+      "group": "BOND"
+    },
+    {
+      "id": 100,
+      "label": "Triple Bonds",
+      "group": "BOND"
+    },
+    {
+      "id": 101,
+      "label": "Lone Pairs",
+      "group": "BOND"
+    },
+    {
+      "id": 102,
+      "label": "Bonding Pairs",
+      "group": "BOND"
+    },
+    {
+      "id": 103,
+      "label": "Resonance Structures",
+      "group": "BOND"
+    },
+    {
+      "id": 104,
+      "label": "Resonance Hybrid",
+      "group": "BOND"
+    },
+    {
+      "id": 105,
+      "label": "Formal Charge",
+      "group": "BOND"
+    },
+    {
+      "id": 106,
+      "label": "Formal Charge Calculation",
+      "group": "BOND"
+    },
+    {
+      "id": 107,
+      "label": "Expanded Octets",
+      "group": "BOND"
+    },
+    {
+      "id": 108,
+      "label": "Incomplete Octets",
+      "group": "BOND"
+    },
+    {
+      "id": 109,
+      "label": "Exceptions to Octet Rule",
+      "group": "BOND"
+    },
+    {
+      "id": 110,
+      "label": "Bond Order",
+      "group": "BOND"
+    },
+    {
+      "id": 111,
+      "label": "Bond Length",
+      "group": "BOND"
+    },
+    {
+      "id": 112,
+      "label": "Bond Energy",
+      "group": "BOND"
+    },
+    {
+      "id": 113,
+      "label": "VSEPR Theory",
+      "group": "BOND"
+    },
+    {
+      "id": 114,
+      "label": "Electron Geometry",
+      "group": "BOND"
+    },
+    {
+      "id": 115,
+      "label": "Molecular Geometry",
+      "group": "BOND"
+    },
+    {
+      "id": 116,
+      "label": "Linear Geometry",
+      "group": "BOND"
+    },
+    {
+      "id": 117,
+      "label": "Trigonal Planar Geometry",
+      "group": "BOND"
+    },
+    {
+      "id": 118,
+      "label": "Tetrahedral Geometry",
+      "group": "BOND"
+    },
+    {
+      "id": 119,
+      "label": "Trigonal Bipyramidal",
+      "group": "BOND"
+    },
+    {
+      "id": 120,
+      "label": "Octahedral Geometry",
+      "group": "BOND"
+    },
+    {
+      "id": 121,
+      "label": "Bent Geometry",
+      "group": "BOND"
+    },
+    {
+      "id": 122,
+      "label": "Trigonal Pyramidal",
+      "group": "BOND"
+    },
+    {
+      "id": 123,
+      "label": "Bond Angles",
+      "group": "BOND"
+    },
+    {
+      "id": 124,
+      "label": "Lone Pair Repulsion",
+      "group": "BOND"
+    },
+    {
+      "id": 125,
+      "label": "Orbital Hybridization",
+      "group": "BOND"
+    },
+    {
+      "id": 126,
+      "label": "sp Hybridization",
+      "group": "BOND"
+    },
+    {
+      "id": 127,
+      "label": "sp2 Hybridization",
+      "group": "BOND"
+    },
+    {
+      "id": 128,
+      "label": "sp3 Hybridization",
+      "group": "BOND"
+    },
+    {
+      "id": 129,
+      "label": "Sigma Bonds",
+      "group": "BOND"
+    },
+    {
+      "id": 130,
+      "label": "Pi Bonds",
+      "group": "BOND"
+    },
+    {
+      "id": 131,
+      "label": "Bond Polarity",
+      "group": "BOND"
+    },
+    {
+      "id": 132,
+      "label": "Electronegativity Difference",
+      "group": "BOND"
+    },
+    {
+      "id": 133,
+      "label": "Polar Covalent Bonds",
+      "group": "BOND"
+    },
+    {
+      "id": 134,
+      "label": "Nonpolar Covalent Bonds",
+      "group": "BOND"
+    },
+    {
+      "id": 135,
+      "label": "Dipole Moment",
+      "group": "BOND"
+    },
+    {
+      "id": 136,
+      "label": "Molecular Polarity",
+      "group": "BOND"
+    },
+    {
+      "id": 137,
+      "label": "Polar Molecules",
+      "group": "BOND"
+    },
+    {
+      "id": 138,
+      "label": "Nonpolar Molecules",
+      "group": "BOND"
+    },
+    {
+      "id": 139,
+      "label": "Naming Covalent Compounds",
+      "group": "BOND"
+    },
+    {
+      "id": 140,
+      "label": "Network Covalent Solids",
+      "group": "BOND"
+    },
+    {
+      "id": 141,
+      "label": "Intermolecular Forces",
+      "group": "IMF"
+    },
+    {
+      "id": 142,
+      "label": "Intramolecular Forces",
+      "group": "IMF"
+    },
+    {
+      "id": 143,
+      "label": "IMF vs Chemical Bonds",
+      "group": "IMF"
+    },
+    {
+      "id": 144,
+      "label": "London Dispersion Forces",
+      "group": "IMF"
+    },
+    {
+      "id": 145,
+      "label": "Polarizability",
+      "group": "IMF"
+    },
+    {
+      "id": 146,
+      "label": "Dipole-Dipole Forces",
+      "group": "IMF"
+    },
+    {
+      "id": 147,
+      "label": "Hydrogen Bonding",
+      "group": "IMF"
+    },
+    {
+      "id": 148,
+      "label": "Hydrogen Bond Requirements",
+      "group": "IMF"
+    },
+    {
+      "id": 149,
+      "label": "Ion-Dipole Forces",
+      "group": "IMF"
+    },
+    {
+      "id": 150,
+      "label": "IMF Strength Comparison",
+      "group": "IMF"
+    },
+    {
+      "id": 151,
+      "label": "States of Matter",
+      "group": "IMF"
+    },
+    {
+      "id": 152,
+      "label": "Kinetic Molecular Theory",
+      "group": "IMF"
+    },
+    {
+      "id": 153,
+      "label": "Solids",
+      "group": "IMF"
+    },
+    {
+      "id": 154,
+      "label": "Crystalline Solids",
+      "group": "IMF"
+    },
+    {
+      "id": 155,
+      "label": "Amorphous Solids",
+      "group": "IMF"
+    },
+    {
+      "id": 156,
+      "label": "Liquids",
+      "group": "IMF"
+    },
+    {
+      "id": 157,
+      "label": "Surface Tension",
+      "group": "IMF"
+    },
+    {
+      "id": 158,
+      "label": "Viscosity",
+      "group": "IMF"
+    },
+    {
+      "id": 159,
+      "label": "Capillary Action",
+      "group": "IMF"
+    },
+    {
+      "id": 160,
+      "label": "Gases",
+      "group": "GAS"
+    },
+    {
+      "id": 161,
+      "label": "Gas Pressure",
+      "group": "GAS"
+    },
+    {
+      "id": 162,
+      "label": "Atmospheric Pressure",
+      "group": "GAS"
+    },
+    {
+      "id": 163,
+      "label": "Ideal Gas Law",
+      "group": "GAS"
+    },
+    {
+      "id": 164,
+      "label": "Ideal Gas Constant",
+      "group": "GAS"
+    },
+    {
+      "id": 165,
+      "label": "Boyle's Law",
+      "group": "GAS"
+    },
+    {
+      "id": 166,
+      "label": "Charles's Law",
+      "group": "GAS"
+    },
+    {
+      "id": 167,
+      "label": "Avogadro's Law",
+      "group": "GAS"
+    },
+    {
+      "id": 168,
+      "label": "Dalton's Law",
+      "group": "GAS"
+    },
+    {
+      "id": 169,
+      "label": "Partial Pressures",
+      "group": "GAS"
+    },
+    {
+      "id": 170,
+      "label": "Mole Fraction",
+      "group": "GAS"
+    },
+    {
+      "id": 171,
+      "label": "Gas Stoichiometry",
+      "group": "GAS"
+    },
+    {
+      "id": 172,
+      "label": "Molar Volume",
+      "group": "GAS"
+    },
+    {
+      "id": 173,
+      "label": "Real Gases",
+      "group": "GAS"
+    },
+    {
+      "id": 174,
+      "label": "Van der Waals Equation",
+      "group": "GAS"
+    },
+    {
+      "id": 175,
+      "label": "Deviations from Ideality",
+      "group": "GAS"
+    },
+    {
+      "id": 176,
+      "label": "Phase Changes",
+      "group": "IMF"
+    },
+    {
+      "id": 177,
+      "label": "Melting and Freezing",
+      "group": "IMF"
+    },
+    {
+      "id": 178,
+      "label": "Boiling and Condensation",
+      "group": "IMF"
+    },
+    {
+      "id": 179,
+      "label": "Sublimation and Deposition",
+      "group": "IMF"
+    },
+    {
+      "id": 180,
+      "label": "Heating Curves",
+      "group": "IMF"
+    },
+    {
+      "id": 181,
+      "label": "Cooling Curves",
+      "group": "IMF"
+    },
+    {
+      "id": 182,
+      "label": "Heat of Fusion",
+      "group": "IMF"
+    },
+    {
+      "id": 183,
+      "label": "Heat of Vaporization",
+      "group": "IMF"
+    },
+    {
+      "id": 184,
+      "label": "Phase Diagrams",
+      "group": "IMF"
+    },
+    {
+      "id": 185,
+      "label": "Triple Point",
+      "group": "IMF"
+    },
+    {
+      "id": 186,
+      "label": "Critical Point",
+      "group": "IMF"
+    },
+    {
+      "id": 187,
+      "label": "Vapor Pressure",
+      "group": "IMF"
+    },
+    {
+      "id": 188,
+      "label": "Solutions",
+      "group": "IMF"
+    },
+    {
+      "id": 189,
+      "label": "Solvent and Solute",
+      "group": "IMF"
+    },
+    {
+      "id": 190,
+      "label": "Solubility",
+      "group": "IMF"
+    },
+    {
+      "id": 191,
+      "label": "Like Dissolves Like",
+      "group": "IMF"
+    },
+    {
+      "id": 192,
+      "label": "Saturated Solutions",
+      "group": "IMF"
+    },
+    {
+      "id": 193,
+      "label": "Concentration Units",
+      "group": "IMF"
+    },
+    {
+      "id": 194,
+      "label": "Molarity",
+      "group": "IMF"
+    },
+    {
+      "id": 195,
+      "label": "Dilution Calculations",
+      "group": "IMF"
+    },
+    {
+      "id": 196,
+      "label": "Beer-Lambert Law",
+      "group": "IMF"
+    },
+    {
+      "id": 197,
+      "label": "Spectrophotometry",
+      "group": "IMF"
+    },
+    {
+      "id": 198,
+      "label": "Colligative Properties",
+      "group": "IMF"
+    },
+    {
+      "id": 199,
+      "label": "Boiling Point Elevation",
+      "group": "IMF"
+    },
+    {
+      "id": 200,
+      "label": "Freezing Point Depression",
+      "group": "IMF"
+    },
+    {
+      "id": 201,
+      "label": "Chemical Equations",
+      "group": "RXNS"
+    },
+    {
+      "id": 202,
+      "label": "Balancing Equations",
+      "group": "RXNS"
+    },
+    {
+      "id": 203,
+      "label": "Coefficients",
+      "group": "RXNS"
+    },
+    {
+      "id": 204,
+      "label": "State Symbols",
+      "group": "RXNS"
+    },
+    {
+      "id": 205,
+      "label": "Reaction Types Overview",
+      "group": "RXNS"
+    },
+    {
+      "id": 206,
+      "label": "Synthesis Reactions",
+      "group": "RXNS"
+    },
+    {
+      "id": 207,
+      "label": "Decomposition Reactions",
+      "group": "RXNS"
+    },
+    {
+      "id": 208,
+      "label": "Single Replacement",
+      "group": "RXNS"
+    },
+    {
+      "id": 209,
+      "label": "Double Replacement",
+      "group": "RXNS"
+    },
+    {
+      "id": 210,
+      "label": "Combustion Reactions",
+      "group": "RXNS"
+    },
+    {
+      "id": 211,
+      "label": "Activity Series",
+      "group": "RXNS"
+    },
+    {
+      "id": 212,
+      "label": "Solubility Rules",
+      "group": "RXNS"
+    },
+    {
+      "id": 213,
+      "label": "Precipitation Reactions",
+      "group": "RXNS"
+    },
+    {
+      "id": 214,
+      "label": "Complete Ionic Equations",
+      "group": "RXNS"
+    },
+    {
+      "id": 215,
+      "label": "Net Ionic Equations",
+      "group": "RXNS"
+    },
+    {
+      "id": 216,
+      "label": "Spectator Ions",
+      "group": "RXNS"
+    },
+    {
+      "id": 217,
+      "label": "Stoichiometry",
+      "group": "STOI"
+    },
+    {
+      "id": 218,
+      "label": "Mole-to-Mole Ratios",
+      "group": "STOI"
+    },
+    {
+      "id": 219,
+      "label": "Mass-to-Mass Calculations",
+      "group": "STOI"
+    },
+    {
+      "id": 220,
+      "label": "Limiting Reagent",
+      "group": "STOI"
+    },
+    {
+      "id": 221,
+      "label": "Excess Reagent",
+      "group": "STOI"
+    },
+    {
+      "id": 222,
+      "label": "Theoretical Yield",
+      "group": "STOI"
+    },
+    {
+      "id": 223,
+      "label": "Actual Yield",
+      "group": "STOI"
+    },
+    {
+      "id": 224,
+      "label": "Percent Yield",
+      "group": "STOI"
+    },
+    {
+      "id": 225,
+      "label": "Solution Stoichiometry",
+      "group": "STOI"
+    },
+    {
+      "id": 226,
+      "label": "Titration",
+      "group": "STOI"
+    },
+    {
+      "id": 227,
+      "label": "Titration Curves",
+      "group": "STOI"
+    },
+    {
+      "id": 228,
+      "label": "Equivalence Point",
+      "group": "STOI"
+    },
+    {
+      "id": 229,
+      "label": "Indicator Selection",
+      "group": "STOI"
+    },
+    {
+      "id": 230,
+      "label": "Gravimetric Analysis",
+      "group": "STOI"
+    },
+    {
+      "id": 231,
+      "label": "Oxidation States",
+      "group": "RXNS"
+    },
+    {
+      "id": 232,
+      "label": "Assigning Oxidation Numbers",
+      "group": "RXNS"
+    },
+    {
+      "id": 233,
+      "label": "Oxidation",
+      "group": "RXNS"
+    },
+    {
+      "id": 234,
+      "label": "Reduction",
+      "group": "RXNS"
+    },
+    {
+      "id": 235,
+      "label": "Redox Reactions",
+      "group": "RXNS"
+    },
+    {
+      "id": 236,
+      "label": "Half Reactions",
+      "group": "RXNS"
+    },
+    {
+      "id": 237,
+      "label": "Balancing Redox Equations",
+      "group": "RXNS"
+    },
+    {
+      "id": 238,
+      "label": "Oxidizing Agents",
+      "group": "RXNS"
+    },
+    {
+      "id": 239,
+      "label": "Reducing Agents",
+      "group": "RXNS"
+    },
+    {
+      "id": 240,
+      "label": "Electron Transfer",
+      "group": "RXNS"
+    },
+    {
+      "id": 241,
+      "label": "Conservation of Mass",
+      "group": "RXNS"
+    },
+    {
+      "id": 242,
+      "label": "Conservation of Charge",
+      "group": "RXNS"
+    },
+    {
+      "id": 243,
+      "label": "Gas Evolution Reactions",
+      "group": "RXNS"
+    },
+    {
+      "id": 244,
+      "label": "Acid-Carbonate Reactions",
+      "group": "RXNS"
+    },
+    {
+      "id": 245,
+      "label": "Molecular Equations",
+      "group": "RXNS"
+    },
+    {
+      "id": 246,
+      "label": "Reaction Prediction",
+      "group": "RXNS"
+    },
+    {
+      "id": 247,
+      "label": "Qualitative Analysis",
+      "group": "RXNS"
+    },
+    {
+      "id": 248,
+      "label": "Flame Tests",
+      "group": "RXNS"
+    },
+    {
+      "id": 249,
+      "label": "Precipitate Identification",
+      "group": "RXNS"
+    },
+    {
+      "id": 250,
+      "label": "Volumetric Analysis",
+      "group": "STOI"
+    },
+    {
+      "id": 251,
+      "label": "Standard Solutions",
+      "group": "STOI"
+    },
+    {
+      "id": 252,
+      "label": "Primary Standards",
+      "group": "STOI"
+    },
+    {
+      "id": 253,
+      "label": "Endpoint vs Equivalence",
+      "group": "STOI"
+    },
+    {
+      "id": 254,
+      "label": "Titration Calculations",
+      "group": "STOI"
+    },
+    {
+      "id": 255,
+      "label": "Percent Purity",
+      "group": "STOI"
+    },
+    {
+      "id": 256,
+      "label": "Empirical Formula from Data",
+      "group": "STOI"
+    },
+    {
+      "id": 257,
+      "label": "Molar Ratios in Solutions",
+      "group": "STOI"
+    },
+    {
+      "id": 258,
+      "label": "Serial Dilutions",
+      "group": "STOI"
+    },
+    {
+      "id": 259,
+      "label": "Driving Force of Reactions",
+      "group": "RXNS"
+    },
+    {
+      "id": 260,
+      "label": "Metathesis Reactions",
+      "group": "RXNS"
+    },
+    {
+      "id": 261,
+      "label": "Acid-Metal Reactions",
+      "group": "RXNS"
+    },
+    {
+      "id": 262,
+      "label": "Disproportionation",
+      "group": "RXNS"
+    },
+    {
+      "id": 263,
+      "label": "Color of Solutions",
+      "group": "RXNS"
+    },
+    {
+      "id": 264,
+      "label": "Chemical Analysis",
+      "group": "RXNS"
+    },
+    {
+      "id": 265,
+      "label": "Back Titration",
+      "group": "STOI"
+    },
+    {
+      "id": 266,
+      "label": "Reaction Rate",
+      "group": "KIN"
+    },
+    {
+      "id": 267,
+      "label": "Rate of Disappearance",
+      "group": "KIN"
+    },
+    {
+      "id": 268,
+      "label": "Rate of Appearance",
+      "group": "KIN"
+    },
+    {
+      "id": 269,
+      "label": "Average Rate",
+      "group": "KIN"
+    },
+    {
+      "id": 270,
+      "label": "Instantaneous Rate",
+      "group": "KIN"
+    },
+    {
+      "id": 271,
+      "label": "Initial Rate",
+      "group": "KIN"
+    },
+    {
+      "id": 272,
+      "label": "Rate Law",
+      "group": "KIN"
+    },
+    {
+      "id": 273,
+      "label": "Rate Constant",
+      "group": "KIN"
+    },
+    {
+      "id": 274,
+      "label": "Reaction Order",
+      "group": "KIN"
+    },
+    {
+      "id": 275,
+      "label": "Zero Order Reactions",
+      "group": "KIN"
+    },
+    {
+      "id": 276,
+      "label": "First Order Reactions",
+      "group": "KIN"
+    },
+    {
+      "id": 277,
+      "label": "Second Order Reactions",
+      "group": "KIN"
+    },
+    {
+      "id": 278,
+      "label": "Determining Reaction Order",
+      "group": "KIN"
+    },
+    {
+      "id": 279,
+      "label": "Method of Initial Rates",
+      "group": "KIN"
+    },
+    {
+      "id": 280,
+      "label": "Integrated Rate Laws",
+      "group": "KIN"
+    },
+    {
+      "id": 281,
+      "label": "Zero Order Integrated Law",
+      "group": "KIN"
+    },
+    {
+      "id": 282,
+      "label": "First Order Integrated Law",
+      "group": "KIN"
+    },
+    {
+      "id": 283,
+      "label": "Second Order Integrated Law",
+      "group": "KIN"
+    },
+    {
+      "id": 284,
+      "label": "Half-Life",
+      "group": "KIN"
+    },
+    {
+      "id": 285,
+      "label": "First Order Half-Life",
+      "group": "KIN"
+    },
+    {
+      "id": 286,
+      "label": "Graphical Rate Analysis",
+      "group": "KIN"
+    },
+    {
+      "id": 287,
+      "label": "Concentration vs Time",
+      "group": "KIN"
+    },
+    {
+      "id": 288,
+      "label": "Linearization Rate Data",
+      "group": "KIN"
+    },
+    {
+      "id": 289,
+      "label": "Collision Theory",
+      "group": "KIN"
+    },
+    {
+      "id": 290,
+      "label": "Activation Energy",
+      "group": "KIN"
+    },
+    {
+      "id": 291,
+      "label": "Activated Complex",
+      "group": "KIN"
+    },
+    {
+      "id": 292,
+      "label": "Transition State",
+      "group": "KIN"
+    },
+    {
+      "id": 293,
+      "label": "Effective Collisions",
+      "group": "KIN"
+    },
+    {
+      "id": 294,
+      "label": "Orientation Factor",
+      "group": "KIN"
+    },
+    {
+      "id": 295,
+      "label": "Arrhenius Equation",
+      "group": "KIN"
+    },
+    {
+      "id": 296,
+      "label": "Arrhenius Plot",
+      "group": "KIN"
+    },
+    {
+      "id": 297,
+      "label": "Frequency Factor",
+      "group": "KIN"
+    },
+    {
+      "id": 298,
+      "label": "Temperature and Rate",
+      "group": "KIN"
+    },
+    {
+      "id": 299,
+      "label": "Energy Diagrams",
+      "group": "KIN"
+    },
+    {
+      "id": 300,
+      "label": "Exothermic Diagrams",
+      "group": "KIN"
+    },
+    {
+      "id": 301,
+      "label": "Endothermic Diagrams",
+      "group": "KIN"
+    },
+    {
+      "id": 302,
+      "label": "Reaction Mechanisms",
+      "group": "KIN"
+    },
+    {
+      "id": 303,
+      "label": "Elementary Steps",
+      "group": "KIN"
+    },
+    {
+      "id": 304,
+      "label": "Molecularity",
+      "group": "KIN"
+    },
+    {
+      "id": 305,
+      "label": "Unimolecular Reactions",
+      "group": "KIN"
+    },
+    {
+      "id": 306,
+      "label": "Bimolecular Reactions",
+      "group": "KIN"
+    },
+    {
+      "id": 307,
+      "label": "Rate-Determining Step",
+      "group": "KIN"
+    },
+    {
+      "id": 308,
+      "label": "Reaction Intermediates",
+      "group": "KIN"
+    },
+    {
+      "id": 309,
+      "label": "Mechanism Validation",
+      "group": "KIN"
+    },
+    {
+      "id": 310,
+      "label": "Catalysis",
+      "group": "KIN"
+    },
+    {
+      "id": 311,
+      "label": "Homogeneous Catalysis",
+      "group": "KIN"
+    },
+    {
+      "id": 312,
+      "label": "Heterogeneous Catalysis",
+      "group": "KIN"
+    },
+    {
+      "id": 313,
+      "label": "Enzyme Catalysis",
+      "group": "KIN"
+    },
+    {
+      "id": 314,
+      "label": "Catalyst Effect on Ea",
+      "group": "KIN"
+    },
+    {
+      "id": 315,
+      "label": "Catalyst and Equilibrium",
+      "group": "KIN"
+    },
+    {
+      "id": 316,
+      "label": "Catalyzed vs Uncatalyzed",
+      "group": "KIN"
+    },
+    {
+      "id": 317,
+      "label": "Surface Area and Rate",
+      "group": "KIN"
+    },
+    {
+      "id": 318,
+      "label": "Concentration and Rate",
+      "group": "KIN"
+    },
+    {
+      "id": 319,
+      "label": "Factors Affecting Rate",
+      "group": "KIN"
+    },
+    {
+      "id": 320,
+      "label": "Kinetics Experiments",
+      "group": "KIN"
+    },
+    {
+      "id": 321,
+      "label": "Thermodynamics",
+      "group": "THRM"
+    },
+    {
+      "id": 322,
+      "label": "System and Surroundings",
+      "group": "THRM"
+    },
+    {
+      "id": 323,
+      "label": "Open Systems",
+      "group": "THRM"
+    },
+    {
+      "id": 324,
+      "label": "Closed Systems",
+      "group": "THRM"
+    },
+    {
+      "id": 325,
+      "label": "Isolated Systems",
+      "group": "THRM"
+    },
+    {
+      "id": 326,
+      "label": "Exothermic Reactions",
+      "group": "THRM"
+    },
+    {
+      "id": 327,
+      "label": "Endothermic Reactions",
+      "group": "THRM"
+    },
+    {
+      "id": 328,
+      "label": "Heat and Temperature",
+      "group": "THRM"
+    },
+    {
+      "id": 329,
+      "label": "Heat Transfer",
+      "group": "THRM"
+    },
+    {
+      "id": 330,
+      "label": "Specific Heat Capacity",
+      "group": "THRM"
+    },
+    {
+      "id": 331,
+      "label": "Heat Capacity",
+      "group": "THRM"
+    },
+    {
+      "id": 332,
+      "label": "Calorimetry",
+      "group": "THRM"
+    },
+    {
+      "id": 333,
+      "label": "Coffee Cup Calorimeter",
+      "group": "THRM"
+    },
+    {
+      "id": 334,
+      "label": "Bomb Calorimeter",
+      "group": "THRM"
+    },
+    {
+      "id": 335,
+      "label": "Enthalpy",
+      "group": "THRM"
+    },
+    {
+      "id": 336,
+      "label": "Enthalpy Change",
+      "group": "THRM"
+    },
+    {
+      "id": 337,
+      "label": "Standard Enthalpy",
+      "group": "THRM"
+    },
+    {
+      "id": 338,
+      "label": "Enthalpy of Formation",
+      "group": "THRM"
+    },
+    {
+      "id": 339,
+      "label": "Standard Formation Values",
+      "group": "THRM"
+    },
+    {
+      "id": 340,
+      "label": "Enthalpy of Combustion",
+      "group": "THRM"
+    },
+    {
+      "id": 341,
+      "label": "Enthalpy of Reaction",
+      "group": "THRM"
+    },
+    {
+      "id": 342,
+      "label": "Hess's Law",
+      "group": "THRM"
+    },
+    {
+      "id": 343,
+      "label": "Hess's Law Calculations",
+      "group": "THRM"
+    },
+    {
+      "id": 344,
+      "label": "Born-Haber Cycle",
+      "group": "THRM"
+    },
+    {
+      "id": 345,
+      "label": "Bond Enthalpy",
+      "group": "THRM"
+    },
+    {
+      "id": 346,
+      "label": "Bond Enthalpy Calculations",
+      "group": "THRM"
+    },
+    {
+      "id": 347,
+      "label": "Entropy",
+      "group": "THRM"
+    },
+    {
+      "id": 348,
+      "label": "Entropy Change",
+      "group": "THRM"
+    },
+    {
+      "id": 349,
+      "label": "Standard Entropy",
+      "group": "THRM"
+    },
+    {
+      "id": 350,
+      "label": "Entropy and Disorder",
+      "group": "THRM"
+    },
+    {
+      "id": 351,
+      "label": "Microstates",
+      "group": "THRM"
+    },
+    {
+      "id": 352,
+      "label": "Boltzmann Equation",
+      "group": "THRM"
+    },
+    {
+      "id": 353,
+      "label": "Second Law Thermodynamics",
+      "group": "THRM"
+    },
+    {
+      "id": 354,
+      "label": "Third Law Thermodynamics",
+      "group": "THRM"
+    },
+    {
+      "id": 355,
+      "label": "Entropy of Phase Changes",
+      "group": "THRM"
+    },
+    {
+      "id": 356,
+      "label": "Entropy Predictions",
+      "group": "THRM"
+    },
+    {
+      "id": 357,
+      "label": "Gibbs Free Energy",
+      "group": "THRM"
+    },
+    {
+      "id": 358,
+      "label": "Gibbs Free Energy Equation",
+      "group": "THRM"
+    },
+    {
+      "id": 359,
+      "label": "Standard Free Energy",
+      "group": "THRM"
+    },
+    {
+      "id": 360,
+      "label": "Free Energy of Formation",
+      "group": "THRM"
+    },
+    {
+      "id": 361,
+      "label": "Spontaneity",
+      "group": "THRM"
+    },
+    {
+      "id": 362,
+      "label": "Nonspontaneous Processes",
+      "group": "THRM"
+    },
+    {
+      "id": 363,
+      "label": "Temperature Dependence",
+      "group": "THRM"
+    },
+    {
+      "id": 364,
+      "label": "Gibbs and Equilibrium",
+      "group": "THRM"
+    },
+    {
+      "id": 365,
+      "label": "Free Energy and Work",
+      "group": "THRM"
+    },
+    {
+      "id": 366,
+      "label": "Coupled Reactions",
+      "group": "THRM"
+    },
+    {
+      "id": 367,
+      "label": "Thermodynamic Stability",
+      "group": "THRM"
+    },
+    {
+      "id": 368,
+      "label": "Kinetic Stability",
+      "group": "THRM"
+    },
+    {
+      "id": 369,
+      "label": "State Functions",
+      "group": "THRM"
+    },
+    {
+      "id": 370,
+      "label": "Path Functions",
+      "group": "THRM"
+    },
+    {
+      "id": 371,
+      "label": "Internal Energy",
+      "group": "THRM"
+    },
+    {
+      "id": 372,
+      "label": "First Law Thermodynamics",
+      "group": "THRM"
+    },
+    {
+      "id": 373,
+      "label": "PV Work",
+      "group": "THRM"
+    },
+    {
+      "id": 374,
+      "label": "Enthalpy vs Internal Energy",
+      "group": "THRM"
+    },
+    {
+      "id": 375,
+      "label": "Calorimetry Calculations",
+      "group": "THRM"
+    },
+    {
+      "id": 376,
+      "label": "Chemical Equilibrium",
+      "group": "EQBM"
+    },
+    {
+      "id": 377,
+      "label": "Dynamic Equilibrium",
+      "group": "EQBM"
+    },
+    {
+      "id": 378,
+      "label": "Equilibrium State",
+      "group": "EQBM"
+    },
+    {
+      "id": 379,
+      "label": "Forward Reaction",
+      "group": "EQBM"
+    },
+    {
+      "id": 380,
+      "label": "Reverse Reaction",
+      "group": "EQBM"
+    },
+    {
+      "id": 381,
+      "label": "Equilibrium Constant Kc",
+      "group": "EQBM"
+    },
+    {
+      "id": 382,
+      "label": "Equilibrium Constant Kp",
+      "group": "EQBM"
+    },
+    {
+      "id": 383,
+      "label": "Kc and Kp Relationship",
+      "group": "EQBM"
+    },
+    {
+      "id": 384,
+      "label": "Writing K Expressions",
+      "group": "EQBM"
+    },
+    {
+      "id": 385,
+      "label": "Homogeneous Equilibrium",
+      "group": "EQBM"
+    },
+    {
+      "id": 386,
+      "label": "Heterogeneous Equilibrium",
+      "group": "EQBM"
+    },
+    {
+      "id": 387,
+      "label": "Equilibrium Position",
+      "group": "EQBM"
+    },
+    {
+      "id": 388,
+      "label": "Reaction Quotient Q",
+      "group": "EQBM"
+    },
+    {
+      "id": 389,
+      "label": "Q vs K Comparison",
+      "group": "EQBM"
+    },
+    {
+      "id": 390,
+      "label": "Predicting Direction",
+      "group": "EQBM"
+    },
+    {
+      "id": 391,
+      "label": "ICE Tables",
+      "group": "EQBM"
+    },
+    {
+      "id": 392,
+      "label": "ICE Table Calculations",
+      "group": "EQBM"
+    },
+    {
+      "id": 393,
+      "label": "Small K Approximation",
+      "group": "EQBM"
+    },
+    {
+      "id": 394,
+      "label": "Quadratic in Equilibrium",
+      "group": "EQBM"
+    },
+    {
+      "id": 395,
+      "label": "Le Chatelier's Principle",
+      "group": "EQBM"
+    },
+    {
+      "id": 396,
+      "label": "Concentration Changes",
+      "group": "EQBM"
+    },
+    {
+      "id": 397,
+      "label": "Pressure Changes",
+      "group": "EQBM"
+    },
+    {
+      "id": 398,
+      "label": "Volume Changes",
+      "group": "EQBM"
+    },
+    {
+      "id": 399,
+      "label": "Temperature Changes on K",
+      "group": "EQBM"
+    },
+    {
+      "id": 400,
+      "label": "Effect of Catalyst on Eq",
+      "group": "EQBM"
+    },
+    {
+      "id": 401,
+      "label": "Adding Inert Gas",
+      "group": "EQBM"
+    },
+    {
+      "id": 402,
+      "label": "Equilibrium Shifts",
+      "group": "EQBM"
+    },
+    {
+      "id": 403,
+      "label": "Solubility Equilibria",
+      "group": "EQBM"
+    },
+    {
+      "id": 404,
+      "label": "Solubility Product Ksp",
+      "group": "EQBM"
+    },
+    {
+      "id": 405,
+      "label": "Molar Solubility",
+      "group": "EQBM"
+    },
+    {
+      "id": 406,
+      "label": "Common Ion Effect",
+      "group": "EQBM"
+    },
+    {
+      "id": 407,
+      "label": "Predicting Precipitation",
+      "group": "EQBM"
+    },
+    {
+      "id": 408,
+      "label": "Selective Precipitation",
+      "group": "EQBM"
+    },
+    {
+      "id": 409,
+      "label": "Complex Ion Formation",
+      "group": "EQBM"
+    },
+    {
+      "id": 410,
+      "label": "Formation Constants",
+      "group": "EQBM"
+    },
+    {
+      "id": 411,
+      "label": "Ksp Calculations",
+      "group": "EQBM"
+    },
+    {
+      "id": 412,
+      "label": "Ion Product",
+      "group": "EQBM"
+    },
+    {
+      "id": 413,
+      "label": "Temperature and Solubility",
+      "group": "EQBM"
+    },
+    {
+      "id": 414,
+      "label": "Henry's Law",
+      "group": "EQBM"
+    },
+    {
+      "id": 415,
+      "label": "Equilibrium and Free Energy",
+      "group": "EQBM"
+    },
+    {
+      "id": 416,
+      "label": "Relationship K and Delta G",
+      "group": "EQBM"
+    },
+    {
+      "id": 417,
+      "label": "Manipulating K Expressions",
+      "group": "EQBM"
+    },
+    {
+      "id": 418,
+      "label": "Reversing Reactions K",
+      "group": "EQBM"
+    },
+    {
+      "id": 419,
+      "label": "Adding Reactions K",
+      "group": "EQBM"
+    },
+    {
+      "id": 420,
+      "label": "Industrial Equilibrium",
+      "group": "EQBM"
+    },
+    {
+      "id": 421,
+      "label": "Acids",
+      "group": "ACID"
+    },
+    {
+      "id": 422,
+      "label": "Bases",
+      "group": "ACID"
+    },
+    {
+      "id": 423,
+      "label": "Arrhenius Theory",
+      "group": "ACID"
+    },
+    {
+      "id": 424,
+      "label": "Bronsted-Lowry Theory",
+      "group": "ACID"
+    },
+    {
+      "id": 425,
+      "label": "Lewis Acid-Base Theory",
+      "group": "ACID"
+    },
+    {
+      "id": 426,
+      "label": "Conjugate Acid-Base Pairs",
+      "group": "ACID"
+    },
+    {
+      "id": 427,
+      "label": "Conjugate Acid",
+      "group": "ACID"
+    },
+    {
+      "id": 428,
+      "label": "Conjugate Base",
+      "group": "ACID"
+    },
+    {
+      "id": 429,
+      "label": "Amphiprotic Substances",
+      "group": "ACID"
+    },
+    {
+      "id": 430,
+      "label": "Autoionization of Water",
+      "group": "ACID"
+    },
+    {
+      "id": 431,
+      "label": "Ion Product of Water Kw",
+      "group": "ACID"
+    },
+    {
+      "id": 432,
+      "label": "pH Scale",
+      "group": "ACID"
+    },
+    {
+      "id": 433,
+      "label": "pH Calculation",
+      "group": "ACID"
+    },
+    {
+      "id": 434,
+      "label": "pOH",
+      "group": "ACID"
+    },
+    {
+      "id": 435,
+      "label": "pH and pOH Relationship",
+      "group": "ACID"
+    },
+    {
+      "id": 436,
+      "label": "Strong Acids",
+      "group": "ACID"
+    },
+    {
+      "id": 437,
+      "label": "Strong Bases",
+      "group": "ACID"
+    },
+    {
+      "id": 438,
+      "label": "Strong Acid pH",
+      "group": "ACID"
+    },
+    {
+      "id": 439,
+      "label": "Strong Base pH",
+      "group": "ACID"
+    },
+    {
+      "id": 440,
+      "label": "Weak Acids",
+      "group": "ACID"
+    },
+    {
+      "id": 441,
+      "label": "Weak Bases",
+      "group": "ACID"
+    },
+    {
+      "id": 442,
+      "label": "Acid Dissociation Ka",
+      "group": "ACID"
+    },
+    {
+      "id": 443,
+      "label": "Base Dissociation Kb",
+      "group": "ACID"
+    },
+    {
+      "id": 444,
+      "label": "Ka and Kb Relationship",
+      "group": "ACID"
+    },
+    {
+      "id": 445,
+      "label": "Percent Ionization",
+      "group": "ACID"
+    },
+    {
+      "id": 446,
+      "label": "Weak Acid pH Calculation",
+      "group": "ACID"
+    },
+    {
+      "id": 447,
+      "label": "Weak Base pH Calculation",
+      "group": "ACID"
+    },
+    {
+      "id": 448,
+      "label": "Polyprotic Acids",
+      "group": "ACID"
+    },
+    {
+      "id": 449,
+      "label": "Diprotic Acid Equilibria",
+      "group": "ACID"
+    },
+    {
+      "id": 450,
+      "label": "Acid Strength Factors",
+      "group": "ACID"
+    },
+    {
+      "id": 451,
+      "label": "Binary Acid Trends",
+      "group": "ACID"
+    },
+    {
+      "id": 452,
+      "label": "Oxyacid Strength",
+      "group": "ACID"
+    },
+    {
+      "id": 453,
+      "label": "Salt Hydrolysis",
+      "group": "ACID"
+    },
+    {
+      "id": 454,
+      "label": "Acidic Salts",
+      "group": "ACID"
+    },
+    {
+      "id": 455,
+      "label": "Basic Salts",
+      "group": "ACID"
+    },
+    {
+      "id": 456,
+      "label": "Neutral Salts",
+      "group": "ACID"
+    },
+    {
+      "id": 457,
+      "label": "Buffer Solutions",
+      "group": "ACID"
+    },
+    {
+      "id": 458,
+      "label": "Buffer Composition",
+      "group": "ACID"
+    },
+    {
+      "id": 459,
+      "label": "Henderson-Hasselbalch",
+      "group": "ACID"
+    },
+    {
+      "id": 460,
+      "label": "Buffer Capacity",
+      "group": "ACID"
+    },
+    {
+      "id": 461,
+      "label": "Buffer pH Calculations",
+      "group": "ACID"
+    },
+    {
+      "id": 462,
+      "label": "Buffer Preparation",
+      "group": "ACID"
+    },
+    {
+      "id": 463,
+      "label": "Acid-Base Titration",
+      "group": "ACID"
+    },
+    {
+      "id": 464,
+      "label": "Strong Acid-Strong Base",
+      "group": "ACID"
+    },
+    {
+      "id": 465,
+      "label": "Weak Acid-Strong Base",
+      "group": "ACID"
+    },
+    {
+      "id": 466,
+      "label": "Strong Acid-Weak Base",
+      "group": "ACID"
+    },
+    {
+      "id": 467,
+      "label": "Titration Curve Analysis",
+      "group": "ACID"
+    },
+    {
+      "id": 468,
+      "label": "Half-Equivalence Point",
+      "group": "ACID"
+    },
+    {
+      "id": 469,
+      "label": "Buffer Region",
+      "group": "ACID"
+    },
+    {
+      "id": 470,
+      "label": "Indicators and pH Range",
+      "group": "ACID"
+    },
+    {
+      "id": 471,
+      "label": "Selecting Indicators",
+      "group": "ACID"
+    },
+    {
+      "id": 472,
+      "label": "Neutralization Reactions",
+      "group": "ACID"
+    },
+    {
+      "id": 473,
+      "label": "Net Ionic Acid-Base",
+      "group": "ACID"
+    },
+    {
+      "id": 474,
+      "label": "Dilute Acid Calculations",
+      "group": "ACID"
+    },
+    {
+      "id": 475,
+      "label": "pH of Mixed Solutions",
+      "group": "ACID"
+    },
+    {
+      "id": 476,
+      "label": "Electrochemistry",
+      "group": "ECHEM"
+    },
+    {
+      "id": 477,
+      "label": "Galvanic Cells",
+      "group": "ECHEM"
+    },
+    {
+      "id": 478,
+      "label": "Voltaic Cell Components",
+      "group": "ECHEM"
+    },
+    {
+      "id": 479,
+      "label": "Anode and Cathode",
+      "group": "ECHEM"
+    },
+    {
+      "id": 480,
+      "label": "Salt Bridge",
+      "group": "ECHEM"
+    },
+    {
+      "id": 481,
+      "label": "Electron Flow Direction",
+      "group": "ECHEM"
+    },
+    {
+      "id": 482,
+      "label": "Cell Notation",
+      "group": "ECHEM"
+    },
+    {
+      "id": 483,
+      "label": "Standard Reduction Potential",
+      "group": "ECHEM"
+    },
+    {
+      "id": 484,
+      "label": "Standard Hydrogen Electrode",
+      "group": "ECHEM"
+    },
+    {
+      "id": 485,
+      "label": "Cell Potential Calculation",
+      "group": "ECHEM"
+    },
+    {
+      "id": 486,
+      "label": "Spontaneous Cell Reactions",
+      "group": "ECHEM"
+    },
+    {
+      "id": 487,
+      "label": "Nernst Equation",
+      "group": "ECHEM"
+    },
+    {
+      "id": 488,
+      "label": "Nonstandard Conditions",
+      "group": "ECHEM"
+    },
+    {
+      "id": 489,
+      "label": "Concentration Cells",
+      "group": "ECHEM"
+    },
+    {
+      "id": 490,
+      "label": "Free Energy and Cell EMF",
+      "group": "ECHEM"
+    },
+    {
+      "id": 491,
+      "label": "Delta G and E Relation",
+      "group": "ECHEM"
+    },
+    {
+      "id": 492,
+      "label": "Faraday's Constant",
+      "group": "ECHEM"
+    },
+    {
+      "id": 493,
+      "label": "Electrolytic Cells",
+      "group": "ECHEM"
+    },
+    {
+      "id": 494,
+      "label": "Electrolysis",
+      "group": "ECHEM"
+    },
+    {
+      "id": 495,
+      "label": "Electrolysis of Water",
+      "group": "ECHEM"
+    },
+    {
+      "id": 496,
+      "label": "Electroplating",
+      "group": "ECHEM"
+    },
+    {
+      "id": 497,
+      "label": "Faraday's Laws",
+      "group": "ECHEM"
+    },
+    {
+      "id": 498,
+      "label": "Stoichiometry Electrolysis",
+      "group": "ECHEM"
+    },
+    {
+      "id": 499,
+      "label": "Batteries and Fuel Cells",
+      "group": "ECHEM"
+    },
+    {
+      "id": 500,
+      "label": "Corrosion",
+      "group": "ECHEM"
+    }
+  ],
+  "edges": [
+    {
+      "from": 3,
+      "to": 1
+    },
+    {
+      "from": 4,
+      "to": 3
+    },
+    {
+      "from": 5,
+      "to": 4
+    },
+    {
+      "from": 6,
+      "to": 1
+    },
+    {
+      "from": 6,
+      "to": 5
+    },
+    {
+      "from": 7,
+      "to": 1
+    },
+    {
+      "from": 8,
+      "to": 1
+    },
+    {
+      "from": 8,
+      "to": 5
+    },
+    {
+      "from": 9,
+      "to": 7
+    },
+    {
+      "from": 10,
+      "to": 8
+    },
+    {
+      "from": 12,
+      "to": 11
+    },
+    {
+      "from": 13,
+      "to": 12
+    },
+    {
+      "from": 14,
+      "to": 12
+    },
+    {
+      "from": 15,
+      "to": 13
+    },
+    {
+      "from": 15,
+      "to": 14
+    },
+    {
+      "from": 16,
+      "to": 1
+    },
+    {
+      "from": 16,
+      "to": 12
+    },
+    {
+      "from": 17,
+      "to": 12
+    },
+    {
+      "from": 18,
+      "to": 12
+    },
+    {
+      "from": 19,
+      "to": 12
+    },
+    {
+      "from": 20,
+      "to": 19
+    },
+    {
+      "from": 21,
+      "to": 11
+    },
+    {
+      "from": 22,
+      "to": 11
+    },
+    {
+      "from": 22,
+      "to": 12
+    },
+    {
+      "from": 23,
+      "to": 22
+    },
+    {
+      "from": 24,
+      "to": 2
+    },
+    {
+      "from": 25,
+      "to": 3
+    },
+    {
+      "from": 26,
+      "to": 3
+    },
+    {
+      "from": 26,
+      "to": 25
+    },
+    {
+      "from": 27,
+      "to": 26
+    },
+    {
+      "from": 28,
+      "to": 26
+    },
+    {
+      "from": 29,
+      "to": 26
+    },
+    {
+      "from": 30,
+      "to": 27
+    },
+    {
+      "from": 31,
+      "to": 27
+    },
+    {
+      "from": 31,
+      "to": 28
+    },
+    {
+      "from": 32,
+      "to": 30
+    },
+    {
+      "from": 32,
+      "to": 31
+    },
+    {
+      "from": 33,
+      "to": 31
+    },
+    {
+      "from": 34,
+      "to": 32
+    },
+    {
+      "from": 34,
+      "to": 33
+    },
+    {
+      "from": 35,
+      "to": 34
+    },
+    {
+      "from": 36,
+      "to": 35
+    },
+    {
+      "from": 36,
+      "to": 23
+    },
+    {
+      "from": 37,
+      "to": 32
+    },
+    {
+      "from": 37,
+      "to": 35
+    },
+    {
+      "from": 38,
+      "to": 34
+    },
+    {
+      "from": 39,
+      "to": 38
+    },
+    {
+      "from": 40,
+      "to": 38
+    },
+    {
+      "from": 40,
+      "to": 34
+    },
+    {
+      "from": 41,
+      "to": 38
+    },
+    {
+      "from": 41,
+      "to": 39
+    },
+    {
+      "from": 41,
+      "to": 40
+    },
+    {
+      "from": 42,
+      "to": 40
+    },
+    {
+      "from": 42,
+      "to": 41
+    },
+    {
+      "from": 43,
+      "to": 42
+    },
+    {
+      "from": 44,
+      "to": 43
+    },
+    {
+      "from": 44,
+      "to": 40
+    },
+    {
+      "from": 45,
+      "to": 44
+    },
+    {
+      "from": 45,
+      "to": 10
+    },
+    {
+      "from": 46,
+      "to": 29
+    },
+    {
+      "from": 46,
+      "to": 25
+    },
+    {
+      "from": 47,
+      "to": 46
+    },
+    {
+      "from": 48,
+      "to": 47
+    },
+    {
+      "from": 49,
+      "to": 48
+    },
+    {
+      "from": 50,
+      "to": 49
+    },
+    {
+      "from": 51,
+      "to": 50
+    },
+    {
+      "from": 52,
+      "to": 51
+    },
+    {
+      "from": 53,
+      "to": 50
+    },
+    {
+      "from": 53,
+      "to": 51
+    },
+    {
+      "from": 54,
+      "to": 53
+    },
+    {
+      "from": 55,
+      "to": 53
+    },
+    {
+      "from": 56,
+      "to": 53
+    },
+    {
+      "from": 56,
+      "to": 51
+    },
+    {
+      "from": 57,
+      "to": 53
+    },
+    {
+      "from": 57,
+      "to": 4
+    },
+    {
+      "from": 58,
+      "to": 53
+    },
+    {
+      "from": 58,
+      "to": 57
+    },
+    {
+      "from": 59,
+      "to": 53
+    },
+    {
+      "from": 59,
+      "to": 57
+    },
+    {
+      "from": 60,
+      "to": 53
+    },
+    {
+      "from": 60,
+      "to": 57
+    },
+    {
+      "from": 61,
+      "to": 2
+    },
+    {
+      "from": 62,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 61
+    },
+    {
+      "from": 63,
+      "to": 62
+    },
+    {
+      "from": 64,
+      "to": 63
+    },
+    {
+      "from": 64,
+      "to": 2
+    },
+    {
+      "from": 65,
+      "to": 64
+    },
+    {
+      "from": 66,
+      "to": 64
+    },
+    {
+      "from": 66,
+      "to": 65
+    },
+    {
+      "from": 67,
+      "to": 46
+    },
+    {
+      "from": 67,
+      "to": 64
+    },
+    {
+      "from": 68,
+      "to": 67
+    },
+    {
+      "from": 69,
+      "to": 53
+    },
+    {
+      "from": 69,
+      "to": 64
+    },
+    {
+      "from": 70,
+      "to": 69
+    },
+    {
+      "from": 70,
+      "to": 23
+    },
+    {
+      "from": 71,
+      "to": 4
+    },
+    {
+      "from": 71,
+      "to": 30
+    },
+    {
+      "from": 72,
+      "to": 71
+    },
+    {
+      "from": 73,
+      "to": 72
+    },
+    {
+      "from": 73,
+      "to": 53
+    },
+    {
+      "from": 74,
+      "to": 73
+    },
+    {
+      "from": 75,
+      "to": 73
+    },
+    {
+      "from": 75,
+      "to": 74
+    },
+    {
+      "from": 76,
+      "to": 73
+    },
+    {
+      "from": 76,
+      "to": 57
+    },
+    {
+      "from": 77,
+      "to": 76
+    },
+    {
+      "from": 78,
+      "to": 73
+    },
+    {
+      "from": 78,
+      "to": 57
+    },
+    {
+      "from": 79,
+      "to": 73
+    },
+    {
+      "from": 79,
+      "to": 76
+    },
+    {
+      "from": 79,
+      "to": 78
+    },
+    {
+      "from": 80,
+      "to": 27
+    },
+    {
+      "from": 80,
+      "to": 29
+    },
+    {
+      "from": 80,
+      "to": 73
+    },
+    {
+      "from": 81,
+      "to": 57
+    },
+    {
+      "from": 81,
+      "to": 2
+    },
+    {
+      "from": 82,
+      "to": 81
+    },
+    {
+      "from": 82,
+      "to": 79
+    },
+    {
+      "from": 83,
+      "to": 81
+    },
+    {
+      "from": 83,
+      "to": 57
+    },
+    {
+      "from": 84,
+      "to": 81
+    },
+    {
+      "from": 85,
+      "to": 81
+    },
+    {
+      "from": 85,
+      "to": 2
+    },
+    {
+      "from": 86,
+      "to": 82
+    },
+    {
+      "from": 87,
+      "to": 86
+    },
+    {
+      "from": 88,
+      "to": 87
+    },
+    {
+      "from": 88,
+      "to": 85
+    },
+    {
+      "from": 89,
+      "to": 76
+    },
+    {
+      "from": 89,
+      "to": 82
+    },
+    {
+      "from": 90,
+      "to": 78
+    },
+    {
+      "from": 90,
+      "to": 82
+    },
+    {
+      "from": 91,
+      "to": 86
+    },
+    {
+      "from": 91,
+      "to": 83
+    },
+    {
+      "from": 92,
+      "to": 86
+    },
+    {
+      "from": 92,
+      "to": 91
+    },
+    {
+      "from": 93,
+      "to": 86
+    },
+    {
+      "from": 93,
+      "to": 91
+    },
+    {
+      "from": 94,
+      "to": 89
+    },
+    {
+      "from": 94,
+      "to": 72
+    },
+    {
+      "from": 95,
+      "to": 57
+    },
+    {
+      "from": 96,
+      "to": 95
+    },
+    {
+      "from": 96,
+      "to": 83
+    },
+    {
+      "from": 97,
+      "to": 96
+    },
+    {
+      "from": 97,
+      "to": 57
+    },
+    {
+      "from": 98,
+      "to": 96
+    },
+    {
+      "from": 99,
+      "to": 96
+    },
+    {
+      "from": 99,
+      "to": 98
+    },
+    {
+      "from": 100,
+      "to": 96
+    },
+    {
+      "from": 100,
+      "to": 99
+    },
+    {
+      "from": 101,
+      "to": 96
+    },
+    {
+      "from": 102,
+      "to": 96
+    },
+    {
+      "from": 103,
+      "to": 96
+    },
+    {
+      "from": 103,
+      "to": 99
+    },
+    {
+      "from": 104,
+      "to": 103
+    },
+    {
+      "from": 105,
+      "to": 96
+    },
+    {
+      "from": 105,
+      "to": 101
+    },
+    {
+      "from": 106,
+      "to": 105
+    },
+    {
+      "from": 107,
+      "to": 97
+    },
+    {
+      "from": 107,
+      "to": 50
+    },
+    {
+      "from": 108,
+      "to": 97
+    },
+    {
+      "from": 109,
+      "to": 107
+    },
+    {
+      "from": 109,
+      "to": 108
+    },
+    {
+      "from": 110,
+      "to": 98
+    },
+    {
+      "from": 110,
+      "to": 99
+    },
+    {
+      "from": 110,
+      "to": 100
+    },
+    {
+      "from": 111,
+      "to": 110
+    },
+    {
+      "from": 112,
+      "to": 110
+    },
+    {
+      "from": 112,
+      "to": 85
+    },
+    {
+      "from": 113,
+      "to": 96
+    },
+    {
+      "from": 113,
+      "to": 101
+    },
+    {
+      "from": 113,
+      "to": 102
+    },
+    {
+      "from": 114,
+      "to": 113
+    },
+    {
+      "from": 115,
+      "to": 113
+    },
+    {
+      "from": 115,
+      "to": 114
+    },
+    {
+      "from": 116,
+      "to": 115
+    },
+    {
+      "from": 117,
+      "to": 115
+    },
+    {
+      "from": 118,
+      "to": 115
+    },
+    {
+      "from": 119,
+      "to": 115
+    },
+    {
+      "from": 119,
+      "to": 107
+    },
+    {
+      "from": 120,
+      "to": 115
+    },
+    {
+      "from": 120,
+      "to": 107
+    },
+    {
+      "from": 121,
+      "to": 115
+    },
+    {
+      "from": 121,
+      "to": 101
+    },
+    {
+      "from": 122,
+      "to": 115
+    },
+    {
+      "from": 122,
+      "to": 101
+    },
+    {
+      "from": 123,
+      "to": 115
+    },
+    {
+      "from": 124,
+      "to": 101
+    },
+    {
+      "from": 124,
+      "to": 113
+    },
+    {
+      "from": 125,
+      "to": 51
+    },
+    {
+      "from": 125,
+      "to": 83
+    },
+    {
+      "from": 125,
+      "to": 115
+    },
+    {
+      "from": 126,
+      "to": 125
+    },
+    {
+      "from": 126,
+      "to": 116
+    },
+    {
+      "from": 127,
+      "to": 125
+    },
+    {
+      "from": 127,
+      "to": 117
+    },
+    {
+      "from": 128,
+      "to": 125
+    },
+    {
+      "from": 128,
+      "to": 118
+    },
+    {
+      "from": 129,
+      "to": 125
+    },
+    {
+      "from": 129,
+      "to": 98
+    },
+    {
+      "from": 130,
+      "to": 125
+    },
+    {
+      "from": 130,
+      "to": 99
+    },
+    {
+      "from": 130,
+      "to": 129
+    },
+    {
+      "from": 131,
+      "to": 79
+    },
+    {
+      "from": 131,
+      "to": 83
+    },
+    {
+      "from": 132,
+      "to": 79
+    },
+    {
+      "from": 132,
+      "to": 131
+    },
+    {
+      "from": 133,
+      "to": 131
+    },
+    {
+      "from": 133,
+      "to": 132
+    },
+    {
+      "from": 134,
+      "to": 131
+    },
+    {
+      "from": 134,
+      "to": 132
+    },
+    {
+      "from": 135,
+      "to": 131
+    },
+    {
+      "from": 135,
+      "to": 115
+    },
+    {
+      "from": 136,
+      "to": 135
+    },
+    {
+      "from": 136,
+      "to": 115
+    },
+    {
+      "from": 137,
+      "to": 136
+    },
+    {
+      "from": 138,
+      "to": 136
+    },
+    {
+      "from": 139,
+      "to": 5
+    },
+    {
+      "from": 139,
+      "to": 83
+    },
+    {
+      "from": 140,
+      "to": 83
+    },
+    {
+      "from": 140,
+      "to": 87
+    },
+    {
+      "from": 141,
+      "to": 136
+    },
+    {
+      "from": 141,
+      "to": 137
+    },
+    {
+      "from": 141,
+      "to": 138
+    },
+    {
+      "from": 142,
+      "to": 81
+    },
+    {
+      "from": 142,
+      "to": 112
+    },
+    {
+      "from": 143,
+      "to": 141
+    },
+    {
+      "from": 143,
+      "to": 142
+    },
+    {
+      "from": 144,
+      "to": 141
+    },
+    {
+      "from": 145,
+      "to": 144
+    },
+    {
+      "from": 145,
+      "to": 29
+    },
+    {
+      "from": 146,
+      "to": 141
+    },
+    {
+      "from": 146,
+      "to": 135
+    },
+    {
+      "from": 147,
+      "to": 146
+    },
+    {
+      "from": 147,
+      "to": 79
+    },
+    {
+      "from": 148,
+      "to": 147
+    },
+    {
+      "from": 149,
+      "to": 141
+    },
+    {
+      "from": 149,
+      "to": 86
+    },
+    {
+      "from": 150,
+      "to": 144
+    },
+    {
+      "from": 150,
+      "to": 146
+    },
+    {
+      "from": 150,
+      "to": 147
+    },
+    {
+      "from": 150,
+      "to": 149
+    },
+    {
+      "from": 151,
+      "to": 1
+    },
+    {
+      "from": 151,
+      "to": 2
+    },
+    {
+      "from": 151,
+      "to": 141
+    },
+    {
+      "from": 152,
+      "to": 151
+    },
+    {
+      "from": 152,
+      "to": 2
+    },
+    {
+      "from": 153,
+      "to": 151
+    },
+    {
+      "from": 153,
+      "to": 141
+    },
+    {
+      "from": 154,
+      "to": 153
+    },
+    {
+      "from": 154,
+      "to": 87
+    },
+    {
+      "from": 155,
+      "to": 153
+    },
+    {
+      "from": 156,
+      "to": 151
+    },
+    {
+      "from": 156,
+      "to": 141
+    },
+    {
+      "from": 157,
+      "to": 156
+    },
+    {
+      "from": 157,
+      "to": 141
+    },
+    {
+      "from": 158,
+      "to": 156
+    },
+    {
+      "from": 158,
+      "to": 141
+    },
+    {
+      "from": 159,
+      "to": 157
+    },
+    {
+      "from": 159,
+      "to": 147
+    },
+    {
+      "from": 160,
+      "to": 151
+    },
+    {
+      "from": 160,
+      "to": 152
+    },
+    {
+      "from": 161,
+      "to": 160
+    },
+    {
+      "from": 162,
+      "to": 161
+    },
+    {
+      "from": 163,
+      "to": 160
+    },
+    {
+      "from": 163,
+      "to": 38
+    },
+    {
+      "from": 163,
+      "to": 17
+    },
+    {
+      "from": 164,
+      "to": 163
+    },
+    {
+      "from": 165,
+      "to": 163
+    },
+    {
+      "from": 165,
+      "to": 161
+    },
+    {
+      "from": 166,
+      "to": 163
+    },
+    {
+      "from": 166,
+      "to": 17
+    },
+    {
+      "from": 167,
+      "to": 163
+    },
+    {
+      "from": 167,
+      "to": 38
+    },
+    {
+      "from": 168,
+      "to": 163
+    },
+    {
+      "from": 168,
+      "to": 161
+    },
+    {
+      "from": 169,
+      "to": 168
+    },
+    {
+      "from": 170,
+      "to": 169
+    },
+    {
+      "from": 170,
+      "to": 38
+    },
+    {
+      "from": 171,
+      "to": 163
+    },
+    {
+      "from": 171,
+      "to": 41
+    },
+    {
+      "from": 172,
+      "to": 163
+    },
+    {
+      "from": 172,
+      "to": 38
+    },
+    {
+      "from": 173,
+      "to": 163
+    },
+    {
+      "from": 173,
+      "to": 141
+    },
+    {
+      "from": 174,
+      "to": 173
+    },
+    {
+      "from": 175,
+      "to": 173
+    },
+    {
+      "from": 175,
+      "to": 174
+    },
+    {
+      "from": 176,
+      "to": 151
+    },
+    {
+      "from": 176,
+      "to": 2
+    },
+    {
+      "from": 177,
+      "to": 176
+    },
+    {
+      "from": 177,
+      "to": 153
+    },
+    {
+      "from": 177,
+      "to": 156
+    },
+    {
+      "from": 178,
+      "to": 176
+    },
+    {
+      "from": 178,
+      "to": 156
+    },
+    {
+      "from": 178,
+      "to": 160
+    },
+    {
+      "from": 179,
+      "to": 176
+    },
+    {
+      "from": 179,
+      "to": 153
+    },
+    {
+      "from": 179,
+      "to": 160
+    },
+    {
+      "from": 180,
+      "to": 176
+    },
+    {
+      "from": 180,
+      "to": 17
+    },
+    {
+      "from": 180,
+      "to": 23
+    },
+    {
+      "from": 181,
+      "to": 180
+    },
+    {
+      "from": 182,
+      "to": 177
+    },
+    {
+      "from": 182,
+      "to": 2
+    },
+    {
+      "from": 183,
+      "to": 178
+    },
+    {
+      "from": 183,
+      "to": 2
+    },
+    {
+      "from": 184,
+      "to": 176
+    },
+    {
+      "from": 184,
+      "to": 161
+    },
+    {
+      "from": 184,
+      "to": 17
+    },
+    {
+      "from": 185,
+      "to": 184
+    },
+    {
+      "from": 186,
+      "to": 184
+    },
+    {
+      "from": 187,
+      "to": 178
+    },
+    {
+      "from": 187,
+      "to": 152
+    },
+    {
+      "from": 188,
+      "to": 6
+    },
+    {
+      "from": 188,
+      "to": 189
+    },
+    {
+      "from": 189,
+      "to": 6
+    },
+    {
+      "from": 190,
+      "to": 188
+    },
+    {
+      "from": 190,
+      "to": 141
+    },
+    {
+      "from": 191,
+      "to": 190
+    },
+    {
+      "from": 191,
+      "to": 136
+    },
+    {
+      "from": 192,
+      "to": 190
+    },
+    {
+      "from": 193,
+      "to": 188
+    },
+    {
+      "from": 194,
+      "to": 193
+    },
+    {
+      "from": 194,
+      "to": 38
+    },
+    {
+      "from": 194,
+      "to": 41
+    },
+    {
+      "from": 195,
+      "to": 194
+    },
+    {
+      "from": 196,
+      "to": 194
+    },
+    {
+      "from": 196,
+      "to": 68
+    },
+    {
+      "from": 197,
+      "to": 196
+    },
+    {
+      "from": 197,
+      "to": 22
+    },
+    {
+      "from": 198,
+      "to": 188
+    },
+    {
+      "from": 198,
+      "to": 170
+    },
+    {
+      "from": 199,
+      "to": 198
+    },
+    {
+      "from": 199,
+      "to": 178
+    },
+    {
+      "from": 200,
+      "to": 198
+    },
+    {
+      "from": 200,
+      "to": 177
+    },
+    {
+      "from": 201,
+      "to": 10
+    },
+    {
+      "from": 201,
+      "to": 5
+    },
+    {
+      "from": 202,
+      "to": 201
+    },
+    {
+      "from": 202,
+      "to": 24
+    },
+    {
+      "from": 203,
+      "to": 202
+    },
+    {
+      "from": 204,
+      "to": 201
+    },
+    {
+      "from": 204,
+      "to": 151
+    },
+    {
+      "from": 205,
+      "to": 201
+    },
+    {
+      "from": 206,
+      "to": 205
+    },
+    {
+      "from": 207,
+      "to": 205
+    },
+    {
+      "from": 208,
+      "to": 205
+    },
+    {
+      "from": 209,
+      "to": 205
+    },
+    {
+      "from": 210,
+      "to": 205
+    },
+    {
+      "from": 210,
+      "to": 10
+    },
+    {
+      "from": 211,
+      "to": 208
+    },
+    {
+      "from": 211,
+      "to": 76
+    },
+    {
+      "from": 212,
+      "to": 190
+    },
+    {
+      "from": 212,
+      "to": 86
+    },
+    {
+      "from": 213,
+      "to": 209
+    },
+    {
+      "from": 213,
+      "to": 212
+    },
+    {
+      "from": 214,
+      "to": 213
+    },
+    {
+      "from": 214,
+      "to": 86
+    },
+    {
+      "from": 215,
+      "to": 214
+    },
+    {
+      "from": 216,
+      "to": 215
+    },
+    {
+      "from": 217,
+      "to": 202
+    },
+    {
+      "from": 217,
+      "to": 41
+    },
+    {
+      "from": 218,
+      "to": 217
+    },
+    {
+      "from": 218,
+      "to": 203
+    },
+    {
+      "from": 219,
+      "to": 217
+    },
+    {
+      "from": 219,
+      "to": 40
+    },
+    {
+      "from": 220,
+      "to": 217
+    },
+    {
+      "from": 221,
+      "to": 220
+    },
+    {
+      "from": 222,
+      "to": 220
+    },
+    {
+      "from": 223,
+      "to": 222
+    },
+    {
+      "from": 224,
+      "to": 222
+    },
+    {
+      "from": 224,
+      "to": 223
+    },
+    {
+      "from": 225,
+      "to": 217
+    },
+    {
+      "from": 225,
+      "to": 194
+    },
+    {
+      "from": 226,
+      "to": 225
+    },
+    {
+      "from": 227,
+      "to": 226
+    },
+    {
+      "from": 227,
+      "to": 23
+    },
+    {
+      "from": 228,
+      "to": 226
+    },
+    {
+      "from": 228,
+      "to": 227
+    },
+    {
+      "from": 229,
+      "to": 228
+    },
+    {
+      "from": 230,
+      "to": 213
+    },
+    {
+      "from": 230,
+      "to": 217
+    },
+    {
+      "from": 231,
+      "to": 4
+    },
+    {
+      "from": 231,
+      "to": 81
+    },
+    {
+      "from": 232,
+      "to": 231
+    },
+    {
+      "from": 233,
+      "to": 231
+    },
+    {
+      "from": 233,
+      "to": 232
+    },
+    {
+      "from": 234,
+      "to": 231
+    },
+    {
+      "from": 234,
+      "to": 232
+    },
+    {
+      "from": 235,
+      "to": 233
+    },
+    {
+      "from": 235,
+      "to": 234
+    },
+    {
+      "from": 236,
+      "to": 235
+    },
+    {
+      "from": 237,
+      "to": 236
+    },
+    {
+      "from": 237,
+      "to": 202
+    },
+    {
+      "from": 238,
+      "to": 235
+    },
+    {
+      "from": 239,
+      "to": 235
+    },
+    {
+      "from": 240,
+      "to": 235
+    },
+    {
+      "from": 240,
+      "to": 29
+    },
+    {
+      "from": 241,
+      "to": 24
+    },
+    {
+      "from": 241,
+      "to": 217
+    },
+    {
+      "from": 242,
+      "to": 24
+    },
+    {
+      "from": 242,
+      "to": 240
+    },
+    {
+      "from": 243,
+      "to": 209
+    },
+    {
+      "from": 243,
+      "to": 160
+    },
+    {
+      "from": 244,
+      "to": 243
+    },
+    {
+      "from": 245,
+      "to": 201
+    },
+    {
+      "from": 245,
+      "to": 86
+    },
+    {
+      "from": 246,
+      "to": 205
+    },
+    {
+      "from": 246,
+      "to": 211
+    },
+    {
+      "from": 246,
+      "to": 212
+    },
+    {
+      "from": 247,
+      "to": 246
+    },
+    {
+      "from": 248,
+      "to": 247
+    },
+    {
+      "from": 248,
+      "to": 67
+    },
+    {
+      "from": 249,
+      "to": 247
+    },
+    {
+      "from": 249,
+      "to": 213
+    },
+    {
+      "from": 250,
+      "to": 226
+    },
+    {
+      "from": 251,
+      "to": 194
+    },
+    {
+      "from": 251,
+      "to": 250
+    },
+    {
+      "from": 252,
+      "to": 251
+    },
+    {
+      "from": 253,
+      "to": 228
+    },
+    {
+      "from": 253,
+      "to": 229
+    },
+    {
+      "from": 254,
+      "to": 226
+    },
+    {
+      "from": 254,
+      "to": 225
+    },
+    {
+      "from": 255,
+      "to": 254
+    },
+    {
+      "from": 255,
+      "to": 224
+    },
+    {
+      "from": 256,
+      "to": 43
+    },
+    {
+      "from": 256,
+      "to": 42
+    },
+    {
+      "from": 256,
+      "to": 22
+    },
+    {
+      "from": 257,
+      "to": 194
+    },
+    {
+      "from": 257,
+      "to": 218
+    },
+    {
+      "from": 258,
+      "to": 195
+    },
+    {
+      "from": 259,
+      "to": 205
+    },
+    {
+      "from": 259,
+      "to": 2
+    },
+    {
+      "from": 260,
+      "to": 209
+    },
+    {
+      "from": 261,
+      "to": 235
+    },
+    {
+      "from": 261,
+      "to": 208
+    },
+    {
+      "from": 262,
+      "to": 235
+    },
+    {
+      "from": 262,
+      "to": 232
+    },
+    {
+      "from": 263,
+      "to": 188
+    },
+    {
+      "from": 263,
+      "to": 61
+    },
+    {
+      "from": 264,
+      "to": 247
+    },
+    {
+      "from": 264,
+      "to": 250
+    },
+    {
+      "from": 265,
+      "to": 226
+    },
+    {
+      "from": 265,
+      "to": 254
+    },
+    {
+      "from": 266,
+      "to": 10
+    },
+    {
+      "from": 266,
+      "to": 12
+    },
+    {
+      "from": 267,
+      "to": 266
+    },
+    {
+      "from": 268,
+      "to": 266
+    },
+    {
+      "from": 269,
+      "to": 266
+    },
+    {
+      "from": 269,
+      "to": 23
+    },
+    {
+      "from": 270,
+      "to": 269
+    },
+    {
+      "from": 270,
+      "to": 23
+    },
+    {
+      "from": 271,
+      "to": 270
+    },
+    {
+      "from": 272,
+      "to": 271
+    },
+    {
+      "from": 272,
+      "to": 266
+    },
+    {
+      "from": 273,
+      "to": 272
+    },
+    {
+      "from": 274,
+      "to": 272
+    },
+    {
+      "from": 275,
+      "to": 274
+    },
+    {
+      "from": 276,
+      "to": 274
+    },
+    {
+      "from": 277,
+      "to": 274
+    },
+    {
+      "from": 278,
+      "to": 279
+    },
+    {
+      "from": 278,
+      "to": 304
+    },
+    {
+      "from": 279,
+      "to": 271
+    },
+    {
+      "from": 279,
+      "to": 272
+    },
+    {
+      "from": 280,
+      "to": 272
+    },
+    {
+      "from": 280,
+      "to": 23
+    },
+    {
+      "from": 281,
+      "to": 280
+    },
+    {
+      "from": 281,
+      "to": 275
+    },
+    {
+      "from": 282,
+      "to": 280
+    },
+    {
+      "from": 282,
+      "to": 276
+    },
+    {
+      "from": 283,
+      "to": 280
+    },
+    {
+      "from": 283,
+      "to": 277
+    },
+    {
+      "from": 284,
+      "to": 282
+    },
+    {
+      "from": 285,
+      "to": 284
+    },
+    {
+      "from": 285,
+      "to": 282
+    },
+    {
+      "from": 286,
+      "to": 280
+    },
+    {
+      "from": 286,
+      "to": 23
+    },
+    {
+      "from": 287,
+      "to": 286
+    },
+    {
+      "from": 288,
+      "to": 286
+    },
+    {
+      "from": 288,
+      "to": 287
+    },
+    {
+      "from": 289,
+      "to": 266
+    },
+    {
+      "from": 289,
+      "to": 152
+    },
+    {
+      "from": 290,
+      "to": 289
+    },
+    {
+      "from": 290,
+      "to": 2
+    },
+    {
+      "from": 291,
+      "to": 290
+    },
+    {
+      "from": 292,
+      "to": 291
+    },
+    {
+      "from": 293,
+      "to": 289
+    },
+    {
+      "from": 293,
+      "to": 290
+    },
+    {
+      "from": 294,
+      "to": 293
+    },
+    {
+      "from": 295,
+      "to": 290
+    },
+    {
+      "from": 295,
+      "to": 273
+    },
+    {
+      "from": 295,
+      "to": 17
+    },
+    {
+      "from": 296,
+      "to": 295
+    },
+    {
+      "from": 296,
+      "to": 23
+    },
+    {
+      "from": 297,
+      "to": 295
+    },
+    {
+      "from": 298,
+      "to": 289
+    },
+    {
+      "from": 298,
+      "to": 295
+    },
+    {
+      "from": 299,
+      "to": 290
+    },
+    {
+      "from": 299,
+      "to": 2
+    },
+    {
+      "from": 299,
+      "to": 23
+    },
+    {
+      "from": 300,
+      "to": 299
+    },
+    {
+      "from": 300,
+      "to": 326
+    },
+    {
+      "from": 301,
+      "to": 299
+    },
+    {
+      "from": 301,
+      "to": 327
+    },
+    {
+      "from": 302,
+      "to": 303
+    },
+    {
+      "from": 303,
+      "to": 266
+    },
+    {
+      "from": 303,
+      "to": 272
+    },
+    {
+      "from": 304,
+      "to": 303
+    },
+    {
+      "from": 305,
+      "to": 304
+    },
+    {
+      "from": 306,
+      "to": 304
+    },
+    {
+      "from": 307,
+      "to": 302
+    },
+    {
+      "from": 307,
+      "to": 303
+    },
+    {
+      "from": 307,
+      "to": 272
+    },
+    {
+      "from": 308,
+      "to": 302
+    },
+    {
+      "from": 308,
+      "to": 303
+    },
+    {
+      "from": 309,
+      "to": 307
+    },
+    {
+      "from": 309,
+      "to": 308
+    },
+    {
+      "from": 309,
+      "to": 272
+    },
+    {
+      "from": 310,
+      "to": 290
+    },
+    {
+      "from": 310,
+      "to": 266
+    },
+    {
+      "from": 311,
+      "to": 310
+    },
+    {
+      "from": 311,
+      "to": 188
+    },
+    {
+      "from": 312,
+      "to": 310
+    },
+    {
+      "from": 312,
+      "to": 153
+    },
+    {
+      "from": 313,
+      "to": 310
+    },
+    {
+      "from": 314,
+      "to": 310
+    },
+    {
+      "from": 314,
+      "to": 290
+    },
+    {
+      "from": 314,
+      "to": 299
+    },
+    {
+      "from": 315,
+      "to": 310
+    },
+    {
+      "from": 315,
+      "to": 376
+    },
+    {
+      "from": 316,
+      "to": 314
+    },
+    {
+      "from": 316,
+      "to": 299
+    },
+    {
+      "from": 317,
+      "to": 312
+    },
+    {
+      "from": 317,
+      "to": 266
+    },
+    {
+      "from": 318,
+      "to": 266
+    },
+    {
+      "from": 318,
+      "to": 272
+    },
+    {
+      "from": 319,
+      "to": 298
+    },
+    {
+      "from": 319,
+      "to": 317
+    },
+    {
+      "from": 319,
+      "to": 318
+    },
+    {
+      "from": 319,
+      "to": 294
+    },
+    {
+      "from": 320,
+      "to": 22
+    },
+    {
+      "from": 320,
+      "to": 266
+    },
+    {
+      "from": 320,
+      "to": 279
+    },
+    {
+      "from": 321,
+      "to": 2
+    },
+    {
+      "from": 321,
+      "to": 24
+    },
+    {
+      "from": 322,
+      "to": 321
+    },
+    {
+      "from": 323,
+      "to": 322
+    },
+    {
+      "from": 324,
+      "to": 322
+    },
+    {
+      "from": 325,
+      "to": 322
+    },
+    {
+      "from": 326,
+      "to": 321
+    },
+    {
+      "from": 326,
+      "to": 10
+    },
+    {
+      "from": 327,
+      "to": 321
+    },
+    {
+      "from": 327,
+      "to": 10
+    },
+    {
+      "from": 328,
+      "to": 2
+    },
+    {
+      "from": 328,
+      "to": 17
+    },
+    {
+      "from": 329,
+      "to": 328
+    },
+    {
+      "from": 330,
+      "to": 328
+    },
+    {
+      "from": 330,
+      "to": 1
+    },
+    {
+      "from": 331,
+      "to": 330
+    },
+    {
+      "from": 332,
+      "to": 329
+    },
+    {
+      "from": 332,
+      "to": 330
+    },
+    {
+      "from": 333,
+      "to": 332
+    },
+    {
+      "from": 333,
+      "to": 324
+    },
+    {
+      "from": 334,
+      "to": 332
+    },
+    {
+      "from": 334,
+      "to": 325
+    },
+    {
+      "from": 335,
+      "to": 321
+    },
+    {
+      "from": 335,
+      "to": 329
+    },
+    {
+      "from": 336,
+      "to": 335
+    },
+    {
+      "from": 337,
+      "to": 336
+    },
+    {
+      "from": 338,
+      "to": 337
+    },
+    {
+      "from": 338,
+      "to": 5
+    },
+    {
+      "from": 339,
+      "to": 338
+    },
+    {
+      "from": 340,
+      "to": 337
+    },
+    {
+      "from": 340,
+      "to": 210
+    },
+    {
+      "from": 341,
+      "to": 336
+    },
+    {
+      "from": 341,
+      "to": 217
+    },
+    {
+      "from": 342,
+      "to": 341
+    },
+    {
+      "from": 342,
+      "to": 24
+    },
+    {
+      "from": 343,
+      "to": 342
+    },
+    {
+      "from": 343,
+      "to": 341
+    },
+    {
+      "from": 344,
+      "to": 342
+    },
+    {
+      "from": 344,
+      "to": 88
+    },
+    {
+      "from": 345,
+      "to": 112
+    },
+    {
+      "from": 345,
+      "to": 336
+    },
+    {
+      "from": 346,
+      "to": 345
+    },
+    {
+      "from": 346,
+      "to": 341
+    },
+    {
+      "from": 347,
+      "to": 321
+    },
+    {
+      "from": 348,
+      "to": 347
+    },
+    {
+      "from": 349,
+      "to": 348
+    },
+    {
+      "from": 350,
+      "to": 347
+    },
+    {
+      "from": 350,
+      "to": 152
+    },
+    {
+      "from": 351,
+      "to": 350
+    },
+    {
+      "from": 352,
+      "to": 351
+    },
+    {
+      "from": 353,
+      "to": 347
+    },
+    {
+      "from": 353,
+      "to": 321
+    },
+    {
+      "from": 354,
+      "to": 349
+    },
+    {
+      "from": 355,
+      "to": 348
+    },
+    {
+      "from": 355,
+      "to": 176
+    },
+    {
+      "from": 356,
+      "to": 348
+    },
+    {
+      "from": 356,
+      "to": 350
+    },
+    {
+      "from": 357,
+      "to": 335
+    },
+    {
+      "from": 357,
+      "to": 347
+    },
+    {
+      "from": 358,
+      "to": 357
+    },
+    {
+      "from": 358,
+      "to": 336
+    },
+    {
+      "from": 358,
+      "to": 348
+    },
+    {
+      "from": 359,
+      "to": 358
+    },
+    {
+      "from": 359,
+      "to": 337
+    },
+    {
+      "from": 359,
+      "to": 349
+    },
+    {
+      "from": 360,
+      "to": 359
+    },
+    {
+      "from": 360,
+      "to": 338
+    },
+    {
+      "from": 361,
+      "to": 358
+    },
+    {
+      "from": 362,
+      "to": 361
+    },
+    {
+      "from": 363,
+      "to": 358
+    },
+    {
+      "from": 363,
+      "to": 17
+    },
+    {
+      "from": 364,
+      "to": 357
+    },
+    {
+      "from": 364,
+      "to": 376
+    },
+    {
+      "from": 365,
+      "to": 357
+    },
+    {
+      "from": 365,
+      "to": 2
+    },
+    {
+      "from": 366,
+      "to": 362
+    },
+    {
+      "from": 366,
+      "to": 365
+    },
+    {
+      "from": 367,
+      "to": 361
+    },
+    {
+      "from": 367,
+      "to": 357
+    },
+    {
+      "from": 368,
+      "to": 290
+    },
+    {
+      "from": 368,
+      "to": 367
+    },
+    {
+      "from": 369,
+      "to": 335
+    },
+    {
+      "from": 369,
+      "to": 347
+    },
+    {
+      "from": 369,
+      "to": 321
+    },
+    {
+      "from": 370,
+      "to": 369
+    },
+    {
+      "from": 370,
+      "to": 329
+    },
+    {
+      "from": 371,
+      "to": 321
+    },
+    {
+      "from": 371,
+      "to": 2
+    },
+    {
+      "from": 372,
+      "to": 371
+    },
+    {
+      "from": 372,
+      "to": 24
+    },
+    {
+      "from": 373,
+      "to": 372
+    },
+    {
+      "from": 373,
+      "to": 163
+    },
+    {
+      "from": 374,
+      "to": 335
+    },
+    {
+      "from": 374,
+      "to": 371
+    },
+    {
+      "from": 374,
+      "to": 373
+    },
+    {
+      "from": 375,
+      "to": 332
+    },
+    {
+      "from": 375,
+      "to": 330
+    },
+    {
+      "from": 375,
+      "to": 15
+    },
+    {
+      "from": 376,
+      "to": 266
+    },
+    {
+      "from": 376,
+      "to": 321
+    },
+    {
+      "from": 377,
+      "to": 376
+    },
+    {
+      "from": 378,
+      "to": 377
+    },
+    {
+      "from": 379,
+      "to": 376
+    },
+    {
+      "from": 380,
+      "to": 376
+    },
+    {
+      "from": 380,
+      "to": 379
+    },
+    {
+      "from": 381,
+      "to": 376
+    },
+    {
+      "from": 381,
+      "to": 194
+    },
+    {
+      "from": 382,
+      "to": 381
+    },
+    {
+      "from": 382,
+      "to": 169
+    },
+    {
+      "from": 383,
+      "to": 381
+    },
+    {
+      "from": 383,
+      "to": 382
+    },
+    {
+      "from": 383,
+      "to": 163
+    },
+    {
+      "from": 384,
+      "to": 381
+    },
+    {
+      "from": 385,
+      "to": 384
+    },
+    {
+      "from": 385,
+      "to": 188
+    },
+    {
+      "from": 386,
+      "to": 384
+    },
+    {
+      "from": 386,
+      "to": 153
+    },
+    {
+      "from": 387,
+      "to": 381
+    },
+    {
+      "from": 388,
+      "to": 381
+    },
+    {
+      "from": 389,
+      "to": 388
+    },
+    {
+      "from": 389,
+      "to": 381
+    },
+    {
+      "from": 390,
+      "to": 389
+    },
+    {
+      "from": 391,
+      "to": 384
+    },
+    {
+      "from": 391,
+      "to": 194
+    },
+    {
+      "from": 392,
+      "to": 391
+    },
+    {
+      "from": 393,
+      "to": 392
+    },
+    {
+      "from": 394,
+      "to": 392
+    },
+    {
+      "from": 395,
+      "to": 377
+    },
+    {
+      "from": 395,
+      "to": 387
+    },
+    {
+      "from": 396,
+      "to": 395
+    },
+    {
+      "from": 396,
+      "to": 381
+    },
+    {
+      "from": 397,
+      "to": 395
+    },
+    {
+      "from": 397,
+      "to": 382
+    },
+    {
+      "from": 398,
+      "to": 395
+    },
+    {
+      "from": 398,
+      "to": 163
+    },
+    {
+      "from": 399,
+      "to": 395
+    },
+    {
+      "from": 399,
+      "to": 326
+    },
+    {
+      "from": 399,
+      "to": 327
+    },
+    {
+      "from": 400,
+      "to": 395
+    },
+    {
+      "from": 400,
+      "to": 310
+    },
+    {
+      "from": 401,
+      "to": 395
+    },
+    {
+      "from": 401,
+      "to": 168
+    },
+    {
+      "from": 402,
+      "to": 395
+    },
+    {
+      "from": 403,
+      "to": 190
+    },
+    {
+      "from": 403,
+      "to": 376
+    },
+    {
+      "from": 404,
+      "to": 403
+    },
+    {
+      "from": 404,
+      "to": 384
+    },
+    {
+      "from": 405,
+      "to": 404
+    },
+    {
+      "from": 406,
+      "to": 404
+    },
+    {
+      "from": 406,
+      "to": 395
+    },
+    {
+      "from": 407,
+      "to": 404
+    },
+    {
+      "from": 407,
+      "to": 388
+    },
+    {
+      "from": 408,
+      "to": 407
+    },
+    {
+      "from": 409,
+      "to": 403
+    },
+    {
+      "from": 409,
+      "to": 91
+    },
+    {
+      "from": 410,
+      "to": 409
+    },
+    {
+      "from": 410,
+      "to": 384
+    },
+    {
+      "from": 411,
+      "to": 404
+    },
+    {
+      "from": 411,
+      "to": 391
+    },
+    {
+      "from": 412,
+      "to": 404
+    },
+    {
+      "from": 412,
+      "to": 388
+    },
+    {
+      "from": 413,
+      "to": 403
+    },
+    {
+      "from": 413,
+      "to": 399
+    },
+    {
+      "from": 414,
+      "to": 190
+    },
+    {
+      "from": 414,
+      "to": 161
+    },
+    {
+      "from": 415,
+      "to": 376
+    },
+    {
+      "from": 415,
+      "to": 357
+    },
+    {
+      "from": 416,
+      "to": 415
+    },
+    {
+      "from": 416,
+      "to": 358
+    },
+    {
+      "from": 417,
+      "to": 384
+    },
+    {
+      "from": 418,
+      "to": 417
+    },
+    {
+      "from": 419,
+      "to": 417
+    },
+    {
+      "from": 420,
+      "to": 395
+    },
+    {
+      "from": 420,
+      "to": 376
+    },
+    {
+      "from": 421,
+      "to": 8
+    },
+    {
+      "from": 422,
+      "to": 8
+    },
+    {
+      "from": 423,
+      "to": 421
+    },
+    {
+      "from": 423,
+      "to": 422
+    },
+    {
+      "from": 424,
+      "to": 423
+    },
+    {
+      "from": 424,
+      "to": 240
+    },
+    {
+      "from": 425,
+      "to": 424
+    },
+    {
+      "from": 425,
+      "to": 101
+    },
+    {
+      "from": 426,
+      "to": 424
+    },
+    {
+      "from": 427,
+      "to": 426
+    },
+    {
+      "from": 428,
+      "to": 426
+    },
+    {
+      "from": 429,
+      "to": 424
+    },
+    {
+      "from": 429,
+      "to": 426
+    },
+    {
+      "from": 430,
+      "to": 424
+    },
+    {
+      "from": 431,
+      "to": 430
+    },
+    {
+      "from": 431,
+      "to": 381
+    },
+    {
+      "from": 432,
+      "to": 431
+    },
+    {
+      "from": 433,
+      "to": 432
+    },
+    {
+      "from": 433,
+      "to": 18
+    },
+    {
+      "from": 434,
+      "to": 432
+    },
+    {
+      "from": 435,
+      "to": 433
+    },
+    {
+      "from": 435,
+      "to": 434
+    },
+    {
+      "from": 435,
+      "to": 431
+    },
+    {
+      "from": 436,
+      "to": 421
+    },
+    {
+      "from": 436,
+      "to": 423
+    },
+    {
+      "from": 437,
+      "to": 422
+    },
+    {
+      "from": 437,
+      "to": 423
+    },
+    {
+      "from": 438,
+      "to": 436
+    },
+    {
+      "from": 438,
+      "to": 433
+    },
+    {
+      "from": 439,
+      "to": 437
+    },
+    {
+      "from": 439,
+      "to": 434
+    },
+    {
+      "from": 440,
+      "to": 421
+    },
+    {
+      "from": 440,
+      "to": 376
+    },
+    {
+      "from": 441,
+      "to": 422
+    },
+    {
+      "from": 441,
+      "to": 376
+    },
+    {
+      "from": 442,
+      "to": 440
+    },
+    {
+      "from": 442,
+      "to": 384
+    },
+    {
+      "from": 443,
+      "to": 441
+    },
+    {
+      "from": 443,
+      "to": 384
+    },
+    {
+      "from": 444,
+      "to": 442
+    },
+    {
+      "from": 444,
+      "to": 443
+    },
+    {
+      "from": 444,
+      "to": 431
+    },
+    {
+      "from": 445,
+      "to": 442
+    },
+    {
+      "from": 445,
+      "to": 440
+    },
+    {
+      "from": 446,
+      "to": 442
+    },
+    {
+      "from": 446,
+      "to": 391
+    },
+    {
+      "from": 446,
+      "to": 433
+    },
+    {
+      "from": 447,
+      "to": 443
+    },
+    {
+      "from": 447,
+      "to": 391
+    },
+    {
+      "from": 447,
+      "to": 434
+    },
+    {
+      "from": 448,
+      "to": 440
+    },
+    {
+      "from": 448,
+      "to": 442
+    },
+    {
+      "from": 449,
+      "to": 448
+    },
+    {
+      "from": 449,
+      "to": 391
+    },
+    {
+      "from": 450,
+      "to": 442
+    },
+    {
+      "from": 450,
+      "to": 79
+    },
+    {
+      "from": 450,
+      "to": 111
+    },
+    {
+      "from": 451,
+      "to": 450
+    },
+    {
+      "from": 451,
+      "to": 73
+    },
+    {
+      "from": 452,
+      "to": 450
+    },
+    {
+      "from": 452,
+      "to": 232
+    },
+    {
+      "from": 453,
+      "to": 424
+    },
+    {
+      "from": 453,
+      "to": 190
+    },
+    {
+      "from": 454,
+      "to": 453
+    },
+    {
+      "from": 454,
+      "to": 442
+    },
+    {
+      "from": 455,
+      "to": 453
+    },
+    {
+      "from": 455,
+      "to": 443
+    },
+    {
+      "from": 456,
+      "to": 453
+    },
+    {
+      "from": 457,
+      "to": 440
+    },
+    {
+      "from": 457,
+      "to": 441
+    },
+    {
+      "from": 457,
+      "to": 426
+    },
+    {
+      "from": 458,
+      "to": 457
+    },
+    {
+      "from": 459,
+      "to": 457
+    },
+    {
+      "from": 459,
+      "to": 442
+    },
+    {
+      "from": 459,
+      "to": 433
+    },
+    {
+      "from": 460,
+      "to": 457
+    },
+    {
+      "from": 460,
+      "to": 458
+    },
+    {
+      "from": 461,
+      "to": 459
+    },
+    {
+      "from": 461,
+      "to": 391
+    },
+    {
+      "from": 462,
+      "to": 460
+    },
+    {
+      "from": 462,
+      "to": 461
+    },
+    {
+      "from": 463,
+      "to": 226
+    },
+    {
+      "from": 463,
+      "to": 424
+    },
+    {
+      "from": 464,
+      "to": 463
+    },
+    {
+      "from": 464,
+      "to": 438
+    },
+    {
+      "from": 464,
+      "to": 439
+    },
+    {
+      "from": 465,
+      "to": 463
+    },
+    {
+      "from": 465,
+      "to": 446
+    },
+    {
+      "from": 466,
+      "to": 463
+    },
+    {
+      "from": 466,
+      "to": 447
+    },
+    {
+      "from": 467,
+      "to": 463
+    },
+    {
+      "from": 467,
+      "to": 227
+    },
+    {
+      "from": 467,
+      "to": 432
+    },
+    {
+      "from": 468,
+      "to": 467
+    },
+    {
+      "from": 468,
+      "to": 442
+    },
+    {
+      "from": 469,
+      "to": 467
+    },
+    {
+      "from": 469,
+      "to": 457
+    },
+    {
+      "from": 470,
+      "to": 229
+    },
+    {
+      "from": 470,
+      "to": 432
+    },
+    {
+      "from": 471,
+      "to": 470
+    },
+    {
+      "from": 471,
+      "to": 467
+    },
+    {
+      "from": 472,
+      "to": 424
+    },
+    {
+      "from": 472,
+      "to": 215
+    },
+    {
+      "from": 473,
+      "to": 472
+    },
+    {
+      "from": 473,
+      "to": 215
+    },
+    {
+      "from": 474,
+      "to": 438
+    },
+    {
+      "from": 474,
+      "to": 195
+    },
+    {
+      "from": 475,
+      "to": 433
+    },
+    {
+      "from": 475,
+      "to": 457
+    },
+    {
+      "from": 476,
+      "to": 235
+    },
+    {
+      "from": 476,
+      "to": 321
+    },
+    {
+      "from": 477,
+      "to": 476
+    },
+    {
+      "from": 477,
+      "to": 361
+    },
+    {
+      "from": 478,
+      "to": 477
+    },
+    {
+      "from": 479,
+      "to": 478
+    },
+    {
+      "from": 479,
+      "to": 233
+    },
+    {
+      "from": 479,
+      "to": 234
+    },
+    {
+      "from": 480,
+      "to": 478
+    },
+    {
+      "from": 480,
+      "to": 149
+    },
+    {
+      "from": 481,
+      "to": 479
+    },
+    {
+      "from": 481,
+      "to": 240
+    },
+    {
+      "from": 482,
+      "to": 479
+    },
+    {
+      "from": 482,
+      "to": 478
+    },
+    {
+      "from": 483,
+      "to": 479
+    },
+    {
+      "from": 483,
+      "to": 234
+    },
+    {
+      "from": 484,
+      "to": 483
+    },
+    {
+      "from": 485,
+      "to": 483
+    },
+    {
+      "from": 485,
+      "to": 484
+    },
+    {
+      "from": 486,
+      "to": 485
+    },
+    {
+      "from": 486,
+      "to": 361
+    },
+    {
+      "from": 487,
+      "to": 485
+    },
+    {
+      "from": 487,
+      "to": 381
+    },
+    {
+      "from": 487,
+      "to": 433
+    },
+    {
+      "from": 488,
+      "to": 487
+    },
+    {
+      "from": 489,
+      "to": 487
+    },
+    {
+      "from": 489,
+      "to": 488
+    },
+    {
+      "from": 490,
+      "to": 485
+    },
+    {
+      "from": 490,
+      "to": 357
+    },
+    {
+      "from": 491,
+      "to": 490
+    },
+    {
+      "from": 491,
+      "to": 358
+    },
+    {
+      "from": 492,
+      "to": 240
+    },
+    {
+      "from": 492,
+      "to": 38
+    },
+    {
+      "from": 493,
+      "to": 476
+    },
+    {
+      "from": 493,
+      "to": 362
+    },
+    {
+      "from": 494,
+      "to": 493
+    },
+    {
+      "from": 495,
+      "to": 494
+    },
+    {
+      "from": 495,
+      "to": 207
+    },
+    {
+      "from": 496,
+      "to": 494
+    },
+    {
+      "from": 497,
+      "to": 492
+    },
+    {
+      "from": 497,
+      "to": 494
+    },
+    {
+      "from": 498,
+      "to": 497
+    },
+    {
+      "from": 498,
+      "to": 217
+    },
+    {
+      "from": 499,
+      "to": 477
+    },
+    {
+      "from": 499,
+      "to": 493
+    },
+    {
+      "from": 500,
+      "to": 476
+    },
+    {
+      "from": 500,
+      "to": 235
+    }
+  ]
+}

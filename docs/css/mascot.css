@@ -84,6 +84,18 @@
   color: white;
 }
 
+/* Note (neutral) admonition */
+.md-typeset .admonition.mascot-note,
+.md-typeset details.mascot-note {
+  border-color: #78909c;
+  background-color: #eceff1;
+}
+.md-typeset .mascot-note > .admonition-title,
+.md-typeset .mascot-note > summary {
+  background-color: #78909c;
+  color: white;
+}
+
 /* Left-align title text and remove default icon spacing in mascot admonitions */
 .md-typeset [class*="mascot-"] > .admonition-title,
 .md-typeset [class*="mascot-"] > summary {

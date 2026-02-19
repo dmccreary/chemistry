@@ -298,16 +298,38 @@ date "+%Y-%m-%d %H:%M:%S"
 - Refers to students as "chemists" or "scientists"
 - Signature phrases: "Let's react!", "Great chemistry!", "Now we're bonding!"
 
+### Admonition Types and When to Use Each
+
+There are 7 mascot admonition types. Each has a specific purpose — do not interchange them.
+
+| Type | Color | Image File | When to Use |
+|------|-------|------------|-------------|
+| `mascot-welcome` | Teal | `welcome.png` | **Chapter openings only.** The first admonition in every chapter. Introduces the topic with enthusiasm. Always include the catchphrase "Let's react!" |
+| `mascot-thinking` | Orange | `thinking.png` | **Key conceptual insights.** Use when revealing a "big idea" or connecting concepts in a way that requires reflection. Not for routine definitions — only for moments of genuine insight. |
+| `mascot-tip` | Green | `tip.png` | **Practical study or problem-solving advice.** Shortcuts, memory tricks, exam strategies, or techniques that save time. Must contain actionable advice the student can apply immediately. |
+| `mascot-warning` | Red | `warning.png` | **Common mistakes and misconceptions.** Use when students frequently get something wrong (sign errors, forgetting state symbols, confusing similar concepts). Must describe the specific mistake and how to avoid it. |
+| `mascot-encourage` | Blue | `encouraging.png` | **Before or during difficult content.** Use when introducing topics students commonly struggle with (thermodynamics, equilibrium math, electron configurations). Normalizes difficulty and motivates persistence. |
+| `mascot-celebration` | Purple | `celebration.png` | **After mastering a major concept or completing a section.** Acknowledges achievement. Use sparingly — only at the end of significant sections, not after every paragraph. |
+| `mascot-note` | Blue-grey | `note.png` | **Neutral context and cross-references.** Use for background information, connections to earlier chapters, historical context, or "good to know" facts that don't fit the other categories. No strong emotional tone. |
+
+### Admonition Syntax
+
+Every mascot admonition must include an `<img>` tag as the first line of the body. Adjust the `../../` relative path based on the file's location relative to `docs/img/mascot/`.
+
+```markdown
+!!! mascot-tip "Catalyst's Tip"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Catalyst shares a tip">
+    Always balance your equations by starting with the most
+    complex molecule first. It saves time and reduces errors!
+```
+
 ### Placement Rules
 
-| Context | Admonition Type | Frequency |
-|---------|----------------|-----------|
-| Chapter opening | mascot-welcome | Every chapter |
-| Key concept | mascot-thinking | 2-3 per chapter |
-| Helpful tip | mascot-tip | As needed |
-| Common mistake | mascot-warning | As needed |
-| Section completion | mascot-celebration | End of major sections |
-| Difficult content | mascot-encourage | Where students may struggle |
+- **Exactly 1** `mascot-welcome` per chapter (at the top)
+- **2-3** `mascot-thinking` per chapter (for key insights)
+- **No more than 7 total** mascot admonitions per chapter (all types combined)
+- **Never** place two mascot admonitions back-to-back — always have regular content between them
+- **Space them out** — aim for at least 2-3 paragraphs of regular content between mascot admonitions
 
 ### Do's and Don'ts
 
@@ -316,11 +338,14 @@ date "+%Y-%m-%d %H:%M:%S"
 - Use Catalyst to introduce new topics warmly
 - Include the catchphrase "Let's react!" in welcome admonitions
 - Keep dialogue brief (1-3 sentences)
-- Match the pose/image to the content type
+- Match the image file to the admonition type
+- Use `mascot-note` for neutral observations that don't fit other types
 
 **Don't:**
 
-- Use Catalyst more than 5-6 times per chapter
+- Use Catalyst more than 7 times per chapter
 - Put mascot admonitions back-to-back
+- Use `mascot-celebration` for minor achievements — reserve for section milestones
+- Use `mascot-warning` for general notes — use `mascot-note` instead
 - Use the mascot for purely decorative purposes
 - Change Catalyst's personality or speech patterns

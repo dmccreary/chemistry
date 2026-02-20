@@ -14,6 +14,10 @@ This repository contains the content for an MkDocs Material intelligent textbook
 - A fun, encouraging tone appropriate for high school students
 - A fun cat mascot named Catalyst that gives student encouragement
 
+## Writing Style
+
+- Always use American English spelling (e.g. "color" not "colour", "center" not "centre", "analyze" not "analyse")
+
 ## Open Source Tools Only
 
 This course uses only free, open-source tools.

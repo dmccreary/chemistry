@@ -72,6 +72,8 @@ The electron's mass is roughly 1/1836 that of a proton, which is why chemists tr
 
 #### Diagram: Atomic Structure — Nucleus and Electron Cloud
 
+<iframe src="../../sims/atomic-structure-diagram/main.html" height="442px" width="100%" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Interactive Atomic Structure Diagram</summary>
 Type: diagram-specification

@@ -1,0 +1,30 @@
+{
+  "title": "Matter Classification Flowchart",
+  "description": "Interactive decision tree flowchart for classifying matter as elements, compounds, homogeneous mixtures, or heterogeneous mixtures",
+  "subject": "Chemistry",
+  "creator": "Claude AI with Mermaid Generator Skill",
+  "date": "2026-02-19",
+  "type": "Interactive Workflow Diagram",
+  "format": "text/html",
+  "language": "en-US",
+  "coverage": "Introductory",
+  "rights": "CC BY-NC-SA 4.0",
+  "audience": "High School (Grades 10-12)",
+  "diagram_type": "flowchart",
+  "direction": "TD",
+  "node_count": "10",
+  "edge_count": "9",
+  "concepts": [
+    "Matter",
+    "Mixture",
+    "Pure Substance",
+    "Homogeneous Mixture",
+    "Heterogeneous Mixture",
+    "Compound",
+    "Element",
+    "Physical Separation",
+    "Chemical Decomposition"
+  ],
+  "bloom_taxonomy": "Analyze",
+  "version": "1.0"
+}

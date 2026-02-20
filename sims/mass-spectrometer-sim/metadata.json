@@ -1,0 +1,57 @@
+{
+  "title": "Interactive Mass Spectrometer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Animated MicroSim demonstrating mass spectrometer components and isotope mass spectra.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": [
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Mass Spectrometry",
+    "learningObjectives": [
+      "Analyze a mass spectrum to determine isotopic composition",
+      "Evaluate how isotope abundance affects average atomic mass"
+    ],
+    "bloomsTaxonomy": "Analyze / Evaluate",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Atomic structure basics"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 480
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive exploration with teacher-guided questioning",
+    "keyQuestions": [
+      "Why do lighter isotopes bend more in the magnetic field?",
+      "How does relative peak height relate to natural abundance?"
+    ],
+    "commonMisconceptions": [
+      "All isotopes of an element have the same abundance",
+      "Heavier ions should arrive at the detector first"
+    ],
+    "assessmentOpportunities": [
+      "Ask students to calculate average atomic mass from the displayed bars"
+    ]
+  },
+  "chapter": "02-atomic-structure-and-mass-spectrometry"
+}

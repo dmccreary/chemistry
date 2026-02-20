@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMILES Drawing Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Droid+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Droid Sans', Arial, sans-serif;
+            margin: 0;
+            padding: 16px;
+            background: white;
+        }
+        .molecule-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .molecule-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px;
+            text-align: center;
+            background: #fafafa;
+        }
+        .molecule-card h3 {
+            margin: 0 0 4px 0;
+            font-size: 1rem;
+            color: #333;
+        }
+        .molecule-card .smiles-code {
+            font-family: monospace;
+            font-size: 0.75rem;
+            color: #666;
+            margin-bottom: 8px;
+            word-break: break-all;
+        }
+        .molecule-card canvas {
+            display: block;
+            margin: 0 auto;
+            background: white;
+        }
+        h2 {
+            color: #00796b;
+            border-bottom: 2px solid #00796b;
+            padding-bottom: 6px;
+        }
+        .status {
+            padding: 10px;
+            margin-bottom: 16px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .status.ok    { background: #e8f5e9; color: #2e7d32; }
+        .status.error { background: #ffebee; color: #c62828; }
+    </style>
+</head>
+<body>
+
+<div id="status" class="status">Loading SmilesDrawer...</div>
+
+<!-- ===== Simple Molecules ===== -->
+<h2>Simple Molecules</h2>
+<div class="molecule-grid">
+    <div class="molecule-card">
+        <h3>Water</h3>
+        <div class="smiles-code">O</div>
+        <canvas data-smiles="O" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Methane</h3>
+        <div class="smiles-code">C</div>
+        <canvas data-smiles="C" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Ethanol</h3>
+        <div class="smiles-code">CCO</div>
+        <canvas data-smiles="CCO" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Acetic Acid</h3>
+        <div class="smiles-code">CC(=O)O</div>
+        <canvas data-smiles="CC(=O)O" width="250" height="250"></canvas>
+    </div>
+</div>
+
+<!-- ===== Aromatic Compounds ===== -->
+<h2>Aromatic Compounds</h2>
+<div class="molecule-grid">
+    <div class="molecule-card">
+        <h3>Benzene</h3>
+        <div class="smiles-code">c1ccccc1</div>
+        <canvas data-smiles="c1ccccc1" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Toluene</h3>
+        <div class="smiles-code">Cc1ccccc1</div>
+        <canvas data-smiles="Cc1ccccc1" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Naphthalene</h3>
+        <div class="smiles-code">c1ccc2ccccc2c1</div>
+        <canvas data-smiles="c1ccc2ccccc2c1" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Phenol</h3>
+        <div class="smiles-code">Oc1ccccc1</div>
+        <canvas data-smiles="Oc1ccccc1" width="250" height="250"></canvas>
+    </div>
+</div>
+
+<!-- ===== Drug Molecules (complex) ===== -->
+<h2>Drug Molecules</h2>
+<div class="molecule-grid">
+    <div class="molecule-card">
+        <h3>Aspirin</h3>
+        <div class="smiles-code">CC(=O)Oc1ccccc1C(=O)O</div>
+        <canvas data-smiles="CC(=O)Oc1ccccc1C(=O)O" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Caffeine</h3>
+        <div class="smiles-code">Cn1c(=O)c2c(ncn2C)n(C)c1=O</div>
+        <canvas data-smiles="Cn1c(=O)c2c(ncn2C)n(C)c1=O" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Ibuprofen</h3>
+        <div class="smiles-code">CC(C)Cc1ccc(cc1)[C@@H](C)C(=O)O</div>
+        <canvas data-smiles="CC(C)Cc1ccc(cc1)[C@@H](C)C(=O)O" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Penicillin G</h3>
+        <div class="smiles-code">CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)Cc3ccccc3)C(=O)O)C</div>
+        <canvas data-smiles="CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)Cc3ccccc3)C(=O)O)C" width="250" height="250"></canvas>
+    </div>
+</div>
+
+<!-- ===== Biomolecules ===== -->
+<h2>Biomolecules</h2>
+<div class="molecule-grid">
+    <div class="molecule-card">
+        <h3>Glucose</h3>
+        <div class="smiles-code">OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O</div>
+        <canvas data-smiles="OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Alanine</h3>
+        <div class="smiles-code">C[C@@H](N)C(=O)O</div>
+        <canvas data-smiles="C[C@@H](N)C(=O)O" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>ATP</h3>
+        <div class="smiles-code">c1nc(c2c(n1)n(cn2)C3CC(C(O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)N</div>
+        <canvas data-smiles="c1nc(c2c(n1)n(cn2)C3CC(C(O3)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)N" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Cholesterol</h3>
+        <div class="smiles-code">CC(CCCC(C)C)C1CCC2C1(CCC3C2CC=C4C3(CCC(C4)O)C)C</div>
+        <canvas data-smiles="CC(CCCC(C)C)C1CCC2C1(CCC3C2CC=C4C3(CCC(C4)O)C)C" width="250" height="250"></canvas>
+    </div>
+</div>
+
+<!-- ===== Functional Group Tests ===== -->
+<h2>Functional Groups</h2>
+<div class="molecule-grid">
+    <div class="molecule-card">
+        <h3>Formaldehyde (aldehyde)</h3>
+        <div class="smiles-code">C=O</div>
+        <canvas data-smiles="C=O" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Acetone (ketone)</h3>
+        <div class="smiles-code">CC(=O)C</div>
+        <canvas data-smiles="CC(=O)C" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Diethyl Ether</h3>
+        <div class="smiles-code">CCOCC</div>
+        <canvas data-smiles="CCOCC" width="250" height="250"></canvas>
+    </div>
+    <div class="molecule-card">
+        <h3>Methylamine (amine)</h3>
+        <div class="smiles-code">CN</div>
+        <canvas data-smiles="CN" width="250" height="250"></canvas>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/smiles-drawer@1.2.0/dist/smiles-drawer.min.js"></script>
+<script>
+    var statusEl = document.getElementById('status');
+    try {
+        if (typeof SmilesDrawer === 'undefined') {
+            throw new Error('SmilesDrawer library failed to load');
+        }
+
+        SmilesDrawer.apply(
+            { width: 250, height: 250 },
+            'canvas[data-smiles]',
+            'light',
+            function(err) { console.error('SMILES render error:', err); }
+        );
+
+        var canvasCount = document.querySelectorAll('canvas[data-smiles]').length;
+        statusEl.className = 'status ok';
+        statusEl.textContent = 'SmilesDrawer v1.2.0 loaded. Rendered ' + canvasCount + ' molecules.';
+    } catch (e) {
+        statusEl.className = 'status error';
+        statusEl.textContent = 'Error: ' + e.message;
+    }
+</script>
+
+</body>
+</html>

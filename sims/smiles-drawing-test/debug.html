@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head><title>SMILES Debug</title></head>
+<body>
+<h2>Debug: SMILES Drawing</h2>
+<canvas id="test1" data-smiles="c1ccccc1" width="250" height="250" style="border:1px solid red;"></canvas>
+<canvas id="test2" data-smiles="CCO" width="250" height="250" style="border:1px solid red;"></canvas>
+
+<pre id="log"></pre>
+
+<script src="https://cdn.jsdelivr.net/npm/smiles-drawer@1.2.0/dist/smiles-drawer.min.js"></script>
+<script>
+var log = document.getElementById('log');
+function addLog(msg) { log.textContent += msg + '\n'; }
+
+addLog('SmilesDrawer type: ' + typeof SmilesDrawer);
+addLog('Version: ' + (SmilesDrawer.Version || 'unknown'));
+
+// Test manual parse + draw
+var drawer = new SmilesDrawer.Drawer({ width: 250, height: 250 });
+
+SmilesDrawer.parse('c1ccccc1', function(tree) {
+    addLog('Parse benzene success');
+    drawer.draw(tree, 'test1', 'light', false);
+    addLog('draw() called on test1');
+}, function(err) {
+    addLog('Parse error: ' + err);
+});
+
+// Test apply
+SmilesDrawer.apply({ width: 250, height: 250 }, 'canvas[data-smiles]', 'light', function(err) {
+    addLog('apply error: ' + err);
+});
+addLog('apply() called');
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Matter Classification Flowchart</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis'
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="diagram-panel">
+            <div class="mermaid">
+flowchart TD
+    Matter("Matter"):::matterNode
+    Sep{"Can it be separated<br/>by physical means?"}:::decisionNode
+    Mix["Mixture"]:::mixNode
+    Uniform{"Is composition<br/>uniform?"}:::decisionNode
+    Homo["Homogeneous<br/>Mixture (Solution)"]:::homoNode
+    Hetero["Heterogeneous<br/>Mixture"]:::heteroNode
+    Pure["Pure Substance"]:::pureNode
+    Chem{"Can it be broken<br/>down by chemical<br/>means?"}:::decisionNode
+    Compound["Compound"]:::compoundNode
+    Element["Element"]:::elementNode
+
+    Matter --> Sep
+    Sep -->|Yes| Mix
+    Sep -->|No| Pure
+    Mix --> Uniform
+    Uniform -->|Yes| Homo
+    Uniform -->|No| Hetero
+    Pure --> Chem
+    Chem -->|Yes| Compound
+    Chem -->|No| Element
+
+    classDef matterNode fill:#9b59b6,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef decisionNode fill:#bdc3c7,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef mixNode fill:#e67e22,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef homoNode fill:#f39c12,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef heteroNode fill:#f1c40f,stroke:#333,stroke-width:2px,color:#333,font-size:16px
+    classDef pureNode fill:#1abc9c,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef compoundNode fill:#2ecc71,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+    classDef elementNode fill:#3498db,stroke:#333,stroke-width:2px,color:#fff,font-size:16px
+
+    linkStyle default stroke:#999,stroke-width:2px,font-size:16px
+            </div>
+        </div>
+        <div class="info-panel">
+            <h3>Details</h3>
+            <div id="info-display">
+                <p class="info-placeholder">Hover over a node to see details</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Node information data -->
+    <script>
+        const nodeInfo = {
+            'Matter': {
+                title: 'Matter',
+                description: 'Anything that has mass and takes up space. All matter can be classified as either a mixture or a pure substance based on its composition.'
+            },
+            'Sep': {
+                title: 'Physical Separation?',
+                description: 'Can the material be separated into different components using physical methods such as filtration, distillation, evaporation, or chromatography? If yes, it is a mixture.'
+            },
+            'Mix': {
+                title: 'Mixture',
+                description: 'A combination of two or more substances that are NOT chemically bonded. Each substance retains its own chemical identity and properties. Mixtures can be separated by physical means.'
+            },
+            'Uniform': {
+                title: 'Uniform Composition?',
+                description: 'Is the composition the same throughout the sample? If you take a sample from any part, will it have the same ratio of components?'
+            },
+            'Homo': {
+                title: 'Homogeneous Mixture (Solution)',
+                description: 'A mixture with uniform composition throughout. Also called a solution. Examples: saltwater, air, brass (an alloy), and vinegar. You cannot see the individual components.'
+            },
+            'Hetero': {
+                title: 'Heterogeneous Mixture',
+                description: 'A mixture where the composition is NOT uniform — you can see or detect different regions. Examples: trail mix, salad, sand in water, and granite.'
+            },
+            'Pure': {
+                title: 'Pure Substance',
+                description: 'A sample of matter with a fixed, definite composition. It cannot be separated by physical means. Every sample has the same properties. Pure substances are either elements or compounds.'
+            },
+            'Chem': {
+                title: 'Chemical Decomposition?',
+                description: 'Can the substance be broken down into simpler substances by chemical reactions such as electrolysis, heating, or reaction with acids? If yes, it is a compound.'
+            },
+            'Compound': {
+                title: 'Compound',
+                description: 'A pure substance made of two or more elements chemically bonded in a fixed ratio. Compounds have properties different from their component elements. Examples: water (H₂O), table salt (NaCl), carbon dioxide (CO₂).'
+            },
+            'Element': {
+                title: 'Element',
+                description: 'A pure substance that cannot be broken down into simpler substances by any chemical means. Each element is made of only one type of atom. There are 118 known elements listed on the periodic table. Examples: gold (Au), oxygen (O₂), carbon (C).'
+            }
+        };
+    </script>
+    <!-- Load interaction script after nodeInfo is defined -->
+    <script src="script.js"></script>
+</body>
+</html>

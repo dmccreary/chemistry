@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Method - Interactive Workflow Diagram</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="diagram-container" id="diagramContainer">
+                <div class="mermaid">
+flowchart TD
+    Start("Observe Phenomenon<br/>or Ask Question"):::observeNode
+    Research["Background Research"]:::researchNode
+    Hypothesis["Formulate Hypothesis"]:::hypothesisNode
+    Design["Design Experiment"]:::experimentNode
+    Conduct["Conduct Experiment &<br/>Collect Data"]:::experimentNode
+    Analyze["Analyze Data"]:::analysisNode
+    Decision1{"Does Data<br/>Support<br/>Hypothesis?"}:::decisionNode
+    Accept["Accept Hypothesis"]:::acceptNode
+    Revise["Revise or Reject<br/>Hypothesis"]:::reviseNode
+    Communicate["Communicate Results"]:::communicateNode
+    Decision2{"New Questions<br/>Raised?"}:::decisionNode
+    End("End"):::endNode
+
+    Start --> Research
+    Research --> Hypothesis
+    Hypothesis --> Design
+    Design --> Conduct
+    Conduct --> Analyze
+    Analyze --> Decision1
+    Decision1 -->|Yes| Accept
+    Decision1 -->|No| Revise
+    Accept --> Communicate
+    Revise --> Hypothesis
+    Communicate --> Decision2
+    Decision2 -->|Yes| Start
+    Decision2 -->|No| End
+
+    classDef observeNode fill:#4fc3f7,stroke:#0277bd,stroke-width:3px,color:#000,font-size:16px,font-weight:bold
+    classDef researchNode fill:#81d4fa,stroke:#0277bd,stroke-width:2px,color:#000,font-size:16px
+    classDef hypothesisNode fill:#fff59d,stroke:#f57f17,stroke-width:3px,color:#000,font-size:16px,font-weight:bold
+    classDef experimentNode fill:#81c784,stroke:#2e7d32,stroke-width:2px,color:#000,font-size:16px
+    classDef analysisNode fill:#ffb74d,stroke:#e65100,stroke-width:2px,color:#000,font-size:16px
+    classDef decisionNode fill:#ff9800,stroke:#e65100,stroke-width:3px,color:#000,font-size:16px,font-weight:bold
+    classDef acceptNode fill:#66bb6a,stroke:#2e7d32,stroke-width:2px,color:#fff,font-size:16px
+    classDef reviseNode fill:#ef5350,stroke:#c62828,stroke-width:2px,color:#fff,font-size:16px
+    classDef communicateNode fill:#ba68c8,stroke:#6a1b9a,stroke-width:2px,color:#fff,font-size:16px
+    classDef endNode fill:#9575cd,stroke:#4527a0,stroke-width:3px,color:#fff,font-size:16px,font-weight:bold
+
+    linkStyle default stroke:#666,stroke-width:2px,font-size:14px
+                </div>
+            </div>
+
+            <div class="infobox" id="infobox">
+                <h3 id="infoTitle">Scientific Method</h3>
+                <p id="infoDescription">Hover over any step in the diagram to learn more about it and see a physics example.</p>
+                <div id="infoExample" class="example-box">
+                    <strong>Tip:</strong> Click on any node to keep its information displayed.
+                </div>
+            </div>
+        </div>
+
+        <div class="color-legend">
+            <h3>Color Coding</h3>
+            <ul>
+                <li><span class="color-box" style="background-color:#4fc3f7;"></span> Light blue: Observation and research phases</li>
+                <li><span class="color-box" style="background-color:#fff59d;"></span> Yellow: Hypothesis formulation</li>
+                <li><span class="color-box" style="background-color:#81c784;"></span> Green: Experimental phases</li>
+                <li><span class="color-box" style="background-color:#ff9800;"></span> Orange: Analysis and decision points</li>
+                <li><span class="color-box" style="background-color:#ba68c8;"></span> Purple: Communication and iteration</li>
+            </ul>
+        </div>
+
+        <footer>
+            <p>Interactive workflow diagram for high school physics education</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

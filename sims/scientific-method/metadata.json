@@ -1,0 +1,38 @@
+{
+  "title": "Scientific Method Workflow",
+  "description": "Interactive flowchart visualizing the scientific method process with decision points for hypothesis testing and iterative investigation cycles",
+  "subject": "Physics - Scientific Method",
+  "creator": "Claude AI with Mermaid Generator Skill",
+  "date": "2025-11-09",
+  "type": "Interactive Workflow Diagram",
+  "format": "text/html",
+  "language": "en-US",
+  "coverage": "Introductory",
+  "rights": "CC BY-NC-SA 4.0",
+  "audience": "High School",
+  "diagram_type": "flowchart",
+  "direction": "TD",
+  "node_count": "12",
+  "edge_count": "13",
+  "concepts": [
+    "Scientific Observation",
+    "Background Research",
+    "Hypothesis Formation",
+    "Experimental Design",
+    "Data Collection",
+    "Data Analysis",
+    "Hypothesis Testing",
+    "Scientific Communication",
+    "Iterative Investigation"
+  ],
+  "bloom_taxonomy": "Understand",
+  "version": "1.0",
+  "features": [
+    "Color-coded process phases",
+    "Decision points for hypothesis validation",
+    "Iterative feedback loop",
+    "Zoom controls",
+    "SVG export capability",
+    "Accessible design"
+  ]
+}

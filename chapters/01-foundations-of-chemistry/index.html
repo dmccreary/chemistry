@@ -1438,6 +1438,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#error-propagation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error Propagation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#dimensional-analysis" class="md-nav__link">
     <span class="md-ellipsis">
       Dimensional Analysis
@@ -1574,7 +1583,7 @@ Let's react!</p>
 <p>Before we dive into atoms, bonding, and reactions, we need a solid foundation. This chapter builds the skills you will use in every unit that follows: classifying matter, making precise measurements, performing calculations with proper significant figures, and analyzing experimental data. Think of this chapter as your scientific toolkit — you will reach for these skills again and again throughout the course.</p>
 <p>By the end of this chapter, you will be able to classify matter, distinguish physical from chemical changes, apply dimensional analysis to solve conversion problems, use significant figures correctly, and interpret graphical data.</p>
 <h2 id="concepts-covered">Concepts Covered</h2>
-<p>This chapter covers the following 25 concepts from the learning graph:</p>
+<p>This chapter covers the following 26 concepts from the learning graph:</p>
 <ol>
 <li>Matter</li>
 <li>Energy</li>
@@ -1601,6 +1610,7 @@ Let's react!</p>
 <li>Graphing Data</li>
 <li>Conservation Laws</li>
 <li>Atomic Theory History</li>
+<li>Error Propagation</li>
 </ol>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>This chapter assumes only the prerequisites listed in the <a href="../../course-description/">course description</a>.</p>
@@ -2003,6 +2013,45 @@ subtraction, count <strong>decimal places</strong>. Multiply = figures, Add = pl
 <p>The absolute value bars ensure the result is always positive. A small percent error indicates a more accurate measurement.</p>
 <p><strong>Example:</strong> A student measures the density of aluminum as 2.85 g/cm<span class="arithmatex">\(^3\)</span>. The accepted value is 2.70 g/cm<span class="arithmatex">\(^3\)</span>. What is the percent error?</p>
 <div class="arithmatex">\[\text{Percent Error} = \frac{|2.85 - 2.70|}{2.70} \times 100\% = \frac{0.15}{2.70} \times 100\% = 5.6\%\]</div>
+<h2 id="error-propagation">Error Propagation</h2>
+<p>When multiple measurements are combined in a calculation, the uncertainties in each measurement compound to produce uncertainty in the final result. This is called <strong>error propagation</strong> (also called propagation of uncertainty).</p>
+<p>In AP Chemistry lab work, every measured quantity has some associated uncertainty — from the precision of glassware, balances, and thermometers. When those values are added, subtracted, multiplied, or divided, the errors propagate through the calculation.</p>
+<p><strong>Rule 1 — Addition and subtraction:</strong> Add the <strong>absolute uncertainties</strong>.</p>
+<p>If <span class="arithmatex">\(A = 5.2 \pm 0.1\)</span> g and <span class="arithmatex">\(B = 3.4 \pm 0.2\)</span> g, then:</p>
+<div class="arithmatex">\[A + B = 8.6 \pm 0.3 \text{ g}\]</div>
+<p>The uncertainty in the sum is <span class="arithmatex">\(0.1 + 0.2 = 0.3\)</span> g.</p>
+<p><strong>Rule 2 — Multiplication and division:</strong> Add the <strong>relative (percent) uncertainties</strong>.</p>
+<p>If <span class="arithmatex">\(A = 5.2 \pm 0.1\)</span> g (relative uncertainty = <span class="arithmatex">\(0.1/5.2 = 1.9\%\)</span>) and <span class="arithmatex">\(B = 3.4 \pm 0.2\)</span> g (relative uncertainty = <span class="arithmatex">\(0.2/3.4 = 5.9\%\)</span>), then:</p>
+<div class="arithmatex">\[A \times B = 17.7 \text{ g}^2 \pm (1.9\% + 5.9\%) = 17.7 \pm 7.8\% \approx 17.7 \pm 1.4 \text{ g}^2\]</div>
+<p><strong>Why this matters in AP Chemistry:</strong></p>
+<p>A multi-step calculation — for example, determining a concentration from a mass measurement and a volume measurement — carries uncertainty from every step. A buret reading might be precise to <span class="arithmatex">\(\pm 0.02\)</span> mL; a balance reading precise to <span class="arithmatex">\(\pm 0.001\)</span> g. Understanding how these propagate through a titration calculation helps you explain the precision of your final result and critique sources of experimental error.</p>
+<p><strong>In practice</strong>, AP Chemistry does not require full propagation calculations in most exam problems. However, the Evaluate-level objective "Critique experimental design for sources of error" expects you to identify which measured quantities contribute the most uncertainty to a result. The quantity with the largest relative uncertainty dominates the overall error.</p>
+<table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Propagation Rule</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(A + B\)</span> or <span class="arithmatex">\(A - B\)</span></td>
+<td><span class="arithmatex">\(\delta_{\text{result}} = \delta_A + \delta_B\)</span></td>
+<td>Mass difference from balance</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(A \times B\)</span> or <span class="arithmatex">\(A / B\)</span></td>
+<td><span class="arithmatex">\(\frac{\delta_{\text{result}}}{\text{result}} = \frac{\delta_A}{A} + \frac{\delta_B}{B}\)</span></td>
+<td>Concentration from mass ÷ volume</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(A^n\)</span></td>
+<td><span class="arithmatex">\(\frac{\delta_{\text{result}}}{\text{result}} = n \cdot \frac{\delta_A}{A}\)</span></td>
+<td>Volume from <span class="arithmatex">\(r^3\)</span> measurement</td>
+</tr>
+</tbody>
+</table>
 <h2 id="dimensional-analysis">Dimensional Analysis</h2>
 <p><strong>Dimensional analysis</strong> (also called the factor-label method or unit conversion) is the single most important problem-solving technique in AP Chemistry. It uses conversion factors to change a measurement from one unit to another while ensuring the units cancel correctly.</p>
 <p>A <strong>conversion factor</strong> is a fraction equal to 1, where the numerator and denominator express the same quantity in different units. For example:</p>

@@ -2264,7 +2264,7 @@
 <h2 id="summary">Summary</h2>
 <p>This chapter explores reaction mechanisms including elementary steps, molecularity, rate-determining steps, and reaction intermediates. Students learn about catalysis types (homogeneous, heterogeneous, and enzyme) and how catalysts affect activation energy.</p>
 <h2 id="concepts-covered">Concepts Covered</h2>
-<p>This chapter covers the following 19 concepts from the learning graph:</p>
+<p>This chapter covers the following 20 concepts from the learning graph:</p>
 <ol>
 <li>Determining Reaction Order</li>
 <li>Reaction Mechanisms</li>
@@ -2280,6 +2280,7 @@
 <li>Heterogeneous Catalysis</li>
 <li>Enzyme Catalysis</li>
 <li>Catalyst Effect on Ea</li>
+<li>Catalyst and Equilibrium</li>
 <li>Catalyzed vs Uncatalyzed</li>
 <li>Surface Area and Rate</li>
 <li>Concentration and Rate</li>
@@ -2386,11 +2387,11 @@
 <p>Experiment reveals: <span class="arithmatex">\(\text{rate} = k[\text{NO}_2]^2\)</span></p>
 <p>This is second order in <span class="arithmatex">\(\text{NO}_2\)</span> and zero order in <span class="arithmatex">\(\text{CO}\)</span> — a result that cannot arise from a single bimolecular collision between NO<span class="arithmatex">\(_2\)</span> and CO (which would give rate = <span class="arithmatex">\(k[\text{NO}_2][\text{CO}]\)</span>). A proposed two-step mechanism explains the data:</p>
 <p><strong>Step 1 (slow — rate-determining):</strong>
-[ \text{NO}_2 + \text{NO}_2 \rightarrow \text{NO}_3 + \text{NO} ]
-[ \text{rate}_1 = k_1[\text{NO}_2]^2 ]</p>
+$$ \text{NO}_2 + \text{NO}_2 \rightarrow \text{NO}_3 + \text{NO} $$
+$$ \text{rate}_1 = k_1[\text{NO}_2]^2 $$</p>
 <p><strong>Step 2 (fast):</strong>
-[ \text{NO}_3 + \text{CO} \rightarrow \text{NO}_2 + \text{CO}_2 ]
-[ \text{rate}_2 = k_2[\text{NO}_3][\text{CO}] ]</p>
+$$ \text{NO}_3 + \text{CO} \rightarrow \text{NO}_2 + \text{CO}_2 $$
+$$ \text{rate}_2 = k_2[\text{NO}_3][\text{CO}] $$</p>
 <p>Since Step 1 is rate-determining, the overall rate is governed by Step 1:</p>
 <div class="arithmatex">\[ \text{rate} = k[\text{NO}_2]^2 \]</div>
 <p>This matches the experimental rate law. The species <span class="arithmatex">\(\text{NO}_3\)</span> is a <strong>reaction intermediate</strong> — it is produced in Step 1 and consumed in Step 2. When you sum the two steps algebraically:</p>
@@ -2474,8 +2475,8 @@
 <div class="arithmatex">\[ \text{Ester} + \text{H}_2\text{O} \xrightarrow{\text{H}^+} \text{Carboxylic acid} + \text{Alcohol} \]</div>
 <p>The H<span class="arithmatex">\(^+\)</span> ion participates in the mechanism by protonating the ester carbonyl oxygen, making the carbonyl carbon more electrophilic and susceptible to nucleophilic attack by water. At the end of the mechanism, H<span class="arithmatex">\(^+\)</span> is regenerated — confirming its role as a catalyst rather than a reactant.</p>
 <p>Another example is the catalytic destruction of ozone in the stratosphere. Chlorine radicals (from chlorofluorocarbons, CFCs) act as homogeneous gas-phase catalysts:</p>
-<p>[ \text{Cl} + \text{O}_3 \rightarrow \text{ClO} + \text{O}_2 ]
-[ \text{ClO} + \text{O} \rightarrow \text{Cl} + \text{O}_2 ]</p>
+<div class="arithmatex">\[ \text{Cl} + \text{O}_3 \rightarrow \text{ClO} + \text{O}_2 $$
+$$ \text{ClO} + \text{O} \rightarrow \text{Cl} + \text{O}_2 \]</div>
 <p>The net reaction is <span class="arithmatex">\(\text{O}_3 + \text{O} \rightarrow 2\,\text{O}_2\)</span>, and the Cl atom is regenerated — one chlorine radical can destroy thousands of ozone molecules before being deactivated.</p>
 <h3 id="heterogeneous-catalysis">Heterogeneous Catalysis</h3>
 <p>In <strong>heterogeneous catalysis</strong>, the catalyst and reactants are in different phases. Most commonly, the catalyst is a solid and the reactants are gases or liquids. The reaction occurs at the surface of the solid catalyst, and the mechanism typically involves several stages:</p>
@@ -2486,10 +2487,10 @@
 </ol>
 <p>Two of the most important industrial examples of heterogeneous catalysis:</p>
 <p><strong>The Haber-Bosch process</strong> for ammonia synthesis uses iron as a heterogeneous catalyst:
-[ \text{N}_2(g) + 3\,\text{H}_2(g) \xrightarrow{\text{Fe}} 2\,\text{NH}_3(g) ]
+$$ \text{N}_2(g) + 3\,\text{H}_2(g) \xrightarrow{\text{Fe}} 2\,\text{NH}_3(g) $$
 The iron surface adsorbs N<span class="arithmatex">\(_2\)</span> and H<span class="arithmatex">\(_2\)</span> molecules, weakening the extremely strong N≡N triple bond (<span class="arithmatex">\(\Delta H_{\text{bond}} = 945\)</span> kJ/mol) and facilitating its stepwise hydrogenation.</p>
 <p><strong>The catalytic converter</strong> in automobiles uses platinum, palladium, and rhodium to catalyze the oxidation of CO and hydrocarbons and the reduction of NO<span class="arithmatex">\(_x\)</span>:
-[ 2\,\text{CO}(g) + 2\,\text{NO}(g) \xrightarrow{\text{Pt/Rh}} 2\,\text{CO}_2(g) + \text{N}_2(g) ]</p>
+$$ 2\,\text{CO}(g) + 2\,\text{NO}(g) \xrightarrow{\text{Pt/Rh}} 2\,\text{CO}_2(g) + \text{N}_2(g) $$</p>
 <p>Because heterogeneous catalysts work only at their surfaces, <strong>surface area and rate</strong> are intimately connected: engineers maximize surface area by creating porous structures, nanoparticles, or supported metal films.</p>
 <h3 id="enzyme-catalysis">Enzyme Catalysis</h3>
 <p><strong>Enzyme catalysis</strong> is a specialized form of homogeneous catalysis carried out by protein molecules called enzymes. Enzymes are the molecular machines of life — they catalyze virtually every biochemical reaction in living cells with extraordinary speed and selectivity.</p>
@@ -2559,8 +2560,8 @@ The iron surface adsorbs N<span class="arithmatex">\(_2\)</span> and H<span clas
 </ol>
 <h3 id="designing-an-experiment-to-validate-a-mechanism">Designing an Experiment to Validate a Mechanism</h3>
 <p>Suppose you propose a two-step mechanism for a reaction in which step 1 is rate-determining:</p>
-<p>[ \text{Step 1 (slow):} \quad \text{A} + \text{B} \rightarrow \text{C} \quad \text{rate} = k_1[\text{A}][\text{B}] ]
-[ \text{Step 2 (fast):} \quad \text{C} + \text{D} \rightarrow \text{E} + \text{A} \quad \text{rate} = k_2[\text{C}][\text{D}] ]</p>
+<div class="arithmatex">\[ \text{Step 1 (slow):} \quad \text{A} + \text{B} \rightarrow \text{C} \quad \text{rate} = k_1[\text{A}][\text{B}] $$
+$$ \text{Step 2 (fast):} \quad \text{C} + \text{D} \rightarrow \text{E} + \text{A} \quad \text{rate} = k_2[\text{C}][\text{D}] \]</div>
 <p>The mechanism predicts: overall rate = <span class="arithmatex">\(k_1[\text{A}][\text{B}]\)</span> (first order in A, first order in B, zero order in D).</p>
 <p>To test this experimentally:</p>
 <ul>
@@ -2781,7 +2782,7 @@ The diagram illustrates the three stages of heterogeneous catalysis using the Ha
 </li>
 <li>
 <p>Design a kinetics experiment to determine the rate law for the reaction:
-[\text{BrO}_3^-(aq) + 5\,\text{Br}^-(aq) + 6\,\text{H}^+(aq) \rightarrow 3\,\text{Br}_2(aq) + 3\,\text{H}_2\text{O}(l)]
+<span class="arithmatex">\(<span class="arithmatex">\(\text{BrO}_3^-(aq) + 5\,\text{Br}^-(aq) + 6\,\text{H}^+(aq) \rightarrow 3\,\text{Br}_2(aq) + 3\,\text{H}_2\text{O}(l)\)</span>\)</span>
 Describe what measurements you would make, what you would hold constant in each experimental run, and how you would determine the order with respect to each reactant.</p>
 </li>
 </ol>

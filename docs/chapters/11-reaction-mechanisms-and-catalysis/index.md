@@ -51,7 +51,7 @@ This chapter builds on concepts from:
 
 When you write the balanced equation for the decomposition of ozone:
 
-\[ 2\,\text{O}_3(g) \rightarrow 3\,\text{O}_2(g) \]
+$$ 2\,\text{O}_3(g) \rightarrow 3\,\text{O}_2(g) $$
 
 you are recording what disappears and what appears — the net accounting of atoms. But this equation says nothing about *how* the transformation actually occurs at the molecular level. Do two ozone molecules collide simultaneously and rearrange? Or does each molecule break apart independently before reassembling? These questions belong to the study of **reaction mechanisms**.
 
@@ -67,7 +67,7 @@ This chapter takes you from the experimental rate law back to the molecular stor
 
 Before exploring mechanisms, recall the experimental foundation. **Determining reaction order** is the process of establishing the exponents in the rate law:
 
-\[ \text{rate} = k[\text{A}]^m[\text{B}]^n \]
+$$ \text{rate} = k[\text{A}]^m[\text{B}]^n $$
 
 from experimental initial-rate data. The key principle from Chapter 10: the exponents \(m\) and \(n\) are *not* taken from stoichiometric coefficients in the balanced equation. They must be measured. The **method of initial rates** — comparing pairs of experiments where one concentration changes while the other stays fixed — yields \(m\) and \(n\) directly.
 
@@ -136,31 +136,31 @@ The rate law for the overall reaction is therefore the rate law of the rate-dete
 
 Consider the experimentally determined rate law for the reaction:
 
-\[ \text{NO}_2(g) + \text{CO}(g) \rightarrow \text{NO}(g) + \text{CO}_2(g) \]
+$$ \text{NO}_2(g) + \text{CO}(g) \rightarrow \text{NO}(g) + \text{CO}_2(g) $$
 
 Experiment reveals: \(\text{rate} = k[\text{NO}_2]^2\)
 
 This is second order in \(\text{NO}_2\) and zero order in \(\text{CO}\) — a result that cannot arise from a single bimolecular collision between NO\(_2\) and CO (which would give rate = \(k[\text{NO}_2][\text{CO}]\)). A proposed two-step mechanism explains the data:
 
 **Step 1 (slow — rate-determining):**
-\[ \text{NO}_2 + \text{NO}_2 \rightarrow \text{NO}_3 + \text{NO} \]
-\[ \text{rate}_1 = k_1[\text{NO}_2]^2 \]
+$$ \text{NO}_2 + \text{NO}_2 \rightarrow \text{NO}_3 + \text{NO} $$
+$$ \text{rate}_1 = k_1[\text{NO}_2]^2 $$
 
 **Step 2 (fast):**
-\[ \text{NO}_3 + \text{CO} \rightarrow \text{NO}_2 + \text{CO}_2 \]
-\[ \text{rate}_2 = k_2[\text{NO}_3][\text{CO}] \]
+$$ \text{NO}_3 + \text{CO} \rightarrow \text{NO}_2 + \text{CO}_2 $$
+$$ \text{rate}_2 = k_2[\text{NO}_3][\text{CO}] $$
 
 Since Step 1 is rate-determining, the overall rate is governed by Step 1:
 
-\[ \text{rate} = k[\text{NO}_2]^2 \]
+$$ \text{rate} = k[\text{NO}_2]^2 $$
 
 This matches the experimental rate law. The species \(\text{NO}_3\) is a **reaction intermediate** — it is produced in Step 1 and consumed in Step 2. When you sum the two steps algebraically:
 
-\[ \text{NO}_2 + \cancel{\text{NO}_2} + \cancel{\text{NO}_3} + \text{CO} \rightarrow \cancel{\text{NO}_3} + \text{NO} + \cancel{\text{NO}_2} + \text{CO}_2 \]
+$$ \text{NO}_2 + \cancel{\text{NO}_2} + \cancel{\text{NO}_3} + \text{CO} \rightarrow \cancel{\text{NO}_3} + \text{NO} + \cancel{\text{NO}_2} + \text{CO}_2 $$
 
 The intermediates cancel, yielding:
 
-\[ \text{NO}_2 + \text{CO} \rightarrow \text{NO} + \text{CO}_2 \]
+$$ \text{NO}_2 + \text{CO} \rightarrow \text{NO} + \text{CO}_2 $$
 
 This correctly reproduces the overall balanced equation — confirming that the mechanism is internally consistent.
 
@@ -205,7 +205,7 @@ A complication arises when the intermediate appears in the rate law of the rate-
 
 In the pre-equilibrium approximation, a fast reversible step before the rate-determining step establishes an equilibrium. Setting the forward and reverse rates of that fast step equal allows you to solve for the intermediate concentration:
 
-\[ [\text{intermediate}] = \frac{k_f}{k_r}[\text{reactants}] = K_{eq}[\text{reactants}] \]
+$$ [\text{intermediate}] = \frac{k_f}{k_r}[\text{reactants}] = K_{eq}[\text{reactants}] $$
 
 Substituting this expression into the rate-determining step rate law eliminates the intermediate and yields a rate law written entirely in terms of measurable reactant concentrations.
 
@@ -264,14 +264,14 @@ In **homogeneous catalysis**, the catalyst and the reactants are in the same pha
 
 A classic example is the **acid-catalyzed hydrolysis of esters** in aqueous solution. The hydronium ion (\(\text{H}_3\text{O}^+\)) catalyzes the reaction between an ester and water:
 
-\[ \text{Ester} + \text{H}_2\text{O} \xrightarrow{\text{H}^+} \text{Carboxylic acid} + \text{Alcohol} \]
+$$ \text{Ester} + \text{H}_2\text{O} \xrightarrow{\text{H}^+} \text{Carboxylic acid} + \text{Alcohol} $$
 
 The H\(^+\) ion participates in the mechanism by protonating the ester carbonyl oxygen, making the carbonyl carbon more electrophilic and susceptible to nucleophilic attack by water. At the end of the mechanism, H\(^+\) is regenerated — confirming its role as a catalyst rather than a reactant.
 
 Another example is the catalytic destruction of ozone in the stratosphere. Chlorine radicals (from chlorofluorocarbons, CFCs) act as homogeneous gas-phase catalysts:
 
-\[ \text{Cl} + \text{O}_3 \rightarrow \text{ClO} + \text{O}_2 \]
-\[ \text{ClO} + \text{O} \rightarrow \text{Cl} + \text{O}_2 \]
+$$ \text{Cl} + \text{O}_3 \rightarrow \text{ClO} + \text{O}_2 $$
+$$ \text{ClO} + \text{O} \rightarrow \text{Cl} + \text{O}_2 $$
 
 The net reaction is \(\text{O}_3 + \text{O} \rightarrow 2\,\text{O}_2\), and the Cl atom is regenerated — one chlorine radical can destroy thousands of ozone molecules before being deactivated.
 
@@ -286,11 +286,11 @@ In **heterogeneous catalysis**, the catalyst and reactants are in different phas
 Two of the most important industrial examples of heterogeneous catalysis:
 
 **The Haber-Bosch process** for ammonia synthesis uses iron as a heterogeneous catalyst:
-\[ \text{N}_2(g) + 3\,\text{H}_2(g) \xrightarrow{\text{Fe}} 2\,\text{NH}_3(g) \]
+$$ \text{N}_2(g) + 3\,\text{H}_2(g) \xrightarrow{\text{Fe}} 2\,\text{NH}_3(g) $$
 The iron surface adsorbs N\(_2\) and H\(_2\) molecules, weakening the extremely strong N≡N triple bond (\(\Delta H_{\text{bond}} = 945\) kJ/mol) and facilitating its stepwise hydrogenation.
 
 **The catalytic converter** in automobiles uses platinum, palladium, and rhodium to catalyze the oxidation of CO and hydrocarbons and the reduction of NO\(_x\):
-\[ 2\,\text{CO}(g) + 2\,\text{NO}(g) \xrightarrow{\text{Pt/Rh}} 2\,\text{CO}_2(g) + \text{N}_2(g) \]
+$$ 2\,\text{CO}(g) + 2\,\text{NO}(g) \xrightarrow{\text{Pt/Rh}} 2\,\text{CO}_2(g) + \text{N}_2(g) $$
 
 Because heterogeneous catalysts work only at their surfaces, **surface area and rate** are intimately connected: engineers maximize surface area by creating porous structures, nanoparticles, or supported metal films.
 
@@ -300,7 +300,7 @@ Because heterogeneous catalysts work only at their surfaces, **surface area and 
 
 The **lock-and-key model** (and the more nuanced **induced-fit model**) describes how enzymes achieve specificity. Each enzyme has an **active site** — a precisely shaped pocket or groove on the enzyme surface — that is complementary in shape, charge, and polarity to a specific reactant called the **substrate**. The substrate binds to the active site, forming an enzyme-substrate complex (ES):
 
-\[ \text{E} + \text{S} \rightleftharpoons \text{ES} \rightarrow \text{E} + \text{P} \]
+$$ \text{E} + \text{S} \rightleftharpoons \text{ES} \rightarrow \text{E} + \text{P} $$
 
 Once bound, the enzyme stabilizes the transition state of the reaction, effectively lowering \(E_a\) by many orders of magnitude compared to the uncatalyzed reaction. The enzyme is then released unchanged, ready to bind another substrate molecule.
 
@@ -321,7 +321,7 @@ The most fundamental effect of any catalyst — homogeneous, heterogeneous, or e
 
 The **Arrhenius equation** makes this effect quantitative:
 
-\[ k = A e^{-E_a / RT} \]
+$$ k = A e^{-E_a / RT} $$
 
 When a catalyst reduces \(E_a\), the exponential factor \(e^{-E_a/RT}\) increases substantially, and the rate constant \(k\) increases by the same factor. Because the relationship is exponential, even a modest reduction in \(E_a\) produces a dramatic rate increase. For example, reducing \(E_a\) by 10 kJ/mol at 25°C increases \(k\) by a factor of approximately 57.
 
@@ -389,8 +389,8 @@ A well-designed kinetics investigation typically follows this sequence:
 
 Suppose you propose a two-step mechanism for a reaction in which step 1 is rate-determining:
 
-\[ \text{Step 1 (slow):} \quad \text{A} + \text{B} \rightarrow \text{C} \quad \text{rate} = k_1[\text{A}][\text{B}] \]
-\[ \text{Step 2 (fast):} \quad \text{C} + \text{D} \rightarrow \text{E} + \text{A} \quad \text{rate} = k_2[\text{C}][\text{D}] \]
+$$ \text{Step 1 (slow):} \quad \text{A} + \text{B} \rightarrow \text{C} \quad \text{rate} = k_1[\text{A}][\text{B}] $$
+$$ \text{Step 2 (fast):} \quad \text{C} + \text{D} \rightarrow \text{E} + \text{A} \quad \text{rate} = k_2[\text{C}][\text{D}] $$
 
 The mechanism predicts: overall rate = \(k_1[\text{A}][\text{B}]\) (first order in A, first order in B, zero order in D).
 
@@ -443,7 +443,7 @@ The iodine clock reaction is a classic kinetics experiment that vividly illustra
 
 The net reaction involves the oxidation of iodide by hydrogen peroxide in acidic solution:
 
-\[ \text{H}_2\text{O}_2(aq) + 2\,\text{I}^-(aq) + 2\,\text{H}^+(aq) \rightarrow \text{I}_2(aq) + 2\,\text{H}_2\text{O}(l) \]
+$$ \text{H}_2\text{O}_2(aq) + 2\,\text{I}^-(aq) + 2\,\text{H}^+(aq) \rightarrow \text{I}_2(aq) + 2\,\text{H}_2\text{O}(l) $$
 
 The mechanism involves multiple steps, with H\(^+\) acting as a **homogeneous catalyst**. An intermediate (HOI, hypoiodous acid) is formed in one step and consumed in another. The sudden color change occurs when all of the thiosulfate "scavenger" (which consumes I\(_2\) as fast as it forms) is exhausted, and I\(_2\) accumulates to a detectable level.
 
@@ -579,6 +579,6 @@ Reaction mechanisms provide the molecular-level explanation for the macroscopic 
 5. Sketch a potential energy diagram (qualitative) for an exothermic reaction showing both the uncatalyzed and catalyzed pathways. Label: \(E_a\) (uncatalyzed), \(E_a\) (catalyzed), \(\Delta H\), reactants, products, and transition states. Explain why the catalyst changes \(E_a\) but not \(\Delta H\).
 
 6. Design a kinetics experiment to determine the rate law for the reaction:
-\[\text{BrO}_3^-(aq) + 5\,\text{Br}^-(aq) + 6\,\text{H}^+(aq) \rightarrow 3\,\text{Br}_2(aq) + 3\,\text{H}_2\text{O}(l)\]
+$$\text{BrO}_3^-(aq) + 5\,\text{Br}^-(aq) + 6\,\text{H}^+(aq) \rightarrow 3\,\text{Br}_2(aq) + 3\,\text{H}_2\text{O}(l)$$
 Describe what measurements you would make, what you would hold constant in each experimental run, and how you would determine the order with respect to each reactant.
 

@@ -94,15 +94,15 @@ The **atomic number** (symbol: \(Z\)) is the number of protons in an atom's nucl
 
 The **mass number** (symbol: \(A\)) is the total count of protons and neutrons in the nucleus. Because electrons have negligible mass, the mass number approximates the atom's total mass in atomic mass units. The number of neutrons in a nucleus is therefore:
 
-\[
+$$
 \text{Number of Neutrons} = A - Z
-\]
+$$
 
 Standard nuclide notation places the mass number as a superscript and the atomic number as a subscript to the left of the element symbol:
 
-\[
+$$
 {}^{A}_{Z}\text{X}
-\]
+$$
 
 For example, a carbon atom with 6 protons and 6 neutrons is written \({}^{12}_{6}\text{C}\), and one with 6 protons and 8 neutrons is written \({}^{14}_{6}\text{C}\).
 
@@ -139,9 +139,9 @@ The **atomic mass** of a single atom is the mass of that specific nuclide measur
 
 The formula for average atomic mass is:
 
-\[
+$$
 \bar{m} = \sum_{i} \left( \text{fractional abundance}_i \times \text{mass}_i \right)
-\]
+$$
 
 where the sum runs over all naturally occurring isotopes of the element. The fractional abundance is the percent abundance divided by 100.
 
@@ -149,13 +149,13 @@ where the sum runs over all naturally occurring isotopes of the element. The fra
 
 Given the two chlorine isotopes:
 
-\[
+$$
 \bar{m}_{\text{Cl}} = (0.7577 \times 34.969 \text{ amu}) + (0.2423 \times 36.966 \text{ amu})
-\]
+$$
 
-\[
+$$
 \bar{m}_{\text{Cl}} = 26.496 \text{ amu} + 8.957 \text{ amu} = 35.453 \text{ amu}
-\]
+$$
 
 This calculated value matches the atomic mass listed on the periodic table for chlorine (35.45 amu), confirming the method. Notice that 35.45 amu is not the mass of either isotope — it lies between them, closer to chlorine-35 because that isotope is far more abundant. This weighted average concept is central to interpreting mass spectra.
 
@@ -202,9 +202,9 @@ Atoms and molecules are inconceivably small. A single carbon atom has a mass of 
 
 The **mole concept** is one of the most important ideas in chemistry. One mole (abbreviated mol) is defined as exactly \(6.02214076 \times 10^{23}\) elementary entities (atoms, molecules, ions, electrons, or any specified particle). This number is called **Avogadro's number** (\(N_A\)), named in honor of the Italian scientist Amedeo Avogadro:
 
-\[
+$$
 N_A = 6.022 \times 10^{23} \text{ mol}^{-1}
-\]
+$$
 
 The power of the mole is that it links the atomic mass scale (amu) to the macroscopic mass scale (grams). The **molar mass** of a substance is the mass in grams of exactly one mole of that substance, and it is numerically equal to the atomic mass (or molecular mass) in amu. For example:
 
@@ -225,9 +225,9 @@ This elegant equivalence — amu per atom equals grams per mole — makes molar 
 
 For compounds, the molar mass is calculated by summing the molar masses of all atoms in one formula unit. Water (\(\text{H}_2\text{O}\)) has a molar mass of:
 
-\[
+$$
 M_{\text{H}_2\text{O}} = 2(1.008) + 15.999 = 18.015 \text{ g/mol}
-\]
+$$
 
 ---
 
@@ -237,15 +237,15 @@ M_{\text{H}_2\text{O}} = 2(1.008) + 15.999 = 18.015 \text{ g/mol}
 
 The fundamental relationships are:
 
-\[
+$$
 n = \frac{m}{M}
-\]
+$$
 
 where \(n\) is the number of moles, \(m\) is the mass in grams, and \(M\) is the molar mass in g/mol. The number of particles \(N\) is:
 
-\[
+$$
 N = n \times N_A = \frac{m}{M} \times 6.022 \times 10^{23}
-\]
+$$
 
 ### Mole Calculation Road Map
 
@@ -269,28 +269,28 @@ This static (non-animated) infographic uses a 800×400 px canvas with a white or
 
 How many moles are in 45.0 g of water (\(M = 18.015\) g/mol)?
 
-\[
+$$
 n = \frac{45.0 \text{ g}}{18.015 \text{ g/mol}} = 2.498 \text{ mol}
-\]
+$$
 
 **Example 2: Moles to Number of Molecules**
 
 How many molecules are in 2.498 mol of water?
 
-\[
+$$
 N = 2.498 \text{ mol} \times 6.022 \times 10^{23} \text{ mol}^{-1} = 1.504 \times 10^{24} \text{ molecules}
-\]
+$$
 
 **Example 3: Grams to Number of Atoms**
 
 How many iron atoms are in 11.17 g of iron (\(M = 55.845\) g/mol)?
 
-\[
+$$
 n_{\text{Fe}} = \frac{11.17 \text{ g}}{55.845 \text{ g/mol}} = 0.2000 \text{ mol}
-\]
-\[
+$$
+$$
 N_{\text{Fe}} = 0.2000 \text{ mol} \times 6.022 \times 10^{23} \text{ mol}^{-1} = 1.204 \times 10^{23} \text{ atoms}
-\]
+$$
 
 ---
 
@@ -300,31 +300,31 @@ N_{\text{Fe}} = 0.2000 \text{ mol} \times 6.022 \times 10^{23} \text{ mol}^{-1} 
 
 The formula for the percent composition of element X in a compound is:
 
-\[
+$$
 \% \text{X} = \frac{\text{mass of X in one mole of compound}}{\text{molar mass of compound}} \times 100\%
-\]
+$$
 
 ### Worked Example: Percent Composition of Glucose
 
 Glucose has the molecular formula \(\text{C}_6\text{H}_{12}\text{O}_6\). Its molar mass is:
 
-\[
+$$
 M = 6(12.011) + 12(1.008) + 6(15.999) = 72.066 + 12.096 + 95.994 = 180.156 \text{ g/mol}
-\]
+$$
 
 The percent compositions are:
 
-\[
+$$
 \% \text{C} = \frac{72.066}{180.156} \times 100\% = 40.00\%
-\]
+$$
 
-\[
+$$
 \% \text{H} = \frac{12.096}{180.156} \times 100\% = 6.71\%
-\]
+$$
 
-\[
+$$
 \% \text{O} = \frac{95.994}{180.156} \times 100\% = 53.29\%
-\]
+$$
 
 These three percentages sum to 100%, confirming the calculation. Percent composition data can be obtained experimentally through combustion analysis (discussed in Section 2.10) and is used to identify unknown compounds or verify synthesized ones.
 
@@ -353,15 +353,15 @@ A compound is found to contain 40.00% C, 6.71% H, and 53.29% O by mass.
 
 **Step 2 — Convert to moles:**
 
-\[
+$$
 n_C = \frac{40.00}{12.011} = 3.330 \text{ mol}, \quad n_H = \frac{6.71}{1.008} = 6.657 \text{ mol}, \quad n_O = \frac{53.29}{15.999} = 3.331 \text{ mol}
-\]
+$$
 
 **Step 3 — Divide by the smallest (3.330):**
 
-\[
+$$
 C: \frac{3.330}{3.330} = 1.00, \quad H: \frac{6.657}{3.330} = 2.00, \quad O: \frac{3.331}{3.330} = 1.00
-\]
+$$
 
 **Result:** Empirical formula = \(\text{CH}_2\text{O}\)
 
@@ -369,21 +369,21 @@ C: \frac{3.330}{3.330} = 1.00, \quad H: \frac{6.657}{3.330} = 2.00, \quad O: \fr
 
 The **molecular formula** gives the actual number of each type of atom in one molecule. It is always a whole-number multiple of the empirical formula:
 
-\[
+$$
 \text{Molecular Formula} = n \times (\text{Empirical Formula})
-\]
+$$
 
 where \(n\) is a positive integer. To find \(n\), you need the molar mass of the compound (obtained from mass spectrometry, for example):
 
-\[
+$$
 n = \frac{M_{\text{compound}}}{M_{\text{empirical formula}}}
-\]
+$$
 
 **Continuing the example:** The empirical formula \(\text{CH}_2\text{O}\) has a molar mass of \(12.011 + 2(1.008) + 15.999 = 30.026\) g/mol. If the compound's actual molar mass is measured as 180 g/mol:
 
-\[
+$$
 n = \frac{180}{30.026} \approx 6
-\]
+$$
 
 **Molecular formula = \(\text{C}_6\text{H}_{12}\text{O}_6\)** — which is glucose, as expected.
 
@@ -421,17 +421,17 @@ The following steps summarize the procedure for analyzing a compound containing 
 
 Because one mole of \(\text{CO}_2\) contains exactly one mole of carbon, and one mole of \(\text{H}_2\text{O}\) contains exactly two moles of hydrogen:
 
-\[
+$$
 m_C = m_{\text{CO}_2} \times \frac{12.011 \text{ g C}}{44.009 \text{ g CO}_2}
-\]
+$$
 
-\[
+$$
 m_H = m_{\text{H}_2\text{O}} \times \frac{2(1.008) \text{ g H}}{18.015 \text{ g H}_2\text{O}}
-\]
+$$
 
-\[
+$$
 m_O = m_{\text{sample}} - m_C - m_H
-\]
+$$
 
 ### Worked Example: Combustion Analysis
 
@@ -439,33 +439,33 @@ A 0.2000 g sample of a pure organic compound containing only C, H, and O is burn
 
 **Step 1 — Calculate mass of C:**
 
-\[
+$$
 m_C = 0.2988 \text{ g CO}_2 \times \frac{12.011}{44.009} = 0.08154 \text{ g C}
-\]
+$$
 
 **Step 2 — Calculate mass of H:**
 
-\[
+$$
 m_H = 0.1217 \text{ g H}_2\text{O} \times \frac{2.016}{18.015} = 0.01362 \text{ g H}
-\]
+$$
 
 **Step 3 — Calculate mass of O by subtraction:**
 
-\[
+$$
 m_O = 0.2000 - 0.08154 - 0.01362 = 0.1048 \text{ g O}
-\]
+$$
 
 **Step 4 — Convert to moles:**
 
-\[
+$$
 n_C = \frac{0.08154}{12.011} = 0.006789 \text{ mol}, \quad n_H = \frac{0.01362}{1.008} = 0.01351 \text{ mol}, \quad n_O = \frac{0.1048}{15.999} = 0.006550 \text{ mol}
-\]
+$$
 
 **Step 5 — Divide by smallest (0.006550):**
 
-\[
+$$
 C: \frac{0.006789}{0.006550} = 1.036 \approx 1, \quad H: \frac{0.01351}{0.006550} = 2.063 \approx 2, \quad O: \frac{0.006550}{0.006550} = 1.000
-\]
+$$
 
 **Empirical formula: \(\text{CH}_2\text{O}\)**
 

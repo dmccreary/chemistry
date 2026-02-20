@@ -180,10 +180,44 @@ $$\Delta G = \Delta H - T\Delta S$$
 $$PV = nRT$$
 ```
 
+#### How the Math Rendering Pipeline Works
+
+Understanding the pipeline prevents silent rendering failures:
+
+1. **Source markdown** uses `$...$` (inline) or `$$...$$` (display)
+2. **`pymdownx.arithmatex`** (configured in `mkdocs.yml` with `generic: true`) detects these delimiters and wraps the content in HTML:
+   - `$...$` → `<span class="arithmatex">\(...\)</span>`
+   - `$$...$$` → `<div class="arithmatex">\[...\]</div>`
+3. **MathJax** (loaded from CDN) finds all elements with class `arithmatex` and renders the math inside them using the `\(...\)` and `\[...\]` delimiters it sees in the HTML. The `js/mathjax-config.js` file configures MathJax to recognize exactly these HTML-level delimiters.
+
+The source-level `$` delimiters and the HTML-level `\(...\)` / `\[...\]` delimiters are different layers of the same pipeline. Content writers only ever write the source-level `$` delimiters.
+
+#### CRITICAL: Forbidden Delimiter Patterns
+
+> **NEVER use `\[...\]` or `\(...\)` as source-level math delimiters in markdown files.**
+
+These alternative delimiters cause **silent rendering failures** in specific contexts:
+
+- `pymdownx.arithmatex` only recognizes `\[` as a display math block when it appears at the **absolute start of a line** with no leading whitespace.
+- Any `\[...\]` that is **indented** — inside a list item, inside an admonition (`!!! note`), inside a blockquote, or inside a worked example — is **silently ignored** by arithmatex. The math is then displayed as literal unrendered text on the page.
+- This failure is invisible during authoring because the markdown looks correct — it only fails in the rendered browser output.
+
+**In practice:** 245 display equations across chapters 2–12 were written with `\[...\]` and failed to render whenever indented. All were bulk-converted to `$$...$$` in February 2026.
+
+| Source delimiter | Context | Renders correctly? |
+|---|---|---|
+| `$...$` | Anywhere (prose, lists, tables, admonitions) | ✅ Always |
+| `$$...$$` | Anywhere (prose, lists, tables, admonitions) | ✅ Always |
+| `\(...\)` | Anywhere inline | ✅ Works, but NOT the project standard |
+| `\[...\]` | Start of line, no indentation | ✅ Works in this narrow case only |
+| `\[...\]` | Indented (inside list, admonition, etc.) | ❌ Silent failure — math shows as text |
+
 **Rules:**
-- Use `$...$` for inline math and `$$...$$` for display math
+- Use `$...$` for inline math — works in **any context**
+- Use `$$...$$` for display math — works in **any context**
 - Use `\text{...}` for text labels within math (e.g., `K_{\text{eq}}`)
 - Use `\Delta` for the delta symbol, not the unicode character
+- **Never** use `\[...\]` or `\(...\)` as source-level delimiters
 
 ### Decision Guide: Which System to Use
 
@@ -536,7 +570,7 @@ $\ce{^{14}C}$, $\ce{^{235}U}$, $\ce{^{12}C}$
 
 #### Rule 6: Math Equations Use LaTeX (NOT mhchem)
 
-For mathematical expressions, rate laws, and thermodynamic equations, use standard LaTeX math:
+For mathematical expressions, rate laws, and thermodynamic equations, use standard LaTeX math with **dollar-sign delimiters only**.
 
 ```markdown
 Inline: The ideal gas law is $PV = nRT$.
@@ -548,6 +582,15 @@ $$K_{\text{eq}} = \frac{[\text{products}]}{[\text{reactants}]}$$
 
 $$r = k[\ce{A}]^m[\ce{B}]^n$$
 ```
+
+**CRITICAL — Delimiter rules for the chapter-content-generator:**
+
+| You want | Write this | NEVER write this |
+|---|---|---|
+| Inline math | `$x = y$` | `\(x = y\)` |
+| Display math | `$$E = mc^2$$` | `\[E = mc^2\]` |
+
+The `\[...\]` display delimiter fails silently when indented inside a list, admonition, or worked example — the most common places equations appear. `$$...$$` works in every context. The chapter-content-generator must use `$$...$$` exclusively for all display math.
 
 **Key patterns:**
 

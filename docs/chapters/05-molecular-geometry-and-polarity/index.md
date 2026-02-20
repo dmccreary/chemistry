@@ -327,9 +327,9 @@ When two different atoms bond, however, their different electronegativities mean
 
 The degree of **bond polarity** is determined by the **electronegativity difference** (\(\Delta\chi\)) between the two bonded atoms:
 
-\[
+$$
 \Delta\chi = \chi_{\text{more electronegative}} - \chi_{\text{less electronegative}}
-\]
+$$
 
 The conventional scale for classifying bonds by electronegativity difference is:
 
@@ -341,9 +341,9 @@ These are guidelines, not sharp boundaries. Many chemists use 0.5 and 2.0 as the
 
 The **dipole moment** (\(\mu\)) is the quantitative measure of bond polarity. It equals the magnitude of the partial charges multiplied by the distance between them:
 
-\[
+$$
 \mu = Q \times r
-\]
+$$
 
 where \(Q\) is the magnitude of the partial charges (in units of electron charge, e) and \(r\) is the bond length (distance between the atoms). Dipole moments are reported in units called debyes (D). A larger dipole moment indicates a more polar bond.
 

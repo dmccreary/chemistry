@@ -64,7 +64,7 @@ When none of these driving forces operate, reactants and products remain in equi
 
 **Metathesis reactions**, also called double displacement or double replacement reactions, involve the exchange of ions between two ionic compounds in solution. The general form is:
 
-\[ \text{AB} + \text{CD} \rightarrow \text{AD} + \text{CB} \]
+$$ \text{AB} + \text{CD} \rightarrow \text{AD} + \text{CB} $$
 
 In practice, you swap the cations (or anions) of two ionic compounds and determine whether the resulting products are soluble or insoluble, gaseous, or molecular. Metathesis reactions are the backbone of qualitative analysis and gravimetric experiments. Common subtypes include:
 
@@ -74,7 +74,7 @@ In practice, you swap the cations (or anions) of two ionic compounds and determi
 
 The net ionic equation strips away spectator ions and reveals only the particles that actually interact. For example, when silver nitrate solution meets sodium chloride solution:
 
-\[ \text{Ag}^+(aq) + \text{Cl}^-(aq) \rightarrow \text{AgCl}(s) \]
+$$ \text{Ag}^+(aq) + \text{Cl}^-(aq) \rightarrow \text{AgCl}(s) $$
 
 The sodium and nitrate ions are spectators — they do not participate in bond formation or breaking, and they do not appear in the net ionic equation.
 
@@ -189,15 +189,15 @@ For a strong acid-strong base titration using phenolphthalein as indicator, the 
 
 The fundamental relationship for a 1:1 stoichiometry acid-base titration is:
 
-\[ n_{acid} = n_{base} \]
+$$ n_{acid} = n_{base} $$
 
 Since moles \( n = MV \) (molarity times volume in liters):
 
-\[ M_a V_a = M_b V_b \]
+$$ M_a V_a = M_b V_b $$
 
 For reactions with non-1:1 stoichiometry, the mole ratio from the balanced equation must be incorporated. For example, if a diprotic acid H₂A reacts with NaOH in a 1:2 ratio:
 
-\[ M_a V_a \times 2 = M_b V_b \]
+$$ M_a V_a \times 2 = M_b V_b $$
 
 **Worked Example:** A student titrates 25.00 mL of an unknown HCl solution with 0.1023 M NaOH. The burette reading changes from 1.25 mL to 28.74 mL at the endpoint. What is the molarity of the HCl solution?
 
@@ -207,7 +207,7 @@ Moles of NaOH: \( n_b = 0.1023 \times 0.02749 = 2.812 \times 10^{-3} \text{ mol}
 
 Since HCl + NaOH → NaCl + H₂O is 1:1, \( n_a = n_b \):
 
-\[ M_a = \frac{n_a}{V_a} = \frac{2.812 \times 10^{-3}}{0.02500} = 0.1125 \text{ M} \]
+$$ M_a = \frac{n_a}{V_a} = \frac{2.812 \times 10^{-3}}{0.02500} = 0.1125 \text{ M} $$
 
 **Molar ratios in solutions** are applied directly here: the stoichiometric coefficients from the balanced equation determine how moles of titrant relate to moles of analyte. Always check whether the acid is monoprotic, diprotic, or triprotic before setting up the ratio.
 
@@ -246,27 +246,27 @@ A **back titration** is used when the analyte does not react quickly or cleanly 
 
 The calculation relies on the relationship:
 
-\[ n_{analyte} = n_{standard\,added} - n_{excess} \]
+$$ n_{analyte} = n_{standard\,added} - n_{excess} $$
 
 **Worked Example:** A student wishes to determine the purity of a calcium carbonate antacid tablet. The tablet (mass 1.250 g) is dissolved in 50.00 mL of 0.5000 M HCl (excess). The unreacted HCl is then titrated with 0.2500 M NaOH, requiring 20.00 mL to reach the endpoint.
 
 Step 1 — Moles of HCl added (excess):
-\[ n_{HCl,\,added} = 0.5000 \times 0.05000 = 0.02500 \text{ mol} \]
+$$ n_{HCl,\,added} = 0.5000 \times 0.05000 = 0.02500 \text{ mol} $$
 
 Step 2 — Moles of NaOH used to neutralize excess HCl:
-\[ n_{NaOH} = 0.2500 \times 0.02000 = 5.000 \times 10^{-3} \text{ mol} \]
+$$ n_{NaOH} = 0.2500 \times 0.02000 = 5.000 \times 10^{-3} \text{ mol} $$
 
 Since HCl + NaOH → NaCl + H₂O is 1:1, moles of excess HCl = moles of NaOH used:
-\[ n_{HCl,\,excess} = 5.000 \times 10^{-3} \text{ mol} \]
+$$ n_{HCl,\,excess} = 5.000 \times 10^{-3} \text{ mol} $$
 
 Step 3 — Moles of HCl that reacted with CaCO₃:
-\[ n_{HCl,\,reacted} = 0.02500 - 0.005000 = 0.02000 \text{ mol} \]
+$$ n_{HCl,\,reacted} = 0.02500 - 0.005000 = 0.02000 \text{ mol} $$
 
 Step 4 — Moles of CaCO₃ (from balanced equation CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂, so 2:1 HCl to CaCO₃ ratio):
-\[ n_{CaCO_3} = \frac{0.02000}{2} = 0.01000 \text{ mol} \]
+$$ n_{CaCO_3} = \frac{0.02000}{2} = 0.01000 \text{ mol} $$
 
 Step 5 — Mass of pure CaCO₃:
-\[ m_{CaCO_3} = 0.01000 \times 100.09 = 1.0009 \text{ g} \]
+$$ m_{CaCO_3} = 0.01000 \times 100.09 = 1.0009 \text{ g} $$
 
 #### Diagram: Back Titration Step-by-Step Diagram
 
@@ -297,11 +297,11 @@ Learning objective: Students can evaluate (Bloom's Level 5 — Evaluate) when a 
 
 In real laboratory samples, the analyte of interest is rarely 100% pure. Impurities may be unreactive fillers, byproducts, or simply moisture. **Percent purity** is the quantitative measure of how much of the sample is the desired substance:
 
-\[ \% \text{ purity} = \frac{m_{pure}}{m_{sample}} \times 100 \]
+$$ \% \text{ purity} = \frac{m_{pure}}{m_{sample}} \times 100 $$
 
 Continuing from the back titration example above (Section 9.5):
 
-\[ \% \text{ purity} = \frac{1.0009 \text{ g}}{1.250 \text{ g}} \times 100 = 80.07\% \]
+$$ \% \text{ purity} = \frac{1.0009 \text{ g}}{1.250 \text{ g}} \times 100 = 80.07\% $$
 
 This means the antacid tablet is 80.07% calcium carbonate by mass, with the remaining 19.93% composed of binders, flavorings, and other inactive ingredients.
 
@@ -321,7 +321,7 @@ A common exam trap is confusing **percent yield** (ratio of actual to theoretica
 
 The mathematical relationship for serial dilution is:
 
-\[ C_n = C_0 \times d^n \]
+$$ C_n = C_0 \times d^n $$
 
 where:
 
@@ -332,11 +332,11 @@ where:
 
 For each individual dilution step, the underlying principle is conservation of moles:
 
-\[ C_1 V_1 = C_2 V_2 \]
+$$ C_1 V_1 = C_2 V_2 $$
 
 **Example:** A stock solution of 1.000 M glucose is serially diluted with a dilution factor of 0.10 (each step takes 1 mL and adds 9 mL of water). After 4 steps:
 
-\[ C_4 = 1.000 \times (0.10)^4 = 1.000 \times 10^{-4} \text{ M} \]
+$$ C_4 = 1.000 \times (0.10)^4 = 1.000 \times 10^{-4} \text{ M} $$
 
 Advantages of serial dilutions over single-step dilutions include:
 
@@ -360,22 +360,22 @@ The step-by-step procedure:
 
 1. Weigh the sample of unknown compound before combustion.
 2. Combust in excess O₂; collect and weigh CO₂ and H₂O produced.
-3. Convert mass of CO₂ to mass of C: \[ m_C = m_{CO_2} \times \frac{12.011}{44.010} \]
-4. Convert mass of H₂O to mass of H: \[ m_H = m_{H_2O} \times \frac{2 \times 1.008}{18.016} \]
-5. If oxygen is present: \[ m_O = m_{sample} - m_C - m_H \]
+3. Convert mass of CO₂ to mass of C: $$ m_C = m_{CO_2} \times \frac{12.011}{44.010} $$
+4. Convert mass of H₂O to mass of H: $$ m_H = m_{H_2O} \times \frac{2 \times 1.008}{18.016} $$
+5. If oxygen is present: $$ m_O = m_{sample} - m_C - m_H $$
 6. Convert each mass to moles by dividing by atomic mass.
 7. Divide all mole values by the smallest mole value.
 8. Round to nearest whole number (or multiply through by a small integer if ratios are not close to whole numbers, e.g., multiply by 2 if you get a ratio of 1:1.5).
 
 **Worked Example:** A 0.500 g sample of an unknown compound produces 0.733 g CO₂ and 0.300 g H₂O upon combustion. Find the empirical formula.
 
-Moles of C: \[ \frac{0.733 \times \frac{12.011}{44.010}}{12.011} = \frac{0.200}{12.011} = 0.01665 \text{ mol C} \]
+Moles of C: $$ \frac{0.733 \times \frac{12.011}{44.010}}{12.011} = \frac{0.200}{12.011} = 0.01665 \text{ mol C} $$
 
-Moles of H: \[ \frac{0.300 \times \frac{2.016}{18.016}}{1.008} = \frac{0.03358}{1.008} = 0.03331 \text{ mol H} \]
+Moles of H: $$ \frac{0.300 \times \frac{2.016}{18.016}}{1.008} = \frac{0.03358}{1.008} = 0.03331 \text{ mol H} $$
 
 Mass of O: \( 0.500 - 0.200 - 0.03358 = 0.2664 \text{ g O} \)
 
-Moles of O: \[ \frac{0.2664}{15.999} = 0.01665 \text{ mol O} \]
+Moles of O: $$ \frac{0.2664}{15.999} = 0.01665 \text{ mol O} $$
 
 Mole ratio C:H:O = 0.01665 : 0.03331 : 0.01665 = **1 : 2 : 1**
 
@@ -389,15 +389,15 @@ Empirical formula: **CH₂O** (the same as formaldehyde, glycolaldehyde, glucose
 
 **Acid-metal reactions** are a category of single displacement reactions in which an active metal reduces hydrogen ions from an acid, releasing hydrogen gas. The general form is:
 
-\[ \text{Metal} + \text{Acid} \rightarrow \text{Salt} + \text{H}_2(g) \]
+$$ \text{Metal} + \text{Acid} \rightarrow \text{Salt} + \text{H}_2(g) $$
 
 For example:
-\[ \text{Zn}(s) + 2\text{HCl}(aq) \rightarrow \text{ZnCl}_2(aq) + \text{H}_2(g) \]
+$$ \text{Zn}(s) + 2\text{HCl}(aq) \rightarrow \text{ZnCl}_2(aq) + \text{H}_2(g) $$
 
 Only metals above hydrogen in the activity series react this way with dilute acids. Metals below hydrogen (such as Cu, Ag, Au, Pt) do not displace hydrogen from dilute hydrochloric or sulfuric acid, though they may react with oxidizing acids such as concentrated HNO₃ or hot concentrated H₂SO₄ through different mechanisms.
 
 Concentrated nitric acid (HNO₃) reacts with copper through oxidation, producing NO₂ gas rather than H₂:
-\[ \text{Cu}(s) + 4\text{HNO}_3(conc) \rightarrow \text{Cu(NO}_3)_2(aq) + 2\text{NO}_2(g) + 2\text{H}_2\text{O}(l) \]
+$$ \text{Cu}(s) + 4\text{HNO}_3(conc) \rightarrow \text{Cu(NO}_3)_2(aq) + 2\text{NO}_2(g) + 2\text{H}_2\text{O}(l) $$
 
 This reaction is not a simple acid-metal displacement — it is a redox reaction driven by the strong oxidizing power of nitrate in acidic solution.
 
@@ -407,10 +407,10 @@ This reaction is not a simple acid-metal displacement — it is a redox reaction
 
 The classic example is hydrogen peroxide (H₂O₂), in which oxygen is in the -1 oxidation state. It can disproportionate to water (oxygen in -2 state) and oxygen gas (oxygen in 0 state):
 
-\[ 2\text{H}_2\text{O}_2(aq) \rightarrow 2\text{H}_2\text{O}(l) + \text{O}_2(g) \]
+$$ 2\text{H}_2\text{O}_2(aq) \rightarrow 2\text{H}_2\text{O}(l) + \text{O}_2(g) $$
 
 Another example is copper(I) disproportionation in aqueous solution:
-\[ 2\text{Cu}^+(aq) \rightarrow \text{Cu}(s) + \text{Cu}^{2+}(aq) \]
+$$ 2\text{Cu}^+(aq) \rightarrow \text{Cu}(s) + \text{Cu}^{2+}(aq) $$
 
 This is why Cu⁺ is rarely stable in aqueous solution — it spontaneously disproportionates to copper metal and the more stable Cu²⁺ ion. Disproportionation is thermodynamically driven when the reduction potential for the higher-oxidation-state product exceeds the reduction potential for the lower-oxidation-state product.
 

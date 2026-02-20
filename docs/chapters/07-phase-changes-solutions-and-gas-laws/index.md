@@ -168,25 +168,25 @@ Right panel (35% width): Controls and readout.
 
 During sloped regions of a heating or cooling curve, energy calculations use the specific heat equation:
 
-\[ q = mc\Delta T \]
+$$ q = mc\Delta T $$
 
 During flat plateau regions (phase changes), temperature does not change. Energy calculations use the enthalpy of the phase change multiplied by the mass:
 
-\[ q = m \Delta H_{fus} \quad \text{(at the melting/freezing plateau)} \]
+$$ q = m \Delta H_{fus} \quad \text{(at the melting/freezing plateau)} $$
 
-\[ q = m \Delta H_{vap} \quad \text{(at the boiling/condensation plateau)} \]
+$$ q = m \Delta H_{vap} \quad \text{(at the boiling/condensation plateau)} $$
 
 To calculate the total energy needed to take a substance through multiple segments — for example, heating ice from \(-10^\circ\text{C}\) to steam at \(120^\circ\text{C}\) — sum the \(q\) values for each segment separately:
 
-\[ q_{total} = q_1 + q_2 + q_3 + q_4 + q_5 \]
+$$ q_{total} = q_1 + q_2 + q_3 + q_4 + q_5 $$
 
 **Worked example:** How much energy is required to convert 50.0 g of ice at \(0^\circ\text{C}\) completely to liquid water at \(0^\circ\text{C}\)?
 
-\[ q = m \Delta H_{fus} = (50.0 \, \text{g})(334 \, \text{J/g}) = 16{,}700 \, \text{J} = 16.7 \, \text{kJ} \]
+$$ q = m \Delta H_{fus} = (50.0 \, \text{g})(334 \, \text{J/g}) = 16{,}700 \, \text{J} = 16.7 \, \text{kJ} $$
 
 The same mass of water being vaporized at \(100^\circ\text{C}\) would require:
 
-\[ q = m \Delta H_{vap} = (50.0 \, \text{g})(2260 \, \text{J/g}) = 113{,}000 \, \text{J} = 113 \, \text{kJ} \]
+$$ q = m \Delta H_{vap} = (50.0 \, \text{g})(2260 \, \text{J/g}) = 113{,}000 \, \text{J} = 113 \, \text{kJ} $$
 
 This calculation vividly illustrates why steam burns are far more severe than boiling-water burns: condensing steam on skin releases 113 kJ per 50 g, in addition to the heat released as the resulting liquid cools.
 
@@ -269,7 +269,7 @@ Vapor pressure depends critically on temperature and on the strength of intermol
 
 The **Clausius-Clapeyron equation** describes the quantitative relationship between vapor pressure and temperature:
 
-\[ \ln\left(\frac{P_2}{P_1}\right) = -\frac{\Delta H_{vap}}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right) \]
+$$ \ln\left(\frac{P_2}{P_1}\right) = -\frac{\Delta H_{vap}}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right) $$
 
 This equation shows that a plot of \(\ln P\) versus \(\frac{1}{T}\) is linear with slope \(-\frac{\Delta H_{vap}}{R}\), providing an experimental method for measuring the enthalpy of vaporization. Qualitatively, the key insight is that substances with large \(\Delta H_{vap}\) (strong IMFs, like water) show a steeper rise in vapor pressure with temperature than substances with small \(\Delta H_{vap}\).
 
@@ -329,15 +329,15 @@ A **saturated solution** contains the maximum amount of dissolved solute at a gi
 
 **Molarity** (M) is the most commonly used concentration unit in AP Chemistry. It is defined as the number of moles of solute per liter of solution:
 
-\[ M = \frac{n}{V(\text{L})} \]
+$$ M = \frac{n}{V(\text{L})} $$
 
 where \(n\) is the number of moles of solute and \(V\) is the volume of solution in liters. Note that molarity is defined in terms of solution volume, not solvent volume — this distinction matters when volumes are not additive upon mixing.
 
 **Example:** Dissolving 5.85 g of NaCl (molar mass = 58.5 g/mol) in enough water to make 250.0 mL of solution:
 
-\[ n = \frac{5.85 \, \text{g}}{58.5 \, \text{g/mol}} = 0.100 \, \text{mol} \]
+$$ n = \frac{5.85 \, \text{g}}{58.5 \, \text{g/mol}} = 0.100 \, \text{mol} $$
 
-\[ M = \frac{0.100 \, \text{mol}}{0.2500 \, \text{L}} = 0.400 \, \text{M} \]
+$$ M = \frac{0.100 \, \text{mol}}{0.2500 \, \text{L}} = 0.400 \, \text{M} $$
 
 ### Concentration Units Compared
 
@@ -356,15 +356,15 @@ Molality is preferred for colligative properties because it is defined in terms 
 
 **Dilution** is the process of decreasing the concentration of a solution by adding more solvent. A key principle of dilution: adding solvent changes the volume but not the number of moles of solute. Therefore, the moles of solute before and after dilution are equal:
 
-\[ n_{before} = n_{after} \]
+$$ n_{before} = n_{after} $$
 
-\[ M_1 V_1 = M_2 V_2 \]
+$$ M_1 V_1 = M_2 V_2 $$
 
 where \(M_1\) and \(V_1\) are the initial molarity and volume, and \(M_2\) and \(V_2\) are the final molarity and volume after adding solvent.
 
 **Example:** A student needs 500.0 mL of a 0.100 M HCl solution. How many milliliters of a 12.0 M HCl stock solution should be diluted?
 
-\[ V_1 = \frac{M_2 V_2}{M_1} = \frac{(0.100 \, \text{M})(500.0 \, \text{mL})}{12.0 \, \text{M}} = 4.17 \, \text{mL} \]
+$$ V_1 = \frac{M_2 V_2}{M_1} = \frac{(0.100 \, \text{M})(500.0 \, \text{mL})}{12.0 \, \text{M}} = 4.17 \, \text{mL} $$
 
 The student would measure 4.17 mL of the concentrated stock solution and add water to a final volume of 500.0 mL. (Always add acid to water — never the reverse — for safety.)
 
@@ -380,7 +380,7 @@ The student would measure 4.17 mL of the concentrated stock solution and add wat
 
 The key measured quantity is **absorbance** (A):
 
-\[ A = \log\left(\frac{I_0}{I}\right) \]
+$$ A = \log\left(\frac{I_0}{I}\right) $$
 
 where \(I_0\) is the intensity of the incident (reference) beam and \(I\) is the intensity of the transmitted beam. Absorbance is dimensionless. Transmittance \(T = I/I_0\), so \(A = -\log T\). A solution that absorbs 90% of the light has \(T = 0.10\) and \(A = 1.00\).
 
@@ -388,7 +388,7 @@ where \(I_0\) is the intensity of the incident (reference) beam and \(I\) is the
 
 The **Beer-Lambert Law** (often called Beer's Law) states that absorbance is directly proportional to the concentration of the absorbing species and the path length of light through the solution:
 
-\[ A = \varepsilon l c \]
+$$ A = \varepsilon l c $$
 
 where:
 
@@ -403,7 +403,7 @@ Beer's Law is valid only at low to moderate concentrations. At high concentratio
 
 **Example:** A solution of potassium permanganate (\(\text{KMnO}_4\)) at \(\lambda_{max} = 525 \, \text{nm}\) has \(\varepsilon = 2350 \, \text{L mol}^{-1} \text{cm}^{-1}\) and a path length of 1.00 cm. If the measured absorbance is 0.470:
 
-\[ c = \frac{A}{\varepsilon l} = \frac{0.470}{(2350 \, \text{L mol}^{-1} \text{cm}^{-1})(1.00 \, \text{cm})} = 2.00 \times 10^{-4} \, \text{mol/L} \]
+$$ c = \frac{A}{\varepsilon l} = \frac{0.470}{(2350 \, \text{L mol}^{-1} \text{cm}^{-1})(1.00 \, \text{cm})} = 2.00 \times 10^{-4} \, \text{mol/L} $$
 
 #### Diagram: Beer-Lambert Law Calibration Curve Builder
 
@@ -452,7 +452,7 @@ The physical basis for all colligative properties is the same: dissolved solute 
 
 When ionic compounds dissolve, they dissociate into multiple ions, multiplying the effective number of particles. The **van 't Hoff factor** (\(i\)) accounts for this:
 
-\[ i = \frac{\text{moles of particles in solution}}{\text{moles of solute dissolved}} \]
+$$ i = \frac{\text{moles of particles in solution}}{\text{moles of solute dissolved}} $$
 
 Expected values of \(i\) based on complete dissociation:
 
@@ -467,7 +467,7 @@ In practice, ion pairing at higher concentrations causes the measured \(i\) to b
 
 **Boiling point elevation** (\(\Delta T_b\)) is the increase in a solution's boiling point above that of the pure solvent. Because dissolved solute lowers the vapor pressure of the solvent, a higher temperature must be reached before the vapor pressure equals atmospheric pressure:
 
-\[ \Delta T_b = K_b m i \]
+$$ \Delta T_b = K_b m i $$
 
 where:
 
@@ -480,9 +480,9 @@ The new boiling point of the solution is \(T_b = T_b^{\circ} + \Delta T_b\).
 
 For water, \(K_b = 0.512 \, ^\circ\text{C·kg/mol}\). **Example:** What is the boiling point of a solution made by dissolving 58.5 g of NaCl (\(i = 2\)) in 500 g of water?
 
-\[ m = \frac{n_{NaCl}}{m_{water}} = \frac{(58.5 \, \text{g})/(58.5 \, \text{g/mol})}{0.500 \, \text{kg}} = \frac{1.00 \, \text{mol}}{0.500 \, \text{kg}} = 2.00 \, \text{mol/kg} \]
+$$ m = \frac{n_{NaCl}}{m_{water}} = \frac{(58.5 \, \text{g})/(58.5 \, \text{g/mol})}{0.500 \, \text{kg}} = \frac{1.00 \, \text{mol}}{0.500 \, \text{kg}} = 2.00 \, \text{mol/kg} $$
 
-\[ \Delta T_b = K_b m i = (0.512)(2.00)(2) = 2.05 \, ^\circ\text{C} \]
+$$ \Delta T_b = K_b m i = (0.512)(2.00)(2) = 2.05 \, ^\circ\text{C} $$
 
 The solution boils at \(100.00 + 2.05 = 102.05^\circ\text{C}\). Adding salt to boiling pasta water slightly raises the boiling point — though the effect is too small to cook pasta noticeably faster; the salt's main purpose is flavor.
 
@@ -490,7 +490,7 @@ The solution boils at \(100.00 + 2.05 = 102.05^\circ\text{C}\). Adding salt to b
 
 **Freezing point depression** (\(\Delta T_f\)) is the decrease in a solution's freezing point below that of the pure solvent. Solute particles interfere with the formation of the ordered crystal lattice of the solid solvent, requiring a lower temperature before the solid phase is stable:
 
-\[ \Delta T_f = K_f m i \]
+$$ \Delta T_f = K_f m i $$
 
 where:
 
@@ -505,11 +505,11 @@ For water, \(K_f = 1.86 \, ^\circ\text{C·kg/mol}\) — notably larger than \(K_
 
 **Example:** Antifreeze typically uses ethylene glycol (\(\text{C}_2\text{H}_6\text{O}_2\), \(i = 1\), molar mass = 62.1 g/mol). If 500 g of ethylene glycol is dissolved in 1000 g of water, what is the freezing point of the solution?
 
-\[ n = \frac{500 \, \text{g}}{62.1 \, \text{g/mol}} = 8.05 \, \text{mol} \]
+$$ n = \frac{500 \, \text{g}}{62.1 \, \text{g/mol}} = 8.05 \, \text{mol} $$
 
-\[ m = \frac{8.05 \, \text{mol}}{1.000 \, \text{kg}} = 8.05 \, \text{mol/kg} \]
+$$ m = \frac{8.05 \, \text{mol}}{1.000 \, \text{kg}} = 8.05 \, \text{mol/kg} $$
 
-\[ \Delta T_f = K_f m i = (1.86)(8.05)(1) = 15.0 \, ^\circ\text{C} \]
+$$ \Delta T_f = K_f m i = (1.86)(8.05)(1) = 15.0 \, ^\circ\text{C} $$
 
 The solution freezes at \(0.00 - 15.0 = -15.0^\circ\text{C}\). This is why antifreeze protects car engines in winter — the dissolved ethylene glycol prevents the coolant from freezing and cracking the engine block. Road salt (NaCl, \(i = 2\)) works on the same principle: spreading NaCl on icy roads creates a solution whose freezing point is below the ambient temperature, melting the ice.
 
@@ -528,11 +528,11 @@ The four colligative properties share a common mathematical structure — all de
 
 Colligative properties provide a practical experimental method for determining the molar mass of an unknown substance — a technique historically important before mass spectrometry became routine. If you measure the freezing point depression of a solution of known composition:
 
-\[ m = \frac{\Delta T_f}{K_f \cdot i} \]
+$$ m = \frac{\Delta T_f}{K_f \cdot i} $$
 
-\[ n_{solute} = m \times m_{solvent(\text{kg})} \]
+$$ n_{solute} = m \times m_{solvent(\text{kg})} $$
 
-\[ M_{molar} = \frac{m_{solute(\text{g})}}{n_{solute}} \]
+$$ M_{molar} = \frac{m_{solute(\text{g})}}{n_{solute}} $$
 
 For a nonelectrolyte (\(i = 1\)), this procedure requires only a precise thermometer, a known mass of solvent, and a known mass of solute. This is why freezing point depression experiments are common AP Chemistry laboratory investigations.
 

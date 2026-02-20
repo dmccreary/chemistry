@@ -79,13 +79,13 @@ Ionic bonding arises from the electrostatic attraction between oppositely charge
 
 **Cation formation** occurs when a metal atom loses valence electrons. Sodium (Na, Group 1) loses its single 3s electron:
 
-\[ \text{Na} \rightarrow \text{Na}^+ + e^- \]
+$$ \text{Na} \rightarrow \text{Na}^+ + e^- $$
 
 The resulting Na⁺ ion has the electron configuration of neon — a completely filled outermost shell. This is a key driving force: achieving a noble gas electron configuration by losing or gaining electrons.
 
 **Anion formation** occurs when a nonmetal gains electrons to fill its outermost shell. Chlorine (Cl, Group 17) gains one electron:
 
-\[ \text{Cl} + e^- \rightarrow \text{Cl}^- \]
+$$ \text{Cl} + e^- \rightarrow \text{Cl}^- $$
 
 The resulting Cl⁻ ion has the electron configuration of argon. The combination of Na⁺ and Cl⁻ produces sodium chloride, common table salt. Note that in the final compound, electrons have not truly been "created" or "destroyed" — the electron lost by sodium is the same electron gained by chlorine.
 
@@ -115,7 +115,7 @@ The stability of an ionic crystal lattice is quantified by the **lattice energy*
 
 The magnitude of lattice energy is governed by Coulomb's Law. The electrostatic potential energy between two ions is:
 
-\[ E \propto \frac{Q_1 \times Q_2}{r} \]
+$$ E \propto \frac{Q_1 \times Q_2}{r} $$
 
 where \(Q_1\) and \(Q_2\) are the ion charges and \(r\) is the distance between ion centers (approximately the sum of their ionic radii). This relationship has two critical implications:
 
@@ -348,7 +348,7 @@ When multiple valid Lewis structures exist — either as resonance contributors 
 
 **Formal charge** is defined as the charge an atom would have if all bonding electrons were shared equally between the bonded atoms, regardless of actual electronegativity. It is calculated using:
 
-\[ FC = V - N - \frac{B}{2} \]
+$$ FC = V - N - \frac{B}{2} $$
 
 where:
 
@@ -477,7 +477,7 @@ Three interconnected properties describe the character and strength of any coval
 
 For resonance structures, the bond order is the average over all equivalent bonds. In ozone (O₃), where the Lewis structures show one single bond and one double bond, the average bond order for each O–O bond is:
 
-\[ \text{Bond Order} = \frac{1 + 2}{2} = 1.5 \]
+$$ \text{Bond Order} = \frac{1 + 2}{2} = 1.5 $$
 
 In benzene (C₆H₆), all six C–C bonds are equivalent, each with a bond order of 1.5.
 
@@ -504,13 +504,13 @@ More shared electron pairs mean a stronger bond, requiring more energy to break.
 
 The relationship between bond order, length, and energy can be summarized:
 
-\[ \text{Bond Order} \uparrow \quad \Rightarrow \quad \text{Bond Length} \downarrow \quad \text{and} \quad \text{Bond Energy} \uparrow \]
+$$ \text{Bond Order} \uparrow \quad \Rightarrow \quad \text{Bond Length} \downarrow \quad \text{and} \quad \text{Bond Energy} \uparrow $$
 
 These trends also apply across different elements. Comparing bonds between the same two elements at different bond orders always follows this pattern. When comparing bonds between different elements, the atomic sizes must also be considered — bonds involving larger atoms are longer and often weaker.
 
 Bond energies are directly useful in estimating the enthalpy change (\(\Delta H\)) of a chemical reaction using Hess's Law applied to bond breaking and forming:
 
-\[ \Delta H_{rxn} \approx \sum (\text{Bond Energies Broken}) - \sum (\text{Bond Energies Formed}) \]
+$$ \Delta H_{rxn} \approx \sum (\text{Bond Energies Broken}) - \sum (\text{Bond Energies Formed}) $$
 
 Bonds broken absorb energy (endothermic); bonds formed release energy (exothermic). This calculation gives an estimate, not an exact value, because bond energies are average values over many different molecules.
 

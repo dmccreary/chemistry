@@ -89,7 +89,7 @@ This chapter builds systematically from reading and writing chemical equations, 
 
 A **chemical equation** is a symbolic representation of a chemical reaction. Reactants — the starting materials — appear on the left side, separated from the products — the substances formed — by an arrow. The arrow is read as "yields" or "produces." For example, the reaction of hydrogen gas with oxygen gas to form water is written:
 
-\[ 2\text{H}_2(g) + \text{O}_2(g) \rightarrow 2\text{H}_2\text{O}(g) \]
+$$ 2\text{H}_2(g) + \text{O}_2(g) \rightarrow 2\text{H}_2\text{O}(g) $$
 
 This single line of notation carries enormous information. It tells you the identities of every reactant and product, the physical state of each substance, and the exact whole-number ratios in which they combine and are produced. This form — showing all substances as their complete molecular or ionic formulas — is called a **molecular equation**.
 
@@ -124,19 +124,19 @@ A reliable method for balancing by inspection:
 
 Consider balancing the combustion of propane:
 
-\[ \text{C}_3\text{H}_8(g) + \text{O}_2(g) \rightarrow \text{CO}_2(g) + \text{H}_2\text{O}(g) \]
+$$ \text{C}_3\text{H}_8(g) + \text{O}_2(g) \rightarrow \text{CO}_2(g) + \text{H}_2\text{O}(g) $$
 
 Step 1 — Balance carbon: 3 C on the left requires 3 CO\(_2\) on the right.
 
-\[ \text{C}_3\text{H}_8 + \text{O}_2 \rightarrow 3\text{CO}_2 + \text{H}_2\text{O} \]
+$$ \text{C}_3\text{H}_8 + \text{O}_2 \rightarrow 3\text{CO}_2 + \text{H}_2\text{O} $$
 
 Step 2 — Balance hydrogen: 8 H on the left requires 4 H\(_2\)O on the right.
 
-\[ \text{C}_3\text{H}_8 + \text{O}_2 \rightarrow 3\text{CO}_2 + 4\text{H}_2\text{O} \]
+$$ \text{C}_3\text{H}_8 + \text{O}_2 \rightarrow 3\text{CO}_2 + 4\text{H}_2\text{O} $$
 
 Step 3 — Balance oxygen: right side has \(3(2) + 4(1) = 10\) oxygen atoms, so left side needs 5 O\(_2\).
 
-\[ \text{C}_3\text{H}_8(g) + 5\text{O}_2(g) \rightarrow 3\text{CO}_2(g) + 4\text{H}_2\text{O}(g) \]
+$$ \text{C}_3\text{H}_8(g) + 5\text{O}_2(g) \rightarrow 3\text{CO}_2(g) + 4\text{H}_2\text{O}(g) $$
 
 Verification: C: 3 = 3 ✓, H: 8 = 8 ✓, O: 10 = 10 ✓. Balanced.
 
@@ -211,7 +211,7 @@ If all possible products remain dissolved in solution, no net reaction occurs.
 
 **Combustion reactions** are rapid reactions with oxygen (O\(_2\)) that produce heat and light. For organic compounds (hydrocarbons and their derivatives), complete combustion always produces carbon dioxide and water:
 
-\[ \text{C}_x\text{H}_y(g) + \text{O}_2(g) \rightarrow x\text{CO}_2(g) + \frac{y}{2}\text{H}_2\text{O}(g) \]
+$$ \text{C}_x\text{H}_y(g) + \text{O}_2(g) \rightarrow x\text{CO}_2(g) + \frac{y}{2}\text{H}_2\text{O}(g) $$
 
 If the fuel contains oxygen (like ethanol, C\(_2\)H\(_5\)OH) or nitrogen, additional products may form. Incomplete combustion, when oxygen is limited, produces carbon monoxide (CO) or soot (C) instead of CO\(_2\).
 
@@ -276,17 +276,17 @@ For reactions in aqueous solution, chemists write three levels of detail, each p
 
 **Molecular equations** show all reactants and products as complete, neutral formulas, even for strong electrolytes that are actually dissociated in solution. For example, the reaction of silver nitrate with sodium chloride:
 
-\[ \text{AgNO}_3(aq) + \text{NaCl}(aq) \rightarrow \text{AgCl}(s) + \text{NaNO}_3(aq) \]
+$$ \text{AgNO}_3(aq) + \text{NaCl}(aq) \rightarrow \text{AgCl}(s) + \text{NaNO}_3(aq) $$
 
 **Complete ionic equations** show every strong electrolyte that is dissolved in water as its individual ions. Solids, liquids, and gases remain as whole formulas. Applying this to the same reaction:
 
-\[ \text{Ag}^+(aq) + \text{NO}_3^-(aq) + \text{Na}^+(aq) + \text{Cl}^-(aq) \rightarrow \text{AgCl}(s) + \text{Na}^+(aq) + \text{NO}_3^-(aq) \]
+$$ \text{Ag}^+(aq) + \text{NO}_3^-(aq) + \text{Na}^+(aq) + \text{Cl}^-(aq) \rightarrow \text{AgCl}(s) + \text{Na}^+(aq) + \text{NO}_3^-(aq) $$
 
 **Spectator ions** are ions that appear unchanged on both sides of the complete ionic equation — they are dissolved in solution at the start and remain dissolved at the end. They do not participate in the actual chemical change. In this example, Na\(^+\) and NO\(_3^-\) are spectator ions.
 
 **Net ionic equations** are obtained by canceling spectator ions from the complete ionic equation. What remains shows only the particles that actually participate in the reaction:
 
-\[ \text{Ag}^+(aq) + \text{Cl}^-(aq) \rightarrow \text{AgCl}(s) \]
+$$ \text{Ag}^+(aq) + \text{Cl}^-(aq) \rightarrow \text{AgCl}(s) $$
 
 This net ionic equation reveals the essence of every precipitation of AgCl, regardless of the source of Ag\(^+\) or Cl\(^-\). Any soluble silver salt mixed with any soluble chloride will produce the same net ionic equation.
 
@@ -310,11 +310,11 @@ Steps to write a net ionic equation:
 
 **Acid-carbonate reactions** are especially important in geochemistry, biology, and everyday chemistry. When an acid reacts with a carbonate or bicarbonate, the intermediate product H\(_2\)CO\(_3\) immediately decomposes to water and carbon dioxide gas:
 
-\[ \text{CaCO}_3(s) + 2\text{HCl}(aq) \rightarrow \text{CaCl}_2(aq) + \text{H}_2\text{O}(l) + \text{CO}_2(g) \]
+$$ \text{CaCO}_3(s) + 2\text{HCl}(aq) \rightarrow \text{CaCl}_2(aq) + \text{H}_2\text{O}(l) + \text{CO}_2(g) $$
 
 The net ionic equation for any strong acid reacting with carbonate is:
 
-\[ \text{CO}_3^{2-}(aq) + 2\text{H}^+(aq) \rightarrow \text{H}_2\text{O}(l) + \text{CO}_2(g) \]
+$$ \text{CO}_3^{2-}(aq) + 2\text{H}^+(aq) \rightarrow \text{H}_2\text{O}(l) + \text{CO}_2(g) $$
 
 This reaction explains the fizzing that occurs when limestone (CaCO\(_3\)) encounters acid rain, when antacid tablets (NaHCO\(_3\)) dissolve in stomach acid, and when baking soda reacts with vinegar.
 
@@ -330,11 +330,11 @@ This reaction explains the fizzing that occurs when limestone (CaCO\(_3\)) encou
 
 The **mole-to-mole ratio** is derived directly from the coefficients of a balanced equation. For the synthesis of ammonia:
 
-\[ \text{N}_2(g) + 3\text{H}_2(g) \rightarrow 2\text{NH}_3(g) \]
+$$ \text{N}_2(g) + 3\text{H}_2(g) \rightarrow 2\text{NH}_3(g) $$
 
 The coefficients tell us: 1 mol N\(_2\) reacts with 3 mol H\(_2\) to produce 2 mol NH\(_3\). Any pair of substances in the reaction can be related:
 
-\[ \frac{1 \text{ mol N}_2}{3 \text{ mol H}_2} \quad \frac{2 \text{ mol NH}_3}{1 \text{ mol N}_2} \quad \frac{2 \text{ mol NH}_3}{3 \text{ mol H}_2} \]
+$$ \frac{1 \text{ mol N}_2}{3 \text{ mol H}_2} \quad \frac{2 \text{ mol NH}_3}{1 \text{ mol N}_2} \quad \frac{2 \text{ mol NH}_3}{3 \text{ mol H}_2} $$
 
 These ratios, used as conversion factors, are the engine of stoichiometric calculations.
 
@@ -348,7 +348,7 @@ These ratios, used as conversion factors, are the engine of stoichiometric calcu
 
 For example: how many grams of NH\(_3\) are produced from 28.0 g of N\(_2\)?
 
-\[ 28.0 \text{ g N}_2 \times \frac{1 \text{ mol N}_2}{28.02 \text{ g}} \times \frac{2 \text{ mol NH}_3}{1 \text{ mol N}_2} \times \frac{17.03 \text{ g NH}_3}{1 \text{ mol NH}_3} = 34.0 \text{ g NH}_3 \]
+$$ 28.0 \text{ g N}_2 \times \frac{1 \text{ mol N}_2}{28.02 \text{ g}} \times \frac{2 \text{ mol NH}_3}{1 \text{ mol N}_2} \times \frac{17.03 \text{ g NH}_3}{1 \text{ mol NH}_3} = 34.0 \text{ g NH}_3 $$
 
 ### Limiting Reagent, Excess Reagent, and Theoretical Yield
 
@@ -375,7 +375,7 @@ The **actual yield** is the amount of product experimentally obtained in the lab
 
 The **percent yield** measures the efficiency of a reaction:
 
-\[ \% \text{ yield} = \frac{\text{actual yield}}{\text{theoretical yield}} \times 100 \]
+$$ \% \text{ yield} = \frac{\text{actual yield}}{\text{theoretical yield}} \times 100 $$
 
 A percent yield of 100% is theoretically perfect; real reactions often achieve 70–95% for well-optimized procedures. A percent yield greater than 100% signals an experimental error, typically incomplete drying of the product or contamination.
 
@@ -413,7 +413,7 @@ Canvas: 800 x 450 px, responsive to window resize using windowResized().
 
 When reactions occur in aqueous solution, amounts of dissolved substances are expressed in terms of **molarity** — moles of solute per liter of solution. The key relationship is:
 
-\[ n = MV \]
+$$ n = MV $$
 
 where \(n\) is moles of solute, \(M\) is molarity in mol/L, and \(V\) is volume in liters. This equation is used in conjunction with mole ratios from balanced equations to solve **solution stoichiometry** problems.
 
@@ -421,11 +421,11 @@ For example, how many mL of 0.250 M HCl are needed to react completely with 15.0
 
 The balanced equation is: \(2\text{HCl}(aq) + \text{Ba(OH)}_2(aq) \rightarrow \text{BaCl}_2(aq) + 2\text{H}_2\text{O}(l)\)
 
-\[ n_{\text{Ba(OH)}_2} = (0.100 \text{ mol/L})(0.0150 \text{ L}) = 1.50 \times 10^{-3} \text{ mol} \]
+$$ n_{\text{Ba(OH)}_2} = (0.100 \text{ mol/L})(0.0150 \text{ L}) = 1.50 \times 10^{-3} \text{ mol} $$
 
-\[ n_{\text{HCl}} = 1.50 \times 10^{-3} \text{ mol Ba(OH)}_2 \times \frac{2 \text{ mol HCl}}{1 \text{ mol Ba(OH)}_2} = 3.00 \times 10^{-3} \text{ mol HCl} \]
+$$ n_{\text{HCl}} = 1.50 \times 10^{-3} \text{ mol Ba(OH)}_2 \times \frac{2 \text{ mol HCl}}{1 \text{ mol Ba(OH)}_2} = 3.00 \times 10^{-3} \text{ mol HCl} $$
 
-\[ V_{\text{HCl}} = \frac{3.00 \times 10^{-3} \text{ mol}}{0.250 \text{ mol/L}} = 0.0120 \text{ L} = 12.0 \text{ mL} \]
+$$ V_{\text{HCl}} = \frac{3.00 \times 10^{-3} \text{ mol}}{0.250 \text{ mol/L}} = 0.0120 \text{ L} = 12.0 \text{ mL} $$
 
 ### Titration
 
@@ -433,11 +433,11 @@ The balanced equation is: \(2\text{HCl}(aq) + \text{Ba(OH)}_2(aq) \rightarrow \t
 
 The process continues until the **equivalence point** is reached — the point at which the titrant has been added in exactly stoichiometric quantities; all of the analyte has reacted. At the equivalence point:
 
-\[ n_{\text{acid}} \times \text{(acid coefficient)} = n_{\text{base}} \times \text{(base coefficient)} \]
+$$ n_{\text{acid}} \times \text{(acid coefficient)} = n_{\text{base}} \times \text{(base coefficient)} $$
 
 For a simple 1:1 reaction (strong acid–strong base):
 
-\[ M_a V_a = M_b V_b \]
+$$ M_a V_a = M_b V_b $$
 
 ### Titration Curves
 
@@ -507,9 +507,9 @@ Steps in a gravimetric analysis:
 
 For example, to determine the chloride content of a sample: dissolve the sample in water, add excess AgNO\(_3\)(aq) to precipitate all Cl\(^-\) as AgCl(s), filter and dry the precipitate, and weigh it. Then:
 
-\[ \text{mol Cl}^- = \text{mol AgCl} = \frac{m_{\text{AgCl}}}{143.32 \text{ g/mol}} \]
+$$ \text{mol Cl}^- = \text{mol AgCl} = \frac{m_{\text{AgCl}}}{143.32 \text{ g/mol}} $$
 
-\[ m_{\text{Cl}} = \text{mol Cl}^- \times 35.45 \text{ g/mol} \]
+$$ m_{\text{Cl}} = \text{mol Cl}^- \times 35.45 \text{ g/mol} $$
 
 ---
 
@@ -599,7 +599,7 @@ Unbalanced: \(\text{MnO}_4^-(aq) + \text{Fe}^{2+}(aq) \rightarrow \text{Mn}^{2+}
 
 **Reduction half-reaction (Mn):**
 
-\[ \text{MnO}_4^- \rightarrow \text{Mn}^{2+} \]
+$$ \text{MnO}_4^- \rightarrow \text{Mn}^{2+} $$
 
 Balance O: add 4 H\(_2\)O to right: \(\text{MnO}_4^- \rightarrow \text{Mn}^{2+} + 4\text{H}_2\text{O}\)
 
@@ -607,19 +607,19 @@ Balance H: add 8 H\(^+\) to left: \(\text{MnO}_4^- + 8\text{H}^+ \rightarrow \te
 
 Balance charge: left = −1 + 8 = +7; right = +2. Add 5 e\(^-\) to left:
 
-\[ \text{MnO}_4^- + 8\text{H}^+ + 5e^- \rightarrow \text{Mn}^{2+} + 4\text{H}_2\text{O} \]
+$$ \text{MnO}_4^- + 8\text{H}^+ + 5e^- \rightarrow \text{Mn}^{2+} + 4\text{H}_2\text{O} $$
 
 **Oxidation half-reaction (Fe):**
 
-\[ \text{Fe}^{2+} \rightarrow \text{Fe}^{3+} + e^- \]
+$$ \text{Fe}^{2+} \rightarrow \text{Fe}^{3+} + e^- $$
 
 **Equalize electrons:** multiply the Fe half-reaction by 5:
 
-\[ 5\text{Fe}^{2+} \rightarrow 5\text{Fe}^{3+} + 5e^- \]
+$$ 5\text{Fe}^{2+} \rightarrow 5\text{Fe}^{3+} + 5e^- $$
 
 **Add half-reactions:**
 
-\[ \text{MnO}_4^-(aq) + 8\text{H}^+(aq) + 5\text{Fe}^{2+}(aq) \rightarrow \text{Mn}^{2+}(aq) + 4\text{H}_2\text{O}(l) + 5\text{Fe}^{3+}(aq) \]
+$$ \text{MnO}_4^-(aq) + 8\text{H}^+(aq) + 5\text{Fe}^{2+}(aq) \rightarrow \text{Mn}^{2+}(aq) + 4\text{H}_2\text{O}(l) + 5\text{Fe}^{3+}(aq) $$
 
 Verify: Mn: 1 = 1 ✓; Fe: 5 = 5 ✓; O: 4 = 4 ✓; H: 8 = 8 ✓; Charge: −1 + 8 + 10 = +17 left; +2 + 0 + 15 = +17 right ✓.
 

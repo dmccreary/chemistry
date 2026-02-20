@@ -81,7 +81,7 @@ We will start by defining the vocabulary of thermodynamics — systems, surround
 
 Before you can analyze any energy change, you need to define *what* you are analyzing. In thermodynamics, we draw an imaginary boundary around the part of the universe we are interested in and call it the **system**. Everything outside that boundary is called the **surroundings**. The combination of system and surroundings constitutes the universe:
 
-\[ \text{universe} = \text{system} + \text{surroundings} \]
+$$ \text{universe} = \text{system} + \text{surroundings} $$
 
 For a chemical reaction, the system is typically the reacting chemicals themselves. The surroundings include the container, the solvent (if any), the air around the container, and ultimately everything else.
 
@@ -157,7 +157,7 @@ Different substances require different amounts of energy to raise their temperat
 
 The heat equation relates these quantities:
 
-\[ q = mc\Delta T \]
+$$ q = mc\Delta T $$
 
 where:
 
@@ -168,7 +168,7 @@ where:
 
 The closely related **heat capacity** (\( C \)) applies to an *entire object* rather than per gram:
 
-\[ q = C\Delta T \]
+$$ q = C\Delta T $$
 
 Heat capacity has units of J/°C and depends on both the identity of the substance *and* the mass of the sample.
 
@@ -195,11 +195,11 @@ Water's unusually **high specific heat capacity** (4.184 J/g·°C) is worth reme
 
 **Calorimetry** is the experimental technique of measuring the heat released or absorbed in a chemical or physical process. The core principle: in an ideal calorimeter (isolated system), heat lost by one part of the system equals heat gained by another part:
 
-\[ q_\text{lost} = -q_\text{gained} \]
+$$ q_\text{lost} = -q_\text{gained} $$
 
 or equivalently:
 
-\[ q_\text{reaction} = -q_\text{solution} \]
+$$ q_\text{reaction} = -q_\text{solution} $$
 
 #### Diagram: Coffee Cup vs. Bomb Calorimeter Explorer
 
@@ -238,7 +238,7 @@ The simplest calorimeter used in AP labs is the **coffee cup calorimeter** — t
 
 Because styrofoam is a poor conductor of heat, we assume negligible heat exchange with the surroundings. The heat released or absorbed by the reaction (\( q_\text{rxn} \)) equals the negative of the heat absorbed or released by the solution (\( q_\text{soln} \)):
 
-\[ q_\text{rxn} = -q_\text{soln} = -(m_\text{soln})(c_\text{soln})(\Delta T) \]
+$$ q_\text{rxn} = -q_\text{soln} = -(m_\text{soln})(c_\text{soln})(\Delta T) $$
 
 **Worked Example:** 50.0 mL of 1.00 M \( \ce{HCl} \) at 22.5 °C is mixed with 50.0 mL of 1.00 M \( \ce{NaOH} \) at 22.5 °C in a coffee cup calorimeter. The final temperature reaches 29.2 °C. Calculate \( q_\text{rxn} \) and \( \Delta H_\text{rxn} \) in kJ/mol.
 
@@ -259,7 +259,7 @@ For reactions involving gases or combustion, we use a **bomb calorimeter** — a
 
 The heat calculation for a bomb calorimeter uses the *heat capacity of the entire calorimeter assembly* \( C_\text{cal} \) (units: J/°C):
 
-\[ q_\text{rxn} = -C_\text{cal} \times \Delta T \]
+$$ q_\text{rxn} = -C_\text{cal} \times \Delta T $$
 
 The value of \( C_\text{cal} \) is determined by calibration — burning a substance of known enthalpy of combustion (often benzoic acid) and measuring the temperature change.
 
@@ -328,15 +328,15 @@ Note that *both* exothermic and endothermic reactions have activation energy bar
 
 When reactions occur at constant pressure (like in an open beaker in a lab), the heat released or absorbed equals the change in a thermodynamic quantity called **enthalpy** (\( H \)):
 
-\[ q_p = \Delta H \]
+$$ q_p = \Delta H $$
 
 Enthalpy is defined as the sum of a system's internal energy (\( U \)) and the pressure–volume product:
 
-\[ H = U + PV \]
+$$ H = U + PV $$
 
 You do not need to calculate \( H \) directly — what matters is the **enthalpy change**:
 
-\[ \Delta H = H_\text{products} - H_\text{reactants} \]
+$$ \Delta H = H_\text{products} - H_\text{reactants} $$
 
 At constant pressure, \( \Delta H \) equals the heat transferred between system and surroundings. This is why calorimetry at constant pressure directly measures \( \Delta H \).
 
@@ -365,7 +365,7 @@ Two important rules for enthalpies of formation:
 
 One of the most powerful applications of enthalpy of formation data is calculating the standard enthalpy of *any* reaction using tabulated values. The formula is:
 
-\[ \Delta H^\circ_\text{rxn} = \sum n\,\Delta H^\circ_f(\text{products}) - \sum m\,\Delta H^\circ_f(\text{reactants}) \]
+$$ \Delta H^\circ_\text{rxn} = \sum n\,\Delta H^\circ_f(\text{products}) - \sum m\,\Delta H^\circ_f(\text{reactants}) $$
 
 where \( n \) and \( m \) are the stoichiometric coefficients from the balanced equation.
 
@@ -382,11 +382,11 @@ Using standard formation values:
 | \( \ce{CO2(g)} \) | −393.5 |
 | \( \ce{H2O(l)} \) | −285.8 |
 
-\[ \Delta H^\circ_\text{rxn} = [1(-393.5) + 2(-285.8)] - [1(-74.8) + 2(0)] \]
+$$ \Delta H^\circ_\text{rxn} = [1(-393.5) + 2(-285.8)] - [1(-74.8) + 2(0)] $$
 
-\[ \Delta H^\circ_\text{rxn} = [-393.5 + (-571.6)] - [-74.8] \]
+$$ \Delta H^\circ_\text{rxn} = [-393.5 + (-571.6)] - [-74.8] $$
 
-\[ \Delta H^\circ_\text{rxn} = -965.1 - (-74.8) = -890.3\,\text{kJ/mol} \]
+$$ \Delta H^\circ_\text{rxn} = -965.1 - (-74.8) = -890.3\,\text{kJ/mol} $$
 
 The combustion of methane releases 890.3 kJ per mole — a highly exothermic reaction that powers natural gas stoves and furnaces.
 
@@ -435,14 +435,14 @@ Strategy: We need \( \ce{CO(g)} \) as a *product*, but it appears as a *reactant
 
 Now add Reaction 1 and reversed Reaction 2:
 
-\[ \ce{C(s) + O2(g) -> CO2(g)} \]
-\[ \ce{CO2(g) -> CO(g) + \frac{1}{2}O2(g)} \]
+$$ \ce{C(s) + O2(g) -> CO2(g)} $$
+$$ \ce{CO2(g) -> CO(g) + \frac{1}{2}O2(g)} $$
 
 Cancel \( \ce{CO2} \) from both sides, and \( \frac{1}{2}\ce{O2} \) subtracts from \( \ce{O2} \):
 
-\[ \ce{C(s) + \frac{1}{2}O2(g) -> CO(g)} \]
+$$ \ce{C(s) + \frac{1}{2}O2(g) -> CO(g)} $$
 
-\[ \Delta H = -393.5 + 283.0 = -110.5\,\text{kJ} \]
+$$ \Delta H = -393.5 + 283.0 = -110.5\,\text{kJ} $$
 
 #### Diagram: Hess's Law Pathway Visualizer
 
@@ -482,11 +482,11 @@ Type: microsim
 
 Every chemical bond stores energy. **Bond enthalpy** (also called bond dissociation energy) is the energy required to break **one mole** of a particular bond in the gas phase, with all species in their gaseous state:
 
-\[ \ce{A-B(g) -> A(g) + B(g)} \quad \Delta H = \text{Bond Enthalpy (positive, always)} \]
+$$ \ce{A-B(g) -> A(g) + B(g)} \quad \Delta H = \text{Bond Enthalpy (positive, always)} $$
 
 Breaking bonds always **requires** energy (endothermic). Forming bonds always **releases** energy (exothermic). The overall \( \Delta H \) of a reaction reflects the competition between bond breaking and bond forming:
 
-\[ \Delta H_\text{rxn} \approx \sum (\text{bond enthalpies of bonds broken}) - \sum (\text{bond enthalpies of bonds formed}) \]
+$$ \Delta H_\text{rxn} \approx \sum (\text{bond enthalpies of bonds broken}) - \sum (\text{bond enthalpies of bonds formed}) $$
 
 Note that bond enthalpies are **average values** — they vary slightly depending on the molecular environment. This means bond enthalpy calculations give approximate (not exact) \( \Delta H \) values. They are most reliable for gas-phase reactions.
 
@@ -512,11 +512,11 @@ Draw Lewis structures to count bonds:
 - **Bonds broken (reactants):** 4 \( \ce{C-H} \) in \( \ce{CH4} \); 2 \( \times \) 1 \( \ce{O=O} \) in \( \ce{2O2} \)
 - **Bonds formed (products):** 2 \( \times \) 2 \( \ce{C=O} \) in \( \ce{CO2} \); 2 \( \times \) 2 \( \ce{O-H} \) in \( \ce{2H2O} \)
 
-\[ \Delta H \approx [4(413) + 2(498)] - [4(799) + 4(463)] \]
+$$ \Delta H \approx [4(413) + 2(498)] - [4(799) + 4(463)] $$
 
-\[ \Delta H \approx [1652 + 996] - [3196 + 1852] \]
+$$ \Delta H \approx [1652 + 996] - [3196 + 1852] $$
 
-\[ \Delta H \approx 2648 - 5048 = -2400\,\text{kJ/mol} \]
+$$ \Delta H \approx 2648 - 5048 = -2400\,\text{kJ/mol} $$
 
 This is an estimate. The accepted value (−890.3 kJ/mol from formation enthalpies) applies when \( \ce{H2O} \) is liquid; the gas-phase estimate differs due to enthalpy of vaporization of water and the use of average bond enthalpies.
 
@@ -538,15 +538,15 @@ The Born-Haber cycle for the formation of sodium chloride (\( \ce{NaCl} \)) appl
 
 By Hess's Law, the sum of all five steps must equal the overall **enthalpy of formation** of \( \ce{NaCl(s)} \):
 
-\[ \Delta H^\circ_f[\ce{NaCl(s)}] = \Delta H_\text{sub} + \frac{1}{2}D(\ce{Cl-Cl}) + IE_1(\ce{Na}) + EA(\ce{Cl}) + \Delta H_L \]
+$$ \Delta H^\circ_f[\ce{NaCl(s)}] = \Delta H_\text{sub} + \frac{1}{2}D(\ce{Cl-Cl}) + IE_1(\ce{Na}) + EA(\ce{Cl}) + \Delta H_L $$
 
 Rearranging:
 
-\[ \Delta H_L = \Delta H^\circ_f - \Delta H_\text{sub} - \frac{1}{2}D(\ce{Cl-Cl}) - IE_1 - EA \]
+$$ \Delta H_L = \Delta H^\circ_f - \Delta H_\text{sub} - \frac{1}{2}D(\ce{Cl-Cl}) - IE_1 - EA $$
 
 Substituting known values for \( \ce{NaCl} \):
 
-\[ \Delta H_L = -411 - 107 - 121 - 496 - (-349) = -786\,\text{kJ/mol} \]
+$$ \Delta H_L = -411 - 107 - 121 - 496 - (-349) = -786\,\text{kJ/mol} $$
 
 The large negative lattice energy (−786 kJ/mol) reflects the strong electrostatic attraction between \( \ce{Na+} \) and \( \ce{Cl-} \) ions in the crystal lattice.
 
@@ -597,7 +597,7 @@ That second driving force is **entropy** (\( S \)) — a thermodynamic measure o
 
 Entropy is a **state function** with units of joules per kelvin per mole (J/K·mol). Like enthalpy, we track changes in entropy:
 
-\[ \Delta S = S_\text{products} - S_\text{reactants} \]
+$$ \Delta S = S_\text{products} - S_\text{reactants} $$
 
 - \( \Delta S > 0 \): Entropy increases (more disorder) — favors spontaneity
 - \( \Delta S < 0 \): Entropy decreases (more order) — opposes spontaneity
@@ -608,8 +608,7 @@ You can often predict the sign of \( \Delta S \) qualitatively using these guide
 
 - **Gases have more entropy than liquids, which have more entropy than solids.** Phase changes from solid → liquid → gas increase entropy.
 - **Dissolving a solid into solution generally increases entropy** (ions/molecules disperse throughout the solvent).
-- **Reactions that increase the number of gas moles increase entropy.** For example:
-  \[ \ce{CaCO3(s) -> CaO(s) + CO2(g)} \quad \Delta S > 0 \quad (\text{1 mol gas produced}) \]
+- **Reactions that increase the number of gas moles increase entropy.** For example, $\ce{CaCO3(s) -> CaO(s) + CO2(g)}$ has $\Delta S > 0$ because 1 mol of gas is produced.
 - **Reactions that decrease the number of gas moles decrease entropy.**
 
 ### Standard Molar Entropy
@@ -618,13 +617,13 @@ The **standard molar entropy** (\( S^\circ \)) of a substance is the absolute en
 
 The **entropy change** for a reaction is calculated analogously to enthalpy:
 
-\[ \Delta S^\circ_\text{rxn} = \sum n\,S^\circ(\text{products}) - \sum m\,S^\circ(\text{reactants}) \]
+$$ \Delta S^\circ_\text{rxn} = \sum n\,S^\circ(\text{products}) - \sum m\,S^\circ(\text{reactants}) $$
 
 ### Entropy and Disorder
 
 At the molecular level, entropy is related to the **number of microstates** (\( W \)) available to a system — the different ways the particles can be arranged while still having the same total energy:
 
-\[ S = k_B \ln W \]
+$$ S = k_B \ln W $$
 
 where \( k_B = 1.38 \times 10^{-23}\,\text{J/K} \) is Boltzmann's constant. This equation, due to Ludwig Boltzmann, connects the macroscopic property \( S \) to the microscopic count of arrangements. Greater disorder (more possible arrangements) means more microstates means higher entropy.
 

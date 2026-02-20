@@ -77,13 +77,13 @@ A **reaction rate** is the change in concentration of a reactant or product per 
 
 Consider the general decomposition reaction:
 
-\[ \text{A} \rightarrow \text{B} \]
+$$ \text{A} \rightarrow \text{B} $$
 
 As the reaction proceeds, the concentration of reactant A decreases while the concentration of product B increases. We define the **rate of disappearance** of A and the **rate of appearance** of B as:
 
-\[ \text{rate of disappearance of A} = -\frac{\Delta[\text{A}]}{\Delta t} \]
+$$ \text{rate of disappearance of A} = -\frac{\Delta[\text{A}]}{\Delta t} $$
 
-\[ \text{rate of appearance of B} = +\frac{\Delta[\text{B}]}{\Delta t} \]
+$$ \text{rate of appearance of B} = +\frac{\Delta[\text{B}]}{\Delta t} $$
 
 The negative sign in the disappearance expression ensures the rate is always a positive number (since \(\Delta[\text{A}]\) is negative when A is consumed). The positive sign for appearance reflects that product concentration increases over time.
 
@@ -91,11 +91,11 @@ The negative sign in the disappearance expression ensures the rate is always a p
 
 For reactions with coefficients other than 1, stoichiometry links the rates of disappearance and appearance. Consider:
 
-\[ 2\,\text{NO}_2(g) \rightarrow 2\,\text{NO}(g) + \text{O}_2(g) \]
+$$ 2\,\text{NO}_2(g) \rightarrow 2\,\text{NO}(g) + \text{O}_2(g) $$
 
 Here, every time two moles of \(\text{NO}_2\) are consumed, two moles of \(\text{NO}\) and one mole of \(\text{O}_2\) are produced. The unique reaction rate — a single number that describes the overall rate regardless of which species you monitor — is:
 
-\[ \text{rate} = -\frac{1}{2}\frac{\Delta[\text{NO}_2]}{\Delta t} = +\frac{1}{2}\frac{\Delta[\text{NO}]}{\Delta t} = +\frac{\Delta[\text{O}_2]}{\Delta t} \]
+$$ \text{rate} = -\frac{1}{2}\frac{\Delta[\text{NO}_2]}{\Delta t} = +\frac{1}{2}\frac{\Delta[\text{NO}]}{\Delta t} = +\frac{\Delta[\text{O}_2]}{\Delta t} $$
 
 The general rule: divide the rate of change of each species by its stoichiometric coefficient, and include a negative sign for reactants.
 
@@ -122,7 +122,7 @@ Three distinct rate concepts appear regularly in kinetics problems:
 
 The **rate law** (also called the rate equation) expresses the reaction rate as a mathematical function of reactant concentrations. For a reaction involving reactants A and B, the general form is:
 
-\[ \text{rate} = k[\text{A}]^m[\text{B}]^n \]
+$$ \text{rate} = k[\text{A}]^m[\text{B}]^n $$
 
 where:
 
@@ -175,27 +175,27 @@ The following experimental data were collected:
 **Step 1: Find the order with respect to A.**
 Compare Experiments 1 and 2 (only \([\text{A}]\) changes):
 
-\[ \frac{\text{rate}_2}{\text{rate}_1} = \frac{k[\text{A}]_2^m[\text{B}]_1^n}{k[\text{A}]_1^m[\text{B}]_1^n} = \left(\frac{[\text{A}]_2}{[\text{A}]_1}\right)^m \]
+$$ \frac{\text{rate}_2}{\text{rate}_1} = \frac{k[\text{A}]_2^m[\text{B}]_1^n}{k[\text{A}]_1^m[\text{B}]_1^n} = \left(\frac{[\text{A}]_2}{[\text{A}]_1}\right)^m $$
 
-\[ \frac{4.0 \times 10^{-3}}{2.0 \times 10^{-3}} = \left(\frac{0.200}{0.100}\right)^m = 2^m \]
+$$ \frac{4.0 \times 10^{-3}}{2.0 \times 10^{-3}} = \left(\frac{0.200}{0.100}\right)^m = 2^m $$
 
-\[ 2 = 2^m \implies m = 1 \quad \text{(first order in A)} \]
+$$ 2 = 2^m \implies m = 1 \quad \text{(first order in A)} $$
 
 **Step 2: Find the order with respect to B.**
 Compare Experiments 1 and 3 (only \([\text{B}]\) changes):
 
-\[ \frac{\text{rate}_3}{\text{rate}_1} = \left(\frac{[\text{B}]_3}{[\text{B}]_1}\right)^n = \left(\frac{0.200}{0.100}\right)^n = 2^n \]
+$$ \frac{\text{rate}_3}{\text{rate}_1} = \left(\frac{[\text{B}]_3}{[\text{B}]_1}\right)^n = \left(\frac{0.200}{0.100}\right)^n = 2^n $$
 
-\[ \frac{8.0 \times 10^{-3}}{2.0 \times 10^{-3}} = 4 = 2^n \implies n = 2 \quad \text{(second order in B)} \]
+$$ \frac{8.0 \times 10^{-3}}{2.0 \times 10^{-3}} = 4 = 2^n \implies n = 2 \quad \text{(second order in B)} $$
 
 **Step 3: Write the rate law.**
 
-\[ \text{rate} = k[\text{A}][\text{B}]^2 \]
+$$ \text{rate} = k[\text{A}][\text{B}]^2 $$
 
 **Step 4: Calculate \(k\).**
 Using Experiment 1:
 
-\[ k = \frac{\text{rate}}{[\text{A}][\text{B}]^2} = \frac{2.0 \times 10^{-3}\,\text{M/s}}{(0.100\,\text{M})(0.100\,\text{M})^2} = 2.0\,\text{M}^{-2}\text{s}^{-1} \]
+$$ k = \frac{\text{rate}}{[\text{A}][\text{B}]^2} = \frac{2.0 \times 10^{-3}\,\text{M/s}}{(0.100\,\text{M})(0.100\,\text{M})^2} = 2.0\,\text{M}^{-2}\text{s}^{-1} $$
 
 The overall reaction order is \(1 + 2 = 3\) (third order overall).
 
@@ -209,11 +209,11 @@ Rate laws tell us the instantaneous rate, but we often need to know the concentr
 
 For a **zero order reaction**, the rate is constant and independent of concentration:
 
-\[ \text{rate} = k \]
+$$ \text{rate} = k $$
 
 Integrating gives the **zero order integrated law**:
 
-\[ [\text{A}]_t = [\text{A}]_0 - kt \]
+$$ [\text{A}]_t = [\text{A}]_0 - kt $$
 
 This is the equation of a straight line: \([\text{A}]_t\) versus \(t\) is linear with slope \(-k\) and y-intercept \([\text{A}]_0\). The concentration decreases linearly with time until the reactant is exhausted.
 
@@ -221,11 +221,11 @@ This is the equation of a straight line: \([\text{A}]_t\) versus \(t\) is linear
 
 For a **first order reaction**, the rate is proportional to concentration:
 
-\[ \text{rate} = k[\text{A}] \]
+$$ \text{rate} = k[\text{A}] $$
 
 Integrating gives the **first order integrated law**:
 
-\[ \ln[\text{A}]_t = \ln[\text{A}]_0 - kt \]
+$$ \ln[\text{A}]_t = \ln[\text{A}]_0 - kt $$
 
 This can also be written as \([\text{A}]_t = [\text{A}]_0\,e^{-kt}\), which shows that concentration decays exponentially with time. The logarithmic form reveals that a plot of \(\ln[\text{A}]\) versus \(t\) is linear with slope \(-k\).
 
@@ -233,11 +233,11 @@ This can also be written as \([\text{A}]_t = [\text{A}]_0\,e^{-kt}\), which show
 
 For a **second order reaction** (second order in A only):
 
-\[ \text{rate} = k[\text{A}]^2 \]
+$$ \text{rate} = k[\text{A}]^2 $$
 
 Integrating gives the **second order integrated law**:
 
-\[ \frac{1}{[\text{A}]_t} = \frac{1}{[\text{A}]_0} + kt \]
+$$ \frac{1}{[\text{A}]_t} = \frac{1}{[\text{A}]_0} + kt $$
 
 Here, a plot of \(\frac{1}{[\text{A}]}\) versus \(t\) is linear with slope \(+k\) and y-intercept \(\frac{1}{[\text{A}]_0}\).
 
@@ -259,7 +259,7 @@ The **half-life** (\(t_{1/2}\)) of a reaction is the time required for the conce
 
 For **first order reactions**, the half-life is particularly simple and important:
 
-\[ t_{1/2} = \frac{0.693}{k} \]
+$$ t_{1/2} = \frac{0.693}{k} $$
 
 where 0.693 is \(\ln 2\). This result has two remarkable implications:
 
@@ -276,13 +276,13 @@ First order kinetics governs many important processes:
 
 For **zero order reactions**, the half-life depends on initial concentration:
 
-\[ t_{1/2} = \frac{[\text{A}]_0}{2k} \]
+$$ t_{1/2} = \frac{[\text{A}]_0}{2k} $$
 
 As the reactant is consumed, each successive half-life gets shorter.
 
 For **second order reactions**, the half-life also depends on initial concentration:
 
-\[ t_{1/2} = \frac{1}{k[\text{A}]_0} \]
+$$ t_{1/2} = \frac{1}{k[\text{A}]_0} $$
 
 Each successive half-life gets longer as concentration decreases.
 
@@ -292,17 +292,17 @@ The radioactive isotope \(^{32}\text{P}\) undergoes first order decay with a hal
 
 First, note that 42.9 days = 3 half-lives. After each half-life, the amount is multiplied by 1/2:
 
-\[ \text{Amount remaining} = 1.00\,\text{g} \times \left(\frac{1}{2}\right)^3 = 1.00 \times 0.125 = 0.125\,\text{g} \]
+$$ \text{Amount remaining} = 1.00\,\text{g} \times \left(\frac{1}{2}\right)^3 = 1.00 \times 0.125 = 0.125\,\text{g} $$
 
 Alternatively, first calculate \(k\):
 
-\[ k = \frac{0.693}{t_{1/2}} = \frac{0.693}{14.3\,\text{days}} = 0.04846\,\text{days}^{-1} \]
+$$ k = \frac{0.693}{t_{1/2}} = \frac{0.693}{14.3\,\text{days}} = 0.04846\,\text{days}^{-1} $$
 
 Then apply the first order integrated law:
 
-\[ \ln[\text{A}]_t = \ln(1.00) - (0.04846)(42.9) = 0 - 2.079 = -2.079 \]
+$$ \ln[\text{A}]_t = \ln(1.00) - (0.04846)(42.9) = 0 - 2.079 = -2.079 $$
 
-\[ [\text{A}]_t = e^{-2.079} = 0.125\,\text{g} \]
+$$ [\text{A}]_t = e^{-2.079} = 0.125\,\text{g} $$
 
 Both methods give the same answer: 0.125 g remains.
 
@@ -405,7 +405,7 @@ The **orientation factor** (often called the steric factor, \(p\)) quantifies ho
 
 Consider the reaction of NO and O₃:
 
-\[ \text{NO} + \text{O}_3 \rightarrow \text{NO}_2 + \text{O}_2 \]
+$$ \text{NO} + \text{O}_3 \rightarrow \text{NO}_2 + \text{O}_2 $$
 
 The nitrogen atom of NO must collide with an oxygen atom of O₃. If the molecules approach in any other geometry, the collision is unproductive even if the energy is sufficient.
 
@@ -454,7 +454,7 @@ An **energy diagram** (also called a reaction coordinate diagram or potential en
 
 The relationship among these quantities:
 
-\[ E_{a(\text{reverse})} = E_{a(\text{forward})} - \Delta H_\text{rxn} \]
+$$ E_{a(\text{reverse})} = E_{a(\text{forward})} - \Delta H_\text{rxn} $$
 
 #### Diagram: Reaction Energy Diagram
 
@@ -514,7 +514,7 @@ Canvas: 800 px wide × 450 px tall. Background: white (#ffffff).
 
 One of the most important observations in chemical kinetics is that increasing temperature dramatically increases reaction rates. A common rule of thumb is that a 10 °C rise in temperature roughly doubles the rate for many reactions. But this is only an approximation — the precise quantitative relationship is given by the **Arrhenius equation**:
 
-\[ k = Ae^{-E_a/RT} \]
+$$ k = Ae^{-E_a/RT} $$
 
 where:
 
@@ -545,7 +545,7 @@ The key temperature-rate relationships to remember:
 
 Taking the natural logarithm of the Arrhenius equation gives the **linearized Arrhenius equation**:
 
-\[ \ln k = \ln A - \frac{E_a}{R} \cdot \frac{1}{T} \]
+$$ \ln k = \ln A - \frac{E_a}{R} \cdot \frac{1}{T} $$
 
 This is in the form \(y = b + mx\), where:
 
@@ -565,19 +565,19 @@ This graphical method allows chemists to determine both \(E_a\) and \(A\) from e
 
 If you know the rate constant at two temperatures (\(k_1\) at \(T_1\) and \(k_2\) at \(T_2\)), you can find \(E_a\) without needing \(A\):
 
-\[ \ln\frac{k_2}{k_1} = \frac{-E_a}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right) \]
+$$ \ln\frac{k_2}{k_1} = \frac{-E_a}{R}\left(\frac{1}{T_2} - \frac{1}{T_1}\right) $$
 
 This is one of the most tested equations in AP Chemistry kinetics. Note that temperatures must be in Kelvin.
 
 **Example:** The rate constant for a reaction is \(k_1 = 0.0120\,\text{M}^{-1}\text{s}^{-1}\) at \(T_1 = 300\,\text{K}\) and \(k_2 = 0.0420\,\text{M}^{-1}\text{s}^{-1}\) at \(T_2 = 320\,\text{K}\). Find \(E_a\).
 
-\[ \ln\frac{0.0420}{0.0120} = \frac{-E_a}{8.314}\left(\frac{1}{320} - \frac{1}{300}\right) \]
+$$ \ln\frac{0.0420}{0.0120} = \frac{-E_a}{8.314}\left(\frac{1}{320} - \frac{1}{300}\right) $$
 
-\[ \ln(3.50) = \frac{-E_a}{8.314}\left(3.125 \times 10^{-3} - 3.333 \times 10^{-3}\right) \]
+$$ \ln(3.50) = \frac{-E_a}{8.314}\left(3.125 \times 10^{-3} - 3.333 \times 10^{-3}\right) $$
 
-\[ 1.253 = \frac{-E_a}{8.314}\left(-2.08 \times 10^{-4}\right) \]
+$$ 1.253 = \frac{-E_a}{8.314}\left(-2.08 \times 10^{-4}\right) $$
 
-\[ E_a = \frac{1.253 \times 8.314}{2.08 \times 10^{-4}} = 5.01 \times 10^4\,\text{J/mol} = 50.1\,\text{kJ/mol} \]
+$$ E_a = \frac{1.253 \times 8.314}{2.08 \times 10^{-4}} = 5.01 \times 10^4\,\text{J/mol} = 50.1\,\text{kJ/mol} $$
 
 #### Diagram: Arrhenius Equation Explorer
 
@@ -682,7 +682,7 @@ From Experiments 1 and 3: doubling \([\text{B}]\) has no effect on the rate → 
 
 Rate law: \(\text{rate} = k[\text{A}]\)
 
-\[ k = \frac{1.6 \times 10^{-4}\,\text{M/s}}{0.050\,\text{M}} = 3.2 \times 10^{-3}\,\text{s}^{-1} \]
+$$ k = \frac{1.6 \times 10^{-4}\,\text{M/s}}{0.050\,\text{M}} = 3.2 \times 10^{-3}\,\text{s}^{-1} $$
 
 Note that even though B is a reactant (and required by stoichiometry), it does not appear in the rate law. Its concentration does not affect the rate within the range studied. This outcome is perfectly consistent with kinetics — the rate law reflects the mechanism, not the balanced equation.
 
@@ -692,13 +692,13 @@ A reaction \(\text{A} \rightarrow \text{products}\) is second order with \(k = 0
 
 **Concentration at t = 30.0 s:**
 
-\[ \frac{1}{[\text{A}]_t} = \frac{1}{[\text{A}]_0} + kt = \frac{1}{0.500} + (0.0750)(30.0) = 2.00 + 2.25 = 4.25\,\text{M}^{-1} \]
+$$ \frac{1}{[\text{A}]_t} = \frac{1}{[\text{A}]_0} + kt = \frac{1}{0.500} + (0.0750)(30.0) = 2.00 + 2.25 = 4.25\,\text{M}^{-1} $$
 
-\[ [\text{A}]_t = \frac{1}{4.25} = 0.235\,\text{M} \]
+$$ [\text{A}]_t = \frac{1}{4.25} = 0.235\,\text{M} $$
 
 **Half-life:**
 
-\[ t_{1/2} = \frac{1}{k[\text{A}]_0} = \frac{1}{(0.0750)(0.500)} = \frac{1}{0.0375} = 26.7\,\text{s} \]
+$$ t_{1/2} = \frac{1}{k[\text{A}]_0} = \frac{1}{(0.0750)(0.500)} = \frac{1}{0.0375} = 26.7\,\text{s} $$
 
 ---
 

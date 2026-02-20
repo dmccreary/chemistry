@@ -262,7 +262,7 @@ In the gas phase, particles are far apart — typically separated by distances r
 
 **Gas pressure** is the force exerted per unit area by gas molecules colliding with a surface. By KMT, every collision of a gas molecule with the container wall transfers a small amount of momentum to the wall, and the cumulative effect of billions of such collisions per second is a measurable force — pressure.
 
-\[ P = \frac{F}{A} \]
+$$ P = \frac{F}{A} $$
 
 where \( P \) is pressure, \( F \) is force, and \( A \) is area.
 
@@ -283,7 +283,7 @@ Chemists discovered through careful experimentation that the pressure, volume, t
 
 **Boyle's Law** states that at constant temperature and constant amount of gas, the pressure and volume of a gas are inversely proportional:
 
-\[ P_1 V_1 = P_2 V_2 \quad (\text{constant } T, n) \]
+$$ P_1 V_1 = P_2 V_2 \quad (\text{constant } T, n) $$
 
 As you squeeze a gas into a smaller volume, the molecules collide with the container walls more frequently, increasing pressure. A balloon compressed to half its volume will have twice the pressure. Boyle's Law explains how your lungs work: when your diaphragm contracts and lung volume increases, the pressure inside your lungs falls below atmospheric pressure, forcing air to flow in.
 
@@ -291,7 +291,7 @@ As you squeeze a gas into a smaller volume, the molecules collide with the conta
 
 **Charles's Law** states that at constant pressure and constant amount of gas, the volume of a gas is directly proportional to its absolute temperature (in Kelvin):
 
-\[ \frac{V_1}{T_1} = \frac{V_2}{T_2} \quad (\text{constant } P, n) \]
+$$ \frac{V_1}{T_1} = \frac{V_2}{T_2} \quad (\text{constant } P, n) $$
 
 As temperature increases, molecules move faster and collide with the walls more forcefully. For the pressure to remain constant, the container must expand. This is why a balloon deflates when brought into a cold room and expands when warmed.
 
@@ -301,7 +301,7 @@ As temperature increases, molecules move faster and collide with the walls more 
 
 **Avogadro's Law** states that at constant temperature and pressure, the volume of a gas is directly proportional to the number of moles of gas:
 
-\[ \frac{V_1}{n_1} = \frac{V_2}{n_2} \quad (\text{constant } T, P) \]
+$$ \frac{V_1}{n_1} = \frac{V_2}{n_2} \quad (\text{constant } T, P) $$
 
 Equal volumes of different gases at the same temperature and pressure contain equal numbers of molecules — a profound result. Adding more molecules to a container at constant T and P requires the container to expand. Avogadro's Law is the foundation for the concept of molar volume.
 
@@ -320,7 +320,7 @@ Equal volumes of different gases at the same temperature and pressure contain eq
 
 Combining Boyle's Law, Charles's Law, and Avogadro's Law yields the **Ideal Gas Law**, a single equation that relates all four gas variables simultaneously:
 
-\[ PV = nRT \]
+$$ PV = nRT $$
 
 where:
 
@@ -342,7 +342,7 @@ The choice of \( R \) value must match your pressure units — this is one of th
 
 A powerful consequence of Avogadro's Law and the ideal gas law is that one mole of any ideal gas occupies the same volume under the same conditions. At **standard temperature and pressure (STP)** — defined as \( 0^\circ\text{C}\) (273.15 K) and 1 atm — the **molar volume** of an ideal gas is:
 
-\[ V_{molar} = \frac{nRT}{P} = \frac{(1 \text{ mol})(0.08206 \text{ L·atm·mol}^{-1}\text{·K}^{-1})(273.15 \text{ K})}{1 \text{ atm}} = 22.4 \text{ L/mol} \]
+$$ V_{molar} = \frac{nRT}{P} = \frac{(1 \text{ mol})(0.08206 \text{ L·atm·mol}^{-1}\text{·K}^{-1})(273.15 \text{ K})}{1 \text{ atm}} = 22.4 \text{ L/mol} $$
 
 This is a number worth memorizing: **22.4 L/mol at STP**. It means that 22.4 liters of oxygen at STP contains exactly 1 mole (6.022 × 10²³ molecules), and so does 22.4 liters of helium, nitrogen, or any other ideal gas at the same conditions.
 
@@ -358,7 +358,7 @@ The ideal gas law makes it possible to perform stoichiometry calculations when o
 
 **Example:** How many liters of H\(_2\) gas at \(25^\circ\text{C}\) and 1.00 atm are produced when 2.00 g of Zn reacts with excess hydrochloric acid?
 
-\[ \text{Zn}(s) + 2\text{HCl}(aq) \rightarrow \text{ZnCl}_2(aq) + \text{H}_2(g) \]
+$$ \text{Zn}(s) + 2\text{HCl}(aq) \rightarrow \text{ZnCl}_2(aq) + \text{H}_2(g) $$
 
 Moles of Zn: \( \frac{2.00 \text{ g}}{65.38 \text{ g/mol}} = 0.03059 \text{ mol Zn} \)
 
@@ -407,11 +407,11 @@ Type: MicroSim
 
 When two or more gases that do not react chemically are placed in the same container, they behave independently. Each gas exerts its own pressure — called its **partial pressure** — as if the other gases were not present. **Dalton's Law of Partial Pressures** states that the total pressure of a gas mixture is the sum of the partial pressures of each individual gas:
 
-\[ P_{total} = P_1 + P_2 + P_3 + \cdots \]
+$$ P_{total} = P_1 + P_2 + P_3 + \cdots $$
 
 or equivalently:
 
-\[ P_{total} = \sum_{i} P_i \]
+$$ P_{total} = \sum_{i} P_i $$
 
 This law holds because, in an ideal gas, molecules do not interact with each other. Each type of molecule contributes its own collisions with the container walls, independent of the others.
 
@@ -419,9 +419,9 @@ This law holds because, in an ideal gas, molecules do not interact with each oth
 
 The partial pressure of each gas is proportional to its **mole fraction** — the fraction of the total moles that it represents:
 
-\[ \chi_i = \frac{n_i}{n_{total}} \]
+$$ \chi_i = \frac{n_i}{n_{total}} $$
 
-\[ P_i = \chi_i \cdot P_{total} \]
+$$ P_i = \chi_i \cdot P_{total} $$
 
 Where \( \chi_i \) (chi sub i) is the mole fraction of component \( i \). Notice that the sum of all mole fractions always equals 1: \( \sum_i \chi_i = 1 \).
 
@@ -435,11 +435,11 @@ Where \( \chi_i \) (chi sub i) is the mole fraction of component \( i \). Notice
 
 A common laboratory procedure involves collecting a gas by water displacement. When gas is collected over water, the gas sample is saturated with water vapor. The total pressure in the collection tube is:
 
-\[ P_{total} = P_{gas} + P_{water vapor} \]
+$$ P_{total} = P_{gas} + P_{water vapor} $$
 
 To find the partial pressure of the collected gas, you must subtract the vapor pressure of water (which depends on temperature and is found in reference tables) from the total pressure:
 
-\[ P_{gas} = P_{total} - P_{water vapor} \]
+$$ P_{gas} = P_{total} - P_{water vapor} $$
 
 This correction is essential for accurate gas stoichiometry calculations involving laboratory gas collection.
 
@@ -497,7 +497,7 @@ The identity of the gas also matters. Gases with stronger IMFs (e.g., CO\(_2\), 
 
 **Deviations from ideality** are often expressed using the **compressibility factor** \( Z \):
 
-\[ Z = \frac{PV}{nRT} \]
+$$ Z = \frac{PV}{nRT} $$
 
 For an ideal gas, \( Z = 1 \) exactly. When \( Z < 1 \), attractive forces dominate and the gas occupies less volume than expected. When \( Z > 1 \), molecular volume dominates and the gas is less compressible than expected.
 
@@ -505,7 +505,7 @@ For an ideal gas, \( Z = 1 \) exactly. When \( Z < 1 \), attractive forces domin
 
 The **Van der Waals equation** is a modified ideal gas law that corrects for the two sources of non-ideal behavior:
 
-\[ \left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT \]
+$$ \left(P + \frac{an^2}{V^2}\right)(V - nb) = nRT $$
 
 The two correction terms are:
 
@@ -582,27 +582,27 @@ The following practice problems span the full range of concepts in this chapter.
 
 6. A 2.50 L sample of gas at 1.20 atm is compressed at constant temperature to 0.80 L. What is the new pressure?
 
-    Use Boyle's Law: \[ P_1V_1 = P_2V_2 \rightarrow P_2 = \frac{P_1V_1}{V_2} = \frac{(1.20)(2.50)}{0.80} = 3.75 \text{ atm} \]
+    Use Boyle's Law: $$ P_1V_1 = P_2V_2 \rightarrow P_2 = \frac{P_1V_1}{V_2} = \frac{(1.20)(2.50)}{0.80} = 3.75 \text{ atm} $$
 
 7. A gas occupies 4.00 L at \(27^\circ\)C. What volume will it occupy at \(127^\circ\)C at constant pressure?
 
-    \[ \frac{V_1}{T_1} = \frac{V_2}{T_2} \rightarrow V_2 = \frac{V_1 T_2}{T_1} = \frac{(4.00)(400)}{300} = 5.33 \text{ L} \]
+    $$ \frac{V_1}{T_1} = \frac{V_2}{T_2} \rightarrow V_2 = \frac{V_1 T_2}{T_1} = \frac{(4.00)(400)}{300} = 5.33 \text{ L} $$
 
 8. How many grams of CO\(_2\) are present in a 5.00 L sample at \(25^\circ\)C and 2.50 atm?
 
-    \[ n = \frac{PV}{RT} = \frac{(2.50)(5.00)}{(0.08206)(298)} = 0.512 \text{ mol} \rightarrow 0.512 \times 44.01 = 22.5 \text{ g} \]
+    $$ n = \frac{PV}{RT} = \frac{(2.50)(5.00)}{(0.08206)(298)} = 0.512 \text{ mol} \rightarrow 0.512 \times 44.01 = 22.5 \text{ g} $$
 
 9. A mixture of gases contains 0.60 mol N\(_2\), 0.20 mol O\(_2\), and 0.20 mol CO\(_2\) at a total pressure of 2.00 atm. Find the partial pressure of each gas.
 
-    \[ \chi_{N_2} = \frac{0.60}{1.00} = 0.60 \Rightarrow P_{N_2} = 1.20 \text{ atm} \]
-    \[ \chi_{O_2} = 0.20 \Rightarrow P_{O_2} = 0.40 \text{ atm} \]
-    \[ \chi_{CO_2} = 0.20 \Rightarrow P_{CO_2} = 0.40 \text{ atm} \]
+    $$ \chi_{N_2} = \frac{0.60}{1.00} = 0.60 \Rightarrow P_{N_2} = 1.20 \text{ atm} $$
+    $$ \chi_{O_2} = 0.20 \Rightarrow P_{O_2} = 0.40 \text{ atm} $$
+    $$ \chi_{CO_2} = 0.20 \Rightarrow P_{CO_2} = 0.40 \text{ atm} $$
 
 10. What volume of O\(_2\) gas at STP is produced by the decomposition of 9.80 g of H\(_2\)O\(_2\)?
 
-    \[ 2\text{H}_2\text{O}_2 \rightarrow 2\text{H}_2\text{O} + \text{O}_2 \]
-    \[ n_{H_2O_2} = \frac{9.80}{34.02} = 0.288 \text{ mol} \rightarrow n_{O_2} = 0.144 \text{ mol} \]
-    \[ V = 0.144 \text{ mol} \times 22.4 \text{ L/mol} = 3.23 \text{ L} \]
+    $$ 2\text{H}_2\text{O}_2 \rightarrow 2\text{H}_2\text{O} + \text{O}_2 $$
+    $$ n_{H_2O_2} = \frac{9.80}{34.02} = 0.288 \text{ mol} \rightarrow n_{O_2} = 0.144 \text{ mol} $$
+    $$ V = 0.144 \text{ mol} \times 22.4 \text{ L/mol} = 3.23 \text{ L} $$
 
 ---
 

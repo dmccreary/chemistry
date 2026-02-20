@@ -178,17 +178,17 @@ Key rules for ion electron configurations:
 
 To understand how we actually know the electron configurations described above — and why they have the specific energies they do — we need to understand how light and matter interact. Light is a form of **electromagnetic radiation**, a self-propagating wave of oscillating electric and magnetic fields. Different types of electromagnetic radiation differ only in their **wavelength** (\(\lambda\)) and **frequency** (\(f\)), which are inversely related through the speed of light:
 
-\[ c = \lambda f \]
+$$ c = \lambda f $$
 
 where \(c = 3.00 \times 10^8\) m/s, \(\lambda\) is in meters, and \(f\) is in hertz (Hz = s⁻¹).
 
 The **electromagnetic spectrum** spans an enormous range of wavelengths and frequencies, from radio waves (wavelengths of kilometers) to gamma rays (wavelengths smaller than atomic nuclei). Visible light occupies only a narrow slice of this spectrum, from roughly 400 nm (violet) to 700 nm (red). The energy of electromagnetic radiation increases as wavelength decreases and frequency increases, a relationship quantified by **Planck's equation**:
 
-\[ E = hf \]
+$$ E = hf $$
 
 where \(E\) is the photon energy in joules, \(h = 6.626 \times 10^{-34}\) J·s is Planck's constant, and \(f\) is the frequency. Combining with the speed of light equation:
 
-\[ E = \frac{hc}{\lambda} \]
+$$ E = \frac{hc}{\lambda} $$
 
 This equation tells us that high-frequency (short-wavelength) radiation carries more energy per photon. Ultraviolet photons carry more energy than visible photons; X-ray photons more still. In electron volts (a convenient unit for atomic-scale energies), visible photon energies range from about 1.8 to 3.1 eV, while X-ray photons carry thousands of eV.
 
@@ -234,7 +234,7 @@ The photoelectric effect has direct applications in modern technology: solar cel
 
 When electrons in an atom absorb a photon with exactly the right energy, they jump to a higher energy level. When they fall back down, they release a photon of exactly that energy — producing the characteristic **emission spectra** (or line spectra) that Bohr's model was designed to explain. The energy of each emitted photon corresponds precisely to the energy difference between two atomic energy levels:
 
-\[ \Delta E = E_{final} - E_{initial} = hf \]
+$$ \Delta E = E_{final} - E_{initial} = hf $$
 
 Because energy levels in an atom are discrete and unique to each element, emission spectra serve as atomic fingerprints. Astronomers use this technique to identify the elemental composition of distant stars. Forensic scientists use it to identify unknown materials. The neon glow of signs, the yellow of sodium street lamps, and the distinctive colors of fireworks all arise from atomic emission.
 
@@ -252,7 +252,7 @@ The relationship between emission and absorption:
 
 **Photoelectron Spectroscopy (PES)** is a powerful experimental technique that directly reveals the energies of electrons in different subshells of an atom, providing direct experimental evidence for the quantum mechanical model. In PES, a beam of high-energy photons (typically X-rays or ultraviolet light) bombards a sample. If a photon has more energy than the binding energy of an electron, that electron is ejected. By measuring the kinetic energies of the ejected electrons, chemists can calculate the binding energies of electrons in each subshell:
 
-\[ E_{binding} = E_{photon} - E_{kinetic} \]
+$$ E_{binding} = E_{photon} - E_{kinetic} $$
 
 The result is a **PES spectrum**: a graph of electron count (or relative intensity) on the y-axis versus binding energy on the x-axis. Each peak in the spectrum corresponds to a different subshell. The position of each peak (on the x-axis) gives the binding energy of electrons in that subshell. The height of each peak is proportional to the number of electrons in that subshell.
 
@@ -324,7 +324,7 @@ One of the most powerful insights of modern chemistry is that atomic properties 
 
 The key concept unifying all periodic trends is **effective nuclear charge** (\(Z_{eff}\)). Although the nucleus contains \(Z\) protons, an outer electron does not feel the full attractive force of all those protons. Inner electrons partially shield the outer electrons from the nucleus. The effective nuclear charge experienced by a valence electron is approximately:
 
-\[ Z_{eff} = Z - S \]
+$$ Z_{eff} = Z - S $$
 
 where \(Z\) is the atomic number and \(S\) is the shielding constant (approximately equal to the number of core electrons for a rough estimate). As you move across a period from left to right, \(Z\) increases while the number of core electrons (and thus \(S\)) stays roughly constant, so \(Z_{eff}\) increases steadily. This single fact explains most periodic trends.
 
@@ -356,7 +356,7 @@ Notable exceptions to the left-to-right increase exist: IE₁ drops slightly fro
 
 **Successive ionization energies** reveal shell structure directly. After each electron is removed, the remaining electrons experience a higher \(Z_{eff}\) and require more energy to remove. The successive ionization energies for an element increase steadily — but with an abrupt, dramatic jump when the first core electron is removed. For sodium:
 
-\[ IE_1 = 496 \text{ kJ/mol}, \quad IE_2 = 4562 \text{ kJ/mol} \]
+$$ IE_1 = 496 \text{ kJ/mol}, \quad IE_2 = 4562 \text{ kJ/mol} $$
 
 The approximately ninefold jump from \(IE_1\) to \(IE_2\) confirms that sodium has exactly one valence electron and that the second electron comes from the next inner shell. This pattern provides experimental evidence for shell structure that directly correlates with electron configuration assignments.
 

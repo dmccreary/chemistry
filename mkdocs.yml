@@ -35,6 +35,7 @@ nav:
   - MicroSims:
     - List of MicroSims: sims/index.md
     - Atomic Structure Diagram: sims/atomic-structure-diagram/index.md
+    - Dimensional Analysis Practice: sims/dimensional-analysis-practice/index.md
     - Interactive Mass Spectrometer: sims/mass-spectrometer-sim/index.md
     - Interactive Density Graphing MicroSim: sims/density-graphing/index.md
     - Matter Classification Flowchart: sims/matter-classification-flowchart/index.md
@@ -42,10 +43,6 @@ nav:
     - Precision vs Accuracy Target Diagram: sims/precision-accuracy/index.md
     - Scientific Method Workflow: sims/scientific-method/index.md
     - SMILES Drawing Test: sims/smiles-drawing-test/index.md
-
-
-
-
 
   - Appendices:
     - List of Appendices: appendices/index.md
@@ -62,7 +59,13 @@ nav:
   - Sample Prompts:
     - List of Prompts: prompts/index.md
     - Chemistry Diagram Rendering Options: prompts/chemistry-diagram-rendering-options.md
-
+    - prompts/atomic-structure-diagram-refinement.md
+    - prompts/generate-chapter-content.md
+    - prompts/learning-graph.md
+    - prompts/missing-concepts-analysis.md
+    - prompts/prepair-to-generate-content.md
+    - prompts/seed-prompt.md
+  
   - Glossary: glossary.md
   - FAQ: faq.md
 

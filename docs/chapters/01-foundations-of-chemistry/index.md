@@ -420,6 +420,8 @@ $$3.5 \text{ hr} \times \frac{60 \text{ min}}{1 \text{ hr}} \times \frac{60 \tex
 
 #### Diagram: Dimensional Analysis Practice MicroSim
 
+<iframe src="../../sims/dimensional-analysis-practice/main.html" width="100%" height="620px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Dimensional Analysis Practice MicroSim</summary>
 

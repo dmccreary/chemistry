@@ -37,6 +37,7 @@ nav:
     - Atomic Structure Diagram: sims/atomic-structure-diagram/index.md
     - Dimensional Analysis Practice: sims/dimensional-analysis-practice/index.md
     - Interactive Mass Spectrometer: sims/mass-spectrometer-sim/index.md
+    - Interactive Orbital Shape Visualizer: sims/orbital-shape-visualizer/index.md
     - Interactive Density Graphing MicroSim: sims/density-graphing/index.md
     - Matter Classification Flowchart: sims/matter-classification-flowchart/index.md
     - mhchem Rendering Test: sims/mhchem-test/index.md

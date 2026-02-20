@@ -1,0 +1,49 @@
+{
+  "title": "Interactive Orbital Shape Visualizer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "MicroSim that renders s, p, and d orbital probability density cross sections with adjustable quantum numbers.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["10", "11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Atomic Orbitals",
+    "learningObjectives": [
+      "Identify the shapes of s, p, and d orbitals",
+      "Describe how principal quantum number n affects orbital size"
+    ],
+    "bloomsTaxonomy": "Understand / Apply",
+    "duration": "10 minutes",
+    "prerequisites": ["Quantum numbers", "Aufbau principle"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 620
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.11"],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive visualization with teacher questioning",
+    "keyQuestions": [
+      "Where do nodes appear in each subshell?",
+      "How does increasing n change the probability distribution?"
+    ],
+    "commonMisconceptions": [
+      "All orbitals are spherical",
+      "Higher n only changes energy, not spatial extent"
+    ],
+    "assessmentOpportunities": [
+      "Ask students to identify a mystery orbital shown on screen"
+    ]
+  },
+  "chapter": "03-electron-configuration-and-periodic-trends"
+}

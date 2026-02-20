@@ -6,3 +6,4 @@ Interactive simulations for AP Chemistry.
 - [mhchem Rendering Test](mhchem-test/index.md) - Test MathJax with the mhchem extension for chemical equations and formulas.
 - [Interactive Mass Spectrometer](mass-spectrometer-sim/index.md) - Visualize instrument stages and the resulting isotope mass spectrum for Chlorine, Neon, Carbon, and Magnesium.
 - [Dimensional Analysis Practice](dimensional-analysis-practice/index.md) - Build conversion chains with live unit cancellation feedback across three difficulty levels.
+- [Interactive Orbital Shape Visualizer](orbital-shape-visualizer/index.md) - Explore probability density plots for s, p, and d orbitals with adjustable orientations and principal quantum numbers.

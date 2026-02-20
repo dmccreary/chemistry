@@ -96,6 +96,8 @@ Within each principal energy level, electrons occupy **subshells** designated by
 
 #### Diagram: Interactive Orbital Shape Visualizer
 
+<iframe src="../../sims/orbital-shape-visualizer/main.html" width="100%" height="640px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Orbital Shape Visualizer (p5.js MicroSim)</summary>
 Type: MicroSim

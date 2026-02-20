@@ -161,30 +161,43 @@ function drawProbabilityGrid(vizWidth) {
   const radius = min(vizWidth, drawHeight) * (0.28 + principalN * 0.12);
   const samples = 140;
 
-  strokeWeight(1);
+  // First pass: collect all values and find the max for normalization
+  const values = [];
+  let maxProb = 0;
   for (let i = 0; i < samples; i++) {
     for (let j = 0; j < samples; j++) {
       const xNorm = map(i, 0, samples - 1, -1, 1);
       const yNorm = map(j, 0, samples - 1, -1, 1);
       const prob = orbitalProbability(xNorm, yNorm);
-      if (prob <= 0) {
-        continue;
-      }
-      stroke(viridisColor(prob));
+      values.push(prob);
+      if (prob > maxProb) maxProb = prob;
+    }
+  }
+
+  // Second pass: draw with normalized color so highest density is always yellow
+  strokeWeight(1);
+  for (let i = 0; i < samples; i++) {
+    for (let j = 0; j < samples; j++) {
+      const prob = values[i * samples + j];
+      if (prob <= 0 || maxProb === 0) continue;
+      const normalized = prob / maxProb;
+      stroke(viridisColor(normalized));
+      const xNorm = map(i, 0, samples - 1, -1, 1);
+      const yNorm = map(j, 0, samples - 1, -1, 1);
       point(centerX + xNorm * radius, centerY + yNorm * radius);
     }
   }
 }
 
 function drawControlLabels() {
-  const baseY = drawHeight + 56;
+  const labelY = drawHeight + 34;
   fill('black');
   noStroke();
   textSize(defaultTextSize);
   textAlign(LEFT, CENTER);
-  text('Subshell:', 20, baseY);
-  text('Orientation:', 140, baseY);
-  text(`Principal Quantum Number n: ${principalN}`, sliderLeftMargin - 180, baseY);
+  text('Subshell:', 20, labelY);
+  text('Orientation:', 140, labelY);
+  text(`Principal Quantum Number n: ${principalN}`, sliderLeftMargin, labelY);
 }
 
 function handleSubshellChange() {
@@ -222,15 +235,15 @@ function updateCanvasSize() {
 }
 
 function positionControls() {
-  const baseY = drawHeight + 34;
+  const controlY = drawHeight + 60;
   if (subshellSelect) {
-    subshellSelect.position(20, baseY - 18);
+    subshellSelect.position(20, controlY);
   }
   if (orientationSelect) {
-    orientationSelect.position(140, baseY - 18);
+    orientationSelect.position(140, controlY);
   }
   if (nSlider) {
-    nSlider.position(sliderLeftMargin, baseY - 24);
+    nSlider.position(sliderLeftMargin, controlY - 6);
     nSlider.size(canvasWidth - sliderLeftMargin - margin);
   }
 }

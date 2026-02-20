@@ -271,6 +271,8 @@ Consider a simplified PES spectrum for sodium (Na, [Ne] 3s¹). Moving from high 
 
 #### Diagram: PES Spectrum Interactive Visualizer
 
+<iframe src="../../sims/pes-spectrum-visualizer/main.html" width="100%" height="640px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Photoelectron Spectroscopy Spectrum Visualizer (p5.js MicroSim)</summary>
 Type: MicroSim

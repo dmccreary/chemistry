@@ -7,3 +7,4 @@ Interactive simulations for AP Chemistry.
 - [Interactive Mass Spectrometer](mass-spectrometer-sim/index.md) - Visualize instrument stages and the resulting isotope mass spectrum for Chlorine, Neon, Carbon, and Magnesium.
 - [Dimensional Analysis Practice](dimensional-analysis-practice/index.md) - Build conversion chains with live unit cancellation feedback across three difficulty levels.
 - [Interactive Orbital Shape Visualizer](orbital-shape-visualizer/index.md) - Explore probability density plots for s, p, and d orbitals with adjustable orientations and principal quantum numbers.
+- [PES Spectrum Interactive Visualizer](pes-spectrum-visualizer/index.md) - Compare PES spectra for elements H–Ar with optional annotations and configuration display.

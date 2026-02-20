@@ -16,31 +16,31 @@ This chapter covers phase changes, heating and cooling curves, phase diagrams, v
 
 This chapter covers the following 25 concepts from the learning graph:
 
-1. Phase Changes
-2. Melting and Freezing
-3. Boiling and Condensation
-4. Sublimation and Deposition
-5. Heating Curves
-6. Cooling Curves
-7. Heat of Fusion
-8. Heat of Vaporization
-9. Phase Diagrams
-10. Triple Point
-11. Critical Point
-12. Vapor Pressure
-13. Solutions
-14. Solvent and Solute
-15. Solubility
-16. Like Dissolves Like
-17. Saturated Solutions
-18. Concentration Units
-19. Molarity
-20. Dilution Calculations
-21. Beer-Lambert Law
-22. Spectrophotometry
-23. Colligative Properties
-24. Boiling Point Elevation
-25. Freezing Point Depression
+176. Phase Changes
+177. Melting and Freezing
+178. Boiling and Condensation
+179. Sublimation and Deposition
+180. Heating Curves
+181. Cooling Curves
+182. Heat of Fusion
+183. Heat of Vaporization
+184. Phase Diagrams
+185. Triple Point
+186. Critical Point
+187. Vapor Pressure
+188. Solutions
+189. Solvent and Solute
+190. Solubility
+191. Like Dissolves Like
+192. Saturated Solutions
+193. Concentration Units
+194. Molarity
+195. Dilution Calculations
+196. Beer-Lambert Law
+197. Spectrophotometry
+198. Colligative Properties
+199. Boiling Point Elevation
+200. Freezing Point Depression
 
 ## Prerequisites
 

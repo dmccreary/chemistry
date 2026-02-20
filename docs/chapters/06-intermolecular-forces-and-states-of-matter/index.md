@@ -16,41 +16,41 @@ This chapter connects molecular structure to intermolecular forces (London dispe
 
 This chapter covers the following 35 concepts from the learning graph:
 
-1. Intermolecular Forces
-2. Intramolecular Forces
-3. IMF vs Chemical Bonds
-4. London Dispersion Forces
-5. Polarizability
-6. Dipole-Dipole Forces
-7. Hydrogen Bonding
-8. Hydrogen Bond Requirements
-9. Ion-Dipole Forces
-10. IMF Strength Comparison
-11. States of Matter
-12. Kinetic Molecular Theory
-13. Solids
-14. Crystalline Solids
-15. Amorphous Solids
-16. Liquids
-17. Surface Tension
-18. Viscosity
-19. Capillary Action
-20. Gases
-21. Gas Pressure
-22. Atmospheric Pressure
-23. Ideal Gas Law
-24. Ideal Gas Constant
-25. Boyle's Law
-26. Charles's Law
-27. Avogadro's Law
-28. Dalton's Law
-29. Partial Pressures
-30. Mole Fraction
-31. Gas Stoichiometry
-32. Molar Volume
-33. Real Gases
-34. Van der Waals Equation
-35. Deviations from Ideality
+141. Intermolecular Forces
+142. Intramolecular Forces
+143. IMF vs Chemical Bonds
+144. London Dispersion Forces
+145. Polarizability
+146. Dipole-Dipole Forces
+147. Hydrogen Bonding
+148. Hydrogen Bond Requirements
+149. Ion-Dipole Forces
+150. IMF Strength Comparison
+151. States of Matter
+152. Kinetic Molecular Theory
+153. Solids
+154. Crystalline Solids
+155. Amorphous Solids
+156. Liquids
+157. Surface Tension
+158. Viscosity
+159. Capillary Action
+160. Gases
+161. Gas Pressure
+162. Atmospheric Pressure
+163. Ideal Gas Law
+164. Ideal Gas Constant
+165. Boyle's Law
+166. Charles's Law
+167. Avogadro's Law
+168. Dalton's Law
+169. Partial Pressures
+170. Mole Fraction
+171. Gas Stoichiometry
+172. Molar Volume
+173. Real Gases
+174. Van der Waals Equation
+175. Deviations from Ideality
 
 ## Prerequisites
 

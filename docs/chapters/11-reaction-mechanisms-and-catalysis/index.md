@@ -14,27 +14,28 @@ This chapter explores reaction mechanisms including elementary steps, moleculari
 
 ## Concepts Covered
 
-This chapter covers the following 19 concepts from the learning graph:
+This chapter covers the following 20 concepts from the learning graph:
 
-1. Determining Reaction Order
-2. Reaction Mechanisms
-3. Elementary Steps
-4. Molecularity
-5. Unimolecular Reactions
-6. Bimolecular Reactions
-7. Rate-Determining Step
-8. Reaction Intermediates
-9. Mechanism Validation
-10. Catalysis
-11. Homogeneous Catalysis
-12. Heterogeneous Catalysis
-13. Enzyme Catalysis
-14. Catalyst Effect on Ea
-15. Catalyzed vs Uncatalyzed
-16. Surface Area and Rate
-17. Concentration and Rate
-18. Factors Affecting Rate
-19. Kinetics Experiments
+278. Determining Reaction Order
+302. Reaction Mechanisms
+303. Elementary Steps
+304. Molecularity
+305. Unimolecular Reactions
+306. Bimolecular Reactions
+307. Rate-Determining Step
+308. Reaction Intermediates
+309. Mechanism Validation
+310. Catalysis
+311. Homogeneous Catalysis
+312. Heterogeneous Catalysis
+313. Enzyme Catalysis
+314. Catalyst Effect on Ea
+315. Catalyst and Equilibrium
+316. Catalyzed vs Uncatalyzed
+317. Surface Area and Rate
+318. Concentration and Rate
+319. Factors Affecting Rate
+320. Kinetics Experiments
 
 ## Prerequisites
 

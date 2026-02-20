@@ -1,11 +1,9 @@
+---
 title: Interactive Density Graphing MicroSim
 description: Plot mass vs. volume data, run a best-fit line, and compare the resulting density to known reference materials.
 image: /sims/density-graphing/density-graphing.png
-og:image: /sims/density-graphing/density-graphing.png
-twitter:image: /sims/density-graphing/density-graphing.png
-social:
-   cards: false
 quality_score: 0
+---
 
 # Interactive Density Graphing MicroSim
 

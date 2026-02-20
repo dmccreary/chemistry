@@ -17,3 +17,6 @@ History favors short, imperative subjects such as “Add Scientific Method micro
 
 ## Configuration & Assets
 Update `mkdocs.yml` whenever you add or rename a page so the sidebar stays in sync, and extend the `watch:` list if you introduce tooling outside `docs/`. Place reusable SVGs or logos in `docs/img` and reference them via `/img/...` paths so Material can bundle them. Custom scripts belong in `docs/js` and must be registered in `extra_javascript`; pin third-party CDNs the way SMILES Drawer is pinned today.
+
+## MicroSim Development Rule
+Before touching any p5.js MicroSim, re-read the canonical guide at `../claude-skills/skills/microsim-generator/references/p5-guide.md` and follow its templates exactly (layout constants, control placement, no arrow-function handlers, standard `main.html`). Do not create or edit a MicroSim until you’ve confirmed the guide’s requirements.

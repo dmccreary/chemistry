@@ -1,0 +1,60 @@
+{
+  "title": "Precision vs Accuracy Target Diagram",
+  "description": "An interactive visualization demonstrating the difference between precision (repeatability) and accuracy (correctness) in measurements using a target/dart analogy with four targets showing different combinations.",
+  "creator": "Dan McCreary",
+  "date": "2024-12-29",
+  "subject": [
+    "precision",
+    "accuracy",
+    "measurement",
+    "systematic error",
+    "random error",
+    "scientific method",
+    "physics",
+    "laboratory skills"
+  ],
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en",
+  "rights": "CC BY-NC-SA 4.0",
+  "contributor": "Claude AI Assistant",
+  "identifier": "precision-accuracy-target-diagram",
+  "educational": {
+    "level": "High School (Grades 9-12)",
+    "bloomsLevel": [
+      "Remembering",
+      "Understanding",
+      "Applying",
+      "Analyzing"
+    ],
+    "concepts": [
+      "Precision",
+      "Accuracy",
+      "Systematic Error",
+      "Random Error",
+      "Measurement Uncertainty",
+      "Scientific Method"
+    ],
+    "prerequisites": [
+      "Basic understanding of measurement",
+      "Introduction to scientific method"
+    ],
+    "timeRequired": "15-20 minutes",
+    "objectives": [
+      "Define accuracy and precision in measurement contexts",
+      "Distinguish between systematic and random errors",
+      "Identify measurement quality from visual data patterns",
+      "Explain why both accuracy and precision are important in scientific measurement"
+    ]
+  },
+  "technical": {
+    "library": "p5.js",
+    "libraryVersion": "1.11.10",
+    "features": [
+      "Interactive dart regeneration",
+      "Four-target comparison display",
+      "Gaussian random distribution for dart placement",
+      "Responsive canvas sizing"
+    ]
+  }
+}

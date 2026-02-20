@@ -1,17 +1,21 @@
-# Welcome to MkDocs
+---
+title: AP Chemistry
+description: An interactive intelligent textbook for AP Chemistry designed for college credit, featuring MicroSims, learning graphs, and mhchem-rendered equations.
+image: /img/cover.png
+og:image: /img/cover.png
+twitter:image: /img/cover.png
+hide:
+  - toc
+---
+<style>
+.md-content__inner h1 {display: none !important;}
+</style>
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Welcome
 
-## Commands
+<figure markdown>
+  ![AP Chemistry](./img/cover.png){ width="100%" }
+</figure>
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Welcome to **AP Chemistry**, an interactive intelligent textbook designed for high school students seeking college credit.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.

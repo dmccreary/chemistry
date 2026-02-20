@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Interactive Density Graphing MicroSim using p5.js</title>
+    <style>
+        :root {
+            color-scheme: light;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+            background: #f4f7fb;
+            color: #0f273a;
+        }
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .sim-layout {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .data-panel,
+        .graph-panel,
+        .controls-panel,
+        .identify-panel,
+        .reference-panel {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 16px rgba(15, 39, 58, 0.08);
+            padding: 20px;
+        }
+        .data-panel {
+            flex: 1 1 260px;
+            min-width: 260px;
+        }
+        .graph-panel {
+            flex: 2 1 360px;
+            min-width: 320px;
+        }
+        .graph-panel h2 {
+            margin-top: 0;
+        }
+        .graph-panel p {
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+        th, td {
+            padding: 6px 8px;
+            border-bottom: 1px solid #d9e3f0;
+            text-align: left;
+        }
+        th {
+            background: #eef4fb;
+            font-weight: 600;
+        }
+        .controls-panel {
+            margin-top: 20px;
+        }
+        .identify-panel {
+            margin-top: 12px;
+        }
+        .reference-panel {
+            margin-top: 12px;
+        }
+        .control-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .control-group label {
+            font-weight: 600;
+            min-width: 160px;
+        }
+        select, button {
+            padding: 8px 12px;
+            border-radius: 8px;
+            border: 1px solid #008C95;
+            font-size: 0.95rem;
+        }
+        select {
+            flex: 1 1 200px;
+        }
+        button {
+            background: #008C95;
+            color: #ffffff;
+            cursor: pointer;
+            border: none;
+            transition: background 0.2s ease;
+        }
+        button:hover {
+            background: #006d73;
+        }
+        button.secondary {
+            background: #f4f7fb;
+            color: #0f273a;
+            border: 1px solid #c5d4e4;
+        }
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+        .status-line {
+            background: #eef9fa;
+            border-radius: 8px;
+            padding: 8px 12px;
+            font-size: 0.95rem;
+            color: #055b63;
+            margin-bottom: 8px;
+        }
+        .canvas-wrapper {
+            background: #f9fcff;
+            border: 1px solid #dbe8f5;
+            border-radius: 12px;
+            padding: 10px;
+        }
+        #canvas-holder {
+            width: 100%;
+        }
+        .point-status {
+            margin-top: 10px;
+            font-weight: 600;
+            color: #0f273a;
+        }
+        @media (max-width: 768px) {
+            .control-group {
+                flex-direction: column;
+            }
+            select, button {
+                width: 100%;
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js"></script>
+    <script src="density-graphing.js"></script>
+</head>
+<body>
+    <main>
+        <div class="sim-layout">
+            <section class="data-panel">
+                <h2>Mass vs. Volume Data</h2>
+                <p id="substance-note">Select a mystery substance to view measurement pairs.</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Trial</th>
+                            <th>Volume (cm³)</th>
+                            <th>Mass (g)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data-table-body"></tbody>
+                </table>
+            </section>
+            <section class="graph-panel">
+                <h2>Plot the Data</h2>
+                <p>Use the table values to plot mass vs. volume points. Click inside the grid to place each data point.</p>
+                <div class="canvas-wrapper">
+                    <div id="canvas-holder"></div>
+                </div>
+                <div class="point-status" id="point-count">Points plotted: 0</div>
+            </section>
+        </div>
+
+        <section class="controls-panel">
+            <div class="control-group">
+                <label for="substance-select">Mystery Substance</label>
+                <select id="substance-select"></select>
+                <button id="reset-points" class="secondary">Clear Points</button>
+            </div>
+            <div class="button-row">
+                <button id="show-line-btn">Show Best Fit Line</button>
+                <button id="calc-slope-btn">Calculate Slope</button>
+            </div>
+            <div class="status-line" id="slope-output">Slope (density): --</div>
+            <div class="status-line" id="status-message">Click inside the graph to add points.</div>
+        </section>
+
+        <section class="identify-panel">
+            <div class="control-group">
+                <label for="identify-select">Identify Substance</label>
+                <select id="identify-select"></select>
+                <button id="check-substance-btn">Check Answer</button>
+            </div>
+            <div class="status-line" id="identify-result">Use the slope to match a known density.</div>
+        </section>
+
+        <section class="reference-panel">
+            <h3>Reference Densities</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Density (g/cm³)</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody id="reference-table"></tbody>
+            </table>
+        </section>
+    </main>
+    <br/>
+    <a href=".">Back to Lesson Plan</a>
+</body>
+</html>

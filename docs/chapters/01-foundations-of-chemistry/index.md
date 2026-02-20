@@ -346,6 +346,10 @@ A measurement can be precise but not accurate (consistently wrong), accurate but
 - **Accurate but not precise:** Shots scattered around the bullseye but not clustered
 - **Neither:** Shots scattered all over the target
 
+#### Diagram: Precision vs. Accuracy
+
+<iframe src="../../sims/precision-accuracy/main.html" height="672px" width="100%" scrolling="no"></iframe>
+
 ## Percent Error
 
 **Percent error** quantifies how far a measured value is from the accepted (true) value. It is calculated as:
@@ -468,6 +472,8 @@ After collecting data, scientists look for patterns by **graphing data**. In AP 
 The slope and intercept of a linear graph often have physical meaning. For example, in a graph of mass vs. volume, the slope equals the density of the substance.
 
 #### Diagram: Interactive Density Graphing MicroSim
+
+<iframe src="../../sims/density-graphing/main.html" width="100%" height="780px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Interactive Density Graphing MicroSim</summary>

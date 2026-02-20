@@ -1,0 +1,62 @@
+{
+  "title": "Interactive Density Graphing MicroSim",
+  "creator": "Dan McCreary",
+  "subject": "Chemistry",
+  "description": "Students plot mass vs. volume data, calculate the slope of the best-fit line, and match the resulting density to known materials.",
+  "date": "2026-02-19",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Density and experimental data analysis",
+    "learningObjectives": [
+      "Plot experimental mass vs. volume data points on a scatter plot with proper units.",
+      "Use a line of best fit to determine the density (slope) of a mystery substance.",
+      "Compare measured densities with a reference table to identify unknown materials."
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Understands mass, volume, and density relationships",
+      "Can read scales on scatter plots and apply linear models"
+    ],
+    "standards": [
+      "NGSS HS-PS1-2: Construct and revise explanations for macroscopic properties using particle-level models.",
+      "Science Practice: Analyze data using tools, technologies, and models."
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.11.10",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 450
+    },
+    "responsive": true,
+    "dependencies": [],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive data exploration and slope interpretation",
+    "keyQuestions": [
+      "How does the slope of a mass vs. volume graph reveal density?",
+      "Which materials have densities closest to the calculated slope?"
+    ],
+    "commonMisconceptions": [
+      "Believing density depends on sample size rather than mass/volume ratio.",
+      "Confusing axes (mass on x-axis instead of y-axis)."
+    ],
+    "assessmentOpportunities": [
+      "Students justify the identified material using numerical evidence.",
+      "Monitor accuracy of plotted points and discussion of slope differences."
+    ]
+  },
+  "chapter": "01-foundations-of-chemistry"
+}

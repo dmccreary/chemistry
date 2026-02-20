@@ -34,6 +34,7 @@ nav:
     - List of MicroSims: sims/index.md
     - SMILES Drawing Test: sims/smiles-drawing-test/index.md
     - Matter Classification Flowchart: sims/matter-classification-flowchart/index.md
+    - Scientific Method: sims/scientific-method/index.md
     - mhchem Rendering Test: sims/mhchem-test/index.md
 
   - Appendices:

@@ -112,6 +112,8 @@ The following diagram summarizes how we classify all matter:
 
 #### Diagram: Matter Classification Flowchart
 
+<iframe src="../../sims/matter-classification-flowchart/main.html" width="100%" height="450px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Matter Classification Flowchart</summary>
 

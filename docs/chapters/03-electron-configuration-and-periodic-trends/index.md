@@ -13,7 +13,7 @@ This chapter covers the quantum mechanical model of the atom, electron configura
 
 ## Concepts Covered
 
-This chapter covers the following 35 concepts from the learning graph:
+This chapter covers the following 36 concepts from the learning graph:
 
 46. Bohr Model
 47. Quantum Mechanical Model
@@ -50,6 +50,7 @@ This chapter covers the following 35 concepts from the learning graph:
 78. Electron Affinity
 79. Electronegativity
 80. Effective Nuclear Charge
+501. Coulombic Attraction
 
 ## Prerequisites
 
@@ -322,7 +323,21 @@ The blocks of the periodic table correspond directly to the subshell being fille
 
 One of the most powerful insights of modern chemistry is that atomic properties vary systematically across the periodic table. These **periodic trends** arise directly from the interplay between nuclear charge, electron shielding, and the distance of valence electrons from the nucleus.
 
-The key concept unifying all periodic trends is **effective nuclear charge** (\(Z_{eff}\)). Although the nucleus contains \(Z\) protons, an outer electron does not feel the full attractive force of all those protons. Inner electrons partially shield the outer electrons from the nucleus. The effective nuclear charge experienced by a valence electron is approximately:
+### Coulombic Attraction: The Engine Behind All Periodic Trends
+
+Every periodic trend ultimately traces back to **Coulombic attraction** — the electrostatic force between opposite charges. Coulomb's law states:
+
+$$F = k \frac{|q_1||q_2|}{r^2}$$
+
+where $q_1$ and $q_2$ are the magnitudes of the charges and $r$ is the distance between them. In an atom:
+
+- The **nucleus** carries a positive charge of $+Ze$ (where $Z$ = number of protons)
+- Each **electron** carries a charge of $-e$
+- The Coulombic attraction between a nucleus and a valence electron therefore increases with **larger nuclear charge** and decreases with **greater distance**
+
+This simple relationship explains the entire periodic table's behavior. Moving left to right across a period: more protons increase $q_1$, pulling electrons inward — atoms shrink, electrons are harder to remove, and electronegativity rises. Moving down a group: each new shell places valence electrons farther away (larger $r$), so the force weakens — atoms grow, electrons are easier to remove.
+
+The key concept unifying all periodic trends is **effective nuclear charge** ($Z_{eff}\)$). Although the nucleus contains \(Z\) protons, an outer electron does not feel the full attractive force of all those protons. Inner electrons partially shield the outer electrons from the nucleus. The effective nuclear charge experienced by a valence electron is approximately:
 
 $$ Z_{eff} = Z - S $$
 

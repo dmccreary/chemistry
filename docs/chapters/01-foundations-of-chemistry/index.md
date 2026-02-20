@@ -25,7 +25,7 @@ By the end of this chapter, you will be able to classify matter, distinguish phy
 
 ## Concepts Covered
 
-This chapter covers the following 25 concepts from the learning graph:
+This chapter covers the following 26 concepts from the learning graph:
 
 1. Matter
 2. Energy
@@ -52,6 +52,7 @@ This chapter covers the following 25 concepts from the learning graph:
 23. Graphing Data
 24. Conservation Laws
 25. Atomic Theory History
+508. Error Propagation
 
 ## Prerequisites
 
@@ -361,6 +362,38 @@ The absolute value bars ensure the result is always positive. A small percent er
 **Example:** A student measures the density of aluminum as 2.85 g/cm$^3$. The accepted value is 2.70 g/cm$^3$. What is the percent error?
 
 $$\text{Percent Error} = \frac{|2.85 - 2.70|}{2.70} \times 100\% = \frac{0.15}{2.70} \times 100\% = 5.6\%$$
+
+## Error Propagation
+
+When multiple measurements are combined in a calculation, the uncertainties in each measurement compound to produce uncertainty in the final result. This is called **error propagation** (also called propagation of uncertainty).
+
+In AP Chemistry lab work, every measured quantity has some associated uncertainty — from the precision of glassware, balances, and thermometers. When those values are added, subtracted, multiplied, or divided, the errors propagate through the calculation.
+
+**Rule 1 — Addition and subtraction:** Add the **absolute uncertainties**.
+
+If $A = 5.2 \pm 0.1$ g and $B = 3.4 \pm 0.2$ g, then:
+
+$$A + B = 8.6 \pm 0.3 \text{ g}$$
+
+The uncertainty in the sum is $0.1 + 0.2 = 0.3$ g.
+
+**Rule 2 — Multiplication and division:** Add the **relative (percent) uncertainties**.
+
+If $A = 5.2 \pm 0.1$ g (relative uncertainty = $0.1/5.2 = 1.9\%$) and $B = 3.4 \pm 0.2$ g (relative uncertainty = $0.2/3.4 = 5.9\%$), then:
+
+$$A \times B = 17.7 \text{ g}^2 \pm (1.9\% + 5.9\%) = 17.7 \pm 7.8\% \approx 17.7 \pm 1.4 \text{ g}^2$$
+
+**Why this matters in AP Chemistry:**
+
+A multi-step calculation — for example, determining a concentration from a mass measurement and a volume measurement — carries uncertainty from every step. A buret reading might be precise to $\pm 0.02$ mL; a balance reading precise to $\pm 0.001$ g. Understanding how these propagate through a titration calculation helps you explain the precision of your final result and critique sources of experimental error.
+
+**In practice**, AP Chemistry does not require full propagation calculations in most exam problems. However, the Evaluate-level objective "Critique experimental design for sources of error" expects you to identify which measured quantities contribute the most uncertainty to a result. The quantity with the largest relative uncertainty dominates the overall error.
+
+| Operation | Propagation Rule | Example |
+|-----------|-----------------|---------|
+| $A + B$ or $A - B$ | $\delta_{\text{result}} = \delta_A + \delta_B$ | Mass difference from balance |
+| $A \times B$ or $A / B$ | $\frac{\delta_{\text{result}}}{\text{result}} = \frac{\delta_A}{A} + \frac{\delta_B}{B}$ | Concentration from mass ÷ volume |
+| $A^n$ | $\frac{\delta_{\text{result}}}{\text{result}} = n \cdot \frac{\delta_A}{A}$ | Volume from $r^3$ measurement |
 
 ## Dimensional Analysis
 

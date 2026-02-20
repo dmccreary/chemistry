@@ -13,7 +13,7 @@ This chapter uses VSEPR theory to predict molecular shapes, introduces orbital h
 
 ## Concepts Covered
 
-This chapter covers the following 28 concepts from the learning graph:
+This chapter covers the following 34 concepts from the learning graph:
 
 113. VSEPR Theory
 114. Electron Geometry
@@ -43,6 +43,12 @@ This chapter covers the following 28 concepts from the learning graph:
 138. Nonpolar Molecules
 139. Naming Covalent Compounds
 140. Network Covalent Solids
+502. Molecular Orbital Theory
+503. Bonding Molecular Orbitals
+504. Antibonding Molecular Orbitals
+505. MO Energy Diagrams
+506. Bond Order from MO Theory
+507. Paramagnetism and Diamagnetism
 
 ## Prerequisites
 
@@ -460,6 +466,120 @@ Properties that distinguish network covalent solids from molecular covalent comp
 - Represented by empirical formulas (such as SiO₂) rather than molecular formulas
 
 The distinction between network covalent solids and molecular covalent substances is one of the key ideas connecting molecular structure to bulk material properties — a theme that runs through AP Chemistry from bonding through thermodynamics.
+
+## 5.13b Molecular Orbital Theory: Competing Models of Covalent Bonding
+
+The Lewis structure and VSEPR/hybridization approach developed in Chapters 4 and 5 explains a great deal — molecular geometry, bond polarity, and physical properties. But it has a fundamental limitation: it treats electrons as *localized* between specific pairs of atoms. A more powerful model, **Molecular Orbital (MO) theory**, treats electrons as *delocalized* — spread across the entire molecule in orbitals that belong to all the atoms at once.
+
+These two models — Valence Bond (VB) theory, which underlies hybridization, and MO theory — are **competing models of bonding**. Each has strengths and weaknesses. Understanding both satisfies the AP Chemistry Evaluate-level objective: "Evaluate competing models of bonding."
+
+### Forming Molecular Orbitals
+
+When two atomic orbitals on adjacent atoms overlap, they combine mathematically to produce **molecular orbitals (MOs)**. Two AOs always produce two MOs:
+
+- **Bonding MO** (σ or π): constructive interference — the electron density *increases* between the nuclei, lowering the energy relative to the isolated atoms. Electrons in bonding MOs stabilize the molecule.
+- **Antibonding MO** (σ\* or π\*): destructive interference — electron density decreases between the nuclei, raising the energy above the isolated atoms. Electrons in antibonding MOs destabilize the molecule.
+
+The bonding MO is always *lower* in energy than the original AOs; the antibonding MO is always *higher*.
+
+### Filling MO Energy Diagrams
+
+Molecular orbitals are filled with electrons following the same three rules as atomic orbitals:
+
+- **Aufbau principle**: fill lowest-energy MOs first
+- **Pauli exclusion principle**: each MO holds at most 2 electrons with opposite spins
+- **Hund's rule**: when MOs of equal energy are available, place one electron in each before pairing
+
+The MO energy diagram for a homonuclear diatomic molecule ($\ce{A2}$) places the bonding MO below, the antibonding MO above, and shows each MO filled from the bottom up with all available valence electrons.
+
+For **H₂** (2 total electrons):
+
+| MO | Electrons |
+|----|-----------|
+| σ\*1s (antibonding) | 0 |
+| σ1s (bonding) | 2 |
+
+Both electrons go into the bonding MO — the molecule is stable.
+
+### Bond Order from MO Theory
+
+**Bond order** (BO) from MO theory is:
+
+$$\text{Bond order} = \frac{\text{(electrons in bonding MOs)} - \text{(electrons in antibonding MOs)}}{2}$$
+
+A higher bond order means a stronger, shorter bond. A bond order of zero means the molecule does not form.
+
+| Molecule | Bonding $e^-$ | Antibonding $e^-$ | Bond Order | Bond |
+|----------|--------------|-------------------|------------|------|
+| $\ce{H2}$ | 2 | 0 | 1 | Single |
+| $\ce{He2}$ | 2 | 2 | 0 | Does not exist |
+| $\ce{N2}$ | 8 | 2 | 3 | Triple |
+| $\ce{O2}$ | 8 | 4 | 2 | Double |
+| $\ce{F2}$ | 8 | 6 | 1 | Single |
+
+### Paramagnetism and Diamagnetism
+
+One of MO theory's greatest triumphs is explaining the **magnetic behavior of molecules**:
+
+- **Diamagnetic**: all electrons are paired → molecule is weakly repelled by a magnetic field
+- **Paramagnetic**: one or more **unpaired electrons** → molecule is attracted to a magnetic field
+
+Liquid oxygen is visibly attracted to a magnet — it is paramagnetic. The Lewis structure of $\ce{O2}$ (which shows a double bond and all paired electrons) **cannot** explain this. MO theory predicts it correctly: the two highest-energy electrons occupy two degenerate (equal-energy) antibonding π\* MOs one each, following Hund's rule, leaving them unpaired.
+
+$$\ce{O2}: \quad \text{Bond order} = \frac{8-4}{2} = 2 \quad \text{(paramagnetic — 2 unpaired electrons)}$$
+
+This is a case where MO theory makes a prediction that Lewis structures get *wrong*, demonstrating the value of the more sophisticated model.
+
+### MO Theory vs. Lewis/VB Theory: When to Use Each
+
+| Feature | Lewis / VB / VSEPR | MO Theory |
+|---------|-------------------|-----------|
+| Molecular geometry | Excellent | Not directly |
+| Bond polarity | Good | Good |
+| Paramagnetism | Cannot predict | Correctly predicts |
+| Delocalization / resonance | Partial (resonance structures) | Full treatment |
+| Bond order | From bond type | From BO formula |
+| Complexity | Simpler | More complex |
+
+For AP Chemistry, use VSEPR and Lewis structures for geometry, polarity, and most bonding questions. Invoke MO theory specifically when asked about: magnetic properties, bond order of species not well-described by Lewis structures, or "competing models of bonding."
+
+#### Diagram: MO Energy Diagram Explorer
+
+<details markdown="1">
+<summary>Interactive Molecular Orbital Energy Diagram</summary>
+Type: microsim
+**sim-id:** mo-energy-diagram<br/>
+**Library:** p5.js<br/>
+**Status:** Specified
+
+**Learning objective:** Students will be able to (Evaluating) compare MO and Lewis/VB models of bonding by constructing MO energy diagrams for diatomic molecules and predicting bond order and magnetic behavior.
+
+**Canvas:** 820 × 560 px, responsive to window resize.
+
+**Controls (left panel, 180 px wide):**
+- Dropdown: Select molecule: H₂ | He₂ | Li₂ | B₂ | C₂ | N₂ | O₂ | F₂ | Ne₂ | O₂⁻ | O₂⁺ | NO | CO
+- Display: Total valence electrons count
+
+**MO diagram (center, ~500 px wide):**
+- Left column: two identical atomic orbital energy levels labeled "Atom A" (e.g., "1s")
+- Center column: MO energy levels — bonding MO lower, antibonding MO higher (marked with asterisk *)
+- Right column: same as left, "Atom B"
+- Dashed lines connecting AOs to MOs
+- Electrons shown as pairs of up/down arrows filled into MOs from lowest to highest energy
+- Color: bonding MOs in blue, antibonding MOs in red, electrons as black arrows
+
+**Results panel (right, 140 px wide):**
+- Bonding electrons: N
+- Antibonding electrons: N
+- Bond order = (bonding − antibonding) / 2 = X
+- Bond order shown as a large number with label (Single / Double / Triple / None)
+- Magnetic character: "Paramagnetic (N unpaired)" or "Diamagnetic (all paired)"
+- Lewis structure bond notation: "≡" or "=" or "−" or "× (no bond)"
+
+**Color coding for bond order:** Bond order 3 = green, 2 = blue, 1 = orange, 0 = red.
+
+Implementation: p5.js. Store electron configuration data for each molecule in a lookup object. Draw the diagram procedurally from the configuration data.
+</details>
 
 ## 5.14 Chapter Summary and Connections
 

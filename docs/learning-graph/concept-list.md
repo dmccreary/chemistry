@@ -532,3 +532,18 @@ organized by course unit with foundational and cross-cutting concepts.
 498. Stoichiometry Electrolysis
 499. Batteries and Fuel Cells
 500. Corrosion
+
+## Addendum: Concepts from Bloom's Taxonomy Learning Objectives (501-508)
+
+These concepts are explicitly named in the course description's Bloom's Taxonomy learning objectives
+but were not included in the original 500-concept learning graph. They are covered in the
+chapters indicated.
+
+501. Coulombic Attraction
+502. Molecular Orbital Theory
+503. Bonding Molecular Orbitals
+504. Antibonding Molecular Orbitals
+505. MO Energy Diagrams
+506. Bond Order from MO Theory
+507. Paramagnetism and Diamagnetism
+508. Error Propagation

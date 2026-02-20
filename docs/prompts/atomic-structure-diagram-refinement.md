@@ -38,9 +38,9 @@ The bug is clear — two compounding issues:
 
 Log written to logs/atomic-structure-diagram-microsim.md. It covers:                                                                            
   
-- Specification summary — what was requested                                                                                                    
-- Instructional design decisions — Bloom's level alignment, animation gating rationale, control count justification                           
-- Layout decisions — canvas dimensions, 66/30 atom/legend split, atom center offset at 37%, slider margin calculation                           
+- Specification summary — what was requested
+- Instructional design decisions — Bloom's level alignment, animation gating rationale, control count justification
+- Layout decisions — canvas dimensions, 66/30 atom/legend split, atom center offset at 37%, slider margin calculation
 - Nucleus packing algorithm — ring structure table, step formula derivation, type-shuffle LCG, and the full post-mortem on the two bugs fixed   
 (draw-time nucleusScale multiplier and the +2 ring gap)                                                                                         
 - Visual design decisions — dark background override rationale, ellipse flattening factor, legend colour choices, tooltip text format

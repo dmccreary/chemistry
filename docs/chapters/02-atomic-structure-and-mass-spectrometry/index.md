@@ -182,6 +182,8 @@ For a monatomic element such as neon, the mass spectrum shows three peaks corres
 
 #### Diagram: Interactive Mass Spectrometer Simulation
 
+<iframe src="../../sims/mass-spectrometer-sim/main.html" width="100%" height="480px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Interactive Mass Spectrometer MicroSim</summary>
 Type: MicroSim

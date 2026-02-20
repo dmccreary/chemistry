@@ -35,6 +35,7 @@ nav:
   - MicroSims:
     - List of MicroSims: sims/index.md
     - Atomic Structure Diagram: sims/atomic-structure-diagram/index.md
+    - Interactive Mass Spectrometer: sims/mass-spectrometer-sim/index.md
     - Interactive Density Graphing MicroSim: sims/density-graphing/index.md
     - Matter Classification Flowchart: sims/matter-classification-flowchart/index.md
     - mhchem Rendering Test: sims/mhchem-test/index.md

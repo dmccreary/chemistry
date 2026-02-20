@@ -11,42 +11,24 @@ nav:
 
   - Chapters:
     - Overview: chapters/index.md
-    - 1. Atomic Structure and Properties:
-      - Content: chapters/01-atomic-structure-and-properties/index.md
-      - Quiz: chapters/01-atomic-structure-and-properties/quiz.md
-      - References: chapters/01-atomic-structure-and-properties/references.md
-    - 2. Compound Structure and Properties:
-      - Content: chapters/02-compound-structure-and-properties/index.md
-      - Quiz: chapters/02-compound-structure-and-properties/quiz.md
-      - References: chapters/02-compound-structure-and-properties/references.md
-    - 3. Properties of Substances and Mixtures:
-      - Content: chapters/03-properties-of-substances-and-mixtures/index.md
-      - Quiz: chapters/03-properties-of-substances-and-mixtures/quiz.md
-      - References: chapters/03-properties-of-substances-and-mixtures/references.md
-    - 4. Chemical Reactions:
-      - Content: chapters/04-chemical-reactions/index.md
-      - Quiz: chapters/04-chemical-reactions/quiz.md
-      - References: chapters/04-chemical-reactions/references.md
-    - 5. Kinetics:
-      - Content: chapters/05-kinetics/index.md
-      - Quiz: chapters/05-kinetics/quiz.md
-      - References: chapters/05-kinetics/references.md
-    - 6. Thermodynamics:
-      - Content: chapters/06-thermodynamics/index.md
-      - Quiz: chapters/06-thermodynamics/quiz.md
-      - References: chapters/06-thermodynamics/references.md
-    - 7. Equilibrium:
-      - Content: chapters/07-equilibrium/index.md
-      - Quiz: chapters/07-equilibrium/quiz.md
-      - References: chapters/07-equilibrium/references.md
-    - 8. Acids and Bases:
-      - Content: chapters/08-acids-and-bases/index.md
-      - Quiz: chapters/08-acids-and-bases/quiz.md
-      - References: chapters/08-acids-and-bases/references.md
-    - 9. Applications of Thermodynamics:
-      - Content: chapters/09-applications-of-thermodynamics/index.md
-      - Quiz: chapters/09-applications-of-thermodynamics/quiz.md
-      - References: chapters/09-applications-of-thermodynamics/references.md
+    - 1. Foundations of Chemistry: chapters/01-foundations-of-chemistry/index.md
+    - 2. Atomic Structure: chapters/02-atomic-structure-and-mass-spectrometry/index.md
+    - 3. Electron Config and Trends: chapters/03-electron-configuration-and-periodic-trends/index.md
+    - 4. Bonding and Lewis Structures: chapters/04-chemical-bonding-and-lewis-structures/index.md
+    - 5. Molecular Geometry: chapters/05-molecular-geometry-and-polarity/index.md
+    - 6. IMF and States of Matter: chapters/06-intermolecular-forces-and-states-of-matter/index.md
+    - 7. Phase Changes and Solutions: chapters/07-phase-changes-solutions-and-gas-laws/index.md
+    - 8. Chemical Reactions: chapters/08-chemical-reactions-and-equations/index.md
+    - 9. Stoichiometry and Analysis: chapters/09-stoichiometry-titrations-and-analysis/index.md
+    - 10. Reaction Rates: chapters/10-reaction-rates-and-rate-laws/index.md
+    - 11. Mechanisms and Catalysis: chapters/11-reaction-mechanisms-and-catalysis/index.md
+    - 12. Enthalpy and Calorimetry: chapters/12-energy-enthalpy-and-calorimetry/index.md
+    - 13. Entropy and Gibbs Energy: chapters/13-entropy-and-gibbs-free-energy/index.md
+    - 14. Chemical Equilibrium: chapters/14-chemical-equilibrium/index.md
+    - 15. Solubility Equilibria: chapters/15-solubility-equilibria/index.md
+    - 16. Acid-Base Theory and pH: chapters/16-acid-base-theory-and-ph/index.md
+    - 17. Buffers and Titrations: chapters/17-buffers-and-acid-base-titrations/index.md
+    - 18. Electrochemistry: chapters/18-electrochemistry/index.md
 
   - MicroSims:
     - List of MicroSims: sims/index.md

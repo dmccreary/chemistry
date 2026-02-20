@@ -4,13 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is an MkDocs Material intelligent textbook for an AP Chemistry course designed for high school students seeking college credit. It features:
-- 9 chapters aligned to the AP Chemistry Course and Exam Description (CED) units
+This repository contains the content for an MkDocs Material intelligent textbook for an AP Chemistry course designed for high school students seeking college credit. It features:
+
+- 18 chapters covering 500 concepts aligned to the AP Chemistry Course and Exam Description (CED)
 - Interactive MicroSims using p5.js and other JavaScript libraries
 - MathJax for LaTeX equation rendering (including mhchem for chemical equations)
 - SmilesDrawer for declarative 2D molecular structure diagrams from SMILES notation
 - Learning graphs with concepts and dependency relationships
 - A fun, encouraging tone appropriate for high school students
+- A fun cat mascot named Catalyst that gives student encouragement
 
 ## Open Source Tools Only
 
@@ -40,7 +42,6 @@ When testing with `mkdocs serve`, use the repository name in the path:
 - MicroSims: `http://127.0.0.1:8000/chemistry/sims/<sim-name>/`
 - SMILES test page: `http://127.0.0.1:8000/chemistry/sims/smiles-drawing-test/`
 
----
 
 ## Chemistry Notation in Markdown
 
@@ -212,8 +213,6 @@ The molecular structure of ethanol:
 <canvas data-smiles="CCO" width="250" height="250"></canvas>
 ```
 
----
-
 ## MkDocs Configuration Notes
 
 - Never use `navigation.tabs` feature (no top navigation tabs)
@@ -349,3 +348,260 @@ Every mascot admonition must include an `<img>` tag as the first line of the bod
 - Use `mascot-warning` for general notes — use `mascot-note` instead
 - Use the mascot for purely decorative purposes
 - Change Catalyst's personality or speech patterns
+
+---
+
+## Chapter Content Generation Guide
+
+This section provides the complete specification for generating chapter content.
+Follow every rule exactly when writing or editing chapter markdown files.
+
+### Chapter File Location
+
+All chapter content goes in: `docs/chapters/XX-chapter-name/index.md`
+
+The image path from any chapter file to the mascot images is: `../../img/mascot/`
+
+### Chapter Structure Template
+
+Every chapter MUST follow this structure in this exact order:
+
+```markdown
+# Chapter N: Chapter Title
+
+!!! mascot-welcome "Welcome, Scientists!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Catalyst welcomes you">
+    [Enthusiastic 1-2 sentence introduction to the chapter topic.
+    Must include "Let's react!" somewhere in the text.]
+
+## Introduction
+
+[2-3 paragraphs introducing the chapter topic, why it matters,
+and how it connects to prior knowledge. Written at a high school level.]
+
+## Section 1 Title
+
+[Content for first major topic area...]
+
+## Section 2 Title
+
+[Content for second major topic area...]
+
+[... additional sections as needed ...]
+
+## Summary
+
+[Brief recap of key concepts covered in this chapter.]
+
+!!! mascot-celebration "Great Work, Chemists!"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Catalyst celebrates">
+    [1-2 sentences celebrating completion of the chapter.]
+```
+
+### Writing Tone and Level
+
+- **Audience**: High school juniors and seniors (ages 16-18)
+- **Reading level**: Clear, accessible, but scientifically precise
+- **Tone**: Encouraging, engaging, occasionally playful — never condescending
+- **Voice**: Second person ("you") and first person plural ("we") — never passive academic voice
+- **Length**: Aim for 3,000-5,000 words per chapter (excluding code blocks and formulas)
+
+### Mascot Placement Plan for Each Chapter
+
+Plan mascot admonitions before writing. Use this distribution as a guide:
+
+| Position in Chapter | Admonition Type | Purpose |
+|---|---|---|
+| Very top (before Introduction) | `mascot-welcome` | Welcome students, set the stage, say "Let's react!" |
+| After introducing the first difficult concept | `mascot-encourage` | Normalize difficulty, motivate persistence |
+| At a key "aha moment" or big idea | `mascot-thinking` | Highlight a deep insight or connection |
+| After a common mistake area | `mascot-warning` | Warn about a specific frequent error |
+| When sharing a study strategy | `mascot-tip` | Give actionable exam or problem-solving advice |
+| When connecting to another chapter or history | `mascot-note` | Provide cross-reference or background context |
+| At the end of the chapter | `mascot-celebration` | Celebrate completing the chapter |
+
+**Mandatory rules:**
+
+- Exactly **1** `mascot-welcome` per chapter — always first
+- At most **7 total** mascot admonitions per chapter (all types combined)
+- **Never** place two mascot admonitions back-to-back — always have 2-3 paragraphs of regular content between them
+- Every admonition body starts with the `<img>` tag on the first line
+- Keep mascot dialogue to 1-3 sentences — brief and punchy
+
+### Complete Mascot Admonition Syntax Reference
+
+Copy-paste these templates exactly. The `<img>` tag MUST be the first line of the body.
+
+**Welcome (chapter opening):**
+```markdown
+!!! mascot-welcome "Welcome, Scientists!"
+    <img src="../../img/mascot/welcome.png" class="mascot-admonition-img" alt="Catalyst welcomes you">
+    Welcome to the world of [topic]! This is where we discover
+    [what makes this exciting]. Let's react!
+```
+
+**Thinking (key insight):**
+```markdown
+!!! mascot-thinking "Catalyst's Key Insight"
+    <img src="../../img/mascot/thinking.png" class="mascot-admonition-img" alt="Catalyst is thinking">
+    [1-2 sentences revealing a deep connection or "big idea"
+    that ties concepts together.]
+```
+
+**Tip (study advice):**
+```markdown
+!!! mascot-tip "Catalyst's Tip"
+    <img src="../../img/mascot/tip.png" class="mascot-admonition-img" alt="Catalyst shares a tip">
+    [1-2 sentences of actionable, specific advice for studying
+    or solving problems. Not generic — tied to the current topic.]
+```
+
+**Warning (common mistake):**
+```markdown
+!!! mascot-warning "Watch Out!"
+    <img src="../../img/mascot/warning.png" class="mascot-admonition-img" alt="Catalyst warns you">
+    [1-2 sentences describing the specific mistake students make
+    and exactly how to avoid it.]
+```
+
+**Encourage (before hard content):**
+```markdown
+!!! mascot-encourage "You've Got This!"
+    <img src="../../img/mascot/encouraging.png" class="mascot-admonition-img" alt="Catalyst encourages you">
+    [1-2 sentences normalizing difficulty and motivating the student.
+    Acknowledge that this topic is challenging but achievable.]
+```
+
+**Note (neutral context):**
+```markdown
+!!! mascot-note "Did You Know?"
+    <img src="../../img/mascot/note.png" class="mascot-admonition-img" alt="Catalyst shares a note">
+    [1-2 sentences of background information, historical context,
+    or a cross-reference to another chapter.]
+```
+
+**Celebration (chapter end):**
+```markdown
+!!! mascot-celebration "Great Work, Chemists!"
+    <img src="../../img/mascot/celebration.png" class="mascot-admonition-img" alt="Catalyst celebrates">
+    [1-2 sentences acknowledging achievement and previewing
+    what comes next.]
+```
+
+### Chemistry Notation Quick Reference for Content Writers
+
+When writing chapter content, use the correct notation system for every piece of chemistry. **Never write raw chemical formulas** like H2O, NaCl, or CO2 — always use the appropriate rendering system.
+
+#### Rule 1: Every Chemical Formula Gets `\ce{}`
+
+Any time a chemical formula appears in text, wrap it:
+
+- Inline: `$\ce{H2O}$` renders as the properly formatted formula
+- Display: `$$\ce{2H2 + O2 -> 2H2O}$$` renders as a centered equation
+- **Never** write `H2O` or `NaCl` as plain text — always `$\ce{H2O}$` or `$\ce{NaCl}$`
+
+#### Rule 2: Reaction Arrows and Equilibrium
+
+| What you need | Syntax | Renders as |
+|---|---|---|
+| Forward reaction | `$\ce{A -> B}$` | A -> B |
+| Equilibrium | `$\ce{A <=> B}$` | A <=> B |
+| With catalyst | `$\ce{A ->[catalyst] B}$` | A ->[catalyst] B |
+| With heat | `$\ce{A ->[\Delta] B}$` | A ->[Delta] B |
+
+#### Rule 3: States of Matter
+
+Always include state symbols in reaction equations:
+```markdown
+$$\ce{NaCl (s) -> Na+ (aq) + Cl- (aq)}$$
+```
+
+State symbols: `(s)` solid, `(l)` liquid, `(g)` gas, `(aq)` aqueous
+
+#### Rule 4: Charges on Ions
+
+```markdown
+$\ce{Na+}$, $\ce{Cl-}$, $\ce{SO4^{2-}}$, $\ce{Fe^{3+}}$
+```
+
+#### Rule 5: Isotope Notation
+
+```markdown
+$\ce{^{14}C}$, $\ce{^{235}U}$, $\ce{^{12}C}$
+```
+
+#### Rule 6: Math Equations Use LaTeX (NOT mhchem)
+
+For mathematical expressions, rate laws, and thermodynamic equations, use standard LaTeX math:
+
+```markdown
+Inline: The ideal gas law is $PV = nRT$.
+
+Display:
+$$\Delta G = \Delta H - T\Delta S$$
+
+$$K_{\text{eq}} = \frac{[\text{products}]}{[\text{reactants}]}$$
+
+$$r = k[\ce{A}]^m[\ce{B}]^n$$
+```
+
+**Key patterns:**
+
+- Greek letters: `$\Delta$`, `$\lambda$`, `$\nu$`
+- Subscripts/superscripts: `$K_a$`, `$K_{\text{sp}}$`, `$E^\circ$`
+- Fractions: `$\frac{a}{b}$`
+- Text in math: `$\text{mol}$`, `$K_{\text{eq}}$`
+
+#### Rule 7: Molecular Structure Diagrams Use SMILES Canvas
+
+When you want to show a 2D structural diagram of a molecule:
+
+```markdown
+<canvas data-smiles="CCO" width="250" height="250"></canvas>
+```
+
+For molecules inside grid cards (`<div ... markdown>`), escape brackets:
+```markdown
+<canvas data-smiles="CC(C)Cc1ccc(cc1)&#91;C@@H&#93;(C)C(=O)O" width="250" height="250"></canvas>
+```
+
+#### Rule 8: Decision Checklist
+
+Before writing any chemistry notation, ask:
+
+1. **Is it a chemical formula or reaction?** -> Use `$\ce{...}$`
+2. **Is it a math equation (rate law, thermodynamic, gas law)?** -> Use `$...$` or `$$...$$`
+3. **Do I need a 2D molecular structure drawing?** -> Use `<canvas data-smiles="...">`
+4. **Am I mixing math and chemistry?** -> Use `$\ce{...}$` for the chemistry parts inside the math: `$r = k[\ce{A}]^2$`
+
+### Content Enrichment Elements
+
+Each chapter should include a mix of these elements beyond prose:
+
+- **Chemical equations**: At least 3-5 properly formatted reaction equations per chapter
+- **Mathematical expressions**: Relevant formulas and calculations with worked examples
+- **Molecular structure diagrams**: SMILES canvas elements where molecular structure is relevant
+- **Tables**: Summary tables, comparison tables, data tables
+- **Worked examples**: Step-by-step problem solutions in blockquotes or admonitions
+- **Molecule grid cards**: Use `<div class="grid cards" markdown>` to display related molecules side by side
+
+### Blank Lines Before Lists (MkDocs Requirement)
+
+**CRITICAL**: MkDocs markdown requires a blank line before every list. Without it, the list will not render:
+
+```markdown
+WRONG:
+The three states of matter are:
+- Solid
+- Liquid
+- Gas
+
+CORRECT:
+The three states of matter are:
+
+- Solid
+- Liquid
+- Gas
+```
+
+This applies to both bulleted lists and numbered lists.

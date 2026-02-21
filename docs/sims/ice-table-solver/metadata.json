@@ -1,0 +1,53 @@
+{
+  "title": "ICE Table Interactive Solver",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive ICE table that walks through Guided and Practice modes, evaluates the 5% approximation, and shows quadratic solving steps for equilibrium problems.",
+  "date": "2026-03-07",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Chemical equilibrium",
+    "learningObjectives": [
+      "Construct and interpret ICE tables with editable initial conditions.",
+      "Decide whether the small-x approximation is justified and solve for x using the quadratic formula when needed."
+    ],
+    "bloomsTaxonomy": "Apply / Analyze",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Mass-action expressions for Kc",
+      "Algebraic manipulation of quadratic equations"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 900
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Guided problem solving with practice mode feedback",
+    "keyQuestions": [
+      "When is the 5% approximation acceptable for an ICE setup?",
+      "How do initial concentrations and K values influence the size of x?"
+    ],
+    "commonMisconceptions": [
+      "The small-x approximation is always valid when K is small.",
+      "Quadratic solutions automatically produce both physically meaningful concentrations."
+    ],
+    "assessmentOpportunities": [
+      "Students capture screenshots of completed Practice Mode tables.",
+      "Learners justify the approximation verdict with percent-change calculations."
+    ]
+  },
+  "chapter": "14-chemical-equilibrium"
+}

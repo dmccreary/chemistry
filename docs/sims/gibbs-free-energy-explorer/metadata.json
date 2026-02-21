@@ -1,0 +1,53 @@
+{
+  "title": "Gibbs Free Energy Spontaneity Explorer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Manipulate enthalpy, entropy, and temperature sliders to trace ΔG vs. temperature, identify spontaneous regions, and locate ΔG = 0 crossover points.",
+  "date": "2026-03-07",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Thermodynamics",
+    "learningObjectives": [
+      "Analyze how the signs of ΔH and ΔS influence spontaneity at high and low temperatures.",
+      "Use ΔG = ΔH − TΔS to determine whether a reaction is spontaneous at a specified temperature."
+    ],
+    "bloomsTaxonomy": "Analyze / Apply",
+    "duration": "10-12 minutes",
+    "prerequisites": [
+      "Understand enthalpy vs entropy definitions",
+      "Comfort working in Kelvin and converting J ↔ kJ"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 780
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive plot with guided readouts and presets",
+    "keyQuestions": [
+      "What happens to ΔG when temperature increases for each ΔH/ΔS sign combination?",
+      "At what temperature does ΔG change sign for a given reaction?"
+    ],
+    "commonMisconceptions": [
+      "Negative ΔG automatically means a reaction is fast.",
+      "Positive ΔS guarantees spontaneity regardless of ΔH."
+    ],
+    "assessmentOpportunities": [
+      "Students record ΔG, TΔS, and spontaneity across three temperatures.",
+      "Learners compute crossover temperature from ΔH and ΔS and verify with the visualization."
+    ]
+  },
+  "chapter": "13-entropy-and-gibbs-free-energy"
+}

@@ -96,6 +96,11 @@ nav:
     - Mechanism Step Explorer: sims/mechanism-step-explorer/index.md
     - Interactive Exothermic and Endothermic Energy Diagrams: sims/energy-diagram-explorer/index.md
     - Hess's Law Pathway Visualizer: sims/hess-law-visualizer/index.md
+    - ICE Table Interactive Solver: sims/ice-table-solver/index.md
+    - Le Chatelier's Principle Explorer: sims/le-chatelier-explorer/index.md
+    - Dissolution Equilibrium Visualizer: sims/dissolution-equilibrium-visualizer/index.md
+    - Gibbs Free Energy Spontaneity Explorer: sims/gibbs-free-energy-explorer/index.md
+    - Ksp Precipitation Predictor: sims/ksp-precipitation-predictor/index.md
     - Microstate Visualizer: sims/microstate-visualizer/index.md
     - Ideal Gas Law Simulator: sims/ideal-gas-law-simulator/index.md
     - Interactive Density Graphing MicroSim: sims/density-graphing/index.md

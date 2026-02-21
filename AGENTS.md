@@ -20,3 +20,6 @@ Update `mkdocs.yml` whenever you add or rename a page so the sidebar stays in sy
 
 ## MicroSim Development Rule
 Before touching any p5.js MicroSim, re-read the canonical guide at `../claude-skills/skills/microsim-generator/references/p5-guide.md` and follow its templates exactly (layout constants, control placement, no arrow-function handlers, standard `main.html`). Do not create or edit a MicroSim until you’ve confirmed the guide’s requirements.
+
+## Build & Testing Rule
+When running tests or builds (e.g., `mkdocs build --strict`), always activate the `mkdocs` Conda environment first by running `conda activate mkdocs`. Document this step in your workflow and assume it is required before any command that relies on the site toolchain.

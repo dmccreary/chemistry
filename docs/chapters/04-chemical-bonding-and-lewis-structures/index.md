@@ -126,6 +126,8 @@ High lattice energies translate directly into macroscopic properties: high melti
 
 #### Diagram: Ionic Crystal Lattice Structure
 
+<iframe src="../../sims/ionic-lattice-visualizer/main.html" width="100%" height="640px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>NaCl Crystal Lattice Interactive Visualizer (p5.js MicroSim)</summary>
 Type: MicroSim

@@ -403,6 +403,8 @@ Electronegativity differences between bonded atoms determine bond polarity and a
 
 #### Diagram: Periodic Trends Explorer
 
+<iframe src="../../sims/periodic-trends-explorer/main.html" width="100%" height="640px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Interactive Periodic Trends Explorer (p5.js MicroSim)</summary>
 Type: MicroSim

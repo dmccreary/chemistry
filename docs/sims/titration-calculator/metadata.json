@@ -1,0 +1,54 @@
+{
+  "title": "Interactive Titration Calculator",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Slider-driven titration tool that compares strong and weak acid titrations, calculates equivalence volumes, and renders the titration curve instantly.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Acid-base titrations",
+    "learningObjectives": [
+      "Apply M_a V_a = M_b V_b to predict the required titrant volume at equivalence.",
+      "Analyze how acid strength changes the titration curve shape and equivalence pH."
+    ],
+    "bloomsTaxonomy": "Apply / Analyze",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Strong vs. weak acid behavior",
+      "Henderson–Hasselbalch relationship",
+      "Stoichiometric molarity calculations"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 620
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive simulation with visual analytics",
+    "keyQuestions": [
+      "How does the equivalence volume change when Ca or Cb is adjusted?",
+      "Why is the equivalence pH above 7 for weak acids titrated with strong base?"
+    ],
+    "commonMisconceptions": [
+      "Equivalence pH is always 7 regardless of acid strength.",
+      "Volume at equivalence depends on both Ca and Cb in a non-linear way."
+    ],
+    "assessmentOpportunities": [
+      "Students submit curve screenshots alongside calculated volumes.",
+      "Learners explain how the simulation reflects Henderson–Hasselbalch in the buffer region."
+    ]
+  },
+  "chapter": "09-stoichiometry-titrations-and-analysis"
+}

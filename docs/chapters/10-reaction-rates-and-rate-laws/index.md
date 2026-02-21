@@ -380,7 +380,7 @@ Plot 3 — 1/[A] vs t:
 
 **Slope display:** Below the linear plot, display "slope = –k = [computed slope]" for first/zero order or "slope = +k = [computed slope]" for second order, in a monospace font, 12 pt.
 
-**Compute data:** Generate 200 evenly-spaced time points from 0 to tmax. For zero order: [A](t) = max([A]₀ − k·t, 0). For first order: [A](t) = [A]₀·e^(−k·t). For second order: [A](t) = 1/(1/[A]₀ + k·t). Transform to ln and 1/[A] accordingly.
+**Compute data:** Generate 200 evenly-spaced time points from 0 to tmax. For zero order: \[A\](t) = max(\[A\]₀ − k·t, 0). For first order: \[A\](t) = \[A\]₀·e^(−k·t). For second order: \[A\](t) = 1/(1/\[A\]₀ + k·t). Transform to ln and 1/\[A\] accordingly.
 </details>
 
 ---

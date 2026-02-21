@@ -18,4 +18,7 @@ Interactive simulations for AP Chemistry.
 - [Beer-Lambert Law Calibration Curve Builder](beer-lambert-calibration/index.md) - Edit calibration data, compute slope and R², and determine unknown concentrations with Beer-Lambert Law.
 - [Reaction Type Classifier](reaction-type-classifier/index.md) - Identify synthesis, decomposition, single replacement, double replacement, or combustion reactions with hints and scoring.
 - [Limiting Reagent and Percent Yield Calculator](limiting-reagent-percent-yield/index.md) - Input reactant masses and actual yield to animate limiting reagent comparisons and percent yield gauges.
+- [Interactive Titration Calculator](titration-calculator/index.md) - Adjust acid/base parameters and trace the titration curve with equivalence markers.
+- [Arrhenius Equation Explorer](arrhenius-equation-explorer/index.md) - Control Ea, A, and temperature range to compare k vs T and ln k vs 1/T plots.
+- [Integrated Rate Law Grapher](integrated-rate-law-grapher/index.md) - Examine [A], ln[A], and 1/[A] plots to identify reaction order and read k from slopes.
 - [Ideal Gas Law Simulator](ideal-gas-law-simulator/index.md) - Manipulate P, V, T, and n with a piston animation to see PV = nRT in action.

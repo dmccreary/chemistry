@@ -14,16 +14,36 @@ nav:
     - 1. Foundations of Chemistry:
       - Content: chapters/01-foundations-of-chemistry/index.md
       - Quiz: chapters/01-foundations-of-chemistry/quiz.md
-    - 2. Atomic Structure: chapters/02-atomic-structure-and-mass-spectrometry/index.md
-    - 3. Electron Config and Trends: chapters/03-electron-configuration-and-periodic-trends/index.md
-    - 4. Bonding and Lewis Structures: chapters/04-chemical-bonding-and-lewis-structures/index.md
-    - 5. Molecular Geometry: chapters/05-molecular-geometry-and-polarity/index.md
-    - 6. IMF and States of Matter: chapters/06-intermolecular-forces-and-states-of-matter/index.md
-    - 7. Phase Changes and Solutions: chapters/07-phase-changes-solutions-and-gas-laws/index.md
-    - 8. Chemical Reactions: chapters/08-chemical-reactions-and-equations/index.md
-    - 9. Stoichiometry and Analysis: chapters/09-stoichiometry-titrations-and-analysis/index.md
-    - 10. Reaction Rates: chapters/10-reaction-rates-and-rate-laws/index.md
-    - 11. Mechanisms and Catalysis: chapters/11-reaction-mechanisms-and-catalysis/index.md
+    - 2. Atomic Structure:
+      - Content: chapters/02-atomic-structure-and-mass-spectrometry/index.md
+      - Quiz: chapters/02-atomic-structure-and-mass-spectrometry/quiz.md
+    - 3. Electron Config and Trends:
+      - Content: chapters/03-electron-configuration-and-periodic-trends/index.md
+      - Quiz: chapters/03-electron-configuration-and-periodic-trends/quiz.md
+    - 4. Bonding and Lewis Structures:
+      - Content: chapters/04-chemical-bonding-and-lewis-structures/index.md
+      - Quiz: chapters/04-chemical-bonding-and-lewis-structures/quiz.md
+    - 5. Molecular Geometry:
+      - Content: chapters/05-molecular-geometry-and-polarity/index.md
+      - Quiz: chapters/05-molecular-geometry-and-polarity/quiz.md
+    - 6. IMF and States of Matter:
+      - Content: chapters/06-intermolecular-forces-and-states-of-matter/index.md
+      - Quiz: chapters/06-intermolecular-forces-and-states-of-matter/quiz.md
+    - 7. Phase Changes and Solutions:
+      - Content: chapters/07-phase-changes-solutions-and-gas-laws/index.md
+      - Quiz: chapters/07-phase-changes-solutions-and-gas-laws/quiz.md
+    - 8. Chemical Reactions:
+      - Content: chapters/08-chemical-reactions-and-equations/index.md
+      - Quiz: chapters/08-chemical-reactions-and-equations/quiz.md
+    - 9. Stoichiometry and Analysis:
+      - Content: chapters/09-stoichiometry-titrations-and-analysis/index.md
+      - Quiz: chapters/09-stoichiometry-titrations-and-analysis/quiz.md
+    - 10. Reaction Rates:
+      - Content: chapters/10-reaction-rates-and-rate-laws/index.md
+      - Quiz: chapters/10-reaction-rates-and-rate-laws/quiz.md
+    - 11. Mechanisms and Catalysis:
+      - Content: chapters/11-reaction-mechanisms-and-catalysis/index.md
+      - Quiz: chapters/11-reaction-mechanisms-and-catalysis/quiz.md
     - 12. Enthalpy and Calorimetry: chapters/12-energy-enthalpy-and-calorimetry/index.md
     - 13. Entropy and Gibbs Energy: chapters/13-entropy-and-gibbs-free-energy/index.md
     - 14. Chemical Equilibrium: chapters/14-chemical-equilibrium/index.md
@@ -49,6 +69,9 @@ nav:
     - Beer-Lambert Law Calibration Curve Builder: sims/beer-lambert-calibration/index.md
     - Reaction Type Classifier: sims/reaction-type-classifier/index.md
     - Limiting Reagent and Percent Yield Calculator: sims/limiting-reagent-percent-yield/index.md
+    - Interactive Titration Calculator: sims/titration-calculator/index.md
+    - Arrhenius Equation Explorer: sims/arrhenius-equation-explorer/index.md
+    - Integrated Rate Law Grapher: sims/integrated-rate-law-grapher/index.md
     - Ideal Gas Law Simulator: sims/ideal-gas-law-simulator/index.md
     - Interactive Density Graphing MicroSim: sims/density-graphing/index.md
     - Matter Classification Flowchart: sims/matter-classification-flowchart/index.md

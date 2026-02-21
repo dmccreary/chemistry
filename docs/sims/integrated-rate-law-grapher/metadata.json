@@ -1,0 +1,53 @@
+{
+  "title": "Integrated Rate Law Grapher",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive plots of [A], ln[A], and 1/[A] versus time that highlight the linear integrated rate law for zero, first, or second order reactions.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Chemical kinetics",
+    "learningObjectives": [
+      "Determine reaction order by identifying which integrated rate law plot is linear.",
+      "Calculate the rate constant k from the slope of the linear integrated rate law plot."
+    ],
+    "bloomsTaxonomy": "Understand / Apply",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Integrated rate law equations",
+      "Natural logarithms and reciprocal functions"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 700
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive simulation with comparative plots",
+    "keyQuestions": [
+      "Which plot is linear and what does that tell you about reaction order?",
+      "How does the slope of the linear plot relate to k?"
+    ],
+    "commonMisconceptions": [
+      "Multiple plots can be linear at once.",
+      "The slope is always positive regardless of order."
+    ],
+    "assessmentOpportunities": [
+      "Students submit the slope and order screenshot for a given parameter set.",
+      "Learners explain how changing k affects each plot."
+    ]
+  },
+  "chapter": "10-reaction-rates-and-rate-laws"
+}

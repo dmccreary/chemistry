@@ -3,10 +3,12 @@
         "Amphiprotic",
         "Aufbau",
         "Bronsted",
+        "chatelier",
         "Chatelier's",
         "Colligative",
         "Diprotic",
         "Electronegativity",
+        "grapher",
         "Hasselbalch",
         "Hund's",
         "mhchem",
@@ -14,6 +16,7 @@
         "Polyprotic",
         "Precalculus",
         "Subshells",
+        "Uncatalyzed",
         "VSEPR"
     ]
 }

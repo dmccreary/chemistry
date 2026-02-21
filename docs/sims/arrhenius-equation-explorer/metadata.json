@@ -1,0 +1,54 @@
+{
+  "title": "Arrhenius Equation Explorer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive Arrhenius visualizer showing k vs. temperature and ln k vs. 1/T plots that respond to activation energy, pre-exponential factor, and temperature range sliders.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Kinetics",
+    "learningObjectives": [
+      "Predict how changing Ea and A alters temperature sensitivity of the rate constant.",
+      "Interpret the slope of an Arrhenius plot as −Ea/R and connect it to kinetic data."
+    ],
+    "bloomsTaxonomy": "Apply / Analyze",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Arrhenius equation",
+      "Natural logarithms",
+      "Temperature in kelvin"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 620
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive simulation with dual plots",
+    "keyQuestions": [
+      "Why does a higher Ea increase the slope magnitude on an Arrhenius plot?",
+      "How does the frequency factor shift k without changing slope?"
+    ],
+    "commonMisconceptions": [
+      "Arrhenius plots are curved.",
+      "Only Ea affects temperature dependence; A has no role."
+    ],
+    "assessmentOpportunities": [
+      "Students screenshot both plots and annotate slope and k changes.",
+      "Learners compare their curve to the reference curve and explain differences."
+    ]
+  },
+  "chapter": "10-reaction-rates-and-rate-laws"
+}

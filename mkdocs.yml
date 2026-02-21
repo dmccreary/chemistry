@@ -45,6 +45,7 @@ nav:
     - VSEPR Molecular Geometry Builder: sims/vsepr-geometry-builder/index.md
     - MO Energy Diagram Explorer: sims/mo-energy-diagram/index.md
     - IMF Strength Explorer: sims/imf-strength-explorer/index.md
+    - Interactive Heating Curve Simulator: sims/heating-curve-simulator/index.md
     - Ideal Gas Law Simulator: sims/ideal-gas-law-simulator/index.md
     - Interactive Density Graphing MicroSim: sims/density-graphing/index.md
     - Matter Classification Flowchart: sims/matter-classification-flowchart/index.md
@@ -64,6 +65,9 @@ nav:
     - Graph Quality Metrics: learning-graph/quality-metrics.md
     - Taxonomy Distribution: learning-graph/taxonomy-distribution.md
     - Mascot Test: learning-graph/mascot-test.md
+    - Glossary Quality Report: learning-graph/glossary-quality-report.md
+    - FAQ Quality Report: learning-graph/faq-quality-report.md
+    - FAQ Coverage Gaps: learning-graph/faq-coverage-gaps.md
 
   - Sample Prompts:
     - List of Prompts: prompts/index.md

@@ -4,7 +4,7 @@ Generated: 2026-02-20
 
 ## Overall Statistics
 
-- **Total Questions:** 87
+- **Total Questions:** 70
 - **Overall Quality Score:** 88/100
 - **Content Completeness Score:** 100/100
 - **Concept Coverage:** ~74% (370 of 500 concepts addressed directly or by implication)
@@ -23,23 +23,23 @@ Generated: 2026-02-20
 
 Questions cover course purpose, audience, prerequisites, textbook navigation, MicroSims, exam format, study time, glossary, getting unstuck, the Catalyst mascot, lab access, and navigation strategy.
 
-### 2. Core Concepts (25 questions)
+### 2. Core Concepts (20 questions)
 
 - Average Bloom's Level: Understand / Apply
 - Average Answer Length: ~210 words
-- Links: 25/25 (100%)
-- Examples: 18/25 (72%)
+- Links: 20/20 (100%)
+- Examples: 15/20 (75%)
 
-Questions cover element/compound/mixture classification, the mole, electron configuration, ionic vs. covalent bonding, VSEPR, intermolecular forces, gas laws, stoichiometry, reaction rates, equilibrium, Le Chatelier's Principle, enthalpy vs. entropy, pH, buffers, electrochemistry, acid-base theories, redox reactions, Hess's Law, quantum numbers, Ksp, and more.
+Questions cover element/compound/mixture classification, the mole, electron configuration, ionic vs. covalent bonding, VSEPR, intermolecular forces, gas laws, stoichiometry, reaction rates, equilibrium, Le Chatelier's Principle, enthalpy vs. entropy, pH, buffers, electrochemistry, acid-base theories, redox reactions, Hess's Law, quantum numbers, and Ksp.
 
-### 3. Technical Detail (18 questions)
+### 3. Technical Detail (14 questions)
 
 - Average Bloom's Level: Remember / Understand / Apply
 - Average Answer Length: ~195 words
-- Links: 17/18 (94%)
-- Examples: 14/18 (78%)
+- Links: 13/14 (93%)
+- Examples: 11/14 (79%)
 
-Questions cover dimensional analysis, significant figures, accuracy vs. precision, mass spectrometry, Lewis structures, formal charge, electronegativity, Kc vs. Kp, oxidation states, Beer-Lambert Law, Henderson-Hasselbalch, net ionic equations, PES, hybridization, and more.
+Questions cover dimensional analysis, significant figures, accuracy vs. precision, mass spectrometry, Lewis structures, formal charge, electronegativity, Kc vs. Kp, oxidation states, Beer-Lambert Law, Henderson-Hasselbalch, net ionic equations, PES, and hybridization.
 
 ### 4. Common Challenges (9 questions)
 
@@ -87,11 +87,11 @@ Questions cover MO theory vs. VB theory, Gibbs-cell potential connection, the Ne
 
 ## Answer Quality Analysis
 
-- **Examples included:** 55/87 (63%) — Target: 40%+ ✓ (exceeds target)
-- **Links to source files:** 76/87 (87%) — Target: 60%+ ✓ (exceeds target)
-- **Answers with zero anchor fragments:** 87/87 (100%) ✓ (hard requirement met)
+- **Examples included:** 45/70 (64%) — Target: 40%+ ✓ (exceeds target)
+- **Links to source files:** 63/70 (90%) — Target: 60%+ ✓ (exceeds target)
+- **Answers with zero anchor fragments:** 70/70 (100%) ✓ (hard requirement met)
 - **Average answer length:** ~205 words — Target: 100-300 words ✓
-- **Complete answers (no partials):** 87/87 (100%) ✓
+- **Complete answers (no partials):** 70/70 (100%) ✓
 
 **Answer Quality Score: 25/25**
 

@@ -46,6 +46,7 @@ nav:
     - MO Energy Diagram Explorer: sims/mo-energy-diagram/index.md
     - IMF Strength Explorer: sims/imf-strength-explorer/index.md
     - Interactive Heating Curve Simulator: sims/heating-curve-simulator/index.md
+    - Beer-Lambert Law Calibration Curve Builder: sims/beer-lambert-calibration/index.md
     - Ideal Gas Law Simulator: sims/ideal-gas-law-simulator/index.md
     - Interactive Density Graphing MicroSim: sims/density-graphing/index.md
     - Matter Classification Flowchart: sims/matter-classification-flowchart/index.md
@@ -54,8 +55,8 @@ nav:
     - Scientific Method Workflow: sims/scientific-method/index.md
     - SMILES Drawing Test: sims/smiles-drawing-test/index.md
 
-  - Appendices:
-    - List of Appendices: appendices/index.md
+  #- Appendices:
+  #  - List of Appendices: appendices/index.md
 
   - Learning Graph:
     - Introduction: learning-graph/index.md

@@ -15,4 +15,5 @@ Interactive simulations for AP Chemistry.
 - [MO Energy Diagram Explorer](mo-energy-diagram/index.md) - Build diatomic MO diagrams, compute bond order, and identify magnetic character.
 - [IMF Strength Explorer](imf-strength-explorer/index.md) - Compare boiling points across IMF categories with interactive bar charts and explanations.
 - [Interactive Heating Curve Simulator](heating-curve-simulator/index.md) - Animate a five-stage heating curve, compare energy distributions across substances, and visualize plateau lengths.
+- [Beer-Lambert Law Calibration Curve Builder](beer-lambert-calibration/index.md) - Edit calibration data, compute slope and R², and determine unknown concentrations with Beer-Lambert Law.
 - [Ideal Gas Law Simulator](ideal-gas-law-simulator/index.md) - Manipulate P, V, T, and n with a piston animation to see PV = nRT in action.

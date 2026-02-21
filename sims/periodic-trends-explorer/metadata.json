@@ -1,0 +1,49 @@
+{
+  "title": "Periodic Trends Explorer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive periodic table that visualizes multiple trends (radius, ionization energy, etc.) with color transitions.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Periodic Trends",
+    "learningObjectives": [
+      "Analyze periodic properties across groups and periods",
+      "Evaluate exceptions using effective nuclear charge and shielding"
+    ],
+    "bloomsTaxonomy": "Apply / Analyze / Evaluate",
+    "duration": "10-15 minutes",
+    "prerequisites": ["Electron configuration", "Coulombic attraction"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 640
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.11"],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive visual analysis",
+    "keyQuestions": [
+      "Why do atomic radii decrease across a period?",
+      "How does Zeff explain trends in ionization energy?"
+    ],
+    "commonMisconceptions": [
+      "Electronegativity and electron affinity are identical",
+      "Atomic radius increases across a period"
+    ],
+    "assessmentOpportunities": [
+      "Ask students to justify an element’s property value using the trend arrows"
+    ]
+  },
+  "chapter": "03-electron-configuration-and-periodic-trends"
+}

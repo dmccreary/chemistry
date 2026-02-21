@@ -1,0 +1,49 @@
+{
+  "title": "PES Spectrum Interactive Visualizer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive MicroSim for comparing PES spectra across elements and linking peaks to electron configurations.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Photoelectron Spectroscopy",
+    "learningObjectives": [
+      "Analyze PES spectra to identify subshell peaks",
+      "Evaluate the effect of nuclear charge on binding energy"
+    ],
+    "bloomsTaxonomy": "Analyze / Evaluate",
+    "duration": "10 minutes",
+    "prerequisites": ["Electron configurations", "Ionization energy"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 640
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.11"],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Teacher-guided comparison and student-driven exploration",
+    "keyQuestions": [
+      "Which subshell corresponds to the tallest peak?",
+      "How does increasing nuclear charge affect peak position?"
+    ],
+    "commonMisconceptions": [
+      "All peaks represent individual electrons instead of subshells",
+      "Binding energy decreases with atomic number"
+    ],
+    "assessmentOpportunities": [
+      "Ask learners to match a PES plot with the correct electron configuration"
+    ]
+  },
+  "chapter": "03-electron-configuration-and-periodic-trends"
+}

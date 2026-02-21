@@ -1,0 +1,58 @@
+{
+  "title": "Dimensional Analysis Practice",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive MicroSim that scaffolds dimensional analysis problems with live unit cancellation feedback.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": [
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Dimensional Analysis",
+    "learningObjectives": [
+      "Apply conversion factors to multi-step unit changes",
+      "Interpret cancellation cues to verify correct units"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Metric unit prefixes",
+      "Avogadro's number"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 600
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Guided practice with immediate visual feedback",
+    "keyQuestions": [
+      "Which units cancel after applying this factor?",
+      "Do I need another tile to generate the target unit?"
+    ],
+    "commonMisconceptions": [
+      "Using inverse ratios for unit conversions",
+      "Stopping when the numeric answer seems reasonable but units are incorrect"
+    ],
+    "assessmentOpportunities": [
+      "Record correct/attempted ratios as part of formative assessment"
+    ]
+  },
+  "chapter": "01-foundations-of-chemistry"
+}

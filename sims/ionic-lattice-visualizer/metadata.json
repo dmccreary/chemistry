@@ -1,0 +1,49 @@
+{
+  "title": "Ionic Crystal Lattice Visualizer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive MicroSim showing NaCl, MgO, CaF2, and CsCl lattices with adjustable grid size and rotation.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Ionic Bonding",
+    "learningObjectives": [
+      "Describe the 3D arrangement of ions in common lattice types",
+      "Relate ion charge/size to lattice energy"
+    ],
+    "bloomsTaxonomy": "Understand / Analyze",
+    "duration": "10 minutes",
+    "prerequisites": ["Ion charges", "Ionic radii"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 640
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.11"],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Visual exploration with teacher prompts",
+    "keyQuestions": [
+      "Why do smaller, more charged ions increase lattice energy?",
+      "How does the CsCl lattice differ from NaCl?"
+    ],
+    "commonMisconceptions": [
+      "All ionic lattices are identical",
+      "Lattice energy only depends on charge"
+    ],
+    "assessmentOpportunities": [
+      "Have students explain which compound has the larger lattice energy and justify with the visualization"
+    ]
+  },
+  "chapter": "04-chemical-bonding-and-lewis-structures"
+}

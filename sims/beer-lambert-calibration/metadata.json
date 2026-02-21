@@ -1,0 +1,54 @@
+{
+  "title": "Beer-Lambert Law Calibration Curve Builder",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive calibration curve builder that plots absorbance vs. concentration data, reports slope and R^2, and solves for an unknown using Beer-Lambert relationships.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Beer-Lambert Law and spectrophotometry",
+    "learningObjectives": [
+      "Construct and interpret a calibration curve to determine molar absorptivity.",
+      "Use Beer-Lambert Law to estimate an unknown concentration from measured absorbance."
+    ],
+    "bloomsTaxonomy": "Apply / Analyze",
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Definition of absorbance, transmittance, and path length",
+      "Ability to perform linear regressions or interpret slope",
+      "Familiarity with Beer-Lambert Law notation"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 750
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive simulation with editable calibration data",
+    "keyQuestions": [
+      "How does the slope of the calibration line relate to molar absorptivity?",
+      "What does a low R^2 imply about the reliability of an unknown concentration reading?"
+    ],
+    "commonMisconceptions": [
+      "Beer-Lambert Law remains perfectly linear at very high concentrations.",
+      "Changing the heating rate or measurement order affects molar absorptivity."
+    ],
+    "assessmentOpportunities": [
+      "Ask students to diagnose whether a provided dataset violates Beer-Lambert assumptions.",
+      "Have students report the concentration of an unknown sample alongside the R^2 to justify confidence."
+    ]
+  },
+  "chapter": "07-phase-changes-solutions-and-gas-laws"
+}

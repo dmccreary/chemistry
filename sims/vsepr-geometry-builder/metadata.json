@@ -1,0 +1,49 @@
+{
+  "title": "VSEPR Molecular Geometry Builder",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive VSEPR model that animates electron/molecular geometries as electron groups and lone pairs change.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "VSEPR Theory",
+    "learningObjectives": [
+      "Determine electron and molecular geometry from electron groups and lone pairs",
+      "Explain how lone pairs modify bond angles"
+    ],
+    "bloomsTaxonomy": "Apply / Analyze",
+    "duration": "10 minutes",
+    "prerequisites": ["Lewis Structures", "Bonding pairs vs lone pairs"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 640
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.11"],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive visualization",
+    "keyQuestions": [
+      "What geometry results from AX5E?",
+      "Why do lone pairs occupy equatorial positions first in trigonal bipyramids?"
+    ],
+    "commonMisconceptions": [
+      "Lone pairs can be placed anywhere",
+      "Electron and molecular geometry names are identical"
+    ],
+    "assessmentOpportunities": [
+      "Ask students to predict the geometry for a given AXmEn and confirm using the simulator"
+    ]
+  },
+  "chapter": "05-molecular-geometry-and-polarity"
+}

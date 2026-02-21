@@ -1,0 +1,54 @@
+{
+  "title": "Interactive Heating Curve Simulator",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Animated heating curve that compares four substances, highlights plateaus vs. slopes, and quantifies how energy is distributed across phase changes.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["10", "11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Phase changes and heating curves",
+    "learningObjectives": [
+      "Identify each segment of a heating curve and explain whether heat input changes temperature or phase.",
+      "Compare how thermodynamic constants (specific heats, enthalpy of fusion, enthalpy of vaporization) alter the slope and length of heating-curve regions."
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Definition of specific heat and enthalpy changes",
+      "Ability to read temperature vs. heat graphs",
+      "Qualitative understanding of intermolecular forces"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 540
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive simulation with guided inquiry",
+    "keyQuestions": [
+      "Which segment uses the greatest fraction of energy for water and why?",
+      "How does switching to ethanol or benzene change the ratio of plateau to slope lengths?"
+    ],
+    "commonMisconceptions": [
+      "Heating rate changes the shape of an energy vs. temperature curve.",
+      "Plateau temperatures depend on how fast heat is added rather than material properties."
+    ],
+    "assessmentOpportunities": [
+      "Exit ticket asking students to justify a longer boiling plateau using enthalpy data",
+      "Quick-write comparing energy pie charts for two substances"
+    ]
+  },
+  "chapter": "07-phase-changes-solutions-and-gas-laws"
+}

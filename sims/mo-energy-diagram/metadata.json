@@ -1,0 +1,49 @@
+{
+  "title": "MO Energy Diagram Explorer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive MO diagram builder for diatomic molecules with bond order and magnetism output.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Molecular Orbital Theory",
+    "learningObjectives": [
+      "Construct MO energy diagrams for diatomic molecules",
+      "Evaluate bond order and magnetic character using MO configurations"
+    ],
+    "bloomsTaxonomy": "Evaluate",
+    "duration": "10 minutes",
+    "prerequisites": ["Electron configurations", "Lewis structures"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 640
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.11"],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Comparative visualization",
+    "keyQuestions": [
+      "How does bond order change between O₂ and O₂⁻?",
+      "Why is B₂ paramagnetic while C₂ is not?"
+    ],
+    "commonMisconceptions": [
+      "All MO diagrams fill σ2p before π2p",
+      "Lewis bond order always equals MO bond order"
+    ],
+    "assessmentOpportunities": [
+      "Ask students to identify the number of unpaired electrons for a selected molecule"
+    ]
+  },
+  "chapter": "05-molecular-geometry-and-polarity"
+}

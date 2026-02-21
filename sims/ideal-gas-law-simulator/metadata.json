@@ -1,0 +1,49 @@
+{
+  "title": "Ideal Gas Law Interactive Simulator",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Piston-and-particles animation that lets students adjust P, V, T, and n while solving PV = nRT for any variable.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Gas Laws",
+    "learningObjectives": [
+      "Use PV = nRT to calculate an unknown variable",
+      "Relate kinetic particle behavior to macroscopic gas variables"
+    ],
+    "bloomsTaxonomy": "Apply / Analyze",
+    "duration": "10 minutes",
+    "prerequisites": ["Gas law basics", "Units for pressure/volume/temperature"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 640
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.11"],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive simulation",
+    "keyQuestions": [
+      "What happens to pressure if volume decreases at constant T and n?",
+      "How does temperature affect molecular speed in the visualization?"
+    ],
+    "commonMisconceptions": [
+      "R changes with units",
+      "Particles slow down when pressure increases despite constant temperature"
+    ],
+    "assessmentOpportunities": [
+      "Have students record observations for Boyle's, Charles', and Avogadro's laws"
+    ]
+  },
+  "chapter": "06-intermolecular-forces-and-states-of-matter"
+}

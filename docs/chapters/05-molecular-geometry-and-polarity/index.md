@@ -159,6 +159,8 @@ This same principle applies to trigonal bipyramidal electron geometries when lon
 
 #### Diagram: Interactive VSEPR Molecular Geometry Builder
 
+<iframe src="../../sims/vsepr-geometry-builder/main.html" width="100%" height="640px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>VSEPR Molecular Geometry Builder (p5.js MicroSim)</summary>
 Type: MicroSim

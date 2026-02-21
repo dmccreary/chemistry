@@ -10,3 +10,5 @@ Interactive simulations for AP Chemistry.
 - [PES Spectrum Interactive Visualizer](pes-spectrum-visualizer/index.md) - Compare PES spectra for elements H–Ar with optional annotations and configuration display.
 - [Periodic Trends Explorer](periodic-trends-explorer/index.md) - Color-code the periodic table to study atomic radius, ionization energy, electron affinity, electronegativity, and Zeff.
 - [Ionic Crystal Lattice Visualizer](ionic-lattice-visualizer/index.md) - Rotate rock salt, fluorite, and CsCl lattices and explore how ion size affects lattice energy.
+- [Interactive Lewis Structure Builder](lewis-structure-builder/index.md) - Step through the six-step Lewis procedure with electron tracking and octet feedback.
+- [VSEPR Molecular Geometry Builder](vsepr-geometry-builder/index.md) - Adjust electron groups and lone pairs to visualize VSEPR geometries and bond angles.

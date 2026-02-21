@@ -1,0 +1,49 @@
+{
+  "title": "Interactive Lewis Structure Builder",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Step-by-step MicroSim for constructing Lewis structures with electron tracking and octet feedback.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Lewis Structures",
+    "learningObjectives": [
+      "Follow the six-step Lewis structure algorithm",
+      "Evaluate octet completion and multiple bond formation"
+    ],
+    "bloomsTaxonomy": "Apply / Evaluate",
+    "duration": "10 minutes",
+    "prerequisites": ["Valence electrons", "Bonding basics"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 640
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.11"],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Guided visualization and practice",
+    "keyQuestions": [
+      "How many valence electrons does this molecule have?",
+      "Which step introduces multiple bonds?"
+    ],
+    "commonMisconceptions": [
+      "Octet is satisfied before checking the central atom",
+      "Single bonds are always sufficient"
+    ],
+    "assessmentOpportunities": [
+      "Ask students to justify when Step 6 is required for a chosen molecule"
+    ]
+  },
+  "chapter": "04-chemical-bonding-and-lewis-structures"
+}

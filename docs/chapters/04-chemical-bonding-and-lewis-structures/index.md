@@ -255,6 +255,8 @@ Within any Lewis structure, electrons exist as either **bonding pairs** (shared 
 
 #### Diagram: Interactive Lewis Structure Builder
 
+<iframe src="../../sims/lewis-structure-builder/main.html" width="100%" height="640px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Lewis Structure Builder (p5.js MicroSim)</summary>
 Type: MicroSim

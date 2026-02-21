@@ -41,6 +41,8 @@ nav:
     - PES Spectrum Interactive Visualizer: sims/pes-spectrum-visualizer/index.md
     - Periodic Trends Explorer: sims/periodic-trends-explorer/index.md
     - Ionic Crystal Lattice Visualizer: sims/ionic-lattice-visualizer/index.md
+    - Interactive Lewis Structure Builder: sims/lewis-structure-builder/index.md
+    - VSEPR Molecular Geometry Builder: sims/vsepr-geometry-builder/index.md
     - Interactive Density Graphing MicroSim: sims/density-graphing/index.md
     - Matter Classification Flowchart: sims/matter-classification-flowchart/index.md
     - mhchem Rendering Test: sims/mhchem-test/index.md

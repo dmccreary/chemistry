@@ -71,10 +71,16 @@ let temperatureSlider;
 let saltSelect;
 let controlRows = [];
 let temperatureRow = null;
+let startPauseButton = null;
+let simulationRunning = false;
+let currentCationDisplay = 0;
+let currentAnionDisplay = 0;
 
 let cationParticles = [];
 let anionParticles = [];
 const maxParticles = 200;
+const maxCationParticles = Math.floor(maxParticles / 2);
+const maxAnionParticles = maxParticles - maxCationParticles;
 
 let statusText = 'Dissolving...';
 let qValue = 0;
@@ -87,13 +93,20 @@ function setup() {
   textFont('Arial');
   createControls();
   resetSimulation();
-  describe('Visualize dissolution equilibrium, track Q vs Ksp, and test the common-ion effect with animated ions.', 'Dissolution Equilibrium Visualizer');
+  describe('Visualize dissolution equilibrium, track Q vs Ksp, and test the common-ion effect with animated ions.');
 }
 
 function draw() {
   updateCanvasSize();
   background('aliceblue');
-  updateSimulation();
+  if (simulationRunning) {
+    updateSimulation();
+  } else {
+    qValue = computeQ();
+    if (statusText !== 'Paused') {
+      statusText = 'Paused';
+    }
+  }
   drawPanels();
   drawInfoBar();
   drawControlBackground();
@@ -115,6 +128,13 @@ function updateCanvasSize() {
 
 function createControls() {
   controlRows = [];
+
+  const runRow = createControlRow('');
+  startPauseButton = createButton('Start simulation');
+  startPauseButton.parent(runRow.slot);
+  stylePrimaryButton(startPauseButton);
+  startPauseButton.mousePressed(toggleSimulation);
+  controlRows.push(runRow);
 
   const saltRow = createControlRow('Select salt');
   saltSelect = createSelect();
@@ -166,15 +186,15 @@ function createControlRow(label, showValue = false) {
 
   const labelSpan = createSpan(label + ':');
   labelSpan.parent(row);
-  labelSpan.style('display', 'inline-block');
+  labelSpan.style('display', label ? 'inline-block' : 'none');
   labelSpan.style('min-width', '220px');
   labelSpan.style('font-weight', '600');
 
   const slot = createDiv();
   slot.parent(row);
-  slot.style('display', 'inline-block');
-  slot.style('width', '250px');
-  slot.style('margin-left', '12px');
+  slot.style('display', label ? 'inline-block' : 'block');
+  slot.style('width', label ? '250px' : '100%');
+  slot.style('margin-left', label ? '12px' : '0');
 
   const value = createSpan('');
   value.parent(row);
@@ -235,36 +255,65 @@ function computeQ() {
   return cationTerm * anionTerm;
 }
 
-function syncParticles() {
-  const targetCations = floor(map(cationConc, 0, currentSalt.molarSolubility * 3, 0, maxParticles / 2));
-  const targetAnions = floor(map(anionConc, 0, currentSalt.molarSolubility * 3, 0, maxParticles / 2));
-  adjustParticleArray(cationParticles, targetCations, currentSalt.colors.cation);
-  adjustParticleArray(anionParticles, targetAnions, currentSalt.colors.anion);
+function initializeParticles() {
+  cationParticles = [];
+  anionParticles = [];
+  for (let i = 0; i < maxCationParticles; i += 1) {
+    cationParticles.push(createParticle(currentSalt.colors.cation));
+  }
+  for (let i = 0; i < maxAnionParticles; i += 1) {
+    anionParticles.push(createParticle(currentSalt.colors.anion));
+  }
 }
 
-function adjustParticleArray(array, targetCount, color) {
-  while (array.length < targetCount) {
-    array.push(createParticle(color));
-  }
-  while (array.length > targetCount) {
-    array.pop();
-  }
+function syncParticles() {
+  const targetCations = constrain(map(cationConc, 0, currentSalt.molarSolubility * 3, 0, maxCationParticles), 0, maxCationParticles);
+  const targetAnions = constrain(map(anionConc, 0, currentSalt.molarSolubility * 3, 0, maxAnionParticles), 0, maxAnionParticles);
+  currentCationDisplay = lerp(currentCationDisplay, targetCations, 0.08);
+  currentAnionDisplay = lerp(currentAnionDisplay, targetAnions, 0.08);
+  adjustActiveParticles(cationParticles, Math.floor(currentCationDisplay), currentSalt.colors.cation);
+  adjustActiveParticles(anionParticles, Math.floor(currentAnionDisplay), currentSalt.colors.anion);
+}
+
+function adjustActiveParticles(particles, targetCount, color) {
+  particles.forEach((particle, index) => {
+    if (index < targetCount) {
+      if (!particle.active) {
+        randomizeParticle(particle);
+        particle.active = true;
+      }
+      particle.color = color;
+    } else {
+      particle.active = false;
+    }
+  });
 }
 
 function createParticle(color) {
-  return {
-    x: random(solutionPanel.x + 10, solutionPanel.x + solutionPanel.width - 10),
-    y: random(solutionPanel.y + 10, solutionPanel.y + solutionPanel.height - 40),
-    vx: random(-0.6, 0.6),
-    vy: random(-0.6, 0.6),
+  const particle = {
+    x: 0,
+    y: 0,
+    vx: 0,
+    vy: 0,
     color,
-    size: random(5, 9)
+    size: random(5, 9),
+    active: false
   };
+  randomizeParticle(particle);
+  return particle;
+}
+
+function randomizeParticle(p) {
+  p.x = random(solutionPanel.x + 12, solutionPanel.x + solutionPanel.width - 12);
+  p.y = random(solutionPanel.y + 12, solutionPanel.y + solutionPanel.height - 44);
+  p.vx = random(-1.5, 1.5);
+  p.vy = random(-1.5, 1.5);
 }
 
 function moveParticles() {
   const particles = [...cationParticles, ...anionParticles];
   particles.forEach(p => {
+    if (!p.active) return;
     p.x += p.vx;
     p.y += p.vy;
     if (p.x < solutionPanel.x + 10 || p.x > solutionPanel.x + solutionPanel.width - 10) p.vx *= -1;
@@ -288,11 +337,13 @@ function drawSolutionPanel() {
   rect(solutionPanel.x + 40, solutionPanel.y + solutionPanel.height - crystalHeight - 10, solutionPanel.width - 80, crystalHeight, 10);
 
   cationParticles.forEach(p => {
+    if (!p.active) return;
     fill(p.color);
     noStroke();
     circle(p.x, p.y, p.size);
   });
   anionParticles.forEach(p => {
+    if (!p.active) return;
     fill(p.color);
     noStroke();
     circle(p.x, p.y, p.size);
@@ -352,6 +403,7 @@ function drawBar(x, y, width, value, maxValue, color, label) {
   noStroke();
   rect(x, y, filled, 30, 8);
   fill('black');
+  noStroke();
   textAlign(LEFT, CENTER);
   text(`${label} = ${value.toExponential(2)} M`, x, y - 18);
 }
@@ -362,6 +414,7 @@ function drawQCompare(x, y, width, height) {
   rect(x, y, width, height, 10);
   noStroke();
   fill('black');
+  noStroke();
   textAlign(LEFT, TOP);
   textSize(14);
   text('Q vs Ksp', x + 10, y + 8);
@@ -383,6 +436,7 @@ function drawQCompare(x, y, width, height) {
   fill(statusText === 'Precipitating...' ? 'firebrick' : statusText === 'Dissolving...' ? 'seagreen' : 'slategray');
   circle(qPos, barY + 9, 14);
   fill('black');
+  noStroke();
   textAlign(LEFT, TOP);
   text(`Q = ${qValue.toExponential(2)}`, x + 12, barY + 34);
   text(`Status: ${statusText}`, x + 12, barY + 52);
@@ -395,6 +449,7 @@ function drawInfoBar() {
   rect(margin, barY, canvasWidth - margin * 2, 70, 12);
   noStroke();
   fill('black');
+  noStroke();
   textSize(14);
   textAlign(LEFT, TOP);
   text(`Formula: ${currentSalt.formula}`, margin + 16, barY + 12);
@@ -429,10 +484,16 @@ function resetSimulation() {
   anionConc = 0;
   solidLevel = 1;
   qValue = 0;
-  cationParticles = [];
-  anionParticles = [];
+  initializeParticles();
+  currentCationDisplay = 0;
+  currentAnionDisplay = 0;
   saltSelect.selected(currentSalt.id);
   updateTemperatureDisplay();
+  simulationRunning = false;
+  statusText = 'Paused';
+  if (startPauseButton) {
+    startPauseButton.html('Start simulation');
+  }
 }
 
 function styleSlider(slider) {
@@ -455,8 +516,19 @@ function stylePrimaryButton(btn) {
   btn.style('background', 'dodgerblue');
   btn.style('color', 'white');
   btn.style('cursor', 'pointer');
+  btn.style('margin-right', '12px');
 }
 
 function log10(value) {
   return Math.log(value) / Math.log(10);
+}
+
+function toggleSimulation() {
+  simulationRunning = !simulationRunning;
+  if (startPauseButton) {
+    startPauseButton.html(simulationRunning ? 'Pause simulation' : 'Start simulation');
+  }
+  if (!simulationRunning) {
+    statusText = 'Paused';
+  }
 }

@@ -624,3 +624,7 @@ These skills and concepts will reappear in every chapter that follows. In Chapte
     You have completed the foundations of chemistry — now you are ready
     to start exploring atoms, elements, and the periodic table. The
     skills you learned here will be your constant companions. Great chemistry!
+
+## References
+
+[See Annotated References](./references.md)

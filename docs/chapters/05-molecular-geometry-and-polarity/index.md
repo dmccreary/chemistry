@@ -620,3 +620,7 @@ These concepts provide the foundation for Chapter 6, which examines how molecula
 - **Polar Molecule**: A molecule with a net dipole moment — bond dipoles do not cancel due to asymmetric geometry
 - **Nonpolar Molecule**: A molecule with zero net dipole moment — either all bonds are nonpolar or bond dipoles cancel due to symmetry
 - **Network Covalent Solid**: A solid in which covalent bonds extend throughout the entire crystal, with no discrete molecular units; examples include diamond and quartz
+
+## References
+
+[See Annotated References](./references.md)

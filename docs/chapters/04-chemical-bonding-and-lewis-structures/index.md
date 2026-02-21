@@ -559,3 +559,7 @@ These concepts lay the essential foundation for Chapter 5, where molecular geome
 ---
 
 *Chapter 4 — Chemical Bonding and Lewis Structures | AP Chemistry*
+
+## References
+
+[See Annotated References](./references.md)

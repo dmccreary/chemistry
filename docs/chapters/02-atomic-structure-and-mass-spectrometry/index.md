@@ -545,3 +545,7 @@ The following list highlights the essential ideas from this chapter:
 7. A student claims that two compounds with the same empirical formula must also have the same molecular formula. Is this claim correct? Justify your answer with an example.
 
 8. Using a mass spectrometer, a chemist determines that a pure organic compound has a molar mass of 78 g/mol and an empirical formula of CH. What is its molecular formula? Name a well-known compound with this formula.
+
+## References
+
+[See Annotated References](./references.md)

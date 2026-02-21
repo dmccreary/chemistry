@@ -611,3 +611,7 @@ The following practice problems span the full range of concepts in this chapter.
 ---
 
 *End of Chapter 6*
+
+## References
+
+[See Annotated References](./references.md)

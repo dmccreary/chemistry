@@ -215,6 +215,8 @@ Type: microsim
 **Implementation:** p5.js canvas. Compute W using the binomial coefficient C(N,k) = N!/(k!(N-k)!). Use iterative factorial to avoid overflow for large N. Bar chart rendered as a p5.js sketch in a second canvas element on the page.
 </details>
 
+<iframe src="/chemistry/sims/microstate-visualizer/main.html" height="762px" width="100%" scrolling="no"></iframe>
+
 ## The Boltzmann Equation
 
 Ludwig Boltzmann formalized the connection between microstates and entropy in 1877 with one of the most elegant equations in all of science:

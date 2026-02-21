@@ -25,4 +25,5 @@ Interactive simulations for AP Chemistry.
 - [Mechanism Step Explorer](mechanism-step-explorer/index.md) - Animate a two-step mechanism and track intermediate concentrations in real time.
 - [Interactive Exothermic and Endothermic Energy Diagrams](energy-diagram-explorer/index.md) - Adjust Ea, ΔH, and catalyst effects for exothermic vs endothermic profiles.
 - [Hess's Law Pathway Visualizer](hess-law-visualizer/index.md) - Compare direct vs multi-step enthalpy pathways to confirm Hess's Law.
+- [Microstate Visualizer](microstate-visualizer/index.md) - Animate particle distributions and visualize microstate probabilities.
 - [Ideal Gas Law Simulator](ideal-gas-law-simulator/index.md) - Manipulate P, V, T, and n with a piston animation to see PV = nRT in action.

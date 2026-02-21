@@ -14,21 +14,27 @@ nav:
     - 1. Foundations of Chemistry:
       - Content: chapters/01-foundations-of-chemistry/index.md
       - Quiz: chapters/01-foundations-of-chemistry/quiz.md
+      - References: chapters/01-foundations-of-chemistry/references.md
     - 2. Atomic Structure:
       - Content: chapters/02-atomic-structure-and-mass-spectrometry/index.md
       - Quiz: chapters/02-atomic-structure-and-mass-spectrometry/quiz.md
+      - References: chapters/02-atomic-structure-and-mass-spectrometry/references.md
     - 3. Electron Config and Trends:
       - Content: chapters/03-electron-configuration-and-periodic-trends/index.md
       - Quiz: chapters/03-electron-configuration-and-periodic-trends/quiz.md
+      - References: chapters/03-electron-configuration-and-periodic-trends/references.md
     - 4. Bonding and Lewis Structures:
       - Content: chapters/04-chemical-bonding-and-lewis-structures/index.md
       - Quiz: chapters/04-chemical-bonding-and-lewis-structures/quiz.md
+      - References: chapters/04-chemical-bonding-and-lewis-structures/references.md
     - 5. Molecular Geometry:
       - Content: chapters/05-molecular-geometry-and-polarity/index.md
       - Quiz: chapters/05-molecular-geometry-and-polarity/quiz.md
+      - References: chapters/05-molecular-geometry-and-polarity/references.md
     - 6. IMF and States of Matter:
       - Content: chapters/06-intermolecular-forces-and-states-of-matter/index.md
       - Quiz: chapters/06-intermolecular-forces-and-states-of-matter/quiz.md
+      - References: chapters/06-intermolecular-forces-and-states-of-matter/references.md
     - 7. Phase Changes and Solutions:
       - Content: chapters/07-phase-changes-solutions-and-gas-laws/index.md
       - Quiz: chapters/07-phase-changes-solutions-and-gas-laws/quiz.md
@@ -90,6 +96,7 @@ nav:
     - Mechanism Step Explorer: sims/mechanism-step-explorer/index.md
     - Interactive Exothermic and Endothermic Energy Diagrams: sims/energy-diagram-explorer/index.md
     - Hess's Law Pathway Visualizer: sims/hess-law-visualizer/index.md
+    - Microstate Visualizer: sims/microstate-visualizer/index.md
     - Ideal Gas Law Simulator: sims/ideal-gas-law-simulator/index.md
     - Interactive Density Graphing MicroSim: sims/density-graphing/index.md
     - Matter Classification Flowchart: sims/matter-classification-flowchart/index.md

@@ -481,3 +481,7 @@ This chapter built from the historical Bohr model through the full quantum mecha
 5. Arrange the following in order of increasing atomic radius and explain your reasoning: Na, Mg, K, Ca, Cl. How does effective nuclear charge account for the trends you observe?
 
 6. Fluorine (F) has a very high ionization energy and the highest electronegativity, but its electron affinity is slightly less negative than that of chlorine (Cl). Explain this apparent exception using orbital size and electron-electron repulsion.
+
+## References
+
+[See Annotated References](./references.md)

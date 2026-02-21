@@ -3,6 +3,10 @@
 This page shows all mascot images as well as the admonition styles for reference.  Check that all the images have a transparent background
 and do not have excessive padding around the drawing.
 
+<style type="text/css">
+    img: dashed blue 1px;
+</style>
+
 ## Image Tests
 
 <div class="grid cards" markdown>

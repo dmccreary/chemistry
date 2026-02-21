@@ -162,6 +162,8 @@ However, this ranking has important nuances. A large nonpolar molecule with many
 
 #### Diagram: IMF Strength Explorer — Boiling Points vs. IMF Type
 
+<iframe src="../../sims/imf-strength-explorer/main.html" width="100%" height="620px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>IMF Strength Explorer — Boiling Points vs. IMF Type</summary>
 Type: MicroSim
@@ -369,6 +371,8 @@ Volume of H\(_2\): \( V = \frac{nRT}{P} = \frac{(0.03059)(0.08206)(298)}{1.00} =
 **Gas stoichiometry** simply weaves \( PV = nRT \) into the familiar mole-map framework you already know.
 
 #### Diagram: Ideal Gas Law Interactive Simulator
+
+<iframe src="../../sims/ideal-gas-law-simulator/main.html" width="100%" height="640px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Ideal Gas Law Interactive Simulator</summary>

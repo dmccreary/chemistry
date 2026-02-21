@@ -1,0 +1,49 @@
+{
+  "title": "IMF Strength Explorer — Boiling Points vs. IMF Type",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Bar-chart MicroSim showing how IMF categories correlate with boiling points, with filters and molecule explanations.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Intermolecular Forces",
+    "learningObjectives": [
+      "Compare boiling points across IMF categories",
+      "Explain why hydrogen bonding elevates boiling points"
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "10 minutes",
+    "prerequisites": ["Polarity", "IMF basics"],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 620
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.11"],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Comparative data visualization",
+    "keyQuestions": [
+      "Why do molecules with hydrogen bonding boil at higher temperatures?",
+      "How does molar mass influence dispersion forces?"
+    ],
+    "commonMisconceptions": [
+      "Dispersion forces are always weak regardless of molar mass",
+      "Dipole interactions are stronger than hydrogen bonding"
+    ],
+    "assessmentOpportunities": [
+      "Ask students to identify which molecules are paramagnetic by inspection of IMF data"
+    ]
+  },
+  "chapter": "06-intermolecular-forces-and-states-of-matter"
+}

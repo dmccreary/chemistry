@@ -547,6 +547,8 @@ For AP Chemistry, use VSEPR and Lewis structures for geometry, polarity, and mos
 
 #### Diagram: MO Energy Diagram Explorer
 
+<iframe src="../../sims/mo-energy-diagram/main.html" width="100%" height="660px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Interactive Molecular Orbital Energy Diagram</summary>
 Type: microsim

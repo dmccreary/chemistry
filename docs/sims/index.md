@@ -12,3 +12,6 @@ Interactive simulations for AP Chemistry.
 - [Ionic Crystal Lattice Visualizer](ionic-lattice-visualizer/index.md) - Rotate rock salt, fluorite, and CsCl lattices and explore how ion size affects lattice energy.
 - [Interactive Lewis Structure Builder](lewis-structure-builder/index.md) - Step through the six-step Lewis procedure with electron tracking and octet feedback.
 - [VSEPR Molecular Geometry Builder](vsepr-geometry-builder/index.md) - Adjust electron groups and lone pairs to visualize VSEPR geometries and bond angles.
+- [MO Energy Diagram Explorer](mo-energy-diagram/index.md) - Build diatomic MO diagrams, compute bond order, and identify magnetic character.
+- [IMF Strength Explorer](imf-strength-explorer/index.md) - Compare boiling points across IMF categories with interactive bar charts and explanations.
+- [Ideal Gas Law Simulator](ideal-gas-law-simulator/index.md) - Manipulate P, V, T, and n with a piston animation to see PV = nRT in action.

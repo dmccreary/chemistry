@@ -16,4 +16,6 @@ Interactive simulations for AP Chemistry.
 - [IMF Strength Explorer](imf-strength-explorer/index.md) - Compare boiling points across IMF categories with interactive bar charts and explanations.
 - [Interactive Heating Curve Simulator](heating-curve-simulator/index.md) - Animate a five-stage heating curve, compare energy distributions across substances, and visualize plateau lengths.
 - [Beer-Lambert Law Calibration Curve Builder](beer-lambert-calibration/index.md) - Edit calibration data, compute slope and R², and determine unknown concentrations with Beer-Lambert Law.
+- [Reaction Type Classifier](reaction-type-classifier/index.md) - Identify synthesis, decomposition, single replacement, double replacement, or combustion reactions with hints and scoring.
+- [Limiting Reagent and Percent Yield Calculator](limiting-reagent-percent-yield/index.md) - Input reactant masses and actual yield to animate limiting reagent comparisons and percent yield gauges.
 - [Ideal Gas Law Simulator](ideal-gas-law-simulator/index.md) - Manipulate P, V, T, and n with a piston animation to see PV = nRT in action.

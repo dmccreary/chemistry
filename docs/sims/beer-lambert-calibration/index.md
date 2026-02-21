@@ -6,7 +6,7 @@ quality_score: 0
 
 # Beer-Lambert Law Calibration Curve Builder
 
-<iframe src="main.html" height="752px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="792px" width="100%" scrolling="no"></iframe>
 
 [Run the Beer-Lambert MicroSim fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

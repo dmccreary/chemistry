@@ -8,11 +8,11 @@
       4. Crosshair concentration slider (row 3)
       5. Twelve data-entry inputs (6 concentration + 6 absorbance fields) arranged in rows 4-9
   - Layout calculations
-      drawHeight = 420
+      drawHeight = 460
       number of control rows = 9
       controlHeight = (9 x 35) + 10 = 325 (rounded to 330 for spacing)
-      canvasHeight = drawHeight + controlHeight = 750
-      iframeHeight target = canvasHeight + 2 = 752px
+      canvasHeight = drawHeight + controlHeight = 790
+      iframeHeight target = canvasHeight + 2 = 792px
       sliderLeftMargin = 260 so labels and buttons fit on the left
   - Control positions
       Plot button: (10, drawHeight + 10)
@@ -29,12 +29,14 @@
 */
 
 let canvasWidth = 800;
-let drawHeight = 420;
+let drawHeight = 460;
 let controlHeight = 330;
 let canvasHeight = drawHeight + controlHeight;
 let margin = 25;
 let sliderLeftMargin = 260;
 let defaultTextSize = 16;
+const titleOffset = 40;
+const titleText = 'Beer-Lambert Law Calibration Curve Builder';
 
 const defaultData = [
   { conc: 0.0001, absorb: 0.15 },
@@ -83,6 +85,7 @@ function draw() {
 
   drawPanels();
   drawGraph();
+  drawTitle();
   drawInfoPanel();
   drawControlLabels();
 }
@@ -136,7 +139,7 @@ function layoutControls() {
     concInputs[i].size(100, 22);
     concInputs[i].position(10, rowY);
     absorbInputs[i].size(100, 22);
-    absorbInputs[i].position(130, rowY);
+    absorbInputs[i].position(230, rowY);
   }
 }
 
@@ -217,7 +220,7 @@ function drawPanels() {
 
 function drawGraph() {
   const graphLeft = margin * 1.5;
-  const graphTop = margin * 1.5;
+  const graphTop = margin * 1.5 + titleOffset;
   const graphRight = canvasWidth * 0.5 - margin;
   const graphBottom = drawHeight - margin * 1.5;
 
@@ -238,14 +241,15 @@ function drawAxes(left, top, right, bottom) {
   line(left, bottom, right, bottom);
   line(left, bottom, left, top);
 
-  noStroke();
   fill('#333333');
+  noStroke();
   textSize(14);
   textAlign(CENTER, CENTER);
   text('Concentration (mol/L)', (left + right) / 2, bottom + 25);
   push();
   translate(left - 35, (top + bottom) / 2);
   rotate(-HALF_PI);
+  noStroke();
   text('Absorbance (A)', 0, 0);
   pop();
 
@@ -256,6 +260,7 @@ function drawAxes(left, top, right, bottom) {
     const x = lerp(left, right, i / 5);
     const concValue = (maxConc * i) / 5;
     fill('#555555');
+    noStroke();
     textAlign(CENTER, TOP);
     text(concValue.toFixed(4), x, bottom + 5);
     stroke('#e0e0e0');
@@ -265,6 +270,7 @@ function drawAxes(left, top, right, bottom) {
     const y = lerp(bottom, top, j / 5);
     const absValue = (maxAbs * j) / 5;
     fill('#555555');
+    noStroke();
     textAlign(RIGHT, CENTER);
     text(absValue.toFixed(2), left - 5, y);
     stroke('#e0e0e0');
@@ -354,34 +360,46 @@ function drawUnknownPoint(left, top, right, bottom) {
 
 function drawInfoPanel() {
   const panelLeft = canvasWidth * 0.5 + margin;
-  const panelTop = margin * 1.5;
+  const panelTop = margin * 1.5 + titleOffset;
   const panelWidth = canvasWidth - panelLeft - margin;
 
   fill('#111111');
+  noStroke();
   textAlign(LEFT, TOP);
   textSize(20);
   text('Calibration Details', panelLeft, panelTop);
 
   textSize(14);
   const infoY = panelTop + 35;
+  noStroke();
   text('Slope (epsilon * l): ' + regression.slope.toFixed(0) + ' L/mol·cm', panelLeft, infoY);
+  noStroke();
   text('Intercept: ' + regression.intercept.toFixed(2), panelLeft, infoY + 22);
+  noStroke();
   text('R^2: ' + regression.r2.toFixed(3), panelLeft, infoY + 44);
   const predictedAbs = regression.slope * crosshairConc + regression.intercept;
+  noStroke();
   text('Crosshair concentration: ' + nf(crosshairConc, 0, 5) + ' mol/L', panelLeft, infoY + 70);
+  noStroke();
   text('Predicted absorbance: ' + predictedAbs.toFixed(2), panelLeft, infoY + 92);
 
   if (unknownPoint) {
+    noStroke();
     text('Unknown concentration: ' + unknownPoint.conc.toExponential(3) + ' mol/L', panelLeft, infoY + 120);
   } else {
+    noStroke();
     text('Unknown concentration: --', panelLeft, infoY + 120);
   }
 
   textSize(13);
   const notesY = infoY + 160;
+  noStroke();
   text('Notes:', panelLeft, notesY);
+  noStroke();
   text('- Edit data table to see how poor points affect slope.', panelLeft, notesY + 18);
+  noStroke();
   text('- Plot curve before solving for unknowns.', panelLeft, notesY + 34);
+  noStroke();
   text('- The best-fit line uses least squares across all visible points.', panelLeft, notesY + 50);
 }
 
@@ -389,8 +407,20 @@ function drawControlLabels() {
   fill('#111111');
   textSize(defaultTextSize);
   textAlign(LEFT, CENTER);
+  noStroke();
   text('Unknown absorbance A:', 10, drawHeight + 45);
-  text('Crosshair concentration (mol/L):', sliderLeftMargin - 150, drawHeight + 95);
+  noStroke();
+  text('Crosshair concentration (mol/L):', sliderLeftMargin - 230, drawHeight + 95);
+  noStroke();
   text('Concentration (mol/L)', 10, drawHeight + 125);
-  text('Absorbance (A)', 150, drawHeight + 125);
+  noStroke();
+  text('Absorbance (A)', 250, drawHeight + 125);
+}
+
+function drawTitle() {
+  fill('#111111');
+  noStroke();
+  textAlign(CENTER, TOP);
+  textSize(24);
+  text(titleText, canvasWidth / 2, 10);
 }

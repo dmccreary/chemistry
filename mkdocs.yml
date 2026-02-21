@@ -47,6 +47,8 @@ nav:
     - IMF Strength Explorer: sims/imf-strength-explorer/index.md
     - Interactive Heating Curve Simulator: sims/heating-curve-simulator/index.md
     - Beer-Lambert Law Calibration Curve Builder: sims/beer-lambert-calibration/index.md
+    - Reaction Type Classifier: sims/reaction-type-classifier/index.md
+    - Limiting Reagent and Percent Yield Calculator: sims/limiting-reagent-percent-yield/index.md
     - Ideal Gas Law Simulator: sims/ideal-gas-law-simulator/index.md
     - Interactive Density Graphing MicroSim: sims/density-graphing/index.md
     - Matter Classification Flowchart: sims/matter-classification-flowchart/index.md

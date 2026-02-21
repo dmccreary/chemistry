@@ -1,0 +1,54 @@
+{
+  "title": "Limiting Reagent and Percent Yield Calculator",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive stoichiometry tool that determines the limiting reagent, theoretical yield, and percent yield for common reaction pairs with animated visuals.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["10", "11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Stoichiometry",
+    "learningObjectives": [
+      "Identify the limiting reagent by comparing moles-per-coefficient for two reactants.",
+      "Calculate theoretical yield and percent yield given reactant masses and actual product mass."
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Mass↔mole conversions",
+      "Balanced chemical equations",
+      "Percent-yield formula"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 620
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive calculator with visual diagnostics",
+    "keyQuestions": [
+      "Which reactant limits the reaction and how do you know?",
+      "How does the actual yield compare to the theoretical limit?"
+    ],
+    "commonMisconceptions": [
+      "The reactant with the smaller mass is always limiting.",
+      "Percent yield can exceed 100% without experimental error."
+    ],
+    "assessmentOpportunities": [
+      "Students capture the Show Work log and annotate each step.",
+      "Pairs explain how altering a reactant mass shifts the limiting reagent."
+    ]
+  },
+  "chapter": "08-chemical-reactions-and-equations"
+}

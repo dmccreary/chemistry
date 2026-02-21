@@ -69,11 +69,11 @@ notation using [SmilesDrawer](https://github.com/reymond-group/smilesDrawer).
 
     <canvas data-smiles="Cn1c(=O)c2c(ncn2C)n(C)c1=O" width="250" height="250"></canvas>
 
--   **Ibuprofen** <code>CC(C)Cc1ccc(cc1)[C@@H](C)C(=O)O</code>
+-   **Ibuprofen** <code>CC(C)Cc1ccc(cc1)&#91;C@@H&#93;(C)C(=O)O</code>
 
     <canvas data-smiles="CC(C)Cc1ccc(cc1)&#91;C@@H&#93;(C)C(=O)O" width="250" height="250"></canvas>
 
--   **Penicillin G** <code>CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)Cc3ccccc3)C(=O)O)C</code>
+-   **Penicillin G** <code>CC1(&#91;C@@H&#93;(N2&#91;C@H&#93;(S1)&#91;C@@H&#93;(C2=O)NC(=O)Cc3ccccc3)C(=O)O)C</code>
 
     <canvas data-smiles="CC1(&#91;C@@H&#93;(N2&#91;C@H&#93;(S1)&#91;C@@H&#93;(C2=O)NC(=O)Cc3ccccc3)C(=O)O)C" width="250" height="250"></canvas>
 
@@ -83,11 +83,11 @@ notation using [SmilesDrawer](https://github.com/reymond-group/smilesDrawer).
 
 <div class="grid cards" markdown>
 
--   **Glucose** <code>OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O</code>
+-   **Glucose** <code>OC&#91;C@H&#93;1OC(O)&#91;C@H&#93;(O)&#91;C@@H&#93;(O)&#91;C@@H&#93;1O</code>
 
     <canvas data-smiles="OC&#91;C@H&#93;1OC(O)&#91;C@H&#93;(O)&#91;C@@H&#93;(O)&#91;C@@H&#93;1O" width="250" height="250"></canvas>
 
--   **Alanine** <code>C[C@@H](N)C(=O)O</code>
+-   **Alanine** <code>C&#91;C@@H&#93;(N)C(=O)O</code>
 
     <canvas data-smiles="C&#91;C@@H&#93;(N)C(=O)O" width="250" height="250"></canvas>
 
@@ -134,6 +134,6 @@ notation using [SmilesDrawer](https://github.com/reymond-group/smilesDrawer).
 | Benzene | `c1ccccc1` |
 | Aspirin | `CC(=O)Oc1ccccc1C(=O)O` |
 | Caffeine | `Cn1c(=O)c2c(ncn2C)n(C)c1=O` |
-| Glucose | <code>OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O</code> |
-| Penicillin G | <code>CC1([C@@H](N2[C@H](S1)[C@@H](C2=O)NC(=O)Cc3ccccc3)C(=O)O)C</code> |
-| Ibuprofen | <code>CC(C)Cc1ccc(cc1)[C@@H](C)C(=O)O</code> |
+| Glucose | <code>OC&#91;C@H&#93;1OC(O)&#91;C@H&#93;(O)&#91;C@@H&#93;(O)&#91;C@@H&#93;1O</code> |
+| Penicillin G | <code>CC1(&#91;C@@H&#93;(N2&#91;C@H&#93;(S1)&#91;C@@H&#93;(C2=O)NC(=O)Cc3ccccc3)C(=O)O)C</code> |
+| Ibuprofen | <code>CC(C)Cc1ccc(cc1)&#91;C@@H&#93;(C)C(=O)O</code> |

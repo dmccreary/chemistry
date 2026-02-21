@@ -1,0 +1,53 @@
+{
+  "title": "Hess's Law Pathway Visualizer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive enthalpy staircase comparing direct versus multi-step reaction pathways to illustrate Hess's Law.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["10", "11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Thermochemistry",
+    "learningObjectives": [
+      "Trace multi-step enthalpy pathways and verify that total ΔH equals the direct route.",
+      "Explain Hess's Law using graphical energy levels."
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "10 minutes",
+    "prerequisites": [
+      "Thermochemical equations",
+      "Definition of ΔH"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 700
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive energy diagram",
+    "keyQuestions": [
+      "Why does adding steps yield the same ΔH as the direct path?",
+      "How does scaling step enthalpies affect the total?"
+    ],
+    "commonMisconceptions": [
+      "Different pathways give different total ΔH",
+      "Catalysts change ΔH values"
+    ],
+    "assessmentOpportunities": [
+      "Students record step values for different examples",
+      "Learners annotate the diagram explaining Hess's Law"
+    ]
+  },
+  "chapter": "12-energy-enthalpy-and-calorimetry"
+}

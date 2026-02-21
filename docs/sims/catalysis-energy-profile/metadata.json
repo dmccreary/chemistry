@@ -1,0 +1,53 @@
+{
+  "title": "Catalyzed vs. Uncatalyzed Energy Profile",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive energy diagram showing how catalysts lower activation energy without changing reaction enthalpy, with adjustable profiles and animation.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Catalysis",
+    "learningObjectives": [
+      "Explain how catalysts lower the activation energy barrier while leaving ΔH unchanged.",
+      "Compare uncatalyzed and catalyzed pathways by reading Ea and ΔH values from energy diagrams."
+    ],
+    "bloomsTaxonomy": "Understand / Apply",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Potential energy diagrams",
+      "Definition of activation energy and enthalpy"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 680
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive energy profile visualization",
+    "keyQuestions": [
+      "How does lowering Ea change the reaction rate?",
+      "Why does a catalyst not affect ΔH?"
+    ],
+    "commonMisconceptions": [
+      "Catalysts make reactions more exothermic.",
+      "Catalysts always add intermediates."
+    ],
+    "assessmentOpportunities": [
+      "Students capture the diagram at different catalyst strengths and report Ea values.",
+      "Learners describe how the intermediate option models multi-step mechanisms."
+    ]
+  },
+  "chapter": "11-reaction-mechanisms-and-catalysis"
+}

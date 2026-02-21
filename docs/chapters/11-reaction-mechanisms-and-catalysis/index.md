@@ -368,6 +368,8 @@ Canvas: 800 x 450 px, responsive to window resize.
 **Learning objective:** Students apply (Bloom's Level 3: Apply) their understanding of activation energy by manipulating catalyst strength and observing how Ea changes relative to ΔH, then predict how changes in Ea affect reaction rate using the Arrhenius relationship.
 </details>
 
+<iframe src="/chemistry/sims/catalysis-energy-profile/main.html" height="682px" width="100%" scrolling="no"></iframe>
+
 ---
 
 ## 11.10 Kinetics Experiments: Designing and Interpreting Investigations
@@ -412,7 +414,7 @@ Type: MicroSim (p5.js)
 **Library:** p5.js<br/>
 **Status:** Specified
 
-Canvas: 800 x 450 px, responsive to window resize.
+Canvas: 800 x 560 px with a 260 px control region below, responsive to window resize.
 
 **Visual layout:**
 - The canvas is divided into two regions: a **molecular animation panel** (left ~60% of canvas) and a **concentration graph panel** (right ~40% of canvas).
@@ -433,6 +435,8 @@ Canvas: 800 x 450 px, responsive to window resize.
 
 **Learning objective:** Students analyze (Bloom's Level 4: Analyze) how intermediates accumulate and are consumed across elementary steps by observing the real-time relationship between the rate-determining step speed and intermediate concentration, connecting molecular events to the macroscopic rate law.
 </details>
+
+<iframe src="/chemistry/sims/mechanism-step-explorer/main.html" height="842px" width="100%" scrolling="no"></iframe>
 
 ---
 
@@ -582,4 +586,3 @@ Reaction mechanisms provide the molecular-level explanation for the macroscopic 
 6. Design a kinetics experiment to determine the rate law for the reaction:
 $$\text{BrO}_3^-(aq) + 5\,\text{Br}^-(aq) + 6\,\text{H}^+(aq) \rightarrow 3\,\text{Br}_2(aq) + 3\,\text{H}_2\text{O}(l)$$
 Describe what measurements you would make, what you would hold constant in each experimental run, and how you would determine the order with respect to each reactant.
-

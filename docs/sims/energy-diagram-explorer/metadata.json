@@ -1,0 +1,53 @@
+{
+  "title": "Interactive Exothermic and Endothermic Energy Diagrams",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Adjust activation energy, enthalpy change, and catalyst presence to compare exothermic vs. endothermic energy profiles in real time.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["10", "11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Thermochemistry",
+    "learningObjectives": [
+      "Interpret potential energy diagrams to identify Ea and ΔH.",
+      "Explain how catalysts affect Ea without changing ΔH."
+    ],
+    "bloomsTaxonomy": "Understand / Apply",
+    "duration": "10 minutes",
+    "prerequisites": [
+      "Definition of exothermic vs endothermic reactions",
+      "Basic knowledge of activation energy"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 700
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive diagram with adjustable parameters",
+    "keyQuestions": [
+      "How do Ea and ΔH differ between exothermic and endothermic reactions?",
+      "What does a catalyst change on an energy diagram?"
+    ],
+    "commonMisconceptions": [
+      "Exothermic reactions have zero activation energy.",
+      "Catalysts change ΔH."
+    ],
+    "assessmentOpportunities": [
+      "Students record Ea/ΔH for different settings",
+      "Learners explain the effects of toggling the catalyst"
+    ]
+  },
+  "chapter": "12-energy-enthalpy-and-calorimetry"
+}

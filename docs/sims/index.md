@@ -21,4 +21,8 @@ Interactive simulations for AP Chemistry.
 - [Interactive Titration Calculator](titration-calculator/index.md) - Adjust acid/base parameters and trace the titration curve with equivalence markers.
 - [Arrhenius Equation Explorer](arrhenius-equation-explorer/index.md) - Control Ea, A, and temperature range to compare k vs T and ln k vs 1/T plots.
 - [Integrated Rate Law Grapher](integrated-rate-law-grapher/index.md) - Examine [A], ln[A], and 1/[A] plots to identify reaction order and read k from slopes.
+- [Catalyzed vs. Uncatalyzed Energy Profile](catalysis-energy-profile/index.md) - Explore Ea changes with catalysts, thermodynamic profiles, and multi-step pathways.
+- [Mechanism Step Explorer](mechanism-step-explorer/index.md) - Animate a two-step mechanism and track intermediate concentrations in real time.
+- [Interactive Exothermic and Endothermic Energy Diagrams](energy-diagram-explorer/index.md) - Adjust Ea, ΔH, and catalyst effects for exothermic vs endothermic profiles.
+- [Hess's Law Pathway Visualizer](hess-law-visualizer/index.md) - Compare direct vs multi-step enthalpy pathways to confirm Hess's Law.
 - [Ideal Gas Law Simulator](ideal-gas-law-simulator/index.md) - Manipulate P, V, T, and n with a piston animation to see PV = nRT in action.

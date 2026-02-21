@@ -232,6 +232,8 @@ Type: microsim
 **Behavior:** All outputs update in real time as sliders move. Warn user (red text) when \( \Delta T < 0 \) for exothermic but sign is entered incorrectly.
 </details>
 
+<iframe src="/chemistry/sims/energy-diagram-explorer/main.html" height="702px" width="100%" scrolling="no"></iframe>
+
 ### The Coffee Cup Calorimeter
 
 The simplest calorimeter used in AP labs is the **coffee cup calorimeter** — two nested styrofoam cups with a lid, thermometer, and stirring rod. It operates at constant pressure (open to atmosphere through a small hole for the thermometer), which makes it ideal for measuring enthalpies of reactions in solution.
@@ -473,6 +475,8 @@ Type: microsim
 - Hover over any arrow to see the numerical \( \Delta H \) value and the chemical equation for that step.
 - "Animate" button traces a glowing particle along each path sequentially.
 </details>
+
+<iframe src="/chemistry/sims/hess-law-visualizer/main.html" height="702px" width="100%" scrolling="no"></iframe>
 
 ---
 

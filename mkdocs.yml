@@ -86,6 +86,10 @@ nav:
     - Interactive Titration Calculator: sims/titration-calculator/index.md
     - Arrhenius Equation Explorer: sims/arrhenius-equation-explorer/index.md
     - Integrated Rate Law Grapher: sims/integrated-rate-law-grapher/index.md
+    - Catalyzed vs. Uncatalyzed Energy Profile: sims/catalysis-energy-profile/index.md
+    - Mechanism Step Explorer: sims/mechanism-step-explorer/index.md
+    - Interactive Exothermic and Endothermic Energy Diagrams: sims/energy-diagram-explorer/index.md
+    - Hess's Law Pathway Visualizer: sims/hess-law-visualizer/index.md
     - Ideal Gas Law Simulator: sims/ideal-gas-law-simulator/index.md
     - Interactive Density Graphing MicroSim: sims/density-graphing/index.md
     - Matter Classification Flowchart: sims/matter-classification-flowchart/index.md

@@ -44,13 +44,27 @@ nav:
     - 11. Mechanisms and Catalysis:
       - Content: chapters/11-reaction-mechanisms-and-catalysis/index.md
       - Quiz: chapters/11-reaction-mechanisms-and-catalysis/quiz.md
-    - 12. Enthalpy and Calorimetry: chapters/12-energy-enthalpy-and-calorimetry/index.md
-    - 13. Entropy and Gibbs Energy: chapters/13-entropy-and-gibbs-free-energy/index.md
-    - 14. Chemical Equilibrium: chapters/14-chemical-equilibrium/index.md
-    - 15. Solubility Equilibria: chapters/15-solubility-equilibria/index.md
-    - 16. Acid-Base Theory and pH: chapters/16-acid-base-theory-and-ph/index.md
-    - 17. Buffers and Titrations: chapters/17-buffers-and-acid-base-titrations/index.md
-    - 18. Electrochemistry: chapters/18-electrochemistry/index.md
+    - 12. Enthalpy and Calorimetry:
+      - Content: chapters/12-energy-enthalpy-and-calorimetry/index.md
+      - Quiz: chapters/12-energy-enthalpy-and-calorimetry/quiz.md
+    - 13. Entropy and Gibbs Energy:
+      - Content: chapters/13-entropy-and-gibbs-free-energy/index.md
+      - Quiz: chapters/13-entropy-and-gibbs-free-energy/quiz.md
+    - 14. Chemical Equilibrium:
+      - Content: chapters/14-chemical-equilibrium/index.md
+      - Quiz: chapters/14-chemical-equilibrium/quiz.md
+    - 15. Solubility Equilibria:
+      - Content: chapters/15-solubility-equilibria/index.md
+      - Quiz: chapters/15-solubility-equilibria/quiz.md
+    - 16. Acid-Base Theory and pH:
+      - Content: chapters/16-acid-base-theory-and-ph/index.md
+      - Quiz: chapters/16-acid-base-theory-and-ph/quiz.md
+    - 17. Buffers and Titrations:
+      - Content: chapters/17-buffers-and-acid-base-titrations/index.md
+      - Quiz: chapters/17-buffers-and-acid-base-titrations/quiz.md
+    - 18. Electrochemistry:
+      - Content: chapters/18-electrochemistry/index.md
+      - Quiz: chapters/18-electrochemistry/quiz.md
 
   - MicroSims:
     - List of MicroSims: sims/index.md

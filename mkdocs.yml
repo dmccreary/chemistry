@@ -121,6 +121,10 @@ nav:
     - mhchem Rendering Test: sims/mhchem-test/index.md
     - SMILES Drawing Test: sims/smiles-drawing-test/index.md
 
+  - Stories:
+    - Overview: stories/index.md
+    - Dmitri Mendeleev - The Table Dreamer: stories/dmitri-mendeleev/index.md
+
   #- Appendices:
   #  - List of Appendices: appendices/index.md
 

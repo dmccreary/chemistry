@@ -2,21 +2,22 @@
   "title": "Buffer pH Interactive Calculator",
   "creator": "Dan McCreary",
   "subject": "AP Chemistry",
-  "description": "Interactive Henderson-Hasselbalch calculator for computing buffer pH and designing component ratios for target pH values.",
-  "date": "2026-03-07",
+  "description": "Dual-panel Henderson-Hasselbalch simulator for computing buffer pH or designing the [A-]/[HA] ratio needed for a target pH.",
+  "date": "2026-02-21",
   "educational": {
     "gradeLevel": ["11", "12"],
     "subjectArea": "Chemistry",
     "topic": "Buffers",
     "learningObjectives": [
-      "Compute buffer pH from [HA], [A-], and pKa using Henderson-Hasselbalch.",
-      "Determine the [A-]/[HA] ratio required to achieve a target pH."
+      "Compute buffer pH from [HA], [A-], and pKa using the Henderson-Hasselbalch equation.",
+      "Determine the [A-]/[HA] ratio and NaOH addition required to reach a target pH."
     ],
     "bloomsTaxonomy": "Apply",
-    "duration": "12 minutes",
+    "duration": "15 minutes",
     "prerequisites": [
-      "Logarithms and Henderson-Hasselbalch equation",
-      "Understanding of weak acid/conjugate base pairs"
+      "Logarithms",
+      "Weak acid/conjugate base pairs",
+      "Henderson-Hasselbalch equation"
     ],
     "standards": []
   },
@@ -25,7 +26,7 @@
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 820
+      "height": 780
     },
     "responsive": true,
     "dependencies": ["p5.js 1.11.10"],
@@ -35,18 +36,18 @@
     }
   },
   "pedagogical": {
-    "teachingStrategy": "Dual-panel computation and design interface",
+    "teachingStrategy": "Interactive simulation with planning and feedback panels",
     "keyQuestions": [
-      "How do [HA]/[A-] ratios influence pH?",
-      "What ratio is required for a specific target pH?"
+      "How does changing the [A-]/[HA] ratio shift buffer pH?",
+      "Which buffer system best matches a chosen target pH?"
     ],
     "commonMisconceptions": [
-      "Buffers work regardless of pKa proximity to the target pH.",
-      "Increasing both HA and A- equally changes pH."
+      "Buffers work equally well regardless of how far the target pH is from pKa.",
+      "Diluting both HA and A- changes the buffer pH."
     ],
     "assessmentOpportunities": [
-      "Students design a buffer at a specific pH and report required ratios.",
-      "Learners compare pH responses of different buffer systems."
+      "Students document slider settings and explain why their buffer is inside or outside the useful range.",
+      "Learners compare two buffer systems and justify which maintains a specified pH better."
     ]
   },
   "chapter": "17-buffers-and-acid-base-titrations"

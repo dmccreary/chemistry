@@ -212,6 +212,8 @@ Bottom: A horizontal number line showing pH 0–14 with the selected pKa marked 
 Implementation: p5.js with createDropdown(), createSlider() DOM elements. All calculations update in real time.
 </details>
 
+<iframe src="../../sims/buffer-ph-calculator/main.html" height="782px" width="100%" scrolling="no"></iframe>
+
 ## Acid-Base Titrations
 
 ### What Is a Titration?

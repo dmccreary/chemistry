@@ -6,7 +6,7 @@ quality_score: 0
 
 # Weak acid ICE solver
 
-<iframe src="main.html" height="782px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="822px" width="100%" scrolling="no"></iframe>
 
 [Run the Weak Acid ICE Solver fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
@@ -14,13 +14,13 @@ quality_score: 0
 
 ## About this MicroSim
 
-Students type an acid name, an initial concentration, and a Ka value, then tap **Calculate** to populate a color-coded ICE table, automatically solve the quadratic $x^2 + K_a x - K_a C_a = 0$, and view the pH, pOH, $[\ce{OH-}]$, and percent ionization. The Ka expression with substituted numbers appears beside the verdict on the 5% (small-x) approximation, and a horizontal gauge shows how strongly the acid ionizes at the chosen concentration.
+Students choose a preset acid (acetic, formic, hydrofluoric, hypochlorous, or custom), drag the initial concentration slider (0.005-1.000 M), and adjust the logarithmic $K_a$ slider before tapping **Calculate**. The sim populates the ICE table, solves the quadratic $x^2 + K_a x - K_a C_a = 0$, and reports the pH, pOH, $[\ce{OH-}]$, and percent ionization. The Ka expression with substituted numbers appears beside the verdict on the 5% (small-x) approximation, and a horizontal gauge shows how strongly the acid ionizes at the chosen concentration.
 
 ## How to use
 
-1. Enter an optional **Acid name** label (defaults to acetic acid for easy testing).
-2. Type the **Initial [HA] (M)** in decimal or scientific notation (e.g., `0.100` or `2.5e-3`).
-3. Type the **Ka value** in scientific notation; both upper- and lower-case `e` are accepted.
+1. Use the **Acid selection** dropdown to load a preset; choose **Custom acid** to reveal a text box for your own label.
+2. Drag the **Initial [HA] (M)** slider (0.005-1.000 M). The value readout to the left of the slider updates in 0.001 M increments.
+3. Adjust the **Ka value** slider (10^-10 to 10^-2) to explore weaker vs stronger acids; presets auto-fill representative Ka values.
 4. Click **Calculate** to refresh the ICE table, Ka algebra panel, approximation verdict, and ionization gauge.
 5. If $K_a / C_a$ is large, the interface warns that the quadratic solution dominates and percent ionization approaches 100%.
 
@@ -32,7 +32,7 @@ Students type an acid name, an initial concentration, and a Ka value, then tap *
 | Grade band | Grades 11-12 (AP Chemistry) |
 | Learning objective | Students will be able to set up a weak-acid ICE table, solve the resulting quadratic for $[\ce{H3O+}]$, and evaluate whether the small-x approximation is valid. |
 | Bloom's level | Apply |
-| Duration | 1012 minutes of guided practice |
+| Duration | 10-12 minutes of guided practice |
 | Prerequisites | Acid dissociation expressions, scientific notation, pH/pOH relationships, quadratic formula |
 | Assessment ideas | Exit ticket justifying the approximation decision for a chosen acid; screenshot of the ICE table with annotations about $x/C_a$ |
 
@@ -43,17 +43,17 @@ Students type an acid name, an initial concentration, and a Ka value, then tap *
 
 | Question | Target | Decision |
 |----------|--------|----------|
-| Number of controls | 15 | 4 total (3 inputs + 1 button) |
-| Input burden | Simple numeric entry | All inputs accept plain numbers or scientific notation |
+| Number of controls | 1-5 | 4 rows (dropdown + optional text, slider, Ka input, button) |
+| Input burden | Simple numeric entry | Presets and slider reduce typing; Ka input still accepts scientific notation |
 | Progressive disclosure | Results follow after Calculate | Ka verdicts and warnings appear only after a calculation |
 
 - **Control inventory (Step 1.5):**
 
 | # | Control type | Label text | Value format | Row |
 |---|--------------|------------|--------------|-----|
-| 1 | Text input | Acid name (optional) | Plain text, 24 character display | 1 |
-| 2 | Text input | Initial [HA] (M) | Numeric / scientific notation | 2 |
-| 3 | Text input | Ka value | Numeric / scientific notation | 3 |
+| 1 | Select + optional text input | Acid selection / custom label | Preset list with optional free-text name | 1 |
+| 2 | Slider | Initial [HA] (M) | 0.005-1.000 M, 0.001 M increments | 2 |
+| 3 | Slider | Ka value | 10^-10 to 10^-2, logarithmic scale | 3 |
 | 4 | Button | Calculate | Runs solver, updates Ka check text | 4 |
 
 - **Progressive disclosure:** ICE values, Ka algebra, approximation verdict, and gauge update only after valid inputs are processed.
@@ -74,11 +74,11 @@ Students type an acid name, an initial concentration, and a Ka value, then tap *
 **Position assignments**
 
 ```javascript
-// Row 1 (Acid name)
+// Row 1 (Acid selection dropdown + optional text)
 controlRows[0].position(margin, drawHeight + 20);
-// Row 2 (Initial [HA])
+// Row 2 (Initial [HA] slider)
 controlRows[1].position(margin, drawHeight + 75);
-// Row 3 (Ka value)
+// Row 3 (Ka value input)
 controlRows[2].position(margin, drawHeight + 130);
 // Row 4 (Calculate button)
 controlRows[3].position(margin, drawHeight + 185);
@@ -90,7 +90,7 @@ controlRows[3].position(margin, drawHeight + 185);
 // All rows follow the template widths
 labelSpan.style('width', '150px');
 valueSpan.style('width', '80px');
-slot.style('width', '260px');
+slot.style('width', '260px'); // slider rows widen dynamically in code
 ```
 
 ## Lesson plan

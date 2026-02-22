@@ -1,57 +1,69 @@
 /*
   Buffer pH Interactive Calculator
-
-  Layout per p5 guide:
-    - drawHeight = 560 px (title, dual panels, number line)
-    - controlHeight = 260 px (buffer selector, custom pKa input, slider rows)
-    - Canvas background: aliceblue; control background: white
+  - drawHeight = 540 px (title, two panels, number line)
+  - controlHeight = 240 px (four aligned control rows beneath the drawing area)
+  - Canvas background: aliceblue; control background: white
 */
 
 let canvasWidth = 920;
-let drawHeight = 420;
-let controlHeight = 260;
+const drawHeight = 540;
+const controlHeight = 240;
 let canvasHeight = drawHeight + controlHeight;
-const margin = 20;
+const margin = 24;
+const sliderLeftMargin = 220;
+const controlRowSpacing = 65;
 
 const bufferSystems = [
-  { label: 'Acetate (pKa 4.74)', pKa: 4.74, id: 'acetate' },
-  { label: 'Phosphate (pKa 7.21)', pKa: 7.21, id: 'phosphate' },
-  { label: 'Ammonia (pKa 9.25)', pKa: 9.25, id: 'ammonia' },
-  { label: 'Custom', pKa: 7.00, id: 'custom' }
+  { id: 'acetate', label: 'Acetate (pKa 4.74)', pKa: 4.74 },
+  { id: 'phosphate', label: 'Phosphate (pKa 7.21)', pKa: 7.21 },
+  { id: 'ammonia', label: 'Ammonia (pKa 9.25)', pKa: 9.25 },
+  { id: 'custom', label: 'Custom system', pKa: 7.00 }
 ];
 
-let systemSelect;
-let customInput;
-let controlRows = [];
-let haSlider, aSlider, targetSlider;
-let haValueSpan, aValueSpan, targetValueSpan;
+let currentSystem = bufferSystems[0];
+let currentPka = currentSystem.pKa;
+let customPka = 7.00;
 
-let selectedSystem = bufferSystems[0];
-let currentPka = selectedSystem.pKa;
 let haConc = 0.50;
 let aConc = 0.50;
-let targetPH = currentPka;
+let targetPh = currentPka;
+
+let systemSelect;
+let customPkaInput;
+let haSlider;
+let aSlider;
+let targetSlider;
+
+let systemValueSpan;
+let haValueSpan;
+let aValueSpan;
+let targetValueSpan;
+
+const controlRows = [];
 
 function setup() {
   updateCanvasSize();
   const canvas = createCanvas(canvasWidth, canvasHeight);
   const main = document.querySelector('main');
-  if (main) canvas.parent(main);
-  textFont('Arial');
+  if (main) {
+    canvas.parent(main);
+  }
+  textFont('Arial, Helvetica, sans-serif');
   createControls();
-  describe('Calculate buffer pH from [HA]/[A-] or find ratio for a target pH using Henderson-Hasselbalch.');
+  updateControlDisplays();
+  describe('Adjust buffer composition and target pH with Henderson-Hasselbalch visual cues.');
 }
 
 function draw() {
   updateCanvasSize();
-
-  // Draw background drawing area and control area
-  fill('aliceblue')
-  // Draw a light border around both the drawing and control areas
-  stroke('sliver');
+  background('aliceblue');
+  stroke('silver');
+  strokeWeight(1);
+  fill('aliceblue');
   rect(0, 0, canvasWidth, drawHeight);
   fill('white');
   rect(0, drawHeight, canvasWidth, controlHeight);
+  noStroke();
 
   drawTitle();
   drawPanels();
@@ -60,15 +72,12 @@ function draw() {
 }
 
 function drawTitle() {
-  fill('black');
-  textAlign(CENTER, TOP);
-  textSize(30);
-  text('Buffer pH Interactive Calculator', canvasWidth / 2, 15);
+  drawText('Buffer pH Interactive Calculator', canvasWidth / 2, 18, CENTER, TOP, 30, '#000000');
 }
 
 function drawPanels() {
   const panelWidth = (canvasWidth - margin * 3) / 2;
-  const panelHeight = 280;
+  const panelHeight = 320;
   const panelY = 70;
 
   drawCompositionPanel(margin, panelY, panelWidth, panelHeight);
@@ -76,184 +85,167 @@ function drawPanels() {
 }
 
 function drawCompositionPanel(x, y, width, height) {
-  stroke('lightgray');
+  stroke('#d5dbe0');
   fill('white');
-  rect(x, y, width, height, 12);
-  fill('black');
-  textAlign(LEFT, TOP);
-  textSize(16);
-  text('Calculate pH from composition', x + 12, y + 12);
+  rect(x, y, width, height, 16);
+  drawText('Calculate pH from composition', x + 16, y + 14, LEFT, TOP, 18, '#0c4f74');
 
   const ratio = aConc / haConc;
   const ph = currentPka + log10(ratio);
-  textSize(14);
-  text(`Buffer system 1: ${selectedSystem.label}`, x + 12, y + 40);
-  text(`[A⁻]/[HA] = ${ratio.toFixed(2)}`, x + 12, y + 68);
+  const sanitizedPh = constrain(ph, 0, 14);
 
-  fill(getPhColor(ph));
-  textAlign(CENTER, CENTER);
-  textSize(48);
-  text(ph.toFixed(2), x + width / 2, y + height / 2 - 20);
-  fill('black');
-  textSize(16);
-  text('pH', x + width / 2, y + height / 2 + 30);
+  drawText('Selected buffer: ' + getSystemName(), x + 16, y + 46);
+  drawText(`[A-]/[HA] = ${ratio.toFixed(2)}`, x + 16, y + 68);
 
-  const barY = y + height - 60;
-  const barWidth = width - 40;
-  drawRatioBar(x + 20, barY, barWidth, 20, haConc, aConc);
+  drawText(ph.toFixed(2), x + width / 2, y + height / 2 - 10, CENTER, CENTER, 48, getPhColor(sanitizedPh));
+  drawText('pH', x + width / 2, y + height / 2 + 42, CENTER, CENTER, 18, '#37474f');
+
+  drawRatioBar(x + 24, y + height - 90, width - 48, 24);
 }
 
 function drawTargetPanel(x, y, width, height) {
-  stroke('lightgray');
+  stroke('#d5dbe0');
   fill('white');
-  rect(x, y, width, height, 12);
-  fill('black');
-  textAlign(LEFT, TOP);
-  textSize(16);
-  text('Calculate ratio for target pH', x + 12, y + 12);
+  rect(x, y, width, height, 16);
+  drawText('Calculate ratio for target pH', x + 16, y + 14, LEFT, TOP, 18, '#0c4f74');
 
-  const requiredRatio = pow(10, targetPH - currentPka);
-  const molesNaohPerMolHa = requiredRatio - 1;
-  textSize(14);
-  text(`Target pH: ${targetPH.toFixed(2)}`, x + 12, y + 40);
-  text(`[A⁻]/[HA] required = ${requiredRatio.toFixed(2)}`, x + 12, y + 64);
-  text(`If starting with 1.00 mol HA, add ${max(molesNaohPerMolHa, 0).toFixed(2)} mol NaOH`, x + 12, y + 88);
-  const rangeText = `Effective buffer range: ${ (currentPka - 1).toFixed(2)} to ${(currentPka + 1).toFixed(2)}`;
-  text(rangeText, x + 12, y + 112);
-  if (targetPH < currentPka - 1 || targetPH > currentPka + 1) {
-    fill('firebrick');
-    text('Warning: Target pH outside buffer range!', x + 12, y + 140);
+  const ratioRequired = pow(10, targetPh - currentPka);
+  const molNaoh = ratioRequired / (1 + ratioRequired);
+  const lowerRange = currentPka - 1;
+  const upperRange = currentPka + 1;
+  const outsideRange = targetPh < lowerRange || targetPh > upperRange;
+
+  drawText(`Target pH: ${targetPh.toFixed(2)}`, x + 16, y + 52);
+  drawText(`[A-]/[HA] required = ${ratioRequired.toFixed(2)}`, x + 16, y + 74);
+  drawText(`Add ${molNaoh.toFixed(2)} mol NaOH per 1.00 mol HA`, x + 16, y + 96);
+  drawText(`Effective buffer range: ${lowerRange.toFixed(2)} to ${upperRange.toFixed(2)}`, x + 16, y + 118);
+
+  if (outsideRange) {
+    drawText('Warning: Target pH lies outside the useful buffer range.', x + 16, y + 142, LEFT, TOP, 14, '#c62828');
   }
 }
 
-function drawRatioBar(x, y, width, height, ha, a) {
-  const total = ha + a;
-  const haWidth = (ha / total) * width;
+function drawRatioBar(x, y, width, height) {
+  const total = haConc + aConc;
+  const haWidth = (haConc / total) * width;
   const aWidth = width - haWidth;
+  stroke('#cccccc');
   fill('#F57C00');
-  rect(x, y, haWidth, height, 6, 0, 0, 6);
+  rect(x, y, haWidth, height, 8, 0, 0, 8);
   fill('#1976D2');
-  rect(x + haWidth, y, aWidth, height, 0, 6, 6, 0);
-  fill('black');
-  textAlign(LEFT, TOP);
-  text('HA', x, y + height + 4);
-  textAlign(RIGHT, TOP);
-  text('A⁻', x + width, y + height + 4);
+  rect(x + haWidth, y, aWidth, height, 0, 8, 8, 0);
+  drawText('HA', x, y + height + 6);
+  drawText('A-', x + width, y + height + 6, RIGHT, TOP);
 }
 
 function drawNumberLine() {
-  const lineY = 380;
+  const lineY = drawHeight - 80;
   const lineX = margin;
   const lineWidth = canvasWidth - margin * 2;
-  stroke('lightgray');
+
+  stroke('#90a4ae');
+  strokeWeight(2);
   line(lineX, lineY, lineX + lineWidth, lineY);
-  for (let ph = 0; ph <= 14; ph += 1) {
-    const x = map(ph, 0, 14, lineX, lineX + lineWidth);
-    stroke('lightgray');
-    line(x, lineY - 8, x, lineY + 8);
-    noStroke();
-    fill('black');
-    textAlign(CENTER, TOP);
-    text(ph.toString(), x, lineY + 10);
+
+  const lowerRange = constrain(currentPka - 1, 0, 14);
+  const upperRange = constrain(currentPka + 1, 0, 14);
+  const startX = map(lowerRange, 0, 14, lineX, lineX + lineWidth);
+  const endX = map(upperRange, 0, 14, lineX, lineX + lineWidth);
+  noStroke();
+  fill('rgba(129,199,132,0.5)');
+  rect(startX, lineY - 8, endX - startX, 16, 6);
+
+  for (let p = 0; p <= 14; p += 1) {
+    const tick = map(p, 0, 14, lineX, lineX + lineWidth);
+    stroke('#90a4ae');
+    line(tick, lineY - 6, tick, lineY + 6);
+    drawText(p.toString(), tick, lineY + 10, CENTER, TOP, 12);
   }
-  const start = max(currentPka - 1, 0);
-  const end = min(currentPka + 1, 14);
-  const startX = map(start, 0, 14, lineX, lineX + lineWidth);
-  const endX = map(end, 0, 14, lineX, lineX + lineWidth);
-  fill('lightgreen');
-  noStroke();
-  rect(startX, lineY - 4, endX - startX, 8);
-  stroke('black');
-  line(map(currentPka, 0, 14, lineX, lineX + lineWidth), lineY - 12, map(currentPka, 0, 14, lineX, lineX + lineWidth), lineY + 12);
-  noStroke();
-  fill('black');
-  textAlign(CENTER, BOTTOM);
-  text(`pKa = ${currentPka.toFixed(2)}`, map(currentPka, 0, 14, lineX, lineX + lineWidth), lineY - 14);
+
+  const pkaX = map(currentPka, 0, 14, lineX, lineX + lineWidth);
+  drawText(`pKa = ${currentPka.toFixed(2)}`, pkaX, lineY - 10, CENTER, BOTTOM, 13, '#0c4f74');
+
+  const targetX = map(targetPh, 0, 14, lineX, lineX + lineWidth);
+  stroke('#c62828');
+  line(targetX, lineY - 14, targetX, lineY + 14);
+  drawText(`Target pH ${targetPh.toFixed(2)}`, targetX, lineY + 26, CENTER, TOP, 13, '#c62828');
 }
 
 function createControls() {
-
-  // right side: buffer system select top selection list
-  systemLabel = createSpan('Buffer system 2: ');
-  styleLabel(systemLabel);
-  // standard p5.js select element - we will populate options and handle changes manually
+  const systemRow = createControlRow('Buffer system');
+  systemValueSpan = systemRow.value;
   systemSelect = createSelect();
   bufferSystems.forEach(function (system) {
     systemSelect.option(system.label, system.id);
   });
+  systemSelect.selected(currentSystem.id);
+  systemSelect.parent(systemRow.slot);
   systemSelect.changed(handleSystemChange);
-  const systemRow = createSelectRow('Buffer system', systemSelect);
 
-  customInput = createInput(currentPka.toFixed(2));
-  customInput.attribute('type', 'number');
-  customInput.attribute('step', '0.01');
-  customInput.attribute('min', '1');
-  customInput.attribute('max', '13');
-  customInput.input(handleCustomChange);
-  customRowRef = createSelectRow('Custom pKa', customInput);
-  customRowRef.row.hide();
+  customPkaInput = createInput(currentPka.toFixed(2));
+  customPkaInput.attribute('type', 'number');
+  customPkaInput.attribute('step', '0.01');
+  customPkaInput.attribute('min', '1');
+  customPkaInput.attribute('max', '13');
+  customPkaInput.style('width', '90px');
+  customPkaInput.style('margin-left', '12px');
+  customPkaInput.parent(systemRow.slot);
+  customPkaInput.input(function () {
+    const parsed = parseFloat(customPkaInput.value());
+    if (Number.isFinite(parsed)) {
+      customPka = constrain(parsed, 1, 13);
+      if (currentSystem.id === 'custom') {
+        currentPka = customPka;
+        adjustTargetSlider();
+      }
+    }
+    updateControlDisplays();
+  });
 
-  const haControl = createSliderRow('Initial [HA] (M)', 0.01, 1.0, haConc, 0.01, function (value) {
+  const haRow = createSliderRow('Initial [HA] (M)', 0.01, 1.00, haConc, 0.01, function (value) {
     haConc = value;
   });
-  haSlider = haControl.slider;
-  haValueSpan = haControl.valueSpan;
+  haSlider = haRow.slider;
+  haValueSpan = haRow.valueSpan;
 
-  const aControl = createSliderRow('Initial [A⁻] (M)', 0.01, 1.0, aConc, 0.01, function (value) {
+  const aRow = createSliderRow('[A-] (M)', 0.01, 1.00, aConc, 0.01, function (value) {
     aConc = value;
   });
-  aSlider = aControl.slider;
-  aValueSpan = aControl.valueSpan;
+  aSlider = aRow.slider;
+  aValueSpan = aRow.valueSpan;
 
-  const targetControl = createSliderRow('Target pH', currentPka - 2, currentPka + 2, targetPH, 0.05, function (value) {
-    targetPH = value;
+  const targetRow = createSliderRow('Target pH', Math.max(currentPka - 2, 0), Math.min(currentPka + 2, 14), targetPh, 0.05, function (value) {
+    targetPh = value;
   });
-  targetSlider = targetControl.slider;
-  targetValueSpan = targetControl.valueSpan;
+  targetSlider = targetRow.slider;
+  targetValueSpan = targetRow.valueSpan;
 
-  updateSliderValues();
-}
-
-function createSliderRow(labelText, min, max, initial, step, callback) {
-  const row = createControlRow(labelText);
-  controlRows.push(row.row);
-  const slider = createSlider(min, max, initial, step);
-  slider.parent(row.slot);
-  slider.size(260);
-  slider.input(function () {
-    row.value.html(slider.value().toFixed(2));
-    callback(parseFloat(slider.value()));
-  });
-  row.value.html(initial.toFixed(2));
-  return { slider, valueSpan: row.value, row: row.row };
-}
-
-function createSelectRow(labelText, element) {
-  const row = createControlRow(labelText);
-  controlRows.push(row.row);
-  element.parent(row.slot);
-  element.size(260);
-  row.value.hide();
-  return row;
+  updateSliderWidths();
+  handleSystemChange();
 }
 
 function createControlRow(labelText) {
   const row = createDiv();
   row.style('display', 'inline-block');
   row.style('background', 'white');
-  row.style('padding', '6px 10px');
-  row.style('border-radius', '8px');
-  row.style('box-shadow', '0 1px 3px rgba(0,0,0,0.12)');
+  row.style('padding', '8px 12px');
+  row.style('border-radius', '10px');
+  row.style('box-shadow', '0 1px 4px rgba(0,0,0,0.15)');
   row.style('font-family', 'Arial, Helvetica, sans-serif');
   row.style('font-size', '14px');
 
   const labelSpan = createSpan(labelText + ': ');
   labelSpan.parent(row);
-  styleLabel(labelSpan);
+  labelSpan.style('display', 'inline-block');
+  labelSpan.style('width', '150px');
+  labelSpan.style('font-weight', '600');
 
   const valueSpan = createSpan('');
   valueSpan.parent(row);
-  styleValue(valueSpan);
+  valueSpan.style('display', 'inline-block');
+  valueSpan.style('width', '70px');
+  valueSpan.style('font-weight', '600');
+  valueSpan.style('color', '#0c4f74');
 
   const slot = createDiv();
   slot.parent(row);
@@ -261,83 +253,104 @@ function createControlRow(labelText) {
   slot.style('width', '260px');
   slot.style('margin-left', '12px');
 
-  return { row, label: labelSpan, value: valueSpan, slot };
+  const record = { row: row, value: valueSpan, slot: slot };
+  controlRows.push(record);
+  return record;
+}
+
+function createSliderRow(labelText, min, max, initial, step, callback) {
+  const row = createControlRow(labelText);
+  const slider = createSlider(min, max, initial, step);
+  slider.parent(row.slot);
+  slider.style('width', '240px');
+  slider.input(function () {
+    callback(parseFloat(slider.value()));
+    updateControlDisplays();
+  });
+  return { slider: slider, valueSpan: row.value };
 }
 
 function positionControls() {
   const canvasEl = document.querySelector('main canvas');
-  if (!canvasEl) return;
+  if (!canvasEl) {
+    return;
+  }
   const rect = canvasEl.getBoundingClientRect();
   const baseX = rect.left + window.scrollX + margin;
-  const baseY = rect.top + window.scrollY + drawHeight + 20;
-  const spacing = 70;
+  const baseY = rect.top + window.scrollY + drawHeight + 25;
 
-  controlRows.forEach(function (row, index) {
-    row.position(baseX, baseY + index * spacing);
+  controlRows.forEach(function (record, index) {
+    record.row.position(baseX, baseY + index * controlRowSpacing);
   });
 }
 
-function handleSystemChange() {
-  const id = systemSelect.value();
-  selectedSystem = bufferSystems.find(function (sys) { return sys.id === id; }) || bufferSystems[0];
-  if (selectedSystem.id === 'custom') {
-    customRowRef.row.show();
-  } else {
-    customRowRef.row.hide();
-    currentPka = selectedSystem.pKa;
-    targetSlider.attribute('min', currentPka - 2);
-    targetSlider.attribute('max', currentPka + 2);
-    targetPH = currentPka;
+function updateControlDisplays() {
+  if (systemValueSpan) {
+    systemValueSpan.html(`pKa ${currentPka.toFixed(2)}`);
   }
-  updateSliderValues();
+  if (customPkaInput) {
+    customPkaInput.style('display', currentSystem.id === 'custom' ? 'inline-block' : 'none');
+    if (currentSystem.id === 'custom') {
+      customPkaInput.value(customPka.toFixed(2));
+    }
+  }
+  if (haValueSpan) {
+    haValueSpan.html(haConc.toFixed(2) + ' M');
+  }
+  if (aValueSpan) {
+    aValueSpan.html(aConc.toFixed(2) + ' M');
+  }
+  if (targetValueSpan) {
+    targetValueSpan.html(targetPh.toFixed(2));
+  }
 }
 
-function handleCustomChange() {
-  const value = parseFloat(customInput.value());
-  if (!Number.isFinite(value)) return;
-  currentPka = constrain(value, 1, 13);
-  targetSlider.attribute('min', currentPka - 2);
-  targetSlider.attribute('max', currentPka + 2);
-  targetPH = currentPka;
-  updateSliderValues();
+function handleSystemChange() {
+  const selectedId = systemSelect ? systemSelect.value() : bufferSystems[0].id;
+  currentSystem = bufferSystems.find(function (system) {
+    return system.id === selectedId;
+  }) || bufferSystems[0];
+
+  if (currentSystem.id === 'custom') {
+    currentPka = customPka;
+  } else {
+    currentPka = currentSystem.pKa;
+    customPka = currentPka;
+  }
+  adjustTargetSlider();
+  updateControlDisplays();
 }
 
-function updateSliderValues() {
-  haValueSpan.html(haConc.toFixed(2));
-  aValueSpan.html(aConc.toFixed(2));
-  targetSlider.value(targetPH);
-  targetValueSpan.html(targetPH.toFixed(2));
-  customInput.value(currentPka.toFixed(2));
+function adjustTargetSlider() {
+  if (!targetSlider) {
+    return;
+  }
+  const min = Math.max(currentPka - 2, 0);
+  const max = Math.min(currentPka + 2, 14);
+  targetSlider.attribute('min', min);
+  targetSlider.attribute('max', max);
+  targetPh = constrain(currentPka, min, max);
+  targetSlider.value(targetPh);
 }
 
-function styleLabel(el) {
-  el.style('display', 'inline-block');
-  el.style('width', '140px');
-  el.style('font-weight', '600');
-}
-
-function styleValue(el) {
-  el.style('display', 'inline-block');
-  el.style('width', '50px');
-  el.style('font-weight', '600');
-}
-
-function log10(value) {
-  return Math.log(value) / Math.log(10);
-}
-
-function getGradientColor(pct) {
-  // the lerpColor function is a built-in p5 function that interpolates between two colors based on a percentage (0 to 1)
-  return lerpColor(color('crimson'), color('purple'), pct);
-}
-
-function getPhColor(phValue) {
-  return getGradientColor(constrain(phValue / 14, 0, 1));
+function updateSliderWidths() {
+  const sliderWidth = Math.max(canvasWidth - sliderLeftMargin - margin * 2, 180);
+  [haSlider, aSlider, targetSlider].forEach(function (slider) {
+    if (slider) {
+      slider.size(sliderWidth);
+    }
+  });
+  controlRows.forEach(function (record) {
+    if (record.slot) {
+      record.slot.style('width', sliderWidth + 'px');
+    }
+  });
 }
 
 function windowResized() {
   updateCanvasSize();
   resizeCanvas(canvasWidth, canvasHeight);
+  updateSliderWidths();
   positionControls();
 }
 
@@ -347,4 +360,30 @@ function updateCanvasSize() {
     canvasWidth = container.offsetWidth;
   }
   canvasHeight = drawHeight + controlHeight;
+}
+
+function getSystemName() {
+  if (currentSystem.id === 'custom') {
+    return `Custom (pKa ${currentPka.toFixed(2)})`;
+  }
+  return currentSystem.label;
+}
+
+function getPhColor(value) {
+  const pct = constrain(value / 14, 0, 1);
+  const acidic = color('#c62828');
+  const basic = color('#283593');
+  return lerpColor(acidic, basic, pct);
+}
+
+function log10(value) {
+  return Math.log(value) / Math.log(10);
+}
+
+function drawText(content, x, y, alignX = LEFT, alignY = TOP, size = 14, color = '#37474f') {
+  noStroke();
+  fill(color);
+  textAlign(alignX, alignY);
+  textSize(size);
+  text(content, x, y);
 }

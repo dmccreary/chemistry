@@ -14,14 +14,24 @@ const margin = 24;
 const sliderLeftMargin = 180;
 const controlRowSpacing = 55;
 
-const defaultAcid = 'Acetic acid';
-const defaultConcentration = '0.100';
-const defaultKa = '1.8e-5';
+const acidOptions = [
+  { id: 'acetic', name: 'Acetic acid', label: 'Acetic acid (Ka 1.8e-5)', ka: '1.8e-5', defaultCa: 0.100 },
+  { id: 'formic', name: 'Formic acid', label: 'Formic acid (Ka 1.8e-4)', ka: '1.8e-4', defaultCa: 0.050 },
+  { id: 'hydrofluoric', name: 'Hydrofluoric acid', label: 'Hydrofluoric acid (Ka 7.2e-4)', ka: '7.2e-4', defaultCa: 0.020 },
+  { id: 'hypochlorous', name: 'Hypochlorous acid', label: 'Hypochlorous acid (Ka 3.0e-8)', ka: '3.0e-8', defaultCa: 0.100 },
+  { id: 'custom', name: 'Custom acid', label: 'Custom acid (enter name)', ka: '', defaultCa: 0.050 }
+];
 
-let acidInput;
-let concentrationInput;
-let kaInput;
+let selectedAcidOption = acidOptions[0];
+
+let acidSelect;
+let customAcidInput;
+let haSlider;
+let haSliderSlot;
+let kaSlider;
+let kaSliderSlot;
 let calculateButton;
+let customAcidLabel = 'Custom acid';
 
 let acidValueSpan;
 let concentrationValueSpan;
@@ -251,24 +261,50 @@ function buildKaSubstitutionText(data) {
 }
 
 function createControlPanel() {
-  acidInput = createInput(defaultAcid);
-  concentrationInput = createInput(defaultConcentration);
-  kaInput = createInput(defaultKa);
-
-  const acidRow = createControlRow('Acid name');
+  const acidRow = createControlRow('Acid selection');
   acidValueSpan = acidRow.value;
-  acidInput.parent(acidRow.slot);
-  styleTextInput(acidInput);
+  acidSelect = createSelect();
+  acidOptions.forEach(function (option) {
+    acidSelect.option(option.label, option.id);
+  });
+  acidSelect.selected(selectedAcidOption.id);
+  acidSelect.parent(acidRow.slot);
+  acidSelect.changed(handleAcidChange);
+
+  customAcidInput = createInput('Custom acid');
+  styleTextInput(customAcidInput);
+  customAcidInput.style('width', '180px');
+  customAcidInput.parent(acidRow.slot);
+  customAcidInput.style('margin-left', '10px');
+  customAcidInput.style('display', 'none');
+  customAcidInput.attribute('maxlength', '40');
+  customAcidInput.input(function () {
+    customAcidLabel = customAcidInput.value();
+    updateInputDisplays();
+  });
 
   const concentrationRow = createControlRow('Initial [HA] (M)');
   concentrationValueSpan = concentrationRow.value;
-  concentrationInput.parent(concentrationRow.slot);
-  styleTextInput(concentrationInput);
+  haSliderSlot = concentrationRow.slot;
+  haSlider = createSlider(0.005, 1.0, selectedAcidOption.defaultCa, 0.005);
+  haSlider.parent(concentrationRow.slot);
+  haSlider.style('width', '240px');
+  haSlider.style('margin-top', '8px');
+  haSlider.input(function () {
+    updateInputDisplays();
+  });
 
   const kaRow = createControlRow('Ka value');
   kaValueSpan = kaRow.value;
-  kaInput.parent(kaRow.slot);
-  styleTextInput(kaInput);
+  kaSliderSlot = kaRow.slot;
+  const initialKa = selectedAcidOption.ka ? parseFloat(selectedAcidOption.ka) : 1e-5;
+  kaSlider = createSlider(-10, -2, Math.log10(initialKa), 0.01);
+  kaSlider.parent(kaRow.slot);
+  kaSlider.style('width', '240px');
+  kaSlider.style('margin-top', '8px');
+  kaSlider.input(function () {
+    updateInputDisplays();
+  });
 
   const actionRow = createControlRow('Action');
   statusValueSpan = actionRow.value;
@@ -278,15 +314,8 @@ function createControlPanel() {
   calculateButton.mousePressed(handleCalculate);
   statusValueSpan.html('Ready');
 
-  acidInput.input(function () {
-    updateInputDisplays();
-  });
-  concentrationInput.input(function () {
-    updateInputDisplays();
-  });
-  kaInput.input(function () {
-    updateInputDisplays();
-  });
+  updateSliderLayout();
+  handleAcidChange();
 }
 
 function createControlRow(labelText) {
@@ -320,6 +349,67 @@ function createControlRow(labelText) {
   slot.style('margin-left', '12px');
 
   return { row: row, value: valueSpan, slot: slot };
+}
+
+function handleAcidChange() {
+  if (!acidSelect) {
+    return;
+  }
+  const selectedId = acidSelect.value();
+  selectedAcidOption = acidOptions.find(function (option) {
+    return option.id === selectedId;
+  }) || acidOptions[0];
+
+  if (selectedAcidOption.id === 'custom') {
+    if (customAcidInput) {
+      customAcidInput.style('display', 'inline-block');
+      if (!customAcidLabel.trim()) {
+        customAcidLabel = 'Custom acid';
+      }
+      customAcidInput.value(customAcidLabel);
+    }
+  } else if (customAcidInput) {
+    customAcidInput.style('display', 'none');
+  }
+
+  if (kaSlider) {
+    const kaValue = selectedAcidOption.ka ? parseFloat(selectedAcidOption.ka) : 1e-5;
+    if (kaValue > 0) {
+      kaSlider.value(Math.log10(kaValue));
+    }
+  }
+  if (haSlider && selectedAcidOption.defaultCa) {
+    haSlider.value(selectedAcidOption.defaultCa);
+  }
+  updateInputDisplays();
+}
+
+function getCurrentAcidLabel() {
+  if (!selectedAcidOption) {
+    return 'Unnamed acid';
+  }
+  if (selectedAcidOption.id === 'custom') {
+    const customLabelSource = customAcidInput ? customAcidInput.value() : customAcidLabel;
+    const trimmed = (customLabelSource || '').trim();
+    return trimmed || 'Custom acid';
+  }
+  return selectedAcidOption.name;
+}
+
+function updateSliderLayout() {
+  const sliderWidth = Math.max(canvasWidth - sliderLeftMargin - margin * 2, 160);
+  if (haSlider) {
+    haSlider.size(sliderWidth);
+  }
+  if (haSliderSlot) {
+    haSliderSlot.style('width', sliderWidth + 'px');
+  }
+  if (kaSlider) {
+    kaSlider.size(sliderWidth);
+  }
+  if (kaSliderSlot) {
+    kaSliderSlot.style('width', sliderWidth + 'px');
+  }
 }
 
 function styleTextInput(input) {
@@ -361,9 +451,9 @@ function handleCalculate() {
 
 function calculateSolution() {
   updateInputDisplays();
-  const acidLabel = acidInput.value().trim() || 'Unnamed acid';
-  const ca = parseScientific(concentrationInput.value());
-  const ka = parseScientific(kaInput.value());
+  const acidLabel = getCurrentAcidLabel();
+  const ca = haSlider ? parseFloat(haSlider.value()) : NaN;
+  const ka = getKaFromSlider();
 
   if (!Number.isFinite(ca) || ca <= 0) {
     solutionData = null;
@@ -442,28 +532,16 @@ function setStatusValue(text, isError) {
 
 function updateInputDisplays() {
   if (acidValueSpan) {
-    const trimmed = acidInput.value().trim();
-    acidValueSpan.html(limitText(trimmed || 'Not set', 22));
+    acidValueSpan.html(limitText(getCurrentAcidLabel(), 24));
   }
-  if (concentrationValueSpan) {
-    const ca = parseScientific(concentrationInput.value());
-    concentrationValueSpan.html(Number.isFinite(ca) ? formatValue(ca, 4) + ' M' : '--');
+  if (concentrationValueSpan && haSlider) {
+    const ca = parseFloat(haSlider.value());
+    concentrationValueSpan.html(Number.isFinite(ca) ? ca.toFixed(3) + ' M' : '--');
   }
   if (kaValueSpan) {
-    const ka = parseScientific(kaInput.value());
+    const ka = getKaFromSlider();
     kaValueSpan.html(Number.isFinite(ka) ? formatValue(ka, 3) : '--');
   }
-}
-
-function parseScientific(value) {
-  if (typeof value !== 'string') {
-    return NaN;
-  }
-  const cleaned = value.replace(/,/g, '').trim();
-  if (cleaned === '') {
-    return NaN;
-  }
-  return Number(cleaned);
 }
 
 function formatValue(value, decimals) {
@@ -496,9 +574,18 @@ function limitText(text, maxLen) {
   return text.substring(0, maxLen - 3) + '...';
 }
 
+function getKaFromSlider() {
+  if (!kaSlider) {
+    return NaN;
+  }
+  const exponent = kaSlider.value();
+  return Math.pow(10, exponent);
+}
+
 function windowResized() {
   updateCanvasSize();
   resizeCanvas(canvasWidth, canvasHeight);
+  updateSliderLayout();
   positionControls();
 }
 

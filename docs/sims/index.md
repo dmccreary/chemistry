@@ -30,6 +30,7 @@ Interactive simulations for AP Chemistry.
 - [Dissolution Equilibrium Visualizer](dissolution-equilibrium-visualizer/index.md) - Animate sparingly soluble salts, track Q vs Ksp, and test common-ion effects.
 - [Interactive pH Scale Explorer](ph-scale-explorer/index.md) - Drag across a color pH scale, view [H⁺]/[OH⁻], and compare everyday substances.
 - [Buffer System Visualizer](buffer-visualizer/index.md) - Mix HA/A⁻ buffers, add acid/base, and compare pH shifts to pure water.
+- [Buffer pH Interactive Calculator](buffer-ph-calculator/index.md) - Slide [HA], [A⁻], and target pH to see Henderson-Hasselbalch ratios and range cues.
 - [Weak Acid ICE Solver](weak-acid-ice-solver/index.md) - Enter [HA] and Ka to autofill the ICE table, check the 5% rule, and view percent ionization.
 - [Gibbs Free Energy Spontaneity Explorer](gibbs-free-energy-explorer/index.md) - Graph ΔG vs. temperature, toggle presets, and reason through spontaneity quadrants.
 - [Ksp Precipitation Predictor](ksp-precipitation-predictor/index.md) - Mix ionic solutions, compute Q vs Ksp, and visualize precipitation events.

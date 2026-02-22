@@ -133,7 +133,11 @@ nav:
     - Glossary Quality Report: learning-graph/glossary-quality-report.md
     - FAQ Quality Report: learning-graph/faq-quality-report.md
     - FAQ Coverage Gaps: learning-graph/faq-coverage-gaps.md
-
+    - learning-graph/book-metrics.md
+    - learning-graph/chapter-metrics.md
+    - learning-graph/diagram-details.md
+    - learning-graph/diagram-table.md
+  
   - Sample Prompts:
     - List of Prompts: prompts/index.md
     - Chemistry Diagram Rendering Options: prompts/chemistry-diagram-rendering-options.md
@@ -141,7 +145,7 @@ nav:
     - prompts/generate-chapter-content.md
     - prompts/learning-graph.md
     - prompts/missing-concepts-analysis.md
-    - prompts/prepair-to-generate-content.md
+    - prompts/prepare-to-generate-content.md
     - prompts/seed-prompt.md
   
   - Glossary: glossary.md

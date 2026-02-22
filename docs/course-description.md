@@ -21,14 +21,13 @@ The course is aligned with the framework published by the College Board and foll
 
 Students should have successfully completed:
 
-* A first-year high school chemistry course
-* Algebra II (or concurrent enrollment)
-* Foundational skills in:
-
-  * Linear equations
-  * Logarithms
-  * Scientific notation
-  * Basic data analysis
+- A first-year high school chemistry course
+- Algebra II (or concurrent enrollment)
+- Foundational skills in:
+    * Linear equations
+    * Logarithms
+    * Scientific notation
+    * Basic data analysis
 
 Recommended but not required:
 

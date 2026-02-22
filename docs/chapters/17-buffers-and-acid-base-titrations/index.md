@@ -181,7 +181,7 @@ $$\frac{x}{1.00 - x} = 1.82 \implies x = 0.645 \text{ mol NaOH needed}$$
 <details markdown="1">
 <summary>Henderson-Hasselbalch Buffer Calculator MicroSim</summary>
 Type: microsim
-**sim-id:** buffer-hh-calculator<br/>
+**sim-id:** buffer-ph-calculator<br/>
 **Library:** p5.js<br/>
 **Status:** Specified
 

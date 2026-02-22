@@ -1,0 +1,53 @@
+{
+  "title": "Buffer pH Interactive Calculator",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive Henderson-Hasselbalch calculator for computing buffer pH and designing component ratios for target pH values.",
+  "date": "2026-03-07",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Buffers",
+    "learningObjectives": [
+      "Compute buffer pH from [HA], [A-], and pKa using Henderson-Hasselbalch.",
+      "Determine the [A-]/[HA] ratio required to achieve a target pH."
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "12 minutes",
+    "prerequisites": [
+      "Logarithms and Henderson-Hasselbalch equation",
+      "Understanding of weak acid/conjugate base pairs"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 820
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Dual-panel computation and design interface",
+    "keyQuestions": [
+      "How do [HA]/[A-] ratios influence pH?",
+      "What ratio is required for a specific target pH?"
+    ],
+    "commonMisconceptions": [
+      "Buffers work regardless of pKa proximity to the target pH.",
+      "Increasing both HA and A- equally changes pH."
+    ],
+    "assessmentOpportunities": [
+      "Students design a buffer at a specific pH and report required ratios.",
+      "Learners compare pH responses of different buffer systems."
+    ]
+  },
+  "chapter": "17-buffers-and-acid-base-titrations"
+}

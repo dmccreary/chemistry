@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Atomic Theory Timeline</title>
+    <script src="https://unpkg.com/vis-timeline/standalone/umd/vis-timeline-graph2d.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/vis-timeline/standalone/umd/vis-timeline-graph2d.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Atomic Theory Timeline</h1>
+    <p>From Democritus (~400 BCE) to the Quantum Mechanical Model (1926)</p>
+</header>
+
+<!-- Category filter buttons -->
+<div id="filter-bar">
+    <label>Show:</label>
+    <button class="filter-btn active" data-cat="all">All Events</button>
+    <button class="filter-btn" data-cat="Ancient Philosophy">Ancient Philosophy</button>
+    <button class="filter-btn" data-cat="Classical Atomic Theory">Classical Atomic Theory</button>
+    <button class="filter-btn" data-cat="Quantum Model">Quantum Model</button>
+</div>
+
+<!-- Zoom / pan controls -->
+<div id="nav-bar">
+    <button class="nav-btn" id="pan-left">◀ Pan Left</button>
+    <button class="nav-btn" id="zoom-in">+ Zoom In</button>
+    <button class="nav-btn" id="fit-all">Fit All</button>
+    <button class="nav-btn" id="zoom-out">− Zoom Out</button>
+    <button class="nav-btn" id="pan-right">Pan Right ▶</button>
+</div>
+
+<p id="instructions">Click any event to see full details below • Hover for a quick note • Drag to pan</p>
+
+<!-- vis-timeline renders here -->
+<div id="timeline-container">
+    <div id="timeline"></div>
+</div>
+
+<!-- Detail panel — populated on click -->
+<div id="detail-panel">
+    <div class="detail-body" style="color:#888;">Click an event above to read about that scientist's contribution.</div>
+</div>
+
+<!-- Colour legend -->
+<div id="legend">
+    <div class="legend-item">
+        <div class="legend-dot" style="background:#8b5e3c;"></div>
+        <span>Ancient Philosophy</span>
+    </div>
+    <div class="legend-item">
+        <div class="legend-dot" style="background:#1a6e8a;"></div>
+        <span>Classical Atomic Theory</span>
+    </div>
+    <div class="legend-item">
+        <div class="legend-dot" style="background:#4a3080;"></div>
+        <span>Quantum Model</span>
+    </div>
+</div>
+
+<script>
+// ── Colour map ───────────────────────────────────────────────────
+const categoryColors = {
+    'Ancient Philosophy':      { bg: '#8b5e3c', border: '#6b4229' },
+    'Classical Atomic Theory': { bg: '#1a6e8a', border: '#104f66' },
+    'Quantum Model':           { bg: '#4a3080', border: '#30205a' }
+};
+
+// CSS class names for vis-timeline (spaces → hyphens)
+function cssClass(cat) {
+    return 'vis-' + cat.replace(/\s+/g, '-');
+}
+
+// ── Parse timeline.json ──────────────────────────────────────────
+let allItems = [];
+let timelineData;
+let timeline;
+
+async function loadTimeline() {
+    const resp = await fetch('./timeline.json');
+    const data = await resp.json();
+
+    // Convert JSON events → vis DataSet items
+    allItems = data.events.map((ev, idx) => {
+        const yearInt = parseInt(ev.start_date.year, 10);
+        // JavaScript Date with year < 100 needs special handling to avoid 1900 offset
+        const startDate = new Date(0);
+        startDate.setFullYear(yearInt, 0, 1);
+
+        const displayDate = ev.start_date.display_date || ev.start_date.year;
+        const cat = ev.group || 'Classical Atomic Theory';
+        const colors = categoryColors[cat] || { bg: '#555', border: '#333' };
+
+        return {
+            id: idx + 1,
+            content: `<strong>${ev.text.headline}</strong><br><small>${displayDate}</small>`,
+            start: startDate,
+            group: cat,
+            category: cat,
+            className: cssClass(cat),
+            title: ev.notes,           // tooltip on hover
+            headline: ev.text.headline,
+            body: ev.text.text,
+            notes: ev.notes,
+            displayDate: displayDate,
+            style: `background-color:${colors.bg};border-color:${colors.border};color:white;`
+        };
+    });
+
+    timelineData = new vis.DataSet(allItems);
+
+    // ── Timeline options ─────────────────────────────────────────
+    const container = document.getElementById('timeline');
+    const options = {
+        width: '100%',
+        height: '200px',
+        margin: {
+            item: { horizontal: 50, vertical: 10 },
+            axis: 40
+        },
+        orientation: 'top',
+        // Wide zoom range to accommodate ~400 BCE through 1926
+        zoomMin: 1000 * 60 * 60 * 24 * 365 * 5,     // 5 years
+        zoomMax: 1000 * 60 * 60 * 24 * 365 * 2500,   // 2500 years
+        tooltip: { followMouse: true },
+        stack: true,
+        selectable: true,
+        showCurrentTime: false,
+        moveable: true,
+        zoomable: false,   // Disable scroll-wheel zoom to prevent page-scroll hijack
+        align: 'center'
+    };
+
+    timeline = new vis.Timeline(container, timelineData, options);
+
+    // Initial view: padded window around all events
+    fitAll();
+
+    // ── Click → detail panel ─────────────────────────────────────
+    timeline.on('select', function(props) {
+        if (props.items.length === 0) return;
+        const item = allItems.find(i => i.id === props.items[0]);
+        if (item) showDetail(item);
+    });
+
+    // ── Filter buttons ───────────────────────────────────────────
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            filterCategory(this.dataset.cat);
+        });
+    });
+
+    // ── Navigation controls ──────────────────────────────────────
+    document.getElementById('pan-left').addEventListener('click', () => {
+        const w = timeline.getWindow();
+        const shift = (w.end - w.start) * 0.3;
+        timeline.setWindow(new Date(w.start - shift), new Date(w.end - shift));
+    });
+
+    document.getElementById('pan-right').addEventListener('click', () => {
+        const w = timeline.getWindow();
+        const shift = (w.end.getTime() - w.start.getTime()) * 0.3;
+        timeline.setWindow(new Date(w.start.getTime() + shift), new Date(w.end.getTime() + shift));
+    });
+
+    document.getElementById('zoom-in').addEventListener('click', () => {
+        const w = timeline.getWindow();
+        const mid   = (w.start.getTime() + w.end.getTime()) / 2;
+        const half  = (w.end - w.start) * 0.25;
+        timeline.setWindow(new Date(mid - half), new Date(mid + half), { animation: true });
+    });
+
+    document.getElementById('zoom-out').addEventListener('click', () => {
+        const w = timeline.getWindow();
+        const mid   = (w.start.getTime() + w.end.getTime()) / 2;
+        const half  = (w.end - w.start) * 1.0;
+        timeline.setWindow(new Date(mid - half), new Date(mid + half), { animation: true });
+    });
+
+    document.getElementById('fit-all').addEventListener('click', fitAll);
+}
+
+// ── Category filter ──────────────────────────────────────────────
+function filterCategory(cat) {
+    let filtered = cat === 'all' ? allItems : allItems.filter(i => i.category === cat);
+    timelineData.clear();
+    timelineData.add(filtered);
+    fitWindowTo(filtered);
+}
+
+// ── Fit view to a list of items (with 2-year padding each side) ──
+function fitWindowTo(items) {
+    if (items.length === 0) return;
+    const times = items.map(i => i.start.getTime());
+    const min = Math.min(...times);
+    const max = Math.max(...times);
+    const pad = 2 * 365.25 * 24 * 60 * 60 * 1000;  // 2 years in ms
+    timeline.setWindow(new Date(min - pad), new Date(max + pad), { animation: false });
+}
+
+function fitAll() { fitWindowTo(allItems); }
+
+// ── Populate detail panel ────────────────────────────────────────
+function showDetail(item) {
+    const colors = categoryColors[item.category] || { bg: '#555' };
+    const panel = document.getElementById('detail-panel');
+    panel.style.borderLeftColor = colors.bg;
+    panel.innerHTML = `
+        <div class="detail-date">${item.displayDate} · ${item.category}</div>
+        <h3>${item.headline}</h3>
+        <div class="detail-body">${item.body}</div>
+        ${item.notes ? `<div class="detail-context"><strong>Historical context:</strong> ${item.notes}</div>` : ''}
+    `;
+}
+
+// ── Boot ─────────────────────────────────────────────────────────
+document.addEventListener('DOMContentLoaded', loadTimeline);
+</script>
+</body>
+</html>

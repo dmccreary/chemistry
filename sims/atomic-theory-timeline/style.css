@@ -1,0 +1,231 @@
+/* Atomic Theory Timeline — Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: aliceblue;
+    color: #222;
+}
+
+/* ── Page header ─────────────────────────────────── */
+header {
+    background: linear-gradient(135deg, #5c3317 0%, #1a3a5c 100%);
+    color: white;
+    padding: 16px 20px 12px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+header p {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+/* ── Filter buttons ──────────────────────────────── */
+#filter-bar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 10px 16px;
+    background: #f0f4f8;
+    border-bottom: 1px solid #d0d8e4;
+    align-items: center;
+}
+
+#filter-bar label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #555;
+    margin-right: 4px;
+}
+
+.filter-btn {
+    padding: 5px 14px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    transition: opacity 0.2s, transform 0.1s;
+}
+
+.filter-btn:hover { opacity: 0.85; transform: translateY(-1px); }
+.filter-btn.active { border-color: #222; }
+
+.filter-btn[data-cat="all"]                  { background: #555; }
+.filter-btn[data-cat="Ancient Philosophy"]   { background: #8b5e3c; }
+.filter-btn[data-cat="Classical Atomic Theory"] { background: #1a6e8a; }
+.filter-btn[data-cat="Quantum Model"]        { background: #4a3080; }
+
+/* ── Navigation controls ─────────────────────────── */
+#nav-bar {
+    display: flex;
+    gap: 6px;
+    padding: 8px 16px;
+    background: #f0f4f8;
+    border-bottom: 1px solid #d0d8e4;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn {
+    padding: 4px 12px;
+    border: 1px solid #b0b8c4;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-size: 0.85rem;
+    color: #333;
+    transition: background 0.15s;
+}
+
+.nav-btn:hover { background: #e4eaf2; }
+
+/* ── Timeline container ──────────────────────────── */
+#timeline-container {
+    padding: 10px 80px;
+    overflow: hidden;
+}
+
+#timeline {
+    border-radius: 6px;
+}
+
+/* Prevent scroll hijack inside iframe */
+.vis-timeline { overflow: visible !important; }
+.vis-panel.vis-center { overflow: visible !important; }
+.vis-item .vis-item-overflow { overflow: visible !important; }
+
+/* ── vis-timeline item colours ───────────────────── */
+.vis-item.vis-Ancient-Philosophy,
+.vis-item.vis-Ancient-Philosophy.vis-selected {
+    background-color: #8b5e3c;
+    border-color: #6b4229;
+    color: white;
+}
+
+.vis-item.vis-Classical-Atomic-Theory,
+.vis-item.vis-Classical-Atomic-Theory.vis-selected {
+    background-color: #1a6e8a;
+    border-color: #104f66;
+    color: white;
+}
+
+.vis-item.vis-Quantum-Model,
+.vis-item.vis-Quantum-Model.vis-selected {
+    background-color: #4a3080;
+    border-color: #30205a;
+    color: white;
+}
+
+/* ── Tooltip ─────────────────────────────────────── */
+.vis-tooltip {
+    background: #2c3e50 !important;
+    color: white !important;
+    padding: 10px 15px !important;
+    border-radius: 8px !important;
+    font-size: 13px !important;
+    max-width: 300px !important;
+    line-height: 1.4 !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+    box-sizing: border-box !important;
+}
+
+.vis-tooltip div {
+    max-width: 280px !important;
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+/* ── Detail panel ────────────────────────────────── */
+#detail-panel {
+    margin: 0 16px 12px;
+    padding: 16px 20px;
+    background: white;
+    border-radius: 8px;
+    border-left: 5px solid #555;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#detail-panel h3 {
+    font-size: 1.1rem;
+    color: #222;
+}
+
+#detail-panel .detail-date {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+#detail-panel .detail-body {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: #333;
+}
+
+#detail-panel .detail-context {
+    margin-top: 6px;
+    padding: 8px 12px;
+    background: #f5f7fa;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    color: #555;
+    line-height: 1.45;
+}
+
+#detail-panel .detail-context strong {
+    color: #333;
+}
+
+/* ── Legend ──────────────────────────────────────── */
+#legend {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding: 8px 16px 12px;
+    font-size: 0.8rem;
+    color: #555;
+    align-items: center;
+    justify-content: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+}
+
+/* ── Instructions ────────────────────────────────── */
+#instructions {
+    text-align: center;
+    font-size: 0.78rem;
+    color: #888;
+    padding: 4px 16px 6px;
+}

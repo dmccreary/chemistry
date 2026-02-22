@@ -6,7 +6,7 @@ quality_score: 0
 
 # Buffer system visualizer
 
-<iframe src="main.html" height="820px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="800px" width="100%" scrolling="no"></iframe>
 
 [Run the Buffer Visualizer fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>

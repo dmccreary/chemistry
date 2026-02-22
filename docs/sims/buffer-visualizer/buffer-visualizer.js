@@ -291,8 +291,10 @@ function drawPHScale() {
 
 function drawPointer(barX, barWidth, barY, phValue, label) {
   const x = map(phValue, 0, 14, barX, barX + barWidth);
-  stroke('black');
-  line(x, barY, x, barY + 45);
+  stroke('white');
+  strokeWeight(3);
+  line(x, barY, x, barY + 30);
+  strokeWeight(1);
   noStroke();
   fill('black');
   textAlign(CENTER, BOTTOM);

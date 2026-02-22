@@ -1,16 +1,31 @@
 ---
 title: Glowing in the Dark - The Radiant Life of Marie Curie
 description: A graphic-novel story of how Marie Curie discovered radioactivity and became the first person to win two Nobel Prizes.
-image: /stories/marie-curie/cover.jpg
-og:image: /stories/marie-curie/cover.jpg
-twitter:image: /stories/marie-curie/cover.jpg
+image: /stories/marie-curie/cover.png
+og:image: /stories/marie-curie/cover.png
+twitter:image: /stories/marie-curie/cover.png
 social:
    cards: false
 ---
 
 # Glowing in the Dark: The Radiant Life of Marie Curie
 
-![](./cover.jpg)
+![](./cover.png)
+
+<details>
+    <summary>Cover Image Prompt</summary>
+Please generate a new wide-landscape cover illustration in 16:9 format.
+
+A dramatic, colorful wide-landscape illustration in a late Victorian/early modern scientific style showing Marie Curie in her converted shed laboratory around 1902. Marie stands at a wooden workbench in near-darkness, her face illuminated by the ethereal blue-green glow of radium samples in glass vials and dishes before her. She wears a simple dark work dress, now slightly luminous from years of radioactive contamination, her hair pinned up practically. Her expression shows wonder, exhaustion, and fierce determination—a scientist witnessing something no human has ever seen before.
+
+The cramped laboratory is filled with period-accurate details: large iron cauldrons used to process pitchblende ore, glass distillation equipment, handwritten labels in French, a worn notebook open to chemical equations, and burlap sacks of raw ore stacked in the shadows. Through a grimy window, the dim lights of Paris are visible in the distance. Rain streaks the glass—the shed's leaky roof is evident from a bucket catching drips.
+
+The radium's glow is the dominant light source, casting dramatic shadows and giving the entire scene an otherworldly quality. The blue-green luminescence reflects off Marie's face and hands, highlighting both the beauty and the danger of her discovery. Small glowing traces appear on her fingers, her notebook, even floating dust particles—everywhere the radium has touched now glows.
+
+At the top of the image, leave space for the title "GLOWING IN THE DARK" in elegant Art Nouveau-style lettering that appears to emit the same soft radium glow. Below it, in smaller text: "The Radiant Life of Marie Curie". The typography should evoke early 1900s Paris—perhaps similar to Mucha poster designs—with the letters seeming to illuminate from within.
+
+The overall mood should balance scientific triumph with haunting foreshadowing—this glow that fascinates Marie will eventually kill her. The beauty is dangerous. The color palette centers on deep shadows punctuated by the signature blue-green radium luminescence, with warm amber touches from a distant oil lamp and the cool blue of the Paris night through the window.
+</details>
 
 <details>
     <summary>Narrative Prompt</summary>
@@ -55,7 +70,7 @@ But in a modest Warsaw apartment, a professor's daughter named **Maria Sklodowsk
 
 She could not know that she would one day become **Marie Curie**, the most celebrated woman scientist in history, discoverer of radioactivity, and the only person ever to win Nobel Prizes in two different sciences.
 
-![](01-young-maria.jpg)
+![](./image-01.png)
 <details><summary>Image Prompt</summary>
 Image 1:
 Please generate a new wide-landscape illustration.
@@ -70,7 +85,7 @@ Maria made a pact with her sister Bronya: she would work as a governess to fund 
 
 For six years, Maria taught other people's children while teaching herself advanced mathematics and physics from borrowed books.
 
-![](02-flying-university.jpg)
+![](./image-02.png)
 <details><summary>Image Prompt</summary>
 Image 2:
 Please generate a new wide-landscape illustration.
@@ -85,7 +100,7 @@ She rented a tiny sixth-floor garret in the Latin Quarter. In winter, the water 
 
 Within two years, she finished first in her physics degree. The following year, she placed second in mathematics. Her professors had never seen anyone quite like her.
 
-![](03-paris-garret.jpg)
+![](./image-03.png)
 <details><summary>Image Prompt</summary>
 Image 3:
 Please generate a new wide-landscape illustration.
@@ -102,7 +117,7 @@ For a year, he courted her with letters about physics. When he proposed, Marie h
 
 They married in 1895. Marie wore a practical dark blue dress that she could later use in the laboratory.
 
-![](04-meeting-pierre.jpg)
+![](./image-04.png)
 <details><summary>Image Prompt</summary>
 Image 4:
 Please generate a new wide-landscape illustration.
@@ -117,7 +132,7 @@ For her doctoral research, she decided to investigate these "Becquerel rays" sys
 
 Even more surprising, she found that another element—thorium—emitted similar rays. Marie coined a new word for this phenomenon: **radioactivity**.
 
-![](05-electrometer.jpg)
+![](./image-05.png)
 <details><summary>Image Prompt</summary>
 Image 5:
 Please generate a new wide-landscape illustration.
@@ -132,7 +147,7 @@ To find it, Marie and Pierre needed space for large-scale chemistry. The Sorbonn
 
 For the next four years, the shed became their universe. Marie worked like a factory laborer, grinding and dissolving tons of pitchblende ore. Her hands grew cracked and burned from acids. Pierre analyzed the radioactivity of each fraction. Together, they were hunting ghosts.
 
-![](06-leaky-shed.jpg)
+![](./image-06.png)
 <details><summary>Image Prompt</summary>
 Image 6:
 Please generate a new wide-landscape illustration.
@@ -147,7 +162,7 @@ But the most radioactive fractions pointed to something even more extraordinary.
 
 The scientific community was skeptical. Where was the proof? To silence the doubters, Marie set herself an almost impossible task: she would isolate pure radium and determine its atomic weight. It would take four more years of backbreaking labor.
 
-![](07-discovery.jpg)
+![](./image-07.png)
 <details><summary>Image Prompt</summary>
 Image 7:
 Please generate a new wide-landscape illustration.
@@ -166,7 +181,7 @@ In the darkness, the laboratory glowed. Faint blue-green light emanated from the
 
 They could not know that this beautiful glow was slowly killing them. The radiation that made radium gleam was bombarding their bodies with invisible particles, damaging cells and DNA with every exposure.
 
-![](08-blue-glow.jpg)
+![](./image-08.png)
 <details><summary>Image Prompt</summary>
 Image 8:
 Please generate a new wide-landscape illustration.
@@ -181,7 +196,7 @@ Pierre was furious. He wrote to the committee that he could not accept the prize
 
 The committee relented. Marie Curie became the first woman ever to receive a Nobel Prize. She was too ill from radiation exposure to attend the ceremony in Stockholm. When they finally visited Sweden, Marie charmed the king and queen with her quiet dignity—even as French newspapers questioned whether a *woman* really deserved such an honor.
 
-![](09-nobel.jpg)
+![](./image-09.png)
 <details><summary>Image Prompt</summary>
 Image 9:
 Please generate a new wide-landscape illustration.
@@ -196,7 +211,7 @@ Marie was devastated. "I put my head against the [casket] and spoke to him," she
 
 But she did not collapse. Two weeks after the funeral, the Sorbonne offered her Pierre's professorship—the first woman ever to teach at the university in its 650-year history. Marie accepted. She would carry on their work alone.
 
-![](10-tragedy.jpg)
+![](./image-10.png)
 <details><summary>Image Prompt</summary>
 Image 10:
 Please generate a new wide-landscape illustration.
@@ -211,7 +226,7 @@ But science recognized what society refused to see. In 1911, Marie received her 
 
 "I am among those who think that science has great beauty," Marie said. "A scientist in a laboratory is not a mere technician; he is also a child confronting natural phenomena that impress him as though they were fairy tales."
 
-![](11-second-nobel.jpg)
+![](./image-11.png)
 <details><summary>Image Prompt</summary>
 Image 11:
 Please generate a new wide-landscape illustration.
@@ -226,7 +241,7 @@ Marie created a fleet of mobile X-ray units—ordinary cars outfitted with X-ray
 
 Together, they X-rayed over one million wounded soldiers, saving countless lives. The French government never formally thanked her.
 
-![](12-petites-curies.jpg)
+![](./image-12.png)
 <details><summary>Image Prompt</summary>
 Image 12:
 Please generate a new wide-landscape illustration.
@@ -241,7 +256,7 @@ Her laboratory notebooks, stored in lead-lined boxes at the Bibliothèque nation
 
 But her legacy glows brighter than radium. Cancer treatments using radiation save millions of lives. Her daughter Irène won her own Nobel Prize. The Curie Institutes in Paris and Warsaw continue groundbreaking research. And every girl who dreams of becoming a scientist stands on Marie Curie's shoulders.
 
-![](13-legacy.jpg)
+![](./image-13.png)
 <details><summary>Image Prompt</summary>
 Image 13:
 Please generate a new wide-landscape illustration.
@@ -261,7 +276,7 @@ Marie Curie's life teaches us that great discoveries demand great sacrifices—b
 | **Grief** | Continued Pierre's work after his death; trained the next generation | Honor those we've lost by carrying on |
 | **War** | Created mobile X-ray units that saved a million soldiers | Use science to help humanity |
 
-![](14-next-generation.jpg)
+![](./image-14.png)
 <details><summary>Final Image Prompt</summary>
 Image 14:
 Please generate a new wide-landscape illustration.
@@ -285,4 +300,18 @@ Marie's notebooks still glow with radioactivity. Her example still glows with in
 
 *"Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less."*
 —Marie Curie
+
+---
+
+## References
+
+1. [Marie Curie – Biographical](https://www.nobelprize.org/prizes/physics/1903/marie-curie/biographical/) - Ongoing - NobelPrize.org - The official Nobel Prize biography of the first woman to win a Nobel Prize and the only person to win in two different sciences.
+
+2. [Marie Curie | Biography, Nobel Prize, Accomplishments, & Facts](https://www.britannica.com/biography/Marie-Curie) - Updated 2024 - Britannica - Comprehensive article covering her life from Warsaw to Paris, her discoveries, and her lasting legacy in science and medicine.
+
+3. [Marie Sklodowska Curie](https://www.sciencehistory.org/education/scientific-biographies/marie-sklodowska-curie/) - 2024 - Science History Institute - Educational biography with primary source documents and photographs from Curie's life and laboratory.
+
+4. [Marie Curie the Scientist | Bio, Facts & Quotes](https://www.mariecurie.org.uk/about-us/our-history/marie-curie-the-scientist) - 2024 - Marie Curie UK - The charity named after her explains her scientific legacy and how her work continues to inspire medical research today.
+
+5. [Women Who Changed Science: Marie Curie](https://www.nobelprize.org/womenwhochangedscience/stories/marie-curie) - 2024 - NobelPrize.org - Interactive story exploring how Curie broke barriers for women in science while making discoveries that changed the world.
 

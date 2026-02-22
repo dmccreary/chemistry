@@ -123,6 +123,7 @@ nav:
 
   - Stories:
     - Overview: stories/index.md
+    - Marie Curie - The Radioactive Pioneer: stories/marie-curie/index.md
     - Dmitri Mendeleev - The Table Dreamer: stories/dmitri-mendeleev/index.md
 
   #- Appendices:

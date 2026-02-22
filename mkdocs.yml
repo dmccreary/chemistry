@@ -74,6 +74,7 @@ nav:
 
   - MicroSims:
     - List of MicroSims: sims/index.md
+    - Learning Graph Viewer: sims/graph-viewer/index.md
     - Arrhenius Equation Explorer: sims/arrhenius-equation-explorer/index.md
     - Atomic Structure Diagram: sims/atomic-structure-diagram/index.md
     - Beer-Lambert Law Calibration Curve Builder: sims/beer-lambert-calibration/index.md

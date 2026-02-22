@@ -100,6 +100,7 @@ nav:
     - Le Chatelier's Principle Explorer: sims/le-chatelier-explorer/index.md
     - Dissolution Equilibrium Visualizer: sims/dissolution-equilibrium-visualizer/index.md
     - Interactive pH Scale Explorer: sims/ph-scale-explorer/index.md
+    - Buffer System Visualizer: sims/buffer-visualizer/index.md
     - Gibbs Free Energy Spontaneity Explorer: sims/gibbs-free-energy-explorer/index.md
     - Ksp Precipitation Predictor: sims/ksp-precipitation-predictor/index.md
     - Microstate Visualizer: sims/microstate-visualizer/index.md

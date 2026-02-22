@@ -1,0 +1,53 @@
+{
+  "title": "Weak Acid ICE Table Solver",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive ICE table that computes weak-acid equilibria, pH, pOH, and percent ionization with approximation checks.",
+  "date": "2026-03-07",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Acid-base equilibrium",
+    "learningObjectives": [
+      "Construct ICE tables for monoprotic weak acids and solve for [H+].",
+      "Evaluate when the small-x approximation is valid versus when the quadratic formula is required."
+    ],
+    "bloomsTaxonomy": "Apply / Analyze",
+    "duration": "12 minutes",
+    "prerequisites": [
+      "Understanding of Ka expressions",
+      "Logarithms and quadratic formula"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 820
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Guided ICE table visualization with numeric outputs",
+    "keyQuestions": [
+      "How does Ka and initial concentration affect pH?",
+      "When is the small-x approximation acceptable?"
+    ],
+    "commonMisconceptions": [
+      "Ka large relative to concentration still allows approximation.",
+      "Percent ionization decreases when the acid is diluted."
+    ],
+    "assessmentOpportunities": [
+      "Students capture ICE table outputs and justify approximation validity.",
+      "Learners compare percent ionization at two concentrations."
+    ]
+  },
+  "chapter": "16-acid-base-theory-and-ph"
+}

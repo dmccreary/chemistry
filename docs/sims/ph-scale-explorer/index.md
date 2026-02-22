@@ -6,11 +6,11 @@ quality_score: 0
 
 # Interactive pH scale explorer
 
-<iframe src="main.html" height="580px" width="100%" scrolling="no"></iframe>
+<iframe src="main.html" height="520px" width="100%" scrolling="no"></iframe>
 
-[Run the pH Explorer fullscreen](./main.html){ .md-button .md-button--primary }
+[Run the pH Explorer MicroSim fullscreen](./main.html){ .md-button .md-button--primary }
 <br/>
-[Edit the MicroSim in the p5.js editor](https://editor.p5js.org/){ .md-button }
+[Edit the pH Explorer MicroSim using the p5.js editor](https://editor.p5js.org/dmccreary/sketches/8oaNBP6Hf){ .md-button }
 
 ## About this MicroSim
 

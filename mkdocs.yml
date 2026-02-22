@@ -101,6 +101,7 @@ nav:
     - Dissolution Equilibrium Visualizer: sims/dissolution-equilibrium-visualizer/index.md
     - Interactive pH Scale Explorer: sims/ph-scale-explorer/index.md
     - Buffer System Visualizer: sims/buffer-visualizer/index.md
+    - Weak Acid ICE Solver: sims/weak-acid-ice-solver/index.md
     - Gibbs Free Energy Spontaneity Explorer: sims/gibbs-free-energy-explorer/index.md
     - Ksp Precipitation Predictor: sims/ksp-precipitation-predictor/index.md
     - Microstate Visualizer: sims/microstate-visualizer/index.md

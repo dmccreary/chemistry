@@ -1,0 +1,54 @@
+{
+  "title": "Weak Acid ICE Solver",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive weak-acid ICE table solver with Ka algebra, approximation checks, and percent ionization gauge.",
+  "date": "2026-02-21",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Acid-base equilibrium",
+    "learningObjectives": [
+      "Set up and solve a weak-acid ICE table using the quadratic formula.",
+      "Decide whether the small-x approximation is valid based on the ratio x/Ca."
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Acid dissociation expressions",
+      "Quadratic formula",
+      "pH and pOH relationships"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 780
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Guided simulation with problem-solving feedback",
+    "keyQuestions": [
+      "When does the 5 percent rule hold for weak acids?",
+      "How does changing Ka or concentration alter percent ionization?"
+    ],
+    "commonMisconceptions": [
+      "Weak acids always ionize less than five percent regardless of concentration.",
+      "Quadratic solutions are only required for strong acids."
+    ],
+    "assessmentOpportunities": [
+      "Students capture the ICE table plus approximation verdict for two acid scenarios and explain the differences.",
+      "Learners describe why diluting an acid can invalidate or validate the small-x approximation."
+    ]
+  },
+  "chapter": "16-acid-base-theory-and-ph"
+}

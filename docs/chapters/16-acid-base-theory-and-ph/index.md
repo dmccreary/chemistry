@@ -190,6 +190,8 @@ Each rectangle has a label in the top-left corner and 2-3 example reactions. Col
 Implementation: Mermaid diagram or static SVG-style HTML representation
 </details>
 
+<iframe src="../../sims/weak-acid-ice-solver/main.html" height="782px" width="100%" scrolling="no"></iframe>
+
 ## Autoionization of Water and the pH Scale
 
 ### Autoionization of Water

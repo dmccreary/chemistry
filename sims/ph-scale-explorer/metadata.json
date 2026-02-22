@@ -1,0 +1,53 @@
+{
+  "title": "Interactive pH Scale Explorer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Explore a color-coded pH scale with real-world pins while converting between pH, pOH, [H+], and [OH-] values in real time.",
+  "date": "2026-03-07",
+  "educational": {
+    "gradeLevel": ["10", "11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Acid-base theory",
+    "learningObjectives": [
+      "Relate positions on the pH scale to typical acidic/basic substances.",
+      "Convert between pH, pOH, [H+], and [OH-] using the logarithmic definitions."
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "10 minutes",
+    "prerequisites": [
+      "Definition of pH and pOH",
+      "Kw relationships for [H+] and [OH-]"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 780
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive visualization with contextual pins",
+    "keyQuestions": [
+      "Where do common substances fall on the pH scale?",
+      "How does changing pH affect [H+] and [OH-] concentrations?"
+    ],
+    "commonMisconceptions": [
+      "A change of one pH unit doubles acidity (instead of ×10).",
+      "[H+] and [OH-] change independently (ignoring Kw)."
+    ],
+    "assessmentOpportunities": [
+      "Students record computed values for assigned pH points.",
+      "Learners explain why seawater is basic even though it is close to neutral."
+    ]
+  },
+  "chapter": "16-acid-base-theory-and-ph"
+}

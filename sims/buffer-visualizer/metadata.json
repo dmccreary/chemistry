@@ -1,0 +1,53 @@
+{
+  "title": "Buffer System Visualizer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactively adjust HA/A⁻ concentrations and pKa, then add strong acid/base to compare buffer vs. pure water pH changes.",
+  "date": "2026-03-07",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Buffers",
+    "learningObjectives": [
+      "Use the Henderson-Hasselbalch equation to predict buffer pH.",
+      "Explain why buffers resist pH changes compared to pure water when strong acids/bases are added."
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "10 minutes",
+    "prerequisites": [
+      "Acid-base stoichiometry",
+      "Henderson-Hasselbalch equation"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 820
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Comparative visualization (buffer vs. plain water)",
+    "keyQuestions": [
+      "How does changing [HA]/[A-] shift buffer pH?",
+      "Why does pure water exhibit larger ΔpH for the same acid/base addition?"
+    ],
+    "commonMisconceptions": [
+      "Buffers prevent any pH change.",
+      "Adding equal moles of acid/base always neutralizes buffers completely."
+    ],
+    "assessmentOpportunities": [
+      "Students log ΔpH for two additions and justify the difference.",
+      "Learners explain how choosing pKa near target pH improves buffering."
+    ]
+  },
+  "chapter": "16-acid-base-theory-and-ph"
+}

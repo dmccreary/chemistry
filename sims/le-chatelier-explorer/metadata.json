@@ -1,0 +1,53 @@
+{
+  "title": "Le Chatelier's Principle Explorer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactively apply concentration, pressure/volume, temperature, inert-gas, and catalyst stresses to the Haber equilibrium while monitoring particles, bar charts, and Q vs K verdicts.",
+  "date": "2026-03-07",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Chemical equilibrium",
+    "learningObjectives": [
+      "Predict the direction of equilibrium shifts for concentration, pressure, and temperature stresses.",
+      "Explain why catalysts and inert gases at constant volume do not change the equilibrium position."
+    ],
+    "bloomsTaxonomy": "Analyze / Evaluate",
+    "duration": "10-12 minutes",
+    "prerequisites": [
+      "Definition of K, Q, and their relationship",
+      "Understanding of Δn gas for pressure changes"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 760
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive visualization with stress-specific controls",
+    "keyQuestions": [
+      "What happens to Q when a reactant or product is added or removed?",
+      "How do pressure and temperature stresses shift exothermic equilibria?"
+    ],
+    "commonMisconceptions": [
+      "Adding an inert gas always shifts equilibrium.",
+      "Catalysts favor products in equilibrium systems."
+    ],
+    "assessmentOpportunities": [
+      "Students log Q and K after each stress and justify the verdict arrow.",
+      "Learners explain the inert gas and catalyst callouts in their own words."
+    ]
+  },
+  "chapter": "14-chemical-equilibrium"
+}

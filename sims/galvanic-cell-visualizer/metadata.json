@@ -1,0 +1,54 @@
+{
+  "title": "Galvanic Cell Visualizer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Animated galvanic cell diagram with salt-bridge ions, electron flow, and Nernst-calculated potentials tied to live cell notation.",
+  "date": "2026-02-21",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Electrochemistry",
+    "learningObjectives": [
+      "Identify galvanic cell components and explain electron/ion flow directions.",
+      "Connect cell notation and Nernst equation calculations to observed cell spontaneity."
+    ],
+    "bloomsTaxonomy": "Understand / Apply",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Oxidation-reduction reactions",
+      "Standard reduction potentials",
+      "Nernst equation"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 880
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive diagram with linked quantitative readouts",
+    "keyQuestions": [
+      "Which electrode acts as the anode/cathode for a given cell notation?",
+      "How do concentration changes shift the cell potential via the Nernst equation?"
+    ],
+    "commonMisconceptions": [
+      "Electrons travel through the salt bridge rather than the wire.",
+      "Both half-cells must have equal ion concentrations for current to flow."
+    ],
+    "assessmentOpportunities": [
+      "Students capture the displayed notation and write the matching half-reactions.",
+      "Learners adjust concentrations until the cell becomes non-spontaneous and explain why."
+    ]
+  },
+  "chapter": "18-electrochemistry"
+}

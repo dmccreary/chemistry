@@ -1,0 +1,54 @@
+{
+  "title": "Titration Curve Comparison Explorer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive titration curve visualizer with annotations for equivalence, buffer regions, and indicator suitability across strong and weak combinations.",
+  "date": "2026-02-21",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Titrations",
+    "learningObjectives": [
+      "Interpret key regions of titration curves (initial region, buffer region, half-equivalence, equivalence).",
+      "Predict indicator suitability by comparing transition ranges with the titration curve's steep jump."
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Titration stoichiometry",
+      "Acid/base strength definitions",
+      "Henderson-Hasselbalch equation"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 940
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Manipulative simulation with annotated plots",
+    "keyQuestions": [
+      "How does the equivalence pH shift between strong and weak titration pairs?",
+      "Which indicators overlap the rapid pH change for a selected titration?"
+    ],
+    "commonMisconceptions": [
+      "All equivalence points occur at pH 7.",
+      "Diluting both solutions changes the equivalence volume."
+    ],
+    "assessmentOpportunities": [
+      "Learners submit annotated plots with justification of indicator choices.",
+      "Students explain why the buffer region is absent for strong acid-strong base titrations."
+    ]
+  },
+  "chapter": "17-buffers-and-acid-base-titrations"
+}

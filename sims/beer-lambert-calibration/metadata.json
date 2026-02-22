@@ -26,7 +26,7 @@
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 750
+      "height": 790
     },
     "responsive": true,
     "dependencies": ["p5.js 1.11.10"],

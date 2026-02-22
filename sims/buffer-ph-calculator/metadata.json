@@ -1,0 +1,54 @@
+{
+  "title": "Buffer pH Interactive Calculator",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Dual-panel Henderson-Hasselbalch simulator for computing buffer pH or designing the [A-]/[HA] ratio needed for a target pH.",
+  "date": "2026-02-21",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Buffers",
+    "learningObjectives": [
+      "Compute buffer pH from [HA], [A-], and pKa using the Henderson-Hasselbalch equation.",
+      "Determine the [A-]/[HA] ratio and NaOH addition required to reach a target pH."
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Logarithms",
+      "Weak acid/conjugate base pairs",
+      "Henderson-Hasselbalch equation"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 780
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive simulation with planning and feedback panels",
+    "keyQuestions": [
+      "How does changing the [A-]/[HA] ratio shift buffer pH?",
+      "Which buffer system best matches a chosen target pH?"
+    ],
+    "commonMisconceptions": [
+      "Buffers work equally well regardless of how far the target pH is from pKa.",
+      "Diluting both HA and A- changes the buffer pH."
+    ],
+    "assessmentOpportunities": [
+      "Students document slider settings and explain why their buffer is inside or outside the useful range.",
+      "Learners compare two buffer systems and justify which maintains a specified pH better."
+    ]
+  },
+  "chapter": "17-buffers-and-acid-base-titrations"
+}

@@ -1,0 +1,53 @@
+{
+  "title": "Ksp Precipitation Predictor",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Mix two ionic solutions (with optional dilution inputs) to compute Q vs Ksp and visualize whether a precipitate forms.",
+  "date": "2026-03-07",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Solubility equilibria",
+    "learningObjectives": [
+      "Calculate the ion product Q for sparingly soluble salts and compare it to Ksp.",
+      "Account for dilution when solutions are mixed to predict precipitation outcomes."
+    ],
+    "bloomsTaxonomy": "Apply / Analyze",
+    "duration": "10 minutes",
+    "prerequisites": [
+      "Writing Ksp expressions",
+      "Dilution calculations (C1V1 = C2V2)"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 840
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive visualization with calculation panel",
+    "keyQuestions": [
+      "Is Q greater than, less than, or equal to Ksp for the given mixture?",
+      "How does dilution change [ion] after mixing two solutions?"
+    ],
+    "commonMisconceptions": [
+      "Precipitation depends only on Ksp, not the actual concentrations.",
+      "Volume changes do not affect molarity when solutions mix."
+    ],
+    "assessmentOpportunities": [
+      "Learners submit Q vs Ksp calculations for assigned salts.",
+      "Students explain log-bar positions and verdict text for different scenarios."
+    ]
+  },
+  "chapter": "15-solubility-equilibria"
+}

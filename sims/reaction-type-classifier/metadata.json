@@ -1,0 +1,53 @@
+{
+  "title": "Reaction Type Classifier",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive classifier that presents balanced equations and prompts students to identify synthesis, decomposition, single replacement, double replacement, or combustion reactions.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["10", "11"],
+    "subjectArea": "Chemistry",
+    "topic": "Reaction types",
+    "learningObjectives": [
+      "Identify the five primary reaction classes using structural cues in balanced equations.",
+      "Explain the distinguishing feature (reactant count, partner swap, hydrocarbon + O2) that justifies each classification."
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "10 minutes",
+    "prerequisites": [
+      "Ability to read balanced molecular equations",
+      "Knowledge of the five general reaction types"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 560
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive classification with immediate feedback",
+    "keyQuestions": [
+      "What feature of the reactants or products tells you the reaction class?",
+      "How does the hint align with the formal definition of that reaction type?"
+    ],
+    "commonMisconceptions": [
+      "All reactions with oxygen are combustion.",
+      "Any precipitation reaction must be single replacement."
+    ],
+    "assessmentOpportunities": [
+      "Have students record the explanation text after a correct answer as justification.",
+      "Ask learners to predict the next reaction type before revealing the equation." 
+    ]
+  },
+  "chapter": "08-chemical-reactions-and-equations"
+}

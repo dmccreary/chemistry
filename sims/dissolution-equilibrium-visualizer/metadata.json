@@ -1,0 +1,53 @@
+{
+  "title": "Dissolution Equilibrium Visualizer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Animate sparingly soluble salts dissolving, track the ion product Q vs Ksp, and demonstrate the common-ion effect with responsive controls.",
+  "date": "2026-03-07",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Solubility equilibria",
+    "learningObjectives": [
+      "Explain how dissolution reaches dynamic equilibrium where Q = Ksp.",
+      "Predict how adding a common ion or extra solid shifts Q relative to Ksp."
+    ],
+    "bloomsTaxonomy": "Understand / Analyze",
+    "duration": "10 minutes",
+    "prerequisites": [
+      "Ksp and ion product calculations",
+      "Qualitative understanding of the common-ion effect"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 780
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Animated particle model with live charts",
+    "keyQuestions": [
+      "What happens to Q as dissolution proceeds?",
+      "How does a common ion change the equilibrium concentrations?"
+    ],
+    "commonMisconceptions": [
+      "Adding more solid always increases solubility.",
+      "Common ions raise Ksp rather than shifting Q."
+    ],
+    "assessmentOpportunities": [
+      "Students log Q values before/after common-ion addition.",
+      "Learners explain why precipitation resumes when Q > Ksp."
+    ]
+  },
+  "chapter": "15-solubility-equilibria"
+}

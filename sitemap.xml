@@ -2,270 +2,458 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dmccreary.github.io/chemistry/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/about/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/contact/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/course-description/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/faq/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/glossary/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/license/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/01-foundations-of-chemistry/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/01-foundations-of-chemistry/quiz/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/01-foundations-of-chemistry/references/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/02-atomic-structure-and-mass-spectrometry/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/02-atomic-structure-and-mass-spectrometry/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/02-atomic-structure-and-mass-spectrometry/references/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/03-electron-configuration-and-periodic-trends/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/03-electron-configuration-and-periodic-trends/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/03-electron-configuration-and-periodic-trends/references/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/04-chemical-bonding-and-lewis-structures/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/04-chemical-bonding-and-lewis-structures/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/04-chemical-bonding-and-lewis-structures/references/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/05-molecular-geometry-and-polarity/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/05-molecular-geometry-and-polarity/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/05-molecular-geometry-and-polarity/references/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/06-intermolecular-forces-and-states-of-matter/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/06-intermolecular-forces-and-states-of-matter/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/06-intermolecular-forces-and-states-of-matter/references/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/07-phase-changes-solutions-and-gas-laws/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/07-phase-changes-solutions-and-gas-laws/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/08-chemical-reactions-and-equations/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/08-chemical-reactions-and-equations/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/09-stoichiometry-titrations-and-analysis/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/09-stoichiometry-titrations-and-analysis/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/10-reaction-rates-and-rate-laws/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/10-reaction-rates-and-rate-laws/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/11-reaction-mechanisms-and-catalysis/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/11-reaction-mechanisms-and-catalysis/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/12-energy-enthalpy-and-calorimetry/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/12-energy-enthalpy-and-calorimetry/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/13-entropy-and-gibbs-free-energy/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/13-entropy-and-gibbs-free-energy/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/14-chemical-equilibrium/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/14-chemical-equilibrium/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/15-solubility-equilibria/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/15-solubility-equilibria/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/16-acid-base-theory-and-ph/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/16-acid-base-theory-and-ph/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/17-buffers-and-acid-base-titrations/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/17-buffers-and-acid-base-titrations/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/chapters/18-electrochemistry/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/chapters/18-electrochemistry/quiz/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/learning-graph/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/learning-graph/concept-list/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/learning-graph/concept-taxonomy/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/learning-graph/course-description-assessment/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/learning-graph/faq-coverage-gaps/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/learning-graph/faq-quality-report/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/learning-graph/glossary-quality-report/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/learning-graph/mascot-test/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/learning-graph/quality-metrics/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/learning-graph/taxonomy-distribution/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/prompts/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/prompts/atomic-structure-diagram-refinement/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/prompts/chemistry-diagram-rendering-options/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/prompts/generate-chapter-content/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/prompts/learning-graph/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/prompts/missing-concepts-analysis/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/prompts/prepair-to-generate-content/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/prompts/seed-prompt/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/TODO/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/arrhenius-equation-explorer/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/atomic-structure-diagram/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/beer-lambert-calibration/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/buffer-ph-calculator/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/buffer-visualizer/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/catalysis-energy-profile/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/density-graphing/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/dimensional-analysis-practice/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/dissolution-equilibrium-visualizer/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/energy-diagram-explorer/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/faraday-law-calculator/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/galvanic-cell-visualizer/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/gibbs-free-energy-explorer/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/heating-curve-simulator/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/hess-law-visualizer/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/ice-table-solver/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/ideal-gas-law-simulator/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/imf-strength-explorer/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/integrated-rate-law-grapher/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/ionic-lattice-visualizer/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/ksp-precipitation-predictor/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/le-chatelier-explorer/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/lewis-structure-builder/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/limiting-reagent-percent-yield/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/mass-spectrometer-sim/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/matter-classification-flowchart/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/mechanism-step-explorer/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/mhchem-test/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/microstate-visualizer/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/mo-energy-diagram/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/nernst-equation-explorer/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/orbital-shape-visualizer/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/periodic-trends-explorer/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/pes-spectrum-visualizer/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/ph-scale-explorer/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/precision-accuracy/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/reaction-type-classifier/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/scientific-method/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/smiles-drawing-test/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/titration-calculator/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/titration-curve-explorer/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
     <url>
          <loc>https://dmccreary.github.io/chemistry/sims/vsepr-geometry-builder/</loc>
-         <lastmod>2026-02-21</lastmod>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/weak-acid-ice-solver/</loc>
+         <lastmod>2026-02-22</lastmod>
+    </url>
+    <url>
+         <loc>https://dmccreary.github.io/chemistry/sims/weak-acid-ice-table-solver/</loc>
+         <lastmod>2026-02-22</lastmod>
     </url>
 </urlset>

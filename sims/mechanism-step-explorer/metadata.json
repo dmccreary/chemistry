@@ -1,0 +1,53 @@
+{
+  "title": "Mechanism Step Explorer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Animated two-step mechanism showing intermediate buildup and concentration changes as reactants collide, form C, and regenerate A.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Reaction mechanisms",
+    "learningObjectives": [
+      "Visualize how rate-determining steps cause intermediates to accumulate.",
+      "Track concentrations of reactants, intermediates, and products during a catalytic cycle."
+    ],
+    "bloomsTaxonomy": "Understand / Analyze",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Definition of intermediates and catalysts",
+      "Qualitative collision theory"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 740
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive animation with live concentration bars",
+    "keyQuestions": [
+      "What happens to intermediate C when step 1 is slow versus fast?",
+      "How does regenerating A affect the overall mechanism?"
+    ],
+    "commonMisconceptions": [
+      "Intermediates and catalysts are the same", 
+      "The rate-determining step is always the last step"
+    ],
+    "assessmentOpportunities": [
+      "Students document concentration changes for two slider settings",
+      "Learners explain the animation in terms of collision theory"
+    ]
+  },
+  "chapter": "11-reaction-mechanisms-and-catalysis"
+}

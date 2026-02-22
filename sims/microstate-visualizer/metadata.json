@@ -1,0 +1,53 @@
+{
+  "title": "Microstate Visualizer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive particle distribution showing microstate counts, probabilities, and entropy as particles occupy two halves of a container.",
+  "date": "2026-02-20",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Entropy",
+    "learningObjectives": [
+      "Relate the number of microstates to macrostate probability and entropy.",
+      "Explain how removing constraints increases W and S."
+    ],
+    "bloomsTaxonomy": "Understand / Analyze",
+    "duration": "10 minutes",
+    "prerequisites": [
+      "Boltzmann equation",
+      "Basic probability"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 760
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Interactive simulation with probabilistic visualization",
+    "keyQuestions": [
+      "Why is the 50:50 macrostate the most probable for large N?",
+      "How does removing a constraint change W?"
+    ],
+    "commonMisconceptions": [
+      "All macrostates are equally probable",
+      "Entropy is just disorder without quantitative meaning"
+    ],
+    "assessmentOpportunities": [
+      "Students record W and S for selected N values",
+      "Learners explain the effect of removing the wall"
+    ]
+  },
+  "chapter": "13-entropy-and-gibbs-free-energy"
+}

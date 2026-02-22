@@ -74,7 +74,7 @@ function windowResized() {
 function updateCanvasSize() {
   const container = document.querySelector('main');
   if (container) {
-    canvasWidth = container.offsetWidth;
+    canvasWidth = container.offsetWidth || 800;
   }
   canvasHeight = drawHeight + controlHeight;
 }
@@ -115,9 +115,9 @@ function positionControls() {
   const offsetY = rect.top + window.scrollY;
   const baseY = offsetY + drawHeight + 10;
   for (let i = 0; i < controlRows.length; i += 1) {
-    const row = controlRows[i];
-    if (!row) continue;
-    row.position(offsetX + margin + 10, baseY + i * 40);
+    const record = controlRows[i];
+    if (!record) continue;
+    record.row.position(offsetX + margin + 10, baseY + i * 40);
   }
 }
 

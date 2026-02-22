@@ -19,36 +19,38 @@ let egMinusBtn, egPlusBtn, lpMinusBtn, lpPlusBtn;
 let displayPositions = [];
 let targetPositions = [];
 
-const basePositions = {
+// Plain objects used at module level to avoid calling createVector() before p5 initializes.
+// updateTargets() converts these to p5 vectors at runtime.
+const basePositionsRaw = {
   2: [
-    createVector(-220, 0, 0),
-    createVector(220, 0, 0)
+    {x: -220, y: 0, z: 0},
+    {x:  220, y: 0, z: 0}
   ],
   3: [
-    createVector(0, -210, 0),
-    createVector(-190, 120, 0),
-    createVector(190, 120, 0)
+    {x:    0, y: -210, z:   0},
+    {x: -190, y:  120, z:   0},
+    {x:  190, y:  120, z:   0}
   ],
   4: [
-    createVector(0, -200, 0),
-    createVector(-160, 120, 120),
-    createVector(160, 120, 120),
-    createVector(0, 60, -200)
+    {x:    0, y: -200, z:    0},
+    {x: -160, y:  120, z:  120},
+    {x:  160, y:  120, z:  120},
+    {x:    0, y:   60, z: -200}
   ],
   5: [
-    createVector(-200, 40, 0),
-    createVector(200, 40, 0),
-    createVector(0, 160, 0),
-    createVector(0, -180, 150),
-    createVector(0, -180, -150)
+    {x: -200, y:   40, z:    0},
+    {x:  200, y:   40, z:    0},
+    {x:    0, y:  160, z:    0},
+    {x:    0, y: -180, z:  150},
+    {x:    0, y: -180, z: -150}
   ],
   6: [
-    createVector(0, -220, 0),
-    createVector(0, 220, 0),
-    createVector(-200, 0, 0),
-    createVector(200, 0, 0),
-    createVector(0, 0, -200),
-    createVector(0, 0, 200)
+    {x:    0, y: -220, z:    0},
+    {x:    0, y:  220, z:    0},
+    {x: -200, y:    0, z:    0},
+    {x:  200, y:    0, z:    0},
+    {x:    0, y:    0, z: -200},
+    {x:    0, y:    0, z:  200}
   ]
 };
 
@@ -77,7 +79,7 @@ function setup() {
 
   createControls();
   updateTargets();
-  describe('Interactive VSEPR geometry builder with electron group and lone pair controls plus animated visualization.', LABEL);
+  describe('Interactive VSEPR geometry builder with electron group and lone pair controls plus animated visualization.', 'VSEPR Molecular Geometry Builder');
 }
 
 function draw() {
@@ -273,7 +275,7 @@ function updateLonePairs(delta) {
 }
 
 function updateTargets() {
-  const base = basePositions[electronGroups].map(v => v.copy());
+  const base = basePositionsRaw[electronGroups].map(v => createVector(v.x, v.y, v.z));
   const pref = getLonePairPreference();
   targetPositions = base.map((vec, idx) => ({ pos: vec, isLone: pref.includes(idx) }));
 }
@@ -306,7 +308,7 @@ function windowResized() {
 
 function updateCanvasSize() {
   const container = document.querySelector('main').getBoundingClientRect();
-  containerWidth = Math.floor(container.width);
+  containerWidth = Math.floor(container.width) || 800;
   canvasWidth = containerWidth;
   canvasHeight = drawHeight + controlHeight;
   containerHeight = canvasHeight;

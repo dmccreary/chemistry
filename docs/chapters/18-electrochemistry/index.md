@@ -152,6 +152,8 @@ Type: microsim
 Implementation: p5.js. Particle positions updated each frame along predefined paths. Cell potential computed using Nernst equation.
 </details>
 
+<iframe src="../../sims/galvanic-cell-visualizer/main.html" height="882px" width="100%" scrolling="no"></iframe>
+
 ## Standard Reduction Potentials
 
 ### What Is Standard Reduction Potential?
@@ -345,6 +347,8 @@ Type: microsim
 Implementation: p5.js with createSlider() and createSelect() DOM elements. All computations update live.
 </details>
 
+<iframe src="../../sims/nernst-equation-explorer/main.html" height="942px" width="100%" scrolling="no"></iframe>
+
 ## Electrolytic Cells
 
 ### Non-Spontaneous Reactions Driven by Electricity
@@ -483,6 +487,8 @@ Each box highlights with a green fill as "Calculate" is clicked, stepping throug
 
 Implementation: p5.js with createInput(), createSelect(), createRadio(), createButton() DOM elements.
 </details>
+
+<iframe src="../../sims/faraday-law-calculator/main.html" height="822px" width="100%" scrolling="no"></iframe>
 
 ## Batteries, Fuel Cells, and Corrosion
 

@@ -1,0 +1,54 @@
+{
+  "title": "Nernst Equation Explorer",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive Nernst calculator with galvanic cell diagram, live Q updates, and an E vs log Q graph.",
+  "date": "2026-02-21",
+  "educational": {
+    "gradeLevel": ["11", "12"],
+    "subjectArea": "Chemistry",
+    "topic": "Electrochemistry",
+    "learningObjectives": [
+      "Use the Nernst equation to compute cell potential under non-standard concentrations.",
+      "Relate the sign/magnitude of E to the reaction quotient Q and electron count n."
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Balanced galvanic cell reactions",
+      "Logarithms and reaction quotients",
+      "Standard reduction potentials"
+    ],
+    "standards": []
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 940
+    },
+    "responsive": true,
+    "dependencies": ["p5.js 1.11.10"],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "pedagogical": {
+    "teachingStrategy": "Visual-plus-analytical simulation",
+    "keyQuestions": [
+      "How does Q change when the oxidized vs reduced concentrations change?",
+      "Why does increasing n flatten the E vs log Q line?"
+    ],
+    "commonMisconceptions": [
+      "Q should be built from separate half-reactions instead of the overall reaction.",
+      "Increasing both concentrations equally changes E."
+    ],
+    "assessmentOpportunities": [
+      "Students screenshot the substituted Nernst equation and explain each number.",
+      "Learners tune the sliders until E switches sign and describe the concentration relationship."
+    ]
+  },
+  "chapter": "18-electrochemistry"
+}

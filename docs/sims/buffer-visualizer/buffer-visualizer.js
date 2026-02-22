@@ -9,7 +9,7 @@
 */
 
 let canvasWidth = 900;
-let drawHeight = 560;
+let drawHeight = 520;
 let controlHeight = 260;
 let canvasHeight = drawHeight + controlHeight;
 const margin = 28;
@@ -23,6 +23,11 @@ let addButton;
 let haConc = 0.30;
 let aConc = 0.30;
 let pKa = 4.75;
+
+const controlRows = [];
+let haValueSpan;
+let aValueSpan;
+let pkaValueSpan;
 
 let bufferPH = 0;
 let waterPH = 7;
@@ -82,11 +87,51 @@ function updateCanvasSize() {
 }
 
 function createControls() {
-  haSlider = createSlider(0.01, 1.0, haConc, 0.01);
-  aSlider = createSlider(0.01, 1.0, aConc, 0.01);
-  pkaSlider = createSlider(2.0, 12.0, pKa, 0.1);
-  [haSlider, aSlider, pkaSlider].forEach(function (slider) {
-    slider.style('width', '220px');
+  createSliderRow('Initial [HA] (M)', function (slider, valueSpan) {
+    haSlider = slider;
+    haValueSpan = valueSpan;
+    haSlider.attribute('step', '0.01');
+    haSlider.attribute('min', '0.01');
+    haSlider.attribute('max', '1.0');
+    haSlider.value(haConc);
+    haSlider.style('width', '220px');
+    haSlider.input(function () {
+      haConc = parseFloat(haSlider.value());
+      updateChemistry();
+      updateParticles();
+      haValueSpan.html(haConc.toFixed(2));
+    });
+  });
+
+  createSliderRow('Initial [A-] (M)', function (slider, valueSpan) {
+    aSlider = slider;
+    aValueSpan = valueSpan;
+    aSlider.attribute('step', '0.01');
+    aSlider.attribute('min', '0.01');
+    aSlider.attribute('max', '1.0');
+    aSlider.value(aConc);
+    aSlider.style('width', '220px');
+    aSlider.input(function () {
+      aConc = parseFloat(aSlider.value());
+      updateChemistry();
+      updateParticles();
+      aValueSpan.html(aConc.toFixed(2));
+    });
+  });
+
+  createSliderRow('pKa', function (slider, valueSpan) {
+    pkaSlider = slider;
+    pkaValueSpan = valueSpan;
+    pkaSlider.attribute('step', '0.1');
+    pkaSlider.attribute('min', '2.0');
+    pkaSlider.attribute('max', '12.0');
+    pkaSlider.value(pKa);
+    pkaSlider.style('width', '220px');
+    pkaSlider.input(function () {
+      pKa = parseFloat(pkaSlider.value());
+      updateChemistry();
+      pkaValueSpan.html(pKa.toFixed(2));
+    });
   });
 
   additionSelect = createSelect();
@@ -102,21 +147,36 @@ function createControls() {
   addButton.style('color', 'white');
   addButton.style('cursor', 'pointer');
 
-  haSlider.input(function () {
-    haConc = parseFloat(haSlider.value());
-    updateChemistry();
-    updateParticles();
-  });
-  aSlider.input(function () {
-    aConc = parseFloat(aSlider.value());
-    updateChemistry();
-    updateParticles();
-  });
-  pkaSlider.input(function () {
-    pKa = parseFloat(pkaSlider.value());
-    updateChemistry();
-  });
   addButton.mousePressed(handleAddition);
+
+  haValueSpan.html(haConc.toFixed(2));
+  aValueSpan.html(aConc.toFixed(2));
+  pkaValueSpan.html(pKa.toFixed(2));
+}
+
+function createSliderRow(labelText, callback) {
+  const row = createDiv();
+  row.style('display', 'inline-block');
+  row.style('background', 'white');
+  row.style('padding', '6px 10px');
+  row.style('border-radius', '8px');
+  row.style('box-shadow', '0 1px 3px rgba(0,0,0,0.12)');
+  row.style('font-family', 'Arial, Helvetica, sans-serif');
+  row.style('font-size', '14px');
+
+  const labelSpan = createSpan(labelText + ': ');
+  labelSpan.parent(row);
+  styleLabel(labelSpan);
+
+  const valueSpan = createSpan('');
+  valueSpan.parent(row);
+  styleValue(valueSpan);
+
+  const slider = createSlider(0, 1, 0.5, 0.01);
+  slider.parent(row);
+
+  controlRows.push(row);
+  callback(slider, valueSpan);
 }
 
 function positionControls() {
@@ -124,15 +184,14 @@ function positionControls() {
   if (!canvasEl) return;
   const rect = canvasEl.getBoundingClientRect();
   const baseX = rect.left + window.scrollX + margin;
-  const baseY = rect.top + window.scrollY + drawHeight + 20;
-  const spacingY = 70;
+  const baseY = rect.top + window.scrollY + drawHeight + 70;
+  controlRows.forEach(function (row, index) {
+    row.position(baseX, baseY + index * 70);
+    row.style('width', Math.min(canvasWidth - margin * 2, 320) + 'px');
+  });
 
-  haSlider.position(baseX, baseY);
-  aSlider.position(baseX, baseY + spacingY);
-  pkaSlider.position(baseX, baseY + spacingY * 2);
-
-  additionSelect.position(baseX + 300, baseY);
-  addButton.position(baseX + 300, baseY + 40);
+  additionSelect.position(baseX + 360, baseY);
+  addButton.position(baseX + 360, baseY + 40);
 }
 
 function drawControlBackground() {
@@ -203,6 +262,7 @@ function drawWaterBeaker(x, y, width, height, label, phValue) {
 
 function drawPHScale() {
   const barX = margin;
+  // The pH scale bar is drawn near the bottom of the draw area, with some margin.
   const barY = 330;
   const barWidth = canvasWidth - margin * 2;
   const barHeight = 30;
@@ -232,18 +292,18 @@ function drawPHScale() {
 function drawPointer(barX, barWidth, barY, phValue, label) {
   const x = map(phValue, 0, 14, barX, barX + barWidth);
   stroke('black');
-  line(x, barY - 15, x, barY + 45);
+  line(x, barY, x, barY + 45);
   noStroke();
   fill('black');
   textAlign(CENTER, BOTTOM);
-  text(`${label} pH`, x, barY - 18);
+  text(`${label} pH`, x, barY);
 }
 
 function drawInfoPanels() {
   const panelX = margin;
-  const panelY = 380;
+  const panelY = 400;
   const panelWidth = (canvasWidth - margin * 3) / 2;
-  const panelHeight = 150;
+  const panelHeight = 110;
 
   drawInfoPanel(panelX, panelY, panelWidth, panelHeight, 'Buffer ΔpH', bufferPH, lastBufferPH);
   drawInfoPanel(panelX + panelWidth + margin, panelY, panelWidth, panelHeight, 'Water ΔpH', waterPH, lastWaterPH);
@@ -355,6 +415,18 @@ function getGradientColor(pct) {
 function getPhColor(phValue) {
   const pct = constrain(phValue / 14, 0, 1);
   return getGradientColor(pct);
+}
+
+function styleLabel(el) {
+  el.style('display', 'inline-block');
+  el.style('width', '150px');
+  el.style('font-weight', '600');
+}
+
+function styleValue(el) {
+  el.style('display', 'inline-block');
+  el.style('width', '40px');
+  el.style('font-weight', '600');
 }
 
 function log10(value) {

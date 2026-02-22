@@ -1,0 +1,89 @@
+{
+  "title": "Atomic Theory Timeline",
+  "events": [
+    {
+      "start_date": {
+        "year": "-400",
+        "display_date": "~400 BCE"
+      },
+      "text": {
+        "headline": "Democritus",
+        "text": "Greek philosopher Democritus proposed that all matter is composed of tiny, indivisible particles he called <em>atomos</em> (\"uncuttable\"). This was a philosophical idea, not a scientific theory — he had no experimental evidence, but the concept was remarkably prescient."
+      },
+      "group": "Ancient Philosophy",
+      "notes": "Democritus (~460–370 BCE) developed the atomic hypothesis with his mentor Leucippus. The idea was largely ignored in favor of Aristotle's four-element theory for over 2000 years."
+    },
+    {
+      "start_date": {
+        "year": "1803",
+        "display_date": "1803"
+      },
+      "text": {
+        "headline": "John Dalton",
+        "text": "English chemist John Dalton published the first modern atomic theory based on experimental observations. He proposed that all matter consists of atoms, that all atoms of a given element are identical, and that atoms combine in simple whole-number ratios to form compounds."
+      },
+      "group": "Classical Atomic Theory",
+      "notes": "Dalton's atomic theory gave chemistry a quantitative foundation. While some postulates (e.g., atoms are indivisible) were later revised, his model was revolutionary. He also produced the first table of atomic weights."
+    },
+    {
+      "start_date": {
+        "year": "1897",
+        "display_date": "1897"
+      },
+      "text": {
+        "headline": "J.J. Thomson",
+        "text": "British physicist J.J. Thomson discovered the electron using cathode ray tubes, proving that atoms are <em>not</em> indivisible. He proposed the \"plum pudding\" model: a positive sphere with electrons embedded throughout, like raisins in a pudding."
+      },
+      "group": "Classical Atomic Theory",
+      "notes": "Thomson's discovery overturned Dalton's postulate that atoms are indivisible. His cathode ray experiments showed that electrons are particles with negative charge, far lighter than hydrogen atoms."
+    },
+    {
+      "start_date": {
+        "year": "1909",
+        "display_date": "1909"
+      },
+      "text": {
+        "headline": "Robert Millikan",
+        "text": "American physicist Robert Millikan precisely measured the charge of the electron using his famous oil drop experiment. By balancing gravitational and electric forces on tiny charged oil droplets, he determined the elementary charge to be 1.6 × 10⁻¹⁹ coulombs."
+      },
+      "group": "Classical Atomic Theory",
+      "notes": "Millikan's result, combined with Thomson's charge-to-mass ratio, allowed calculation of the electron's mass. He was awarded the Nobel Prize in Physics in 1923."
+    },
+    {
+      "start_date": {
+        "year": "1911",
+        "display_date": "1911"
+      },
+      "text": {
+        "headline": "Ernest Rutherford",
+        "text": "New Zealand-born physicist Ernest Rutherford fired alpha particles at gold foil and found that some bounced straight back — a result he likened to firing artillery at tissue paper. This proved atoms have a tiny, dense, positively charged nucleus surrounded by mostly empty space."
+      },
+      "group": "Classical Atomic Theory",
+      "notes": "Rutherford's gold foil experiment disproved Thomson's plum pudding model. He proposed the nuclear model: a dense nucleus containing most of the atom's mass, with electrons orbiting at a distance. He later discovered the proton (1917)."
+    },
+    {
+      "start_date": {
+        "year": "1913",
+        "display_date": "1913"
+      },
+      "text": {
+        "headline": "Niels Bohr",
+        "text": "Danish physicist Niels Bohr proposed that electrons orbit the nucleus only in specific, quantized energy levels — like rungs on a ladder. Electrons absorb or emit energy only when jumping between levels, explaining the discrete spectral lines of hydrogen."
+      },
+      "group": "Quantum Model",
+      "notes": "Bohr's model successfully explained the hydrogen emission spectrum and introduced quantum ideas into atomic structure. While later replaced by quantum mechanics, the Bohr model is still used to visualize electron shells and explain periodic trends."
+    },
+    {
+      "start_date": {
+        "year": "1926",
+        "display_date": "1926"
+      },
+      "text": {
+        "headline": "Erwin Schrödinger",
+        "text": "Austrian physicist Erwin Schrödinger published the wave equation that describes electrons as probability waves rather than particles in fixed orbits. This quantum mechanical model replaces Bohr's defined paths with electron clouds (orbitals) that show the probability of finding an electron."
+      },
+      "group": "Quantum Model",
+      "notes": "Schrödinger's wave mechanics (developed simultaneously with Heisenberg's matrix mechanics) became the foundation of modern quantum chemistry. The electron orbitals it predicts — s, p, d, f — explain bonding, periodic trends, and chemical reactivity."
+    }
+  ]
+}

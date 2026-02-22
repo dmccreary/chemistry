@@ -575,6 +575,8 @@ We now know that some of Dalton's postulates were not quite right — atoms are 
 
 #### Diagram: Atomic Theory Timeline
 
+<iframe src="../../sims/atomic-theory-timeline/main.html" width="100%" height="560px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Atomic Theory Timeline</summary>
 

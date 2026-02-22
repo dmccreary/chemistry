@@ -19,6 +19,7 @@ Interactive simulations for AP Chemistry.
 - [Reaction Type Classifier](reaction-type-classifier/index.md) - Identify synthesis, decomposition, single replacement, double replacement, or combustion reactions with hints and scoring.
 - [Limiting Reagent and Percent Yield Calculator](limiting-reagent-percent-yield/index.md) - Input reactant masses and actual yield to animate limiting reagent comparisons and percent yield gauges.
 - [Interactive Titration Calculator](titration-calculator/index.md) - Adjust acid/base parameters and trace the titration curve with equivalence markers.
+- [Titration Curve Comparison Explorer](titration-curve-explorer/index.md) - Compare strong vs. weak titration curves with annotated features and indicator overlap.
 - [Arrhenius Equation Explorer](arrhenius-equation-explorer/index.md) - Control Ea, A, and temperature range to compare k vs T and ln k vs 1/T plots.
 - [Integrated Rate Law Grapher](integrated-rate-law-grapher/index.md) - Examine [A], ln[A], and 1/[A] plots to identify reaction order and read k from slopes.
 - [Catalyzed vs. Uncatalyzed Energy Profile](catalysis-energy-profile/index.md) - Explore Ea changes with catalysts, thermodynamic profiles, and multi-step pathways.

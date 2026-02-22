@@ -90,6 +90,7 @@ nav:
     - Reaction Type Classifier: sims/reaction-type-classifier/index.md
     - Limiting Reagent and Percent Yield Calculator: sims/limiting-reagent-percent-yield/index.md
     - Interactive Titration Calculator: sims/titration-calculator/index.md
+    - Titration Curve Comparison Explorer: sims/titration-curve-explorer/index.md
     - Arrhenius Equation Explorer: sims/arrhenius-equation-explorer/index.md
     - Integrated Rate Law Grapher: sims/integrated-rate-law-grapher/index.md
     - Catalyzed vs. Uncatalyzed Energy Profile: sims/catalysis-energy-profile/index.md

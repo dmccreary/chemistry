@@ -380,6 +380,8 @@ Type: microsim
 Implementation: p5.js with DOM controls. pH calculated using exact formulas for each region (buffer region uses HH, equivalence uses Kb ICE, post-equivalence uses excess base). Smooth curve drawn using 200 equally-spaced volume points.
 </details>
 
+<iframe src="../../sims/titration-curve-explorer/main.html" height="842px" width="100%" scrolling="no"></iframe>
+
 ### Titration Curve Analysis
 
 A titration curve is a graph of pH (y-axis) vs. volume of titrant added (x-axis). From the curve you can read:

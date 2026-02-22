@@ -28,6 +28,7 @@ Interactive simulations for AP Chemistry.
 - [ICE Table Interactive Solver](ice-table-solver/index.md) - Step through ICE calculations with approximation checks and quadratic solving.
 - [Le Chatelier's Principle Explorer](le-chatelier-explorer/index.md) - Apply concentration, pressure, and temperature stresses to the Haber equilibrium.
 - [Dissolution Equilibrium Visualizer](dissolution-equilibrium-visualizer/index.md) - Animate sparingly soluble salts, track Q vs Ksp, and test common-ion effects.
+- [Interactive pH Scale Explorer](ph-scale-explorer/index.md) - Drag across a color pH scale, view [H⁺]/[OH⁻], and compare everyday substances.
 - [Gibbs Free Energy Spontaneity Explorer](gibbs-free-energy-explorer/index.md) - Graph ΔG vs. temperature, toggle presets, and reason through spontaneity quadrants.
 - [Ksp Precipitation Predictor](ksp-precipitation-predictor/index.md) - Mix ionic solutions, compute Q vs Ksp, and visualize precipitation events.
 - [Microstate Visualizer](microstate-visualizer/index.md) - Animate particle distributions and visualize microstate probabilities.

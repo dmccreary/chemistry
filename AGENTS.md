@@ -23,6 +23,8 @@ Before touching any p5.js MicroSim, re-read the canonical guide at `../claude-sk
 
 **Visual consistency rule:** The background of every MicroSim drawing area must be `aliceblue`, while the control region beneath it must always use a white background. Apply this palette consistently across all new or updated simulations.
 
+**Notation rule:** Never use arrow glyphs (such as `→`) in UI labels, documentation, or generated text. Spell out transitions or relationships with words instead (e.g., “leads to,” “changes from … to …”).
+
 ## p5.js MicroSim creation steps
 1. **Step 1 – Educational requirements**: define subject, grade band, learning objectives (Bloom-aligned), duration, prerequisites, and assessment ideas; record them for `index.md` and `metadata.json`. `../claude-skills/skills/microsim-generator/references/p5-guide.md:52`
 2. **Step 1.5 – Instructional design review**: confirm one clear objective, limit controls (1–5) via inventory table, plan progressive disclosure, run cognitive-load and accessibility checklists; resolve any gaps before coding. `../claude-skills/skills/microsim-generator/references/p5-guide.md:66`

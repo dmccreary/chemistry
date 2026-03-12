@@ -1,3 +1,9 @@
+---
+title: Catalyst the Cat - Mascot Style Guide
+description: This test page shows all mascot images as well as the admonition styles for our pedagogical agent for our AP Chemistry course, Catalyst the Cat.
+image: img/mascot/welcome.png
+og:image: img/mascot/welcome.png
+---
 # Catalyst the Cat - Mascot Style Guide
 
 This page shows all mascot images as well as the admonition styles for reference.  Check that all the images have a transparent background

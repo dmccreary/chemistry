@@ -1,0 +1,461 @@
+{
+  "project": {
+    "title": "AP Chemistry",
+    "subtitle": "Auto-scanned intelligent textbook",
+    "author": "Dan McCreary",
+    "costPerMTokens": 15,
+    "sessionBudget": {
+      "pro": 900000,
+      "max": 3500000
+    }
+  },
+  "sections": {
+    "scaffold": {
+      "status": "published",
+      "tokensTarget": 2000,
+      "tokensDone": 2000
+    },
+    "course-description": {
+      "status": "published",
+      "tokensTarget": 4000,
+      "tokensDone": 1257
+    },
+    "learning-graph": {
+      "status": "published",
+      "tokensTarget": 20000,
+      "tokensDone": 20000
+    },
+    "chapter-structure": {
+      "status": "published",
+      "tokensTarget": 15000,
+      "tokensDone": 15000
+    },
+    "chapter-content": {
+      "countLabel": "18 chapters",
+      "children": [
+        {
+          "n": 1,
+          "title": "Chapter 1: Foundations of Chemistry",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 2,
+          "title": "Chapter 2: Atomic Structure and Mass Spectrometry",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 3,
+          "title": "Chapter 3: Electron Configuration and Periodic Trends",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 4,
+          "title": "Chapter 4: Chemical Bonding and Lewis Structures",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 5,
+          "title": "Chapter 5: Molecular Geometry and Polarity",
+          "status": "published",
+          "tokens": 10286
+        },
+        {
+          "n": 6,
+          "title": "Chapter 6: Intermolecular Forces and States of Matter",
+          "status": "published",
+          "tokens": 10000
+        },
+        {
+          "n": 7,
+          "title": "Chapter 7: Phase Changes, Solutions, and Gas Laws",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 8,
+          "title": "Chapter 8: Chemical Reactions and Equations",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 9,
+          "title": "Chapter 9: Stoichiometry, Titrations, and Analysis",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 10,
+          "title": "Chapter 10: Reaction Rates and Rate Laws",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 11,
+          "title": "Chapter 11: Reaction Mechanisms and Catalysis",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 12,
+          "title": "Chapter 12: Energy, Enthalpy, and Calorimetry",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 13,
+          "title": "Chapter 13: Entropy and Gibbs Free Energy",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 14,
+          "title": "Chapter 14: Chemical Equilibrium",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 15,
+          "title": "Chapter 15: Solubility Equilibria",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 16,
+          "title": "Chapter 16: Acid-Base Theory and pH",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 17,
+          "title": "Chapter 17: Buffers and Acid-Base Titrations",
+          "status": "reviewed",
+          "tokens": 10000
+        },
+        {
+          "n": 18,
+          "title": "Chapter 18: Electrochemistry",
+          "status": "reviewed",
+          "tokens": 10000
+        }
+      ]
+    },
+    "chapter-images": {
+      "status": "drafted",
+      "tokensTarget": 8000,
+      "tokensDone": 3600
+    },
+    "microsims": {
+      "countLabel": "44 simulations",
+      "children": [
+        {
+          "n": 1,
+          "title": "Arrhenius Equation Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 2,
+          "title": "Atomic Structure Diagram",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 3,
+          "title": "Atomic Theory Timeline",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 4,
+          "title": "Beer-Lambert Law Calibration Curve Builder",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 5,
+          "title": "Buffer pH Interactive Calculator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 6,
+          "title": "Buffer System Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 7,
+          "title": "Catalyzed vs. Uncatalyzed Energy Profile",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 8,
+          "title": "Interactive Density Graphing MicroSim",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 9,
+          "title": "Dimensional Analysis Practice",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 10,
+          "title": "Dissolution Equilibrium Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 11,
+          "title": "Interactive Exothermic and Endothermic Energy Diagrams",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 12,
+          "title": "Faraday Law Calculator",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 13,
+          "title": "Galvanic Cell Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 14,
+          "title": "Gibbs Free Energy Spontaneity Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 15,
+          "title": "Graph Viewer",
+          "status": "drafted",
+          "tokens": 5000
+        },
+        {
+          "n": 16,
+          "title": "Interactive Heating Curve Simulator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 17,
+          "title": "Hess's Law Pathway Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 18,
+          "title": "ICE Table Interactive Solver",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 19,
+          "title": "Ideal Gas Law Interactive Simulator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 20,
+          "title": "IMF Strength Explorer \u2014 Boiling Points vs. IMF Type",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 21,
+          "title": "Integrated Rate Law Grapher",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 22,
+          "title": "Ionic Crystal Lattice Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 23,
+          "title": "Ksp Precipitation Predictor",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 24,
+          "title": "Le Chatelier's Principle Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 25,
+          "title": "Interactive Lewis Structure Builder",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 26,
+          "title": "Limiting Reagent and Percent Yield Calculator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 27,
+          "title": "Interactive Mass Spectrometer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 28,
+          "title": "Matter Classification Flowchart",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 29,
+          "title": "Mechanism Step Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 30,
+          "title": "Microstate Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 31,
+          "title": "MO Energy Diagram Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 32,
+          "title": "Nernst Equation Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 33,
+          "title": "Interactive Orbital Shape Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 34,
+          "title": "Periodic Trends Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 35,
+          "title": "PES Spectrum Interactive Visualizer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 36,
+          "title": "Interactive pH Scale Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 37,
+          "title": "Precision vs Accuracy Target Diagram",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 38,
+          "title": "Reaction Type Classifier",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 39,
+          "title": "Scientific Method Workflow",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 40,
+          "title": "Interactive Titration Calculator",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 41,
+          "title": "Titration Curve Comparison Explorer",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 42,
+          "title": "VSEPR Molecular Geometry Builder",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 43,
+          "title": "Weak Acid ICE Solver",
+          "status": "published",
+          "tokens": 5000
+        },
+        {
+          "n": 44,
+          "title": "Weak Acid ICE Table Solver",
+          "status": "published",
+          "tokens": 5000
+        }
+      ]
+    },
+    "glossary": {
+      "status": "published",
+      "tokensTarget": 39562,
+      "tokensDone": 39562
+    },
+    "faq": {
+      "status": "published",
+      "tokensTarget": 12000,
+      "tokensDone": 11865
+    },
+    "quiz": {
+      "status": "published",
+      "tokensTarget": 37974,
+      "tokensDone": 37974
+    },
+    "reference": {
+      "status": "drafted",
+      "tokensTarget": 20000,
+      "tokensDone": 3115
+    },
+    "teachers-guide": {
+      "status": "not-started",
+      "tokensTarget": 15000,
+      "tokensDone": 0
+    },
+    "book-metrics": {
+      "status": "published",
+      "tokensTarget": 2000,
+      "tokensDone": 2000
+    },
+    "publish": {
+      "status": "published",
+      "tokensTarget": 10000,
+      "tokensDone": 10000
+    },
+    "stories": {
+      "status": "drafted",
+      "tokensTarget": 30000,
+      "tokensDone": 415
+    }
+  }
+}

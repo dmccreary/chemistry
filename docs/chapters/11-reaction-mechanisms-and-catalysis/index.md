@@ -482,6 +482,8 @@ Understanding the similarities and differences among the three main types of cat
 
 #### Diagram: Heterogeneous Catalysis Surface Adsorption
 
+<iframe src="../../sims/heterogeneous-catalysis-surface/main.html" width="100%" height="632px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Infographic: Heterogeneous Catalysis — Surface Adsorption and Reaction Steps</summary>
 Type: Infographic / Diagram

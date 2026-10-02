@@ -25,10 +25,10 @@ let margin = 12;
 let defaultTextSize = 16;
 let sliderLeftMargin = 250;
 
-const PLOT_TOP = 52;
+const PLOT_TOP = 64;
 const PLOT_BOTTOM = 322;
 const ENERGY_MAX = 400;          // kJ/mol at the top of the plot
-const REACTANT_ENERGY = { exo: 180, endo: 60 };   // where the reactant level is drawn
+const REACTANT_ENERGY = { exo: 180, endo: 80 };   // where the reactant level is drawn
 const MINUS = '−';
 const DELTA = 'Δ';
 
@@ -75,7 +75,7 @@ function setup() {
   quizButton.parent(mainElement);
   quizButton.mousePressed(toggleQuiz);
 
-  eaSlider = createSlider(50, 200, 120, 5);
+  eaSlider = createSlider(60, 180, 120, 5);
   eaSlider.parent(mainElement);
   eaSlider.attribute('aria-label', 'Forward activation energy in kilojoules per mole');
 
@@ -100,7 +100,7 @@ function draw() {
   rect(0, drawHeight, canvasWidth, controlHeight);
 
   const v = values();
-  buildGeometry(v);
+  layoutDiagram(v);
   drawPlot(v);
 
   // Title (drawn after the plot background so nothing covers it)
@@ -109,7 +109,19 @@ function draw() {
   textStyle(NORMAL);
   textAlign(CENTER, TOP);
   textSize(canvasWidth < 500 ? 19 : 24);
-  text('Reaction Energy Diagram', canvasWidth / 2, 10);
+  text('Reaction Energy Diagram', canvasWidth / 2, 8);
+
+  // Subtitle: which kind of reaction is shown (hidden during the quiz)
+  if (!quizMode) {
+    const small = canvasWidth < 560;
+    textStyle(BOLD);
+    fill(exothermic ? 'darkgreen' : 'firebrick');
+    const head = exothermic
+      ? (small ? 'Exothermic: ' + DELTA + 'H < 0' : 'Exothermic: products lower in energy than reactants, ' + DELTA + 'H < 0')
+      : (small ? 'Endothermic: ' + DELTA + 'H > 0' : 'Endothermic: products higher in energy than reactants, ' + DELTA + 'H > 0');
+    drawRichFit(head, canvasWidth / 2, 46, small ? 13 : 15, CENTER, canvasWidth - 40);
+    textStyle(NORMAL);
+  }
 
   drawInfoPanel(v);
   drawControlLabels(v);
@@ -146,7 +158,7 @@ function energyY(e) {
   return PLOT_BOTTOM - e / ENERGY_MAX * (PLOT_BOTTOM - PLOT_TOP);
 }
 
-function buildGeometry(v) {
+function layoutDiagram(v) {
   const small = canvasWidth < 560;
   const xL = margin + (small ? 34 : 52);
   const xR = canvasWidth - margin - 8;
@@ -278,43 +290,35 @@ function drawLabels(v, colF, colR, colH) {
   const g = geom;
   const small = g.small;
   const fs = small ? 11 : 14;
+  const pad = fs * 0.9;          // distance from a level line to a label beside it
 
-  // level names
   textStyle(BOLD);
-  labelBox('Reactants', (g.xL + g.x1) / 2, g.yR - 13, fs, CENTER, 'navy');
-  labelBox('Products', g.x2 + (g.xDH - 8 - g.x2) / 2, g.yP - 13, fs, CENTER, 'mediumvioletred');
+  // level names
+  labelBox('Reactants', (g.xL + g.x1) / 2, g.yR - pad, fs, CENTER, 'navy');
+  // "Products" goes below its line for an exothermic reaction (delta H is labeled
+  // above it) unless the line is too close to the axis; above it otherwise
+  const productsBelow = exothermic && PLOT_BOTTOM - g.yP >= 30;
+  labelBox('Products', (g.x2 + g.xDH - 10) / 2, productsBelow ? g.yP + pad : g.yP - pad, fs, CENTER, 'mediumvioletred');
   labelBox(small ? 'Transition state' : 'Transition state (activated complex)', g.xp, g.yTS - 20, fs, CENTER, 'firebrick');
 
-  // forward activation energy: label left of its arrow, low in the hump where it is widest
-  const yF = g.yR - (g.yR - g.yTS) * 0.3;
-  labelBox(small ? 'E_{a} fwd' : 'E_{a} (forward)', g.xEaF - 8, yF - fs * 0.7, fs, RIGHT, colF);
-  textStyle(NORMAL);
-  labelBox(v.eaForward + ' kJ/mol', g.xEaF - 8, yF + fs * 0.7, fs, RIGHT, colF);
+  // forward activation energy: left of its arrow, low in the hump where the hump
+  // is widest; just below the reactant level when the hump is too short for a label
+  const forwardHeight = g.yR - g.yTS;
+  const yFwd = forwardHeight >= 70 ? g.yR - forwardHeight * 0.22 : g.yR + pad;
+  labelBox(small ? 'E_{a} fwd' : 'E_{a} (forward)', g.xEaF - 8, yFwd, fs, RIGHT, colF);
 
-  // reverse activation energy: label right of its arrow
-  const yRv = g.yP - (g.yP - g.yTS) * 0.3;
-  textStyle(BOLD);
-  labelBox(small ? 'E_{a} rev' : 'E_{a} (reverse)', g.xEaR + 8, yRv - fs * 0.7, fs, LEFT, colR);
-  textStyle(NORMAL);
-  labelBox(v.eaReverse + ' kJ/mol', g.xEaR + 8, yRv + fs * 0.7, fs, LEFT, colR);
+  // reverse activation energy: right of its arrow, placed the same way
+  const reverseHeight = g.yP - g.yTS;
+  const yRev = reverseHeight >= 70 ? g.yP - reverseHeight * 0.22 : g.yP + pad;
+  labelBox(small ? 'E_{a} rev' : 'E_{a} (reverse)', g.xEaR + 8, yRev, fs, LEFT, colR);
 
-  // enthalpy change: label left of its arrow, or below the lower level if the gap is small
+  // enthalpy change, with its sign: left of its arrow, between the two levels.
+  // When the levels are close together it moves just outside them, on the side
+  // away from the "Products" label.
   const gap = Math.abs(g.yP - g.yR);
   let yH = (g.yR + g.yP) / 2;
-  if (gap < 62) yH = Math.max(g.yR, g.yP) + fs * 1.6;
-  textStyle(BOLD);
-  labelBox(DELTA + 'H', g.xDH - 9, yH - fs * 0.7, fs, RIGHT, colH);
-  textStyle(NORMAL);
-  labelBox(signedValue(v.dH) + ' kJ/mol', g.xDH - 9, yH + fs * 0.7, fs, RIGHT, colH);
-
-  // mode heading inside the plot
-  textStyle(BOLD);
-  const head = exothermic
-    ? (small ? 'Exothermic: ' + DELTA + 'H < 0' : 'Exothermic: products lower than reactants, ' + DELTA + 'H < 0')
-    : (small ? 'Endothermic: ' + DELTA + 'H > 0' : 'Endothermic: products higher than reactants, ' + DELTA + 'H > 0');
-  noStroke();
-  fill(exothermic ? 'darkgreen' : 'firebrick');
-  drawRichFit(head, g.xL + 10, PLOT_TOP + 12, small ? 12 : 15, LEFT, g.w - 20);
+  if (gap < 24) yH = exothermic ? Math.min(g.yR, g.yP) - pad : Math.max(g.yR, g.yP) + pad;
+  labelBox(DELTA + 'H = ' + signedValue(v.dH) + (small ? '' : ' kJ/mol'), g.xDH - 9, yH, fs, RIGHT, colH);
   textStyle(NORMAL);
 }
 

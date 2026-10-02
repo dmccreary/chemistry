@@ -458,6 +458,8 @@ $$ E_{a(\text{reverse})} = E_{a(\text{forward})} - \Delta H_\text{rxn} $$
 
 #### Diagram: Reaction Energy Diagram
 
+<iframe src="../../sims/reaction-energy-diagram/main.html" width="100%" height="577px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Reaction Energy Diagram — Activation Energy and Transition State</summary>
 Type: diagram

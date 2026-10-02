@@ -1,9 +1,13 @@
 {
   "title": "Reaction Energy Diagram",
   "creator": "Dan McCreary",
-  "subject": "High School Geometry",
-  "description": "Interactive MicroSim for reaction energy diagram",
+  "subject": "AP Chemistry",
+  "description": "Interactive reaction coordinate diagram. Students identify the reactants, products, transition state, forward and reverse activation energies, and enthalpy change, switch between exothermic and endothermic reactions, adjust the energies with sliders, and test themselves with a click-to-identify quiz.",
   "date": "2026-10-02",
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
   "educational": {
     "gradeLevel": [
       "9",
@@ -11,35 +15,76 @@
       "11",
       "12"
     ],
-    "subjectArea": "Mathematics",
-    "topic": "Reaction Energy Diagram",
+    "subjectArea": "Chemistry",
+    "topic": "Activation Energy and Reaction Energy Diagrams",
     "learningObjectives": [
-      "TODO: Add learning objectives"
+      "Identify reactants, products, the transition state, Ea (forward), Ea (reverse), and delta H on a reaction coordinate diagram",
+      "Relate the sign of delta H to whether a reaction is exothermic or endothermic",
+      "Explain why Ea (reverse) equals Ea (forward) minus delta H"
     ],
     "bloomsTaxonomy": "Understand",
     "duration": "10-15 minutes",
-    "prerequisites": [],
-    "standards": []
+    "prerequisites": [
+      "Collision theory",
+      "Potential energy",
+      "Enthalpy change"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 5, Topic 5.6: Reaction Energy Profile"
+    ]
   },
   "technical": {
     "framework": "p5.js",
     "version": "1.0",
     "canvasDimensions": {
       "width": "responsive",
-      "height": 450
+      "height": 575
     },
     "responsive": true,
-    "dependencies": [],
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
     "accessibility": {
-      "hasAltText": false,
-      "keyboardNavigable": false
+      "hasAltText": true,
+      "keyboardNavigable": true
     }
   },
+  "userInterface": {
+    "controls": [
+      { "type": "button", "label": "Switch to Endothermic / Switch to Exothermic", "description": "Toggles the products above or below the reactants" },
+      { "type": "button", "label": "Quiz Me / Show Labels", "description": "Hides the labels and asks the student to click each named feature" },
+      { "type": "slider", "label": "Ea (forward)", "description": "Forward activation energy, 60 to 180 kJ/mol in steps of 5" },
+      { "type": "slider", "label": "Size of delta H", "description": "Magnitude of the enthalpy change, 20 to 150 kJ/mol in steps of 5; its sign is set by the reaction type" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Schematic energy profile on a fixed energy scale",
+    "equations": [
+      "E(transition state) = E(reactants) + Ea(forward)",
+      "E(products) = E(reactants) + delta H",
+      "Ea(reverse) = Ea(forward) - delta H"
+    ],
+    "assumptions": [
+      "Single-step reaction with one transition state",
+      "For an endothermic reaction delta H is kept at least 10 kJ/mol below Ea(forward)",
+      "The curve shape between the levels is schematic; only the three energy levels carry meaning"
+    ]
+  },
   "pedagogical": {
-    "teachingStrategy": "Interactive exploration",
-    "keyQuestions": [],
-    "commonMisconceptions": [],
-    "assessmentOpportunities": []
+    "teachingStrategy": "Labeled diagram with hover explanations and a click-to-identify quiz",
+    "keyQuestions": [
+      "From which level is each activation energy measured?",
+      "How can you tell from the diagram whether a reaction is exothermic or endothermic?",
+      "Why is the reverse barrier larger than the forward barrier for an exothermic reaction?"
+    ],
+    "commonMisconceptions": [
+      "Measuring activation energy from the bottom of the diagram instead of from the reactants",
+      "Confusing delta H with activation energy",
+      "Believing an exothermic reaction needs no activation energy"
+    ],
+    "assessmentOpportunities": [
+      "Built-in quiz reports the number of features identified on the first try"
+    ]
   },
   "chapter": "10-reaction-rates-and-rate-laws"
 }

@@ -78,11 +78,13 @@ nav:
     - Atomic Theory Timeline: sims/atomic-theory-timeline/index.md
     - Arrhenius Equation Explorer: sims/arrhenius-equation-explorer/index.md
     - Atomic Structure Diagram: sims/atomic-structure-diagram/index.md
+    - Back Titration Step-by-Step Diagram: sims/back-titration-diagram/index.md
     - Beer-Lambert Law Calibration Curve Builder: sims/beer-lambert-calibration/index.md
     - Buffer pH Interactive Calculator: sims/buffer-ph-calculator/index.md
     - Buffer System Visualizer: sims/buffer-visualizer/index.md
     - Catalyzed vs. Uncatalyzed Energy Profile: sims/catalysis-energy-profile/index.md
     - Combustion Analysis Flow Chart: sims/combustion-analysis-flowchart/index.md
+    - Dalton's Law Partial Pressure Infographic: sims/dalton-law-partial-pressure/index.md
     - Dimensional Analysis Practice: sims/dimensional-analysis-practice/index.md
     - Dissolution Equilibrium Visualizer: sims/dissolution-equilibrium-visualizer/index.md
     - Electrolysis Stoichiometry Calculator: sims/faraday-law-calculator/index.md
@@ -116,11 +118,16 @@ nav:
     - Nernst Equation Explorer: sims/nernst-equation-explorer/index.md
     - PES Spectrum Interactive Visualizer: sims/pes-spectrum-visualizer/index.md
     - Periodic Trends Explorer: sims/periodic-trends-explorer/index.md
+    - Phase Diagram Infographic: sims/phase-diagram-infographic/index.md
     - Precision vs Accuracy Target Diagram: sims/precision-accuracy/index.md
+    - Qualitative Analysis Flowchart: sims/qualitative-analysis-flowchart/index.md
+    - Reaction Energy Diagram: sims/reaction-energy-diagram/index.md
     - Reaction Type Classifier: sims/reaction-type-classifier/index.md
+    - Redox Half-Reaction Balancing Walkthrough: sims/redox-half-reaction-walkthrough/index.md
     - Resonance Structures Comparison Infographic: sims/resonance-structures-infographic/index.md
     - Scientific Method Workflow: sims/scientific-method/index.md
     - Sigma and Pi Bond Formation Visualization: sims/sigma-pi-bond-diagram/index.md
+    - Titration Curve Comparison: sims/titration-curve-comparison/index.md
     - Titration Curve Comparison Explorer: sims/titration-curve-explorer/index.md
     - VSEPR Molecular Geometry Builder: sims/vsepr-geometry-builder/index.md
     - Weak Acid ICE Solver: sims/weak-acid-ice-solver/index.md

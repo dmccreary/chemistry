@@ -25,6 +25,12 @@ Interactive Micro Simulations to help students learn AP Chemistry fundamentals.
 
     Interactive MicroSim showing protons, neutrons, and electron shells for elements Z=1–18. Adjust the atomic number slider to explore how subatomic particles define each element.
 
+-   **[Back Titration Step-by-Step Diagram](./back-titration-diagram/index.md)**
+
+    ![Back Titration Step-by-Step Diagram](./back-titration-diagram/back-titration-diagram.png)
+
+    Step through a back titration of an antacid tablet, from adding excess acid to titrating what is left over, with the subtraction calculation worked out.
+
 -   **[Beer-Lambert Law Calibration Curve Builder](./beer-lambert-calibration/index.md)**
 
     ![Beer-Lambert Law Calibration Curve Builder](./beer-lambert-calibration/beer-lambert-calibration.png)
@@ -54,6 +60,12 @@ Interactive Micro Simulations to help students learn AP Chemistry fundamentals.
     ![Combustion Analysis Flow Chart](./combustion-analysis-flowchart/combustion-analysis-flowchart.png)
 
     Step through the combustion analysis procedure on an interactive flowchart, with every calculation worked from lab data to the empirical and molecular formulas.
+
+-   **[Dalton's Law Partial Pressure Infographic](./dalton-law-partial-pressure/index.md)**
+
+    ![Dalton's Law Partial Pressure Infographic](./dalton-law-partial-pressure/dalton-law-partial-pressure.png)
+
+    Adjust the moles of three gases and the total pressure to see mole fractions, partial pressures, and particle pictures update together.
 
 -   **[Dimensional Analysis Practice](./dimensional-analysis-practice/index.md)**
 
@@ -253,17 +265,41 @@ Interactive Micro Simulations to help students learn AP Chemistry fundamentals.
 
     Visualize atomic radius, ionization energy, electron affinity, electronegativity, and Zeff across the periodic table.
 
+-   **[Phase Diagram Infographic](./phase-diagram-infographic/index.md)**
+
+    ![Phase Diagram Infographic](./phase-diagram-infographic/phase-diagram-infographic.png)
+
+    Probe the phase diagrams of water and carbon dioxide to find the phase at any temperature and pressure, and compare their triple points, critical points, and fusion curves.
+
 -   **[Precision vs Accuracy Target Diagram](./precision-accuracy/index.md)**
 
     ![Precision vs Accuracy Target Diagram](./precision-accuracy/precision-accuracy.png)
 
     Interactive visualization demonstrating the difference between precision (repeatability) and accuracy (correctness) in measurements using a target/dart analogy.
 
+-   **[Qualitative Analysis Flowchart](./qualitative-analysis-flowchart/index.md)**
+
+    ![Qualitative Analysis Flowchart](./qualitative-analysis-flowchart/qualitative-analysis-flowchart.png)
+
+    Step through the reagents that sort cations into five groups, or pick a cation and trace where it precipitates and why.
+
+-   **[Reaction Energy Diagram](./reaction-energy-diagram/index.md)**
+
+    ![Reaction Energy Diagram](./reaction-energy-diagram/reaction-energy-diagram.png)
+
+    Identify the reactants, products, transition state, activation energies, and enthalpy change on a reaction coordinate diagram, then test yourself with a click-to-identify quiz.
+
 -   **[Reaction Type Classifier](./reaction-type-classifier/index.md)**
 
     ![Reaction Type Classifier](./reaction-type-classifier/reaction-type-classifier.png)
 
     Practice classifying chemical equations into synthesis, decomposition, single replacement, double replacement, or combustion reactions with instant feedback.
+
+-   **[Redox Half-Reaction Balancing Walkthrough](./redox-half-reaction-walkthrough/index.md)**
+
+    ![Redox Half-Reaction Balancing Walkthrough](./redox-half-reaction-walkthrough/redox-half-reaction-walkthrough.png)
+
+    Step through the half-reaction method for four redox equations in acidic and basic solution, with atom and charge counters that turn green as each requirement is met.
 
 -   **[Resonance Structures Comparison Infographic](./resonance-structures-infographic/index.md)**
 
@@ -282,6 +318,12 @@ Interactive Micro Simulations to help students learn AP Chemistry fundamentals.
     ![Sigma and Pi Bond Formation Visualization](./sigma-pi-bond-diagram/sigma-pi-bond-diagram.png)
 
     Twist one atom to see why sigma bonds rotate freely and pi bonds do not, and count the sigma and pi bonds in single, double, and triple bonds.
+
+-   **[Titration Curve Comparison](./titration-curve-comparison/index.md)**
+
+    ![Titration Curve Comparison](./titration-curve-comparison/titration-curve-comparison.png)
+
+    Compare calculated titration curves for a strong acid and a weak acid side by side, with the equivalence point, buffer region, and indicator ranges marked.
 
 -   **[Titration Curve Comparison Explorer](./titration-curve-explorer/index.md)**
 

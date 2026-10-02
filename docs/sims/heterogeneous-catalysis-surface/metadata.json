@@ -1,0 +1,89 @@
+{
+  "title": "Heterogeneous Catalysis Surface Adsorption",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Step-through diagram of heterogeneous catalysis using the Haber process on an iron surface. Seven steps show adsorption, bond breaking, stepwise N-H bond formation, and desorption with atoms conserved, and a slider shows how cutting the same iron into smaller pieces increases the number of surface atoms that act as active sites.",
+  "date": "2026-10-02",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Heterogeneous Catalysis",
+    "learningObjectives": [
+      "Identify the adsorption, surface reaction, and desorption stages of heterogeneous catalysis",
+      "Explain why a catalyst is not consumed and why it lowers the activation energy",
+      "Explain why the surface area of a solid catalyst affects the reaction rate"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Activation energy",
+      "Effect of a catalyst on a reaction energy diagram",
+      "Covalent bonds and bond strength"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 5, Topic 5.11: Catalysis"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 630
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "button", "label": "Back", "description": "Moves back one step" },
+      { "type": "button", "label": "Next Step", "description": "Moves forward one step through the seven steps" },
+      { "type": "checkbox", "label": "Show Labels", "description": "Shows or hides the labels in the picture and the explanation of the step" },
+      { "type": "slider", "label": "Iron cut into pieces", "description": "Cuts a block of 144 iron atoms into 1, 4, 9, 16, or 36 pieces and counts the surface atoms" },
+      { "type": "click", "label": "Stage tabs", "description": "Clicking a stage tab jumps to the first step of that stage" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Step-through molecular diagram",
+    "equations": [
+      "N2(g) + 3 H2(g) = 2 NH3(g), iron catalyst",
+      "Surface atoms of a k by k piece = 4k - 4 (1 if k = 1)"
+    ],
+    "assumptions": [
+      "Schematic side view of the surface: atom sizes and positions are not to scale",
+      "The surface area panel is a two-dimensional cross-section of 12 by 12 atoms"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Step-through worked example with a hide-the-labels self-check",
+    "keyQuestions": [
+      "What happens to the bonds in the reactant molecules when they are adsorbed?",
+      "How can you tell from the picture that the catalyst is not consumed?",
+      "Why does a fine powder have more active sites than a solid block of the same mass?"
+    ],
+    "commonMisconceptions": [
+      "Believing the catalyst is used up or becomes part of the product",
+      "Believing a catalyst changes the enthalpy change or the equilibrium position",
+      "Believing every atom in a solid catalyst takes part, not only the surface atoms"
+    ],
+    "assessmentOpportunities": [
+      "With labels hidden, have students name the stage and describe the bonds breaking and forming in a chosen step"
+    ]
+  },
+  "chapter": "11-reaction-mechanisms-and-catalysis"
+}

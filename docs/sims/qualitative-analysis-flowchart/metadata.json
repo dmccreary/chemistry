@@ -1,0 +1,90 @@
+{
+  "title": "Qualitative Analysis Flowchart",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive Mermaid flowchart of the classical cation separation scheme. Students step through four precipitating reagents and five analytical groups, or choose one of 18 cations and trace where it precipitates, with net ionic equations and precipitate colors in a side panel.",
+  "date": "2026-10-02",
+  "type": "Interactive Workflow Diagram",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "canvasHeight": 760,
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Qualitative Analysis of Cations",
+    "learningObjectives": [
+      "Explain how a mixture of cations is separated into groups by adding precipitating reagents in a fixed order",
+      "Classify a cation into its analytical group and predict the precipitate it forms",
+      "Explain why the order of the reagents matters"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Solubility rules",
+      "Precipitation reactions",
+      "Net ionic equations"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 4: Chemical Reactions (net ionic equations, precipitation)"
+    ]
+  },
+  "technical": {
+    "framework": "Mermaid",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 760
+    },
+    "responsive": true,
+    "dependencies": [
+      "Mermaid 11"
+    ],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": true
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "select", "label": "Trace a cation", "description": "Chooses one of 18 cations to follow through the scheme, or None to show every step" },
+      { "type": "button", "label": "Previous", "description": "Moves back one box along the current path" },
+      { "type": "button", "label": "Next", "description": "Moves forward one box along the current path" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Decision scheme",
+    "equations": [
+      "Ag+ + Cl- = AgCl(s)",
+      "Cu2+ + H2S = CuS(s) + 2H+",
+      "Al3+ + 3NH3 + 3H2O = Al(OH)3(s) + 3NH4+",
+      "Ba2+ + CO3^2- = BaCO3(s)"
+    ],
+    "assumptions": [
+      "Groups and ions are those listed in the chapter text",
+      "Separations are treated as complete; in practice some PbCl2 stays dissolved and carries into Group II"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Step-through flowchart with trace-one-ion prediction",
+    "keyQuestions": [
+      "Which anion does the precipitating at each step?",
+      "Why must the chlorides be removed before sulfide is added?",
+      "Why is ammonium tested on a fresh sample?"
+    ],
+    "commonMisconceptions": [
+      "Believing the reagents can be added in any order",
+      "Believing a white precipitate identifies a single ion",
+      "Forgetting that ions not precipitated remain in the filtrate"
+    ],
+    "assessmentOpportunities": [
+      "Give a set of observations and have students identify the ion and write the net ionic equation"
+    ]
+  },
+  "chapter": "09-stoichiometry-titrations-and-analysis"
+}

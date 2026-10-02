@@ -115,6 +115,8 @@ Flame tests are qualitative, not quantitative. They confirm the presence of an i
 
 #### Diagram: Qualitative Analysis Flowchart
 
+<iframe src="../../sims/qualitative-analysis-flowchart/main.html" width="100%" height="762px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Qualitative Analysis Flowchart — Cation Group Separation</summary>
 Type: infographic / flowchart
@@ -269,6 +271,8 @@ Step 5 — Mass of pure CaCO₃:
 $$ m_{CaCO_3} = 0.01000 \times 100.09 = 1.0009 \text{ g} $$
 
 #### Diagram: Back Titration Step-by-Step Diagram
+
+<iframe src="../../sims/back-titration-diagram/main.html" width="100%" height="582px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Back Titration Procedure — Step-by-Step Visual</summary>

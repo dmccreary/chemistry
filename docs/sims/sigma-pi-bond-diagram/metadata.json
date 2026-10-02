@@ -1,0 +1,88 @@
+{
+  "title": "Sigma and Pi Bond Formation Visualization",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive side-by-side comparison of sigma (end-on) and pi (side-by-side) orbital overlap, each with a side view and a view along the internuclear axis. A twist slider shows that sigma overlap is unchanged by rotation while pi overlap falls to zero at 90 degrees. Cards count the sigma and pi bonds in single, double, and triple bonds.",
+  "date": "2026-10-02",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Sigma and Pi Bonds",
+    "learningObjectives": [
+      "Distinguish sigma and pi bonds by their orbital overlap patterns",
+      "Explain why pi bonds restrict molecular rotation",
+      "Count sigma and pi bonds in single, double, and triple bonds"
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Atomic and hybrid orbitals",
+      "Lewis structures with multiple bonds"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 2, Topic 2.7: VSEPR and Hybridization"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 570
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "slider", "label": "Twist angle", "description": "Rotates atom 2 about the internuclear axis from 0 to 90 degrees; switched off for the triple bond" },
+      { "type": "select", "label": "Bond type", "description": "Single, double, or triple bond" },
+      { "type": "canvas click", "label": "Bond cards", "description": "Clicking a card selects that bond type" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Conceptual diagram",
+    "equations": [
+      "pi overlap is proportional to cos(twist angle)",
+      "single = 1 sigma; double = 1 sigma + 1 pi; triple = 1 sigma + 2 pi"
+    ],
+    "assumptions": [
+      "Orbital lobes are schematic outlines, not calculated electron densities",
+      "Orbital phases (signs) are not shown; color identifies the atom",
+      "The twist test is shown for the double bond only"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Side-by-side comparison with a predict-then-test parameter slider",
+    "keyQuestions": [
+      "Where is the electron density of a sigma bond? Of a pi bond?",
+      "Why can a single bond rotate while a double bond cannot?",
+      "How many sigma and pi bonds are in ethene?"
+    ],
+    "commonMisconceptions": [
+      "A double bond is two identical bonds",
+      "A pi bond is two bonds because it has two lobes",
+      "Pi bonds can form without a sigma bond"
+    ],
+    "assessmentOpportunities": [
+      "Students predict the overlap at 90 degrees before moving the slider",
+      "Students count sigma and pi bonds in ethane, ethene, and ethyne"
+    ]
+  },
+  "chapter": "05-molecular-geometry-and-polarity"
+}

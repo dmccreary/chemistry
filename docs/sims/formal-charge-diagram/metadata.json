@@ -1,0 +1,88 @@
+{
+  "title": "Formal Charge Calculator Infographic",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive formal charge calculator. Selecting an atom in a Lewis structure highlights its lone pairs and bonds, shows V, N, and B in color-coded boxes, substitutes them into FC = V - N - B/2, and tracks the formal charge of every atom so the sum can be checked against the charge on the species.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Formal Charge",
+    "learningObjectives": [
+      "Calculate formal charges on individual atoms in a Lewis structure using FC = V - N - B/2",
+      "Use formal charge analysis to identify the better Lewis structure for a molecule or ion"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Lewis structures",
+      "Valence electrons",
+      "Octet rule and its exceptions"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 2, Topic 2.6: Resonance and Formal Charge"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 540
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "select", "label": "Structure", "description": "Chooses one of eight Lewis structures, including paired candidate structures for carbon dioxide and the sulfate ion" },
+      { "type": "button", "label": "Previous Atom", "description": "Selects the previous atom in the structure" },
+      { "type": "button", "label": "Next Atom", "description": "Selects the next atom and reveals its formal charge" },
+      { "type": "checkbox", "label": "Show all charges", "description": "Reveals the formal charge of every atom at once" },
+      { "type": "canvas click", "label": "Atoms", "description": "Click an atom to select it" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Calculator",
+    "equations": [
+      "FC = V - N - B/2",
+      "sum of formal charges = charge on the species"
+    ],
+    "assumptions": [
+      "Bonding electrons are divided equally between the bonded atoms",
+      "Structures are drawn flat; bond angles are schematic"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Worked example with predict-then-check, followed by comparison of candidate structures",
+    "keyQuestions": [
+      "Which electrons count toward N and which toward B?",
+      "Why must the formal charges add up to the charge on the species?",
+      "Which carbon dioxide structure is better, and which rule tells you?"
+    ],
+    "commonMisconceptions": [
+      "Counting lone pairs instead of lone pair electrons for N",
+      "Counting bonds instead of bonding electrons for B, then dividing by 2 anyway",
+      "Treating formal charge as the real charge on an atom"
+    ],
+    "assessmentOpportunities": [
+      "Students predict each atom's formal charge on paper before selecting it"
+    ]
+  },
+  "chapter": "04-chemical-bonding-and-lewis-structures"
+}

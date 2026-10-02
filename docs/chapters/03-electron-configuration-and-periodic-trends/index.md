@@ -197,6 +197,8 @@ This equation tells us that high-frequency (short-wavelength) radiation carries 
 
 #### Diagram: Electromagnetic Spectrum Infographic
 
+<iframe src="../../sims/em-spectrum-infographic/main.html" width="100%" height="642px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Electromagnetic Spectrum with Energy, Wavelength, and Frequency Scale</summary>
 Type: Infographic

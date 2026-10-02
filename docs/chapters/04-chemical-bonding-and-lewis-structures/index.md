@@ -314,6 +314,8 @@ Key rules for drawing resonance structures:
 
 #### Diagram: Resonance Structures Comparison Infographic
 
+<iframe src="../../sims/resonance-structures-infographic/main.html" width="100%" height="606px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Resonance Structures Infographic (Static Diagram Specification)</summary>
 Type: Infographic
@@ -398,6 +400,8 @@ Consider the two possible Lewis structures for carbon monoxide (CO):
 Structure A is preferred despite the counterintuitive result that carbon carries the negative charge — because the formal charges are smaller in magnitude in Structure A, satisfying rule 2. This example illustrates that formal charge is a bookkeeping tool, not a statement about actual charge distribution, which is better described by partial charges derived from electronegativity differences.
 
 #### Diagram: Formal Charge Calculator Infographic
+
+<iframe src="../../sims/formal-charge-diagram/main.html" width="100%" height="542px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Formal Charge Step-by-Step Diagram</summary>

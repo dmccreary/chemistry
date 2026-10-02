@@ -1,0 +1,212 @@
+/* Combustion Analysis Flow Chart - Mermaid MicroSim stylesheet
+   Layout: flowchart on the left, step-by-step worked example on the right.
+   No inner scrolling regions, so the page scroll is never captured. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid silver;
+}
+
+/* Left: Mermaid diagram on the standard aliceblue drawing background */
+.diagram-panel {
+    width: 56%;
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 8px 6px 8px;
+    overflow: hidden;
+}
+
+.sim-title {
+    font-size: 22px;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.mermaid {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mermaid svg {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
+/* Right: worked example panel on a white background */
+.info-panel {
+    width: 44%;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid silver;
+    padding: 10px 12px;
+    overflow: hidden;
+    font-size: 15px;
+    color: #222;
+}
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid #555;
+    display: inline-block;
+}
+
+.legend-dot.measure { background: #bbdefb; }
+.legend-dot.calc { background: #ffe0b2; }
+.legend-dot.result { background: #a5d6a7; }
+
+.control-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.control-row label {
+    font-size: 15px;
+}
+
+select, button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 3px 8px;
+}
+
+select {
+    flex: 1;
+    min-width: 0;
+}
+
+.given-data {
+    font-size: 14px;
+    line-height: 1.45;
+    background: #f4f6f8;
+    border: 1px solid #d5dbe1;
+    border-radius: 6px;
+    padding: 6px 8px;
+    margin-bottom: 10px;
+}
+
+.stepper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px 6px;
+}
+
+#stepCounter {
+    font-size: 14px;
+    color: #444;
+    white-space: nowrap;
+}
+
+.info-title {
+    font-size: 17px;
+    font-weight: bold;
+    color: #1a4f8b;
+    margin: 6px 0 6px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #1a4f8b;
+}
+
+.info-content {
+    font-size: 14.5px;
+    line-height: 1.45;
+    color: #222;
+}
+
+.info-content p {
+    margin-bottom: 7px;
+}
+
+.calc-line {
+    font-size: 14.5px;
+    background: #fff8e1;
+    border-left: 4px solid #e69500;
+    padding: 4px 8px;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.calc-line.answer {
+    background: #e8f5e9;
+    border-left-color: #2e7d32;
+    font-weight: bold;
+}
+
+.calc-line.check {
+    background: #e3f2fd;
+    border-left-color: #1a4f8b;
+}
+
+/* Node interaction styling */
+.node {
+    cursor: pointer;
+}
+
+.node:hover rect {
+    filter: brightness(1.06);
+}
+
+.datum {
+    display: inline-block;
+    white-space: nowrap;
+    margin-right: 10px;
+}
+
+/* Narrow screens: give the worked example a little more room and shrink type */
+@media (max-width: 560px) {
+    .diagram-panel { width: 50%; }
+    .info-panel { width: 50%; padding: 8px; font-size: 13px; }
+    .sim-title { font-size: 16px; }
+    .info-title { font-size: 14px; }
+    .info-content, .calc-line, .given-data { font-size: 12.5px; }
+    .control-row label, select, button { font-size: 13px; }
+    #stepCounter { font-size: 12px; }
+    button { padding: 3px 5px; }
+}

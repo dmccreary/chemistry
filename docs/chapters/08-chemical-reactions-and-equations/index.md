@@ -449,6 +449,8 @@ A **titration curve** is a graph of solution pH (y-axis) versus volume of titran
 
 #### Diagram: Titration Curve Infographic
 
+<iframe src="../../sims/titration-curve-comparison/main.html" width="100%" height="542px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Titration Curve Comparison Infographic</summary>
 Type: Infographic / Diagram
@@ -634,6 +636,8 @@ For reactions that occur in basic (alkaline) solution, follow the same steps as 
 This procedure converts all H\(^+\) ions to water while maintaining balance, yielding a net ionic equation appropriate for basic conditions.
 
 #### Diagram: Redox Half-Reaction Balancing Walkthrough
+
+<iframe src="../../sims/redox-half-reaction-walkthrough/main.html" width="100%" height="502px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Redox Half-Reaction Balancing Interactive Walkthrough</summary>

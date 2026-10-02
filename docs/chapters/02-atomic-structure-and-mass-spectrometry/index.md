@@ -253,6 +253,8 @@ The diagram below summarizes the conversion relationships. Treat it as a triangl
 
 #### Diagram: Mole Concept Conversion Triangle
 
+<iframe src="../../sims/mole-conversion-triangle/main.html" width="100%" height="582px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Mole Concept Conversion Infographic</summary>
 Type: diagram-specification
@@ -472,6 +474,8 @@ $$
 This empirical formula is consistent with several compounds, including formaldehyde (\(M \approx 30\) g/mol), glycolaldehyde (\(M \approx 60\) g/mol), and glucose (\(M \approx 180\) g/mol). The molecular formula can be determined once the molar mass is known — which is where mass spectrometry plays a critical complementary role.
 
 #### Diagram: Combustion Analysis Flow Chart
+
+<iframe src="../../sims/combustion-analysis-flowchart/main.html" width="100%" height="702px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Combustion Analysis Workflow Diagram</summary>

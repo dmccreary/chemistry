@@ -1,0 +1,90 @@
+{
+  "title": "Combustion Analysis Flow Chart",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive Mermaid flowchart of the combustion analysis procedure. Students step through ten boxes, from weighing the sample to the empirical formula, while a side panel works each calculation for the selected lab data and checks the result against a molar mass.",
+  "date": "2026-10-01",
+  "type": "Interactive Workflow Diagram",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "canvasHeight": 700,
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Combustion Analysis and Empirical Formulas",
+    "learningObjectives": [
+      "Construct the step-by-step procedure for a combustion analysis problem",
+      "Evaluate whether a calculated empirical formula is consistent with a given molar mass"
+    ],
+    "bloomsTaxonomy": "Evaluate",
+    "duration": "15-20 minutes",
+    "prerequisites": [
+      "Mole calculations",
+      "Percent composition",
+      "Empirical and molecular formulas"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 1: Atomic Structure and Properties (moles, molar mass, elemental composition of pure substances)"
+    ]
+  },
+  "technical": {
+    "framework": "Mermaid",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 700
+    },
+    "responsive": true,
+    "dependencies": [
+      "Mermaid 11"
+    ],
+    "accessibility": {
+      "hasAltText": false,
+      "keyboardNavigable": true
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "select", "label": "Sample", "description": "Chooses one of three sets of combustion data" },
+      { "type": "button", "label": "Previous", "description": "Moves back one step in the flowchart" },
+      { "type": "button", "label": "Next", "description": "Moves forward one step and reveals its calculation" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Worked calculation",
+    "equations": [
+      "m_C = m_CO2 x (12.011 / 44.009)",
+      "m_H = m_H2O x (2.016 / 18.015)",
+      "m_O = m_sample - m_C - m_H",
+      "n = m / M"
+    ],
+    "assumptions": [
+      "The compound contains only C, H, and O",
+      "Combustion is complete, so all C becomes CO2 and all H becomes H2O",
+      "Each value is rounded to four significant figures before the next step"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Step-through worked example with predict-then-check",
+    "keyQuestions": [
+      "Why is the mass of oxygen found by subtraction?",
+      "Why does each mole of water account for two moles of hydrogen atoms?",
+      "What do you do when a mole ratio is not close to a whole number?"
+    ],
+    "commonMisconceptions": [
+      "Using 1.008 g instead of 2.016 g of hydrogen per mole of water",
+      "Trying to find oxygen from the oxygen in the carbon dioxide and water",
+      "Rounding a ratio such as 1.33 to 1 instead of multiplying all ratios by 3"
+    ],
+    "assessmentOpportunities": [
+      "Have students work Sample C on paper and use the MicroSim only to check the final formulas"
+    ]
+  },
+  "chapter": "02-atomic-structure-and-mass-spectrometry"
+}

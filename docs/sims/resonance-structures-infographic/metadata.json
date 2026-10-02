@@ -1,0 +1,89 @@
+{
+  "title": "Resonance Structures Comparison Infographic",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive side-by-side comparison of the resonance structures of ozone, the nitrate ion, benzene, and the cyanate ion with their resonance hybrid. Pointing at an atom shows its formal charge calculation; pointing at a hybrid bond shows its averaged bond order.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Resonance Structures and the Resonance Hybrid",
+    "learningObjectives": [
+      "Explain what resonance structures represent and distinguish them from the resonance hybrid",
+      "Identify which resonance structures contribute more to the hybrid based on formal charge minimization"
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "15 minutes",
+    "prerequisites": [
+      "Lewis structures",
+      "Valence electrons",
+      "Octet rule"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 2, Topic 2.6: Resonance and Formal Charge"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 604
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "select", "label": "Species", "description": "Chooses ozone, the nitrate ion, benzene, or the cyanate ion" },
+      { "type": "checkbox", "label": "Formal charges", "description": "Shows or hides the formal charge labels" },
+      { "type": "checkbox", "label": "Hybrid and ranking", "description": "Shows or hides the resonance hybrid and the contributor ranking, for predict-then-check use" },
+      { "type": "canvas hover", "label": "Atoms and hybrid bonds", "description": "Pointing at or tapping an atom or a hybrid bond shows its formal charge or bond order calculation" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Structural diagram",
+    "equations": [
+      "FC = V - N - B/2",
+      "hybrid bond order = sum of bond orders / number of equivalent structures"
+    ],
+    "assumptions": [
+      "Equivalent structures contribute equally to the hybrid",
+      "For the cyanate ion the contributors are ranked qualitatively by formal charge rules; no numerical weights are assigned",
+      "Structures are drawn flat; bond angles are schematic"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Side-by-side comparison with hover-to-reveal calculations and predict-then-check",
+    "keyQuestions": [
+      "What is the same in every resonance structure of a species, and what is different?",
+      "Why are both oxygen-oxygen bonds in ozone the same length?",
+      "Which cyanate structure contributes most to the hybrid, and why?"
+    ],
+    "commonMisconceptions": [
+      "The molecule flips rapidly between its resonance structures",
+      "Resonance structures are different molecules or isomers",
+      "Atoms move from one resonance structure to the next"
+    ],
+    "assessmentOpportunities": [
+      "Students calculate formal charges with the labels hidden, then reveal them to check",
+      "Students predict the hybrid bond order before revealing the hybrid"
+    ]
+  },
+  "chapter": "04-chemical-bonding-and-lewis-structures"
+}

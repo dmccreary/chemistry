@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Combustion Analysis Flow Chart using Mermaid</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            fontFamily: 'Arial, Helvetica, sans-serif',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                rankSpacing: 26,
+                nodeSpacing: 28,
+                padding: 10
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <div class="container">
+        <div class="diagram-panel">
+            <h1 class="sim-title">Combustion Analysis Flow Chart</h1>
+            <div class="mermaid">
+flowchart TD
+    Weigh["Weigh organic sample (g)"]:::measure
+    Burn["Burn in excess O<sub>2</sub>"]:::measure
+    AbsH2O["Absorb H<sub>2</sub>O<br/>record mass gain"]:::measure
+    AbsCO2["Absorb CO<sub>2</sub><br/>record mass gain"]:::measure
+    MassH["Calculate mass of H<br/>from H<sub>2</sub>O"]:::calc
+    MassC["Calculate mass of C<br/>from CO<sub>2</sub>"]:::calc
+    MassO["Calculate mass of O<br/>by subtraction"]:::calc
+    Moles["Convert masses to moles"]:::calc
+    Ratio["Divide by smallest<br/>mole value"]:::calc
+    EF("Empirical Formula"):::result
+
+    Weigh --> Burn
+    Burn --> AbsH2O
+    Burn --> AbsCO2
+    AbsH2O --> MassH
+    AbsCO2 --> MassC
+    MassH --> MassO
+    MassC --> MassO
+    MassO --> Moles
+    Moles --> Ratio
+    Ratio --> EF
+
+    classDef measure fill:#bbdefb,stroke:#1a4f8b,stroke-width:2px,color:#102a43,font-size:16px
+    classDef calc fill:#ffe0b2,stroke:#b35c00,stroke-width:2px,color:#3d2400,font-size:16px
+    classDef result fill:#a5d6a7,stroke:#1b5e20,stroke-width:2px,color:#0b3d0f,font-size:16px
+
+    linkStyle default stroke:#666,stroke-width:2px
+            </div>
+        </div>
+        <div class="info-panel">
+            <div class="legend" aria-label="Color key">
+                <span class="legend-item"><span class="legend-dot measure"></span>Measure</span>
+                <span class="legend-item"><span class="legend-dot calc"></span>Calculate</span>
+                <span class="legend-item"><span class="legend-dot result"></span>Result</span>
+            </div>
+            <div class="control-row">
+                <label for="sampleSelect">Sample:</label>
+                <select id="sampleSelect"></select>
+            </div>
+            <div id="given-data" class="given-data"></div>
+            <div class="control-row stepper">
+                <button id="prevBtn" type="button">Previous</button>
+                <span id="stepCounter">Step 1 of 10</span>
+                <button id="nextBtn" type="button">Next</button>
+            </div>
+            <div id="info-display" aria-live="polite"></div>
+        </div>
+    </div>
+    </main>
+    <script src="combustion-analysis-flowchart.js"></script>
+</body>
+</html>

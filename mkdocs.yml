@@ -82,12 +82,16 @@ nav:
     - Buffer pH Interactive Calculator: sims/buffer-ph-calculator/index.md
     - Buffer System Visualizer: sims/buffer-visualizer/index.md
     - Catalyzed vs. Uncatalyzed Energy Profile: sims/catalysis-energy-profile/index.md
+    - Combustion Analysis Flow Chart: sims/combustion-analysis-flowchart/index.md
     - Dimensional Analysis Practice: sims/dimensional-analysis-practice/index.md
     - Dissolution Equilibrium Visualizer: sims/dissolution-equilibrium-visualizer/index.md
     - Electrolysis Stoichiometry Calculator: sims/faraday-law-calculator/index.md
+    - Electromagnetic Spectrum Infographic: sims/em-spectrum-infographic/index.md
+    - Formal Charge Calculator Infographic: sims/formal-charge-diagram/index.md
     - Galvanic Cell Visualizer: sims/galvanic-cell-visualizer/index.md
     - Gibbs Free Energy Spontaneity Explorer: sims/gibbs-free-energy-explorer/index.md
     - Hess's Law Pathway Visualizer: sims/hess-law-visualizer/index.md
+    - Hybridization Orbital Mixing Diagram: sims/hybridization-diagram/index.md
     - ICE Table Interactive Solver: sims/ice-table-solver/index.md
     - Ideal Gas Law Interactive Simulator: sims/ideal-gas-law-simulator/index.md
     - IMF Strength Explorer: sims/imf-strength-explorer/index.md
@@ -108,12 +112,15 @@ nav:
     - Mechanism Step Explorer: sims/mechanism-step-explorer/index.md
     - Microstate Visualizer: sims/microstate-visualizer/index.md
     - MO Energy Diagram Explorer: sims/mo-energy-diagram/index.md
+    - Mole Concept Conversion Triangle: sims/mole-conversion-triangle/index.md
     - Nernst Equation Explorer: sims/nernst-equation-explorer/index.md
     - PES Spectrum Interactive Visualizer: sims/pes-spectrum-visualizer/index.md
     - Periodic Trends Explorer: sims/periodic-trends-explorer/index.md
     - Precision vs Accuracy Target Diagram: sims/precision-accuracy/index.md
     - Reaction Type Classifier: sims/reaction-type-classifier/index.md
+    - Resonance Structures Comparison Infographic: sims/resonance-structures-infographic/index.md
     - Scientific Method Workflow: sims/scientific-method/index.md
+    - Sigma and Pi Bond Formation Visualization: sims/sigma-pi-bond-diagram/index.md
     - Titration Curve Comparison Explorer: sims/titration-curve-explorer/index.md
     - VSEPR Molecular Geometry Builder: sims/vsepr-geometry-builder/index.md
     - Weak Acid ICE Solver: sims/weak-acid-ice-solver/index.md

@@ -1,0 +1,87 @@
+{
+  "title": "Dalton's Law Partial Pressure Infographic",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive infographic for Dalton's law of partial pressures. Sliders set the moles of three gases and the total pressure; flask pictures, a pie chart of mole fractions, and a table of moles, mole fractions, and partial pressures update together.",
+  "date": "2026-10-02",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Dalton's Law of Partial Pressures",
+    "learningObjectives": [
+      "Calculate the mole fraction and partial pressure of each gas in a mixture",
+      "Verify that the partial pressures of the gases in a mixture add up to the total pressure"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "The mole",
+      "Ideal gas law",
+      "Pressure units"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 3, Topic 3.4: Ideal Gas Law (partial pressures and mole fractions)"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 560
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "slider", "label": "Gas A", "description": "Moles of gas A, 0.5 to 3.0 mol in steps of 0.1" },
+      { "type": "slider", "label": "Gas B", "description": "Moles of gas B, 0.5 to 3.0 mol in steps of 0.1" },
+      { "type": "slider", "label": "Gas C", "description": "Moles of gas C, 0.5 to 3.0 mol in steps of 0.1" },
+      { "type": "slider", "label": "Total P", "description": "Total pressure of the mixture, 0.50 to 2.00 atm in steps of 0.05" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Calculator",
+    "equations": [
+      "chi_i = n_i / n_total",
+      "P_i = chi_i x P_total",
+      "P_total = P_A + P_B + P_C"
+    ],
+    "assumptions": [
+      "Ideal gases that do not react with one another",
+      "All four flasks have the same volume and temperature, so dot count is proportional to pressure (40 dots per atm)"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Parameter exploration with predict-then-check practice",
+    "keyQuestions": [
+      "How is the mixture flask related to the three single-gas flasks?",
+      "Why does adding more of gas A lower the partial pressures of B and C when the total pressure is held constant?"
+    ],
+    "commonMisconceptions": [
+      "Believing heavier or larger gas molecules exert a larger share of the pressure",
+      "Confusing mole fraction with partial pressure when the total pressure is not 1 atm",
+      "Forgetting that mole fractions must add up to 1"
+    ],
+    "assessmentOpportunities": [
+      "Have students calculate mole fractions and partial pressures on paper, then verify with the MicroSim"
+    ]
+  },
+  "chapter": "06-intermolecular-forces-and-states-of-matter"
+}

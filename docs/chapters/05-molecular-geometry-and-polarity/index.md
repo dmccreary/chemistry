@@ -255,6 +255,8 @@ The table below summarizes the three main hybridization types:
 
 #### Diagram: Hybridization Orbital Mixing Diagram
 
+<iframe src="../../sims/hybridization-diagram/main.html" width="100%" height="577px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>sp / sp² / sp³ Orbital Hybridization Visualizer</summary>
 Type: Infographic / Interactive Diagram
@@ -296,6 +298,8 @@ Key differences between sigma and pi bonds:
 The restriction on rotation imposed by pi bonds has enormous consequences in organic chemistry. The carbon-carbon double bond in alkenes creates geometric (cis-trans) isomers, and the rigidity of pi bonds in aromatic rings like benzene gives them their distinctive planar structure and chemical stability.
 
 #### Diagram: Sigma and Pi Bond Formation Visualization
+
+<iframe src="../../sims/sigma-pi-bond-diagram/main.html" width="100%" height="572px" scrolling="no"></iframe>
 
 <details markdown="1">
 <summary>Sigma and Pi Bond Orbital Overlap Diagram</summary>

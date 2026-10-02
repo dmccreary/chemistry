@@ -204,6 +204,8 @@ The three boundary curves in a phase diagram are:
 
 #### Diagram: Phase Diagram Infographic — Labeled Regions and Special Points
 
+<iframe src="../../sims/phase-diagram-infographic/main.html" width="100%" height="564px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Phase Diagram Infographic — Water and Carbon Dioxide Compared</summary>
 Type: Infographic / Static Diagram

@@ -49,6 +49,12 @@ Interactive Micro Simulations to help students learn AP Chemistry fundamentals.
 
     Compare activation energies for catalyzed and uncatalyzed pathways with adjustable catalyst strength, enthalpy, and intermediate visualization.
 
+-   **[Combustion Analysis Flow Chart](./combustion-analysis-flowchart/index.md)**
+
+    ![Combustion Analysis Flow Chart](./combustion-analysis-flowchart/combustion-analysis-flowchart.png)
+
+    Step through the combustion analysis procedure on an interactive flowchart, with every calculation worked from lab data to the empirical and molecular formulas.
+
 -   **[Dimensional Analysis Practice](./dimensional-analysis-practice/index.md)**
 
     ![Dimensional Analysis Practice](./dimensional-analysis-practice/dimensional-analysis-practice.png)
@@ -67,6 +73,18 @@ Interactive Micro Simulations to help students learn AP Chemistry fundamentals.
 
     Use Faraday's law to solve for deposited mass, time, or current in electrolytic systems with step-by-step visuals.
 
+-   **[Electromagnetic Spectrum Infographic](./em-spectrum-infographic/index.md)**
+
+    ![Electromagnetic Spectrum Infographic](./em-spectrum-infographic/em-spectrum-infographic.png)
+
+    Move a marker from radio waves to gamma rays to compare wavelength, frequency, and photon energy and see how each region interacts with matter.
+
+-   **[Formal Charge Calculator Infographic](./formal-charge-diagram/index.md)**
+
+    ![Formal Charge Calculator Infographic](./formal-charge-diagram/formal-charge-diagram.png)
+
+    Select any atom in a Lewis structure to see its valence, nonbonding, and bonding electrons substituted into the formal charge equation.
+
 -   **[Galvanic Cell Visualizer](./galvanic-cell-visualizer/index.md)**
 
     ![Galvanic Cell Visualizer](./galvanic-cell-visualizer/galvanic-cell-visualizer.png)
@@ -84,6 +102,12 @@ Interactive Micro Simulations to help students learn AP Chemistry fundamentals.
     ![Hess's Law Pathway Visualizer](./hess-law-visualizer/hess-law-visualizer.png)
 
     Compare direct and multi-step reaction pathways to see that total enthalpy change is path independent.
+
+-   **[Hybridization Orbital Mixing Diagram](./hybridization-diagram/index.md)**
+
+    ![Hybridization Orbital Mixing Diagram](./hybridization-diagram/hybridization-diagram.png)
+
+    Compare sp, sp², and sp³ hybridization side by side, then practice finding the hybridization of a central atom from its electron groups.
 
 -   **[ICE Table Interactive Solver](./ice-table-solver/index.md)**
 
@@ -205,6 +229,12 @@ Interactive Micro Simulations to help students learn AP Chemistry fundamentals.
 
     Build MO energy diagrams for diatomic molecules, compute bond order, and analyze magnetism.
 
+-   **[Mole Concept Conversion Triangle](./mole-conversion-triangle/index.md)**
+
+    ![Mole Concept Conversion Triangle](./mole-conversion-triangle/mole-conversion-triangle.png)
+
+    Convert between mass, moles, and number of particles for a chosen substance and follow the worked solution step by step.
+
 -   **[Nernst Equation Explorer](./nernst-equation-explorer/index.md)**
 
     ![Nernst Equation Explorer](./nernst-equation-explorer/nernst-equation-explorer.png)
@@ -235,11 +265,23 @@ Interactive Micro Simulations to help students learn AP Chemistry fundamentals.
 
     Practice classifying chemical equations into synthesis, decomposition, single replacement, double replacement, or combustion reactions with instant feedback.
 
+-   **[Resonance Structures Comparison Infographic](./resonance-structures-infographic/index.md)**
+
+    ![Resonance Structures Comparison Infographic](./resonance-structures-infographic/resonance-structures-infographic.png)
+
+    Compare the resonance structures of ozone, nitrate, benzene, and cyanate with their resonance hybrid, with formal charge and bond order calculations on hover.
+
 -   **[Scientific Method Workflow](./scientific-method/index.md)**
 
     ![Scientific Method Workflow](./scientific-method/scientific-method.png)
 
     Interactive flowchart visualizing each step of the scientific method, from observation and hypothesis formation to experimentation and conclusion.
+
+-   **[Sigma and Pi Bond Formation Visualization](./sigma-pi-bond-diagram/index.md)**
+
+    ![Sigma and Pi Bond Formation Visualization](./sigma-pi-bond-diagram/sigma-pi-bond-diagram.png)
+
+    Twist one atom to see why sigma bonds rotate freely and pi bonds do not, and count the sigma and pi bonds in single, double, and triple bonds.
 
 -   **[Titration Curve Comparison Explorer](./titration-curve-explorer/index.md)**
 

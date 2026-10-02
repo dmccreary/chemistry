@@ -1,0 +1,89 @@
+{
+  "title": "Phase Diagram Infographic",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive pressure-temperature phase diagrams of water and carbon dioxide, side by side or overlaid, with labeled regions, triple and critical points, zoom insets showing the slope of each solid-liquid curve, and a movable probe that reports the phase of each substance.",
+  "date": "2026-10-02",
+  "type": "Interactive Diagram",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Phase Diagrams",
+    "learningObjectives": [
+      "Locate and interpret the triple point, critical point, and phase regions on a phase diagram",
+      "Classify the phase of a substance at a given temperature and pressure",
+      "Explain how the slope of water's solid-liquid boundary differs from that of most substances"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Phase changes",
+      "Vapor pressure",
+      "Logarithmic scales"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 3: Intermolecular Forces and Properties (properties of solids, liquids, and gases)"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 562
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "canvas", "label": "Probe", "description": "Click or drag on a diagram to set the temperature and pressure; the probe snaps to curves and marked points" },
+      { "type": "button", "label": "Overlay Both Diagrams", "description": "Toggles between side by side diagrams and both substances on one set of axes" },
+      { "type": "select", "label": "Jump to", "description": "Moves the probe to a notable point such as room conditions or a triple point" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Calculated phase boundaries",
+    "equations": [
+      "Water liquid-gas: Wagner and Pruss saturation-pressure equation (IAPWS-95)",
+      "Water solid-gas and solid-liquid: IAPWS 2011 sublimation and melting pressure equations for ice Ih",
+      "Carbon dioxide: Span and Wagner (1996) vapor-pressure, sublimation-pressure, and melting-pressure equations"
+    ],
+    "assumptions": [
+      "Pure substances at equilibrium",
+      "Only ice Ih is shown for water; the pressure axis stops near 2000 atm",
+      "Pressure axis is logarithmic; zoom insets use a linear pressure axis"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Probe-and-classify exploration with side by side comparison",
+    "keyQuestions": [
+      "Why does dry ice sublime instead of melting at atmospheric pressure?",
+      "What does increasing the pressure do to the melting point of ice, and why is that unusual?",
+      "What happens to the difference between liquid and gas beyond the critical point?"
+    ],
+    "commonMisconceptions": [
+      "Believing every substance has a liquid phase at 1 atm",
+      "Believing higher pressure always raises the melting point",
+      "Treating the critical point as a third boundary rather than the end of the liquid-gas curve"
+    ],
+    "assessmentOpportunities": [
+      "Have students predict the phase of each substance at a stated temperature and pressure, then check with the probe"
+    ]
+  },
+  "chapter": "07-phase-changes-solutions-and-gas-laws"
+}

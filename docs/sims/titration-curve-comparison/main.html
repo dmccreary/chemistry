@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Titration Curve Comparison using Chart.js</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <div class="container">
+        <div class="draw-panel">
+            <h1 class="sim-title">Comparing Strong and Weak Acid Titration Curves</h1>
+            <div class="chart-row" id="chartRow">
+                <div class="chart-card" id="cardStrong">
+                    <canvas id="chartStrong" role="img" aria-label="Titration curve of 25.0 mL of 0.100 M hydrochloric acid with 0.100 M sodium hydroxide"></canvas>
+                </div>
+                <div class="chart-card" id="cardWeak">
+                    <canvas id="chartWeak" role="img" aria-label="Titration curve of 25.0 mL of 0.100 M acetic acid with 0.100 M sodium hydroxide"></canvas>
+                </div>
+            </div>
+            <div class="readout-row" aria-live="polite">
+                <div class="readout strong" id="readoutStrong"></div>
+                <div class="readout weak" id="readoutWeak"></div>
+            </div>
+        </div>
+        <div class="control-panel">
+            <label for="volumeSlider" id="volumeLabel">NaOH added: 12.5 mL</label>
+            <input type="range" id="volumeSlider" min="0" max="50" step="0.1" value="12.5">
+            <button id="overlayBtn" type="button">Show Both on One Chart</button>
+        </div>
+    </div>
+    </main>
+    <script src="titration-curve-comparison.js"></script>
+</body>
+</html>

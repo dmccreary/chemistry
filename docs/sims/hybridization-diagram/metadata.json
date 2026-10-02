@@ -1,0 +1,87 @@
+{
+  "title": "Hybridization Orbital Mixing Diagram",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive diagram with three panels for sp, sp2, and sp3 hybridization. Each panel shows the 2s and 2p orbitals before mixing, the hybrid and leftover p orbitals after mixing, and the resulting geometry and bond angle. A practice mode asks for the hybridization of the central atom in eight common molecules.",
+  "date": "2026-10-02",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Orbital Hybridization",
+    "learningObjectives": [
+      "Explain how atomic orbitals combine to form hybrid orbitals",
+      "Connect hybridization type to electron geometry and bond angle",
+      "Determine the hybridization of a central atom from the number of electron groups"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Atomic orbitals (s and p)",
+      "Lewis structures",
+      "VSEPR electron groups"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 2, Topic 2.7: VSEPR and Hybridization"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 575
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": false
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "select", "label": "Mode", "description": "Explore mode, or a practice question for one of eight molecules" },
+      { "type": "canvas click", "label": "Panels", "description": "Click a panel to see its details (Explore) or to answer the practice question" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Conceptual diagram",
+    "equations": [
+      "number of hybrid orbitals = number of atomic orbitals mixed",
+      "electron groups = bonded atoms + lone pairs"
+    ],
+    "assumptions": [
+      "Only sp, sp2, and sp3 hybridization are shown, matching the chapter",
+      "Box height indicates relative energy only; it is not to scale",
+      "The geometry pictures are two-dimensional sketches of the hybrid orbital directions"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Click-to-reveal comparison followed by practice questions with feedback",
+    "keyQuestions": [
+      "Why are there always four orbital boxes before and after mixing?",
+      "What are the leftover p orbitals used for?",
+      "Why do methane, ammonia, and water share the same hybridization but have different shapes?"
+    ],
+    "commonMisconceptions": [
+      "Counting a double bond as two electron groups",
+      "Thinking hybridization is a physical event rather than a model",
+      "Assuming lone pairs do not occupy hybrid orbitals"
+    ],
+    "assessmentOpportunities": [
+      "Eight built-in practice questions with immediate feedback"
+    ]
+  },
+  "chapter": "05-molecular-geometry-and-polarity"
+}

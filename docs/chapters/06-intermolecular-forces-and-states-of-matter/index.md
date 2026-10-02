@@ -456,6 +456,8 @@ Key facts about partial pressures for AP Chemistry problem-solving:
 
 #### Diagram: Dalton's Law Partial Pressure Infographic
 
+<iframe src="../../sims/dalton-law-partial-pressure/main.html" width="100%" height="562px" scrolling="no"></iframe>
+
 <details markdown="1">
 <summary>Dalton's Law Partial Pressure Infographic</summary>
 Type: infographic

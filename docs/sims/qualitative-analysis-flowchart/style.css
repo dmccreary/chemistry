@@ -1,0 +1,223 @@
+/* Qualitative Analysis Flowchart - Mermaid MicroSim stylesheet
+   Layout: flowchart on the left, explanation panel on the right.
+   No inner scrolling regions, so the page scroll is never captured. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: 1px solid silver;
+}
+
+/* Left: Mermaid diagram on the standard aliceblue drawing background */
+.diagram-panel {
+    width: 54%;
+    height: 100%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px 8px 6px 8px;
+    overflow: hidden;
+}
+
+.sim-title {
+    font-size: 22px;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+.mermaid {
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mermaid svg {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
+/* Right: explanation panel on a white background */
+.info-panel {
+    width: 46%;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid silver;
+    padding: 10px 12px;
+    overflow: hidden;
+    font-size: 15px;
+    color: #222;
+}
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.legend-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid #555;
+    display: inline-block;
+}
+
+.legend-dot.test { background: #ffcdd2; border-color: #b71c1c; }
+.legend-dot.group { background: #bbdefb; border-color: #0d47a1; }
+
+.legend-line {
+    width: 20px;
+    height: 0;
+    border-top: 3px solid #555;
+    display: inline-block;
+}
+
+.legend-line.precip { border-top-color: #c62828; }
+.legend-line.filtrate { border-top-color: #2e7d32; }
+
+.control-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.control-row label {
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+select, button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 3px 8px;
+}
+
+select {
+    flex: 1;
+    min-width: 0;
+}
+
+.stepper {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px 6px;
+}
+
+#stepCounter {
+    font-size: 14px;
+    color: #444;
+    white-space: nowrap;
+}
+
+.info-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0d47a1;
+    margin: 6px 0 6px 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0d47a1;
+}
+
+.info-content {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+}
+
+.info-content p {
+    margin-bottom: 7px;
+}
+
+.info-content ul {
+    margin: 0 0 7px 18px;
+}
+
+.info-content li {
+    margin-bottom: 2px;
+}
+
+/* A chemical equation line; the reaction arrow is a small inline drawing */
+.eqn {
+    font-size: 16px;
+    background: #fff8e1;
+    border-left: 4px solid #e69500;
+    padding: 4px 8px;
+    margin-bottom: 6px;
+    line-height: 1.6;
+}
+
+.eqn.result {
+    background: #e8f5e9;
+    border-left-color: #2e7d32;
+    font-weight: bold;
+}
+
+.eqn.stay {
+    background: #e3f2fd;
+    border-left-color: #0d47a1;
+}
+
+.rxn-arrow {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 4px;
+}
+
+/* Node interaction styling */
+.node {
+    cursor: pointer;
+}
+
+.node.dimmed, .edgePath.dimmed, .flowchart-link.dimmed, .edgeLabel.dimmed {
+    opacity: 0.28;
+}
+
+/* Narrow screens: shrink type so both panels still fit */
+@media (max-width: 560px) {
+    .diagram-panel { width: 48%; padding: 6px 3px; }
+    .info-panel { width: 52%; padding: 8px 7px; font-size: 12.5px; }
+    .sim-title { font-size: 15px; }
+    .info-title { font-size: 13.5px; }
+    .info-content, .eqn { font-size: 12px; line-height: 1.35; }
+    .control-row label, select, button { font-size: 12.5px; }
+    .control-row { flex-wrap: wrap; gap: 4px; }
+    #stepCounter { font-size: 12px; }
+    button { padding: 3px 5px; }
+    .legend { font-size: 11px; gap: 2px 8px; }
+}

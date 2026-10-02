@@ -1,0 +1,88 @@
+{
+  "title": "Back Titration Step-by-Step Diagram",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Four-step interactive diagram of a back titration: an antacid tablet is weighed, a known excess of HCl is added, the leftover HCl is titrated with NaOH, and the calcium carbonate content is calculated by subtraction. A slider changes the NaOH endpoint volume and every calculation line updates.",
+  "date": "2026-10-02",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Back Titration",
+    "learningObjectives": [
+      "Judge when a back titration is preferable to a direct titration",
+      "Calculate the amount of analyte from the reagent added, the reagent left over, and the mole ratios"
+    ],
+    "bloomsTaxonomy": "Evaluate",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Molarity",
+      "Direct titration",
+      "Mole ratios"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 4, Topic 4.6: Introduction to Titration"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 580
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "button", "label": "Previous Step", "description": "Goes back one step" },
+      { "type": "button", "label": "Next Step", "description": "Advances one step and reveals its calculation line" },
+      { "type": "slider", "label": "NaOH at endpoint", "description": "Volume of 0.2500 M NaOH needed to neutralize the leftover HCl, 5.00 to 40.00 mL in steps of 0.05" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Worked calculation",
+    "equations": [
+      "CaCO3 + 2HCl = CaCl2 + H2O + CO2",
+      "HCl + NaOH = NaCl + H2O",
+      "n(HCl reacted) = n(HCl added) - n(HCl excess)",
+      "n(CaCO3) = n(HCl reacted) / 2"
+    ],
+    "assumptions": [
+      "Tablet mass 1.250 g, 50.00 mL of 0.5000 M HCl, 0.2500 M NaOH (chapter worked example)",
+      "Only CaCO3 in the tablet reacts with HCl",
+      "Molar mass of CaCO3 = 100.09 g/mol"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Step-through worked example with predict-then-check",
+    "keyQuestions": [
+      "Why is the excess reagent titrated instead of the analyte?",
+      "Why does a larger NaOH volume mean less CaCO3 in the tablet?"
+    ],
+    "commonMisconceptions": [
+      "Using the moles of NaOH directly as the moles of analyte",
+      "Forgetting to subtract the excess from the amount added",
+      "Applying the 2 to 1 mole ratio to the wrong quantity"
+    ],
+    "assessmentOpportunities": [
+      "Have students calculate each line before revealing it, then repeat with a different endpoint volume"
+    ]
+  },
+  "chapter": "09-stoichiometry-titrations-and-analysis"
+}

@@ -1,0 +1,90 @@
+{
+  "title": "Titration Curve Comparison",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Side by side Chart.js titration curves for 25.0 mL of 0.100 M HCl and 25.0 mL of 0.100 M acetic acid titrated with 0.100 M NaOH. Curves are calculated from the charge balance; the equivalence point, buffer region, half-equivalence point, and indicator ranges are marked, and a slider compares the pH in both flasks at the same volume.",
+  "date": "2026-10-02",
+  "type": "Interactive Chart",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "canvasHeight": 540,
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Acid-Base Titration Curves",
+    "learningObjectives": [
+      "Compare titration curves for strong acid-strong base and weak acid-strong base titrations",
+      "Identify the equivalence point, half-equivalence point, and buffer region on a titration curve",
+      "Explain differences in curve shape and choose a suitable indicator"
+    ],
+    "bloomsTaxonomy": "Analyze",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Molarity and solution stoichiometry",
+      "The pH scale",
+      "Strong and weak acids"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 8, Topic 8.5: Acid-Base Titrations"
+    ]
+  },
+  "technical": {
+    "framework": "Chart.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 540
+    },
+    "responsive": true,
+    "dependencies": [
+      "Chart.js 4.4.4"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "slider", "label": "NaOH added", "description": "Volume of 0.100 M NaOH added, 0 to 50 mL in steps of 0.1; moves a marker along both curves" },
+      { "type": "button", "label": "Show Both on One Chart", "description": "Toggles between side by side charts and a single overlay chart" },
+      { "type": "hover", "label": "Tooltip", "description": "Hovering over a curve shows the volume and pH at that point" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Calculated equilibrium curves",
+    "equations": [
+      "Strong acid: [H+] + [Na+] = [OH-] + [Cl-]",
+      "Weak acid: [H+] + [Na+] = [OH-] + [A-], with [A-] = C x Ka / (Ka + [H+])",
+      "Kw = [H+][OH-] = 1.0 x 10^-14"
+    ],
+    "assumptions": [
+      "25 C; activity coefficients taken as 1",
+      "Acetic acid pKa = 4.74 (Ka = 1.8 x 10^-5)",
+      "Volumes are additive"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Side by side comparison with a shared probe",
+    "keyQuestions": [
+      "Why do both acids reach the equivalence point at the same volume of base?",
+      "Why is the pH at the weak acid's equivalence point above 7?",
+      "Why do the two curves coincide after the equivalence point?"
+    ],
+    "commonMisconceptions": [
+      "Believing the equivalence point always occurs at pH 7",
+      "Believing a weak acid needs less base to neutralize than a strong acid of the same concentration",
+      "Confusing the half-equivalence point with the equivalence point"
+    ],
+    "assessmentOpportunities": [
+      "Have students tabulate the pH of both flasks at key volumes and explain the largest differences"
+    ]
+  },
+  "chapter": "08-chemical-reactions-and-equations"
+}

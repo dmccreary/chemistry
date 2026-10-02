@@ -1,0 +1,87 @@
+{
+  "title": "Mole Concept Conversion Triangle",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive triangle diagram and calculator that converts between mass, moles, and number of particles for a chosen substance, highlighting the conversion factors used (molar mass and Avogadro's number) and showing a step-by-step worked solution.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Mole Calculations",
+    "learningObjectives": [
+      "Apply mole conversion factors to convert between mass, moles, and number of particles",
+      "Decide whether each conversion step requires multiplying or dividing by molar mass or Avogadro's number"
+    ],
+    "bloomsTaxonomy": "Apply",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Molar mass of elements and compounds",
+      "Scientific notation",
+      "Significant figures"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 1, Topic 1.1: Moles and Molar Mass"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 580
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "select", "label": "Substance", "description": "Chooses the substance and therefore the molar mass" },
+      { "type": "select", "label": "Given", "description": "Chooses which quantity is known: mass, moles, or particles" },
+      { "type": "input", "label": "Amount", "description": "Value of the given quantity; particles are entered in units of 10^23" },
+      { "type": "button", "label": "Reset Example", "description": "Returns to the worked example, 24.0 g of carbon" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Calculator",
+    "equations": [
+      "n = m / M",
+      "N = n x N_A",
+      "N_A = 6.022 x 10^23 per mole"
+    ],
+    "assumptions": [
+      "Pure substance of known formula",
+      "Molar masses from standard atomic weights; results displayed to four significant figures"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Worked example with predict-then-check practice",
+    "keyQuestions": [
+      "Why must a mass-to-particles conversion pass through moles?",
+      "When do you multiply by molar mass and when do you divide?"
+    ],
+    "commonMisconceptions": [
+      "Multiplying by molar mass when converting grams to moles",
+      "Believing one mole of every substance has the same mass",
+      "Forgetting that Avogadro's number counts particles per mole, not per gram"
+    ],
+    "assessmentOpportunities": [
+      "Have students solve a conversion on paper, then verify each step with the MicroSim"
+    ]
+  },
+  "chapter": "02-atomic-structure-and-mass-spectrometry"
+}

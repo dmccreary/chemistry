@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="schema" content="https://dmccreary.github.io/intelligent-textbooks/ns/microsim/v1">
+    <title>Qualitative Analysis Flowchart using Mermaid</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'default',
+            fontFamily: 'Arial, Helvetica, sans-serif',
+            flowchart: {
+                useMaxWidth: true,
+                htmlLabels: true,
+                curve: 'basis',
+                rankSpacing: 20,
+                nodeSpacing: 18,
+                padding: 10
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <div class="container">
+        <div class="diagram-panel">
+            <h1 class="sim-title">Qualitative Analysis Flowchart</h1>
+            <div class="mermaid">
+flowchart TD
+    Start(["Unknown solution<br/>(mixed cations)"]):::start
+    subgraph S1[" "]
+        direction LR
+        T1("1. Add dilute HCl"):::test
+        G1["<b>Group I</b><br/>Ag<sup>+</sup>, Pb<sup>2+</sup>, Hg<sub>2</sub><sup>2+</sup><br/>chlorides"]:::group
+        T1 -->|precipitate| G1
+    end
+    subgraph S2[" "]
+        direction LR
+        T2("2. Add H<sub>2</sub>S<br/>in acidic solution"):::test
+        G2["<b>Group II</b><br/>Cu<sup>2+</sup>, Bi<sup>3+</sup>, Cd<sup>2+</sup>, Sn<sup>2+</sup><br/>sulfides"]:::group
+        T2 -->|precipitate| G2
+    end
+    subgraph S3[" "]
+        direction LR
+        T3("3. Add NH<sub>3</sub>/NH<sub>4</sub><sup>+</sup><br/>buffer and H<sub>2</sub>S"):::test
+        G3["<b>Group III</b><br/>Fe<sup>3+</sup>, Al<sup>3+</sup>, Cr<sup>3+</sup>,<br/>Ni<sup>2+</sup>, Zn<sup>2+</sup><br/>hydroxides or sulfides"]:::group
+        T3 -->|precipitate| G3
+    end
+    subgraph S4[" "]
+        direction LR
+        T4("4. Add (NH<sub>4</sub>)<sub>2</sub>CO<sub>3</sub>"):::test
+        G4["<b>Group IV</b><br/>Ba<sup>2+</sup>, Ca<sup>2+</sup>, Sr<sup>2+</sup><br/>carbonates"]:::group
+        T4 -->|precipitate| G4
+    end
+    G5["<b>Group V</b><br/>Na<sup>+</sup>, K<sup>+</sup>, NH<sub>4</sub><sup>+</sup><br/>stay dissolved"]:::group
+
+    Start --> S1
+    S1 -->|filtrate| S2
+    S2 -->|filtrate| S3
+    S3 -->|filtrate| S4
+    S4 -->|filtrate| G5
+
+    classDef start fill:#eceff1,stroke:#455a64,stroke-width:2px,color:#102027,font-size:16px
+    classDef test fill:#ffcdd2,stroke:#b71c1c,stroke-width:2px,color:#3e0a0a,font-size:16px
+    classDef group fill:#bbdefb,stroke:#0d47a1,stroke-width:2px,color:#0a2540,font-size:16px
+    classDef stepBand fill:#ffffff,stroke:#90a4ae,stroke-width:1px,stroke-dasharray:5 4
+    class S1,S2,S3,S4 stepBand
+
+    linkStyle 0,1,2,3 stroke:#c62828,stroke-width:2.5px
+    linkStyle 4 stroke:#555,stroke-width:2px
+    linkStyle 5,6,7,8 stroke:#2e7d32,stroke-width:2.5px
+            </div>
+        </div>
+        <div class="info-panel">
+            <div class="legend" aria-label="Color key">
+                <span class="legend-item"><span class="legend-dot test"></span>Add a reagent</span>
+                <span class="legend-item"><span class="legend-dot group"></span>Group identified</span>
+                <span class="legend-item"><span class="legend-line precip"></span>Precipitate</span>
+                <span class="legend-item"><span class="legend-line filtrate"></span>Filtrate continues</span>
+            </div>
+            <div class="control-row">
+                <label for="ionSelect">Trace a cation:</label>
+                <select id="ionSelect"></select>
+            </div>
+            <div class="control-row stepper">
+                <button id="prevBtn" type="button">Previous</button>
+                <span id="stepCounter">Step 1 of 10</span>
+                <button id="nextBtn" type="button">Next</button>
+            </div>
+            <div id="info-display" aria-live="polite"></div>
+        </div>
+    </div>
+    </main>
+    <script src="qualitative-analysis-flowchart.js"></script>
+</body>
+</html>

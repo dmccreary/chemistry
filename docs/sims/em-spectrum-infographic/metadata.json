@@ -1,0 +1,89 @@
+{
+  "title": "Electromagnetic Spectrum Infographic",
+  "creator": "Dan McCreary",
+  "subject": "AP Chemistry",
+  "description": "Interactive electromagnetic spectrum on a logarithmic scale with aligned wavelength, frequency, and photon energy rulers and a magnified view of visible light. A movable marker shows the region, how it interacts with matter, and the frequency and photon energy calculated from c = wavelength x frequency and E = hf.",
+  "date": "2026-10-01",
+  "type": "Interactive Simulation",
+  "format": "text/html",
+  "language": "en-US",
+  "rights": "CC BY-NC-SA 4.0",
+  "educational": {
+    "gradeLevel": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "subjectArea": "Chemistry",
+    "topic": "Electromagnetic Radiation",
+    "learningObjectives": [
+      "Identify the regions of the electromagnetic spectrum in order",
+      "Compare the relative wavelength, frequency, and photon energy of different types of radiation using c = wavelength x frequency and E = hf"
+    ],
+    "bloomsTaxonomy": "Understand",
+    "duration": "10-15 minutes",
+    "prerequisites": [
+      "Scientific notation",
+      "Wave properties: wavelength and frequency"
+    ],
+    "standards": [
+      "AP Chemistry CED Unit 3: Intermolecular Forces and Properties (spectroscopy and the electromagnetic spectrum, photoelectric effect)"
+    ]
+  },
+  "technical": {
+    "framework": "p5.js",
+    "version": "1.0",
+    "canvasDimensions": {
+      "width": "responsive",
+      "height": 640
+    },
+    "responsive": true,
+    "dependencies": [
+      "p5.js 1.11.10"
+    ],
+    "accessibility": {
+      "hasAltText": true,
+      "keyboardNavigable": true
+    }
+  },
+  "userInterface": {
+    "controls": [
+      { "type": "slider", "label": "Wavelength", "description": "Logarithmic wavelength from 10^3 m to 10^-13 m; sliding right shortens the wavelength" },
+      { "type": "select", "label": "Example", "description": "Jumps the marker to a real source such as an FM radio station, a microwave oven, or a medical X-ray" },
+      { "type": "canvas click", "label": "Spectrum bar, rulers, and magnified visible strip", "description": "Click or drag to place the marker" }
+    ]
+  },
+  "simulation": {
+    "modelType": "Mathematical",
+    "equations": [
+      "f = c / wavelength",
+      "E = h f",
+      "c = 2.998 x 10^8 m/s",
+      "h = 6.626 x 10^-34 J s",
+      "1 eV = 1.602 x 10^-19 J"
+    ],
+    "assumptions": [
+      "Radiation travels in a vacuum",
+      "Region boundaries follow common textbook conventions and are approximate",
+      "Visible light is taken as 400 nm to 700 nm, matching the chapter text"
+    ]
+  },
+  "pedagogical": {
+    "teachingStrategy": "Labeled diagram with a movable marker and concrete calculated values",
+    "keyQuestions": [
+      "Which region has the longest wavelength? The highest photon energy?",
+      "Why does frequency increase when wavelength decreases?",
+      "Why can ultraviolet light break bonds when infrared light cannot?"
+    ],
+    "commonMisconceptions": [
+      "Visible light makes up a large part of the spectrum",
+      "Longer wavelength means more energy",
+      "Different regions travel at different speeds"
+    ],
+    "assessmentOpportunities": [
+      "Rank three sources by wavelength, frequency, and photon energy without the MicroSim, then check"
+    ]
+  },
+  "chapter": "03-electron-configuration-and-periodic-trends"
+}

@@ -50,5 +50,8 @@
       "Learners adjust concentrations until the cell becomes non-spontaneous and explain why."
     ]
   },
-  "chapter": "18-electrochemistry"
+  "chapter": "18-electrochemistry",
+  "search": {
+    "showcase": true
+  }
 }

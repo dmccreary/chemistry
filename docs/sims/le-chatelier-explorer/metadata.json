@@ -49,5 +49,8 @@
       "Learners explain the inert gas and catalyst callouts in their own words."
     ]
   },
-  "chapter": "14-chemical-equilibrium"
+  "chapter": "14-chemical-equilibrium",
+  "search": {
+    "showcase": true
+  }
 }
